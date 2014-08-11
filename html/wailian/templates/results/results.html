@@ -1,0 +1,23 @@
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script>
+  var pgo=0;
+  function JumpUrl(){
+    if(pgo==0){ location='javascript:;'; pgo=1; }
+      }
+document.write("<br /><div align='center'><div style='width:25%; text-align:center;padding:0px;border:1px solid #DADADA;'><div style='padding:6px;font-size:12px;border-bottom:1px solid #DADADA;background:#ccc';'><b>网站提示信息！</b></div>");
+document.write("<div style='height:130px;font-size:10pt;background:#fff'><br />");
+document.write("<span style='color:#F00;'><{$mes}></span><br><div id='t'></div>");
+document.write("<br/></div></div>");
+   i=2
+   function gett()
+   {
+     t.innerHTML=i+"秒后跳转！"
+     setTimeout("gett()",1000);
+     if(i==0)
+     location.replace("<{$url}>");
+     i--;
+    }
+   gett();
+</script>
+

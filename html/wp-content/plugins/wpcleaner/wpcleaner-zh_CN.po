@@ -1,0 +1,119 @@
+# Chinese translations for WP Cleaner package
+# WP Cleaner 软件包的简体中文翻译.
+# Copyright (C) 2010 THE WP Cleaner'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the WP Cleaner package.
+# Jiang Miao <jiangfriend@gmail.com>, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: WP Cleaner 1.1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-10-08 19:08+0800\n"
+"PO-Revision-Date: 2010-10-08 19:09+0800\n"
+"Last-Translator: Jiang Miao <jiangfriend@gmail.com>\n"
+"Language-Team: Chinese (simplified)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../wpcleaner.php:21
+msgid "Fatal: Script is trying delete publish post, operation abandon... :("
+msgstr "出现问题，您试图在删除已发页的贴子，放弃操作。:("
+
+#: ../wpcleaner.php:32
+msgid "Fatal: The plugin can only change revision or draft. :("
+msgstr "该插件只能改变修订版或草稿。 :("
+
+#: ../wpcleaner.php:49
+#, php-format
+msgid "Success %s"
+msgstr "成功%s"
+
+#: ../wpcleaner.php:59
+msgid "Are you sure"
+msgstr "确定"
+
+#: ../wpcleaner.php:82
+msgid "Tips"
+msgstr "提示"
+
+#: ../wpcleaner.php:83
+msgid ""
+"This operation will be delete useless revision and cannot be rollback, "
+"please <b>backup</b> before using it, Thank you :), The plugin has protect "
+"mechanism, so it cannot effect any published post ever. be free in using it."
+msgstr ""
+"本操作将删除所有冗余修订版，"
+"该操作是不可逆的，"
+"请作好<b>备份</b>工作，谢谢:)<br/>"
+"本插件有保护机制，无论怎么操作都无法影响已发布的贴子，请放心使用^^"
+
+#: ../wpcleaner.php:85
+msgid "Posts Stats"
+msgstr "文章统计信息"
+
+#: ../wpcleaner.php:88
+msgid "Posts Type"
+msgstr "贴子类型"
+
+#: ../wpcleaner.php:88
+msgid "Posts Status"
+msgstr "贴子状态"
+
+#: ../wpcleaner.php:88
+msgid "Posts count"
+msgstr "贴子数量"
+
+#: ../wpcleaner.php:116
+msgid "Delete All"
+msgstr "删除所有"
+
+#: ../wpcleaner.php:134
+#, php-format
+msgid "%d broken links"
+msgstr "%d条冗余修订本关联"
+
+#: ../wpcleaner.php:139
+msgid "Delete all revisions"
+msgstr "删除所有修订版"
+
+#: ../wpcleaner.php:140
+msgid "Delete all drafts"
+msgstr "删除所有草稿"
+
+#: ../wpcleaner.php:141
+msgid "Delete all revisions and drafts"
+msgstr "删除所有修订版和草稿"
+
+msgid "page"
+msgstr "页面"
+
+msgid "post"
+msgstr "文章"
+
+msgid "revision"
+msgstr "修订版"
+
+msgid "attachment"
+msgstr "附件"
+
+msgid "draft"
+msgstr "草稿"
+
+msgid "publish"
+msgstr "已发布"
+
+msgid "inherit"
+msgstr "继承"
+
+msgid "pending"
+msgstr "等待复审"
+
+msgid "auto-draft"
+msgstr "自动保存"
+
+msgid "private"
+msgstr "私有"
+
+msgid "trash"
+msgstr "回收站"

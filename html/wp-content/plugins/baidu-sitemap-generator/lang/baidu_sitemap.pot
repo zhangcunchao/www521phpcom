@@ -1,0 +1,463 @@
+# [Countryname] Language File for baidu_sitemap (baidu_sitemap-[localname].po)
+# Copyright (C) 2009 [name] : [URL]
+# This file is distributed under the same license as the WordPress package.
+# [name] <[mail-address]>, 2009.
+# $Id: baidu_sitemap.pot 123431 2009-06-07 00:17:10Z LiuCheng.Name $
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: baidu_sitemap\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2009-08-12 14:15+0800\n"
+"PO-Revision-Date: 2009-08-12 14:15+0800\n"
+"Last-Translator: LiuCheng.Name\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: _e;__\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#
+msgid "Baidu Zhanzhang"
+msgstr ""
+
+#
+msgid "add a link in Homepage or Anywhere you want."
+msgstr ""
+
+#
+msgid "Add to robots.txt:"
+msgstr ""
+
+
+#
+msgid "Post Limit 1000"
+msgstr ""
+
+
+#
+msgid "Update Sitemap when Publish Post"
+msgstr ""
+
+#
+msgid "Enabled Html Sitemap"
+msgstr ""
+
+#
+msgid "Enabled XML Sitemap"
+msgstr ""
+
+
+# baidu_sitemap.php:55
+#: 参数配置
+msgid "Preferences"
+msgstr ""
+
+# baidu_sitemap.php:56
+#: 百度Sitemap的基本参数配置。以后将会根据需要丰富选项。
+msgid "Parameter setting for Baidu Sitemap Generator Plugin. "
+msgstr ""
+
+# baidu_sitemap.php:60
+#: 基本配置
+msgid "General Options"
+msgstr ""
+
+# baidu_sitemap.php:61
+#: 博客主页
+msgid "Blog Homepage"
+msgstr ""
+
+# baidu_sitemap.php:61
+#: 最好不要以/结束
+msgid "The end without / symbol"
+msgstr ""
+
+# baidu_sitemap.php:62
+#: 管理员邮箱
+msgid "Manager Email"
+msgstr ""
+
+# baidu_sitemap.php:62
+#: 如有需要，百度将会通过此Email跟你联系
+msgid "Baidu will contact you use this Email if necessary"
+msgstr ""
+
+# baidu_sitemap.php:63
+#: 更新周期(单位：小时)
+msgid "Update Period(hour)"
+msgstr ""
+
+# baidu_sitemap.php:63
+#: 24小时/每天更新一次是比较合适的值。除非你的站每天有大量的文章发表。
+msgid "Updated in 24 hour is more suitable. Unless you publish a lot of post one day."
+msgstr ""
+
+# baidu_sitemap.php:64
+#: 文章数量
+msgid "Post Count"
+msgstr ""
+
+# baidu_sitemap.php:64
+#: 只需要将最近一个更新周期内新增的和变化了的文章包含在XML页面上，过多的数量只会增加服务器的负担。
+msgid "XML file just need include the Recent Post and Update Post. Needs much more memory if increase the Post Count."
+msgstr ""
+
+# baidu_sitemap.php:65
+#: 在后台自动更新 sitemap 文件
+msgid "Auto build the sitemap"
+msgstr ""
+
+# baidu_sitemap.php:68
+#: 第一次先激活参数配置
+msgid "Active the options first"
+msgstr ""
+
+# baidu_sitemap.php:68
+#: 更新配置
+msgid "Update options"
+msgstr ""
+
+# baidu_sitemap.php:74,80
+#: 生成XML文件
+msgid "Write a XML file"
+msgstr ""
+
+# baidu_sitemap.php:75
+#: 激活配置后，在这里创建XML文件。或更新配置后，请手动重建sitemap文件。
+msgid "When active the options, you can create a XML file here. or Rebulid the sitemap file after update options or other else."
+msgstr ""
+
+# baidu_sitemap.php:80
+#: 更新 XML 文件
+msgid "Update XML file"
+msgstr ""
+
+# baidu_sitemap.php:81
+#: 还没有呢，先激活配置。
+msgid "There is nothing to do, Please Active the options first."
+msgstr ""
+
+# baidu_sitemap.php:113
+#: 生成百度Sitemap XML 文件。就相当于网站被百度--全球最大的中文搜索引擎订阅，进而为您的网站带来潜在的流量。同时生成一个静态的站点地图页面，对所有的搜索引擎都有利。
+msgid "This pulgin generates a Baidu XML-Sitemap for WordPress Blog. Also Build a real Static Sitemap-Page for all Search Engine."
+msgstr ""
+
+# baidu_sitemap.php:164
+#: 恭喜, 更新配置成功
+msgid "Congratulate, Update options success"
+msgstr ""
+
+# baidu_sitemap.php:310
+#: 恭喜, 生成百度 Sitemap 文件成功
+msgid "Congratulate, Build the XML file success"
+msgstr ""
+
+# baidu_sitemap.php:313
+#: 文件或目录不可写，请修改目录权限改为777。
+msgid "Directory is not writable. please chmod your directory to 777."
+msgstr ""
+
+# sitemap-function.php:177
+#: XML 文件状态
+msgid "XML File Status"
+msgstr ""
+
+# sitemap-function.php:184
+#: 当您需要改变XML文件的路径或名称时(最好不要)，请将原页面做301重定向至新页面，或将原页面置为404。
+msgid "When you change Path of the XML file(Better not). please use 301 redirect to the new XML-file, or setting as 404 page."
+msgstr ""
+
+# sitemap-function.php:186
+#: 检查 XML 文件：
+msgid "Check XML-sitemap File: "
+msgstr ""
+
+# sitemap-function.php:187
+#: 最后更新时间：
+msgid "Last updated: "
+msgstr ""
+
+# sitemap-function.php:188
+#: 你可以在首页加个链接（如友情链接/首页底部，或是任何合适的地方），以方便百度蜘蛛访问。
+msgid "You can add a link in Homepage or Anywhere you want. Make sure Robots can visit the XML."
+msgstr ""
+
+# sitemap-function.php:189
+#: 注意：一个站点只能有一个sitemap_baidu.xml文件。否则可能会被识别为作弊。
+msgid "Pay your attention: One site one sitemap_baidu.xml."
+msgstr ""
+
+# sitemap-function.php:191
+#: 还没有创建百度Sitemap文件呢
+msgid "Baidu Sitemap File is not Exist, please Write a normal XML file."
+msgstr ""
+
+# sitemap-function.php:193
+#: 同样在合适的位置加个链接。
+msgid "Also add a link in Homepage or Anywhere you want. "
+msgstr ""
+
+# sitemap-function.php:388
+#: 关于Baidu-Sitemap：
+msgid "About Baidu-Sitemap:"
+msgstr ""
+
+# sitemap-function.php:390
+#: 柳城博客
+msgid "zhenglc(Author Homepage)"
+msgstr ""
+
+# sitemap-function.php:391
+#: 插件主页
+msgid "Plugin Homepage"
+msgstr ""
+
+# sitemap-function.php:392
+#: 百度 sitemap 协议
+msgid "Baidu-Sitemap Protocol"
+msgstr ""
+
+# sitemap-function.php:393
+#: 常见问题回答(FAQ)
+msgid "FAQ"
+msgstr ""
+
+# sitemap-function.php:394
+#: 报告BUG
+msgid "Report a Bug"
+msgstr ""
+
+# sitemap-function.php:395
+#: 建议新功能
+msgid "Suggest a Feature"
+msgstr ""
+
+# sitemap-function.php:400
+#: 贡献人员列表：
+msgid "Donations: "
+msgstr ""
+
+# sitemap-function.php:402
+#: 还没有呢。来抢第一个。
+msgid "Not yet. you would be the first!"
+msgstr ""
+
+# sitemap-function.php:407
+#: 多语言支持：
+msgid "Multi-Language Support: "
+msgstr ""
+
+# sitemap-function.php:409
+#: 英文
+msgid "English"
+msgstr ""
+
+# sitemap-function.php:410
+#: 简体中文
+msgid "Simplified Chinese"
+msgstr ""
+
+# sitemap-function.php:411
+#: 繁体中文
+msgid "Traditional Chinese"
+msgstr ""
+
+# sitemap-function.php:412
+#: 日文
+msgid "Japanese"
+msgstr ""
+
+# sitemap-function.php:413
+#: 韩文
+msgid "Korean"
+msgstr ""
+
+# sitemap-function.php:418
+#: 我的插件列表：
+msgid "My Other Plugin:"
+msgstr ""
+
+# sitemap-function.php:438
+#: XML 文件正在创建中…… 根据包含的文章数量花费的时间也不同！
+msgid "Your sitemap is being refreshed at the moment. Depending on your Post Count this might take some time!"
+msgstr ""
+
+# sitemap-function.php:440
+#: 在 %s 秒后将会自动更新 Sitemap 文件。
+msgid "Your sitemap will be refreshed in %s seconds!"
+msgstr ""
+
+# sitemap-function.php:444
+#: 没有激活自动生成XML文件,需手动更新。
+msgid "Donot activate the Auto build the sitema options, you need build the XML file by yourself."
+msgstr ""
+
+# sitemap-function.php:455
+#: 高级选项
+msgid "Advanced Options"
+msgstr ""
+
+# sitemap-function.php:456
+#: 文章排列顺序
+msgid "Post Order"
+msgstr ""
+
+# sitemap-function.php:458,464,470
+#: 文章发布时间
+msgid "Post_Date"
+msgstr ""
+
+# sitemap-function.php:459,465,471
+#: 文章修改时间
+msgid "Modified_Date"
+msgstr ""
+
+# sitemap-function.php:456,466,472
+#: 最新评论时间
+msgid "Comment_Date"
+msgstr ""
+
+# sitemap-function.php:473
+#: 学习更多
+msgid "Learn More"
+msgstr ""
+
+# sitemap-function.php:474
+#: 加入评论数和最后评论时间
+msgid "CommentCount/Date"
+msgstr ""
+
+# sitemap-function.php:474
+#: 加入 <bbs:lastDate> 和 <bbs:reply> 标签，非必需项
+msgid "Add <bbs:lastDate> and <bbs:reply> label, not require"
+msgstr ""
+
+# sitemap-function.php:474
+#: 加入文章长度(单位/字节)
+msgid "Post strlen(Unit/byte)"
+msgstr ""
+
+# sitemap-function.php:474
+#: 加入 <bbs:mainLen> 标签，非必需项
+msgid "Add <bbs:mainLen> label, not requir"
+msgstr ""
+
+# sitemap-function.php:476
+#: 加入文章分类
+msgid "Post Category"
+msgstr ""
+
+# sitemap-function.php:476
+#: 加入 <bbs:boardid> 标签，非必需项
+msgid "Add <bbs:boardid> label, not requir"
+msgstr ""
+
+# sitemap-function.php:478,480
+#: 文章点击数
+msgid "Post Views"
+msgstr ""
+
+# sitemap-function.php:478
+#: 恭喜您，检测到您装了wp-PostViews插件，可以选择添加文章点击数。加入<bbs:hit>标签。非必需项
+msgid "I love wp-PostViews Plugin. You the add a new label <bbs:hit>. Not requir"
+msgstr ""
+
+# sitemap-function.php:480
+#: 此选项不可添加
+msgid "This option can not add."
+msgstr ""
+
+# sitemap-function.php:480
+#: 对不起，你没有安装或启动wp-PostViews插件。因此没有文章点击量的数据。
+msgid "Sorry, wp-PostViews not start-up. No Post Views."
+msgstr ""
+
+# sitemap-function.php:482
+#: 精华文章标准
+msgid "Popular Post"
+msgstr ""
+
+# sitemap-function.php:482
+#: 按分章分类或留言数或点击数
+msgid "Depend on Post Categories or Comments Count or Post Views"
+msgstr ""
+
+# sitemap-function.php:482
+#: 按留言数，大于
+msgid "Comments Count, More than"
+msgstr ""
+
+# sitemap-function.php:484,486
+#: 按点击数，大于
+msgid "Post Views, More than"
+msgstr ""
+
+# sitemap-function.php:486
+#: 您没有安装或启动wp-postviews
+msgid "wp-PostViews not start-up"
+msgstr ""
+
+# sitemap-function.php:488
+#: 精华文章，加入标签<bbs:pick>。非必需项
+msgid "Popular Post, Add <bbs:pick> label. Not requir"
+msgstr ""
+
+# sitemap-function.php:193
+#: 检查 Html 静态页面：
+msgid "Check SiteMap Html: "
+msgstr ""
+
+# baidu_sitemap.php:299
+#: 评论 %html_comment%
+msgid "Comments %html_comment%"
+msgstr ""
+
+# baidu_sitemap.php:302
+#: &nbsp;&nbsp;&nbsp;阅读 %html_views%
+msgid "&nbsp;&nbsp;&nbsp;Views %html_views%"
+msgstr ""
+
+# baidu_sitemap.php:330
+#: 站点地图
+msgid "SiteMap"
+msgstr ""
+
+# baidu_sitemap.php:338
+#: 最新文章
+msgid "RecentPost"
+msgstr ""
+
+# baidu_sitemap.php:339
+#: 查看博客首页
+msgid "HomePage"
+msgstr ""
+
+# baidu_sitemap.php:496
+#: 扩展功能
+msgid "Expand Options"
+msgstr ""
+
+# baidu_sitemap.php:
+#: 静态SiteMap页面
+msgid "Static Sitemap-Page"
+msgstr ""
+
+# baidu_sitemap.php:
+#: 同时创建一个静态的 SiteMap 页面。对所有搜索引擎都有利，特别是百度。
+msgid "Also Build a real Static Sitemap-Page for all Search Engine."
+msgstr ""
+
+# baidu_sitemap.php:
+msgid "publish post"
+msgstr ""
+
+# baidu_sitemap.php:
+msgid "Update sitemap xml & html when publish a post."
+msgstr ""
+
+# baidu_sitemap.php:
+msgid "Auto when publish post"
+msgstr ""

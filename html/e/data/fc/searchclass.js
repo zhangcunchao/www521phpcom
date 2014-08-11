@@ -1,0 +1,1 @@
+document.write("<option value=\'1\'>|-相册集</option><option value=\'2\'>|-每天赚2元中奖名单</option>");

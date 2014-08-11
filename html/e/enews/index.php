@@ -1,0 +1,274 @@
+<?php
+require("../class/connect.php");
+require("../class/db_sql.php");
+require("../data/dbcache/class.php");
+require("../class/user.php");
+require("../data/dbcache/MemberLevel.php");
+require LoadLang("pub/fun.php");
+$link=db_connect();
+$empire=new mysqlquery();
+$enews=$_POST['enews'];
+if(empty($enews))
+{
+	$enews=$_GET['enews'];
+}
+//导入文件
+if($enews=='AddPl'||$enews=='DoForPl')
+{
+	include('plfun.php');
+}
+elseif($enews=='AddVote'||$enews=='AddInfoVote'||$enews=='AddInfoPfen')
+{
+	include('votefun.php');
+}
+elseif($enews=='DownSoft'||$enews=='GetSofturl')
+{
+	$enews=='DownSoft'?eCheckCloseMods('down'):eCheckCloseMods('movie');//关闭模块
+	include('../class/DownSysFun.php');
+}
+elseif($enews=='ClearBuycar'||$enews=='AddBuycar'||$enews=='EditBuycar'||$enews=='AddDd'||$enews=='ShopDdToPay')
+{
+	eCheckCloseMods('shop');//关闭模块
+	include('../class/ShopSysFun.php');
+}
+elseif($enews=='AddGbook')
+{
+	include('gbookfun.php');
+}
+elseif($enews=='SendPassword'||$enews=='DoGetPassword'||$enews=='DoActUser'||$enews=='RegSend')
+{
+	include('../class/qmemberfun.php');
+}
+else
+{
+	include('../class/q_functions.php');
+}
+if($enews=="AddPl")//增加评论
+{
+	$username=$_POST['username'];
+	$password=$_POST['password'];
+	$saytext=$_POST['saytext'];
+	$id=$_POST['id'];
+	$classid=$_POST['classid'];
+	$repid=$_POST['repid'];
+	$nomember=$_POST['nomember'];
+	$key=$_POST['key'];
+	AddPl($username,$password,$nomember,$key,$saytext,$id,$classid,$repid,$_POST);
+}
+elseif($enews=='DoForPl')//评论意见
+{
+	DoForPl($_GET);
+}
+elseif($enews=="login")//登陆
+{
+	$username=$_POST['username'];
+	$password=$_POST['password'];
+	$lifetime=$_POST['lifetime'];
+	$key=$_POST['key'];
+	login1($username,$password,$lifetime,$key,$location);
+}
+elseif($enews=="register")//注册
+{
+	$username=$_POST['username'];
+	$password=$_POST['password'];
+	$repassword=$_POST['repassword'];
+	$email=$_POST['email'];
+	register($username,$password,$repassword,$email);
+}
+elseif($enews=="ChangeSpaceStyle")//选择空间模板
+{
+	ChangeSpaceStyle($_GET);
+}
+elseif($enews=="DoSetSpace")//设置空间信息
+{
+	DoSetSpace($_POST);
+}
+elseif($enews=="EditSafeInfo")//修改安全信息
+{
+	EditSafeInfo($_POST);
+}
+elseif($enews=="EditInfo")//修改信息
+{
+	EditInfo($_POST);
+}
+elseif($enews=="exit")//退出登陆
+{
+	loginout1($myuserid,$myusername,$myrnd);
+}
+elseif($enews=='AddVote')//增加投票
+{
+	$voteid=$_POST['voteid'];
+	$vote=$_POST['vote'];
+	AddVote($voteid,$vote);
+}
+elseif($enews=='AddInfoVote')//增加信息投票
+{
+	$id=$_POST['id'];
+	$classid=$_POST['classid'];
+	$vote=$_POST['vote'];
+	AddInfoVote($classid,$id,$vote);
+}
+elseif($enews=='AddInfoPfen')//信息评分
+{
+	if($_GET['id'])
+	{
+		$add=$_GET;
+	}
+	else
+	{
+		$add=$_POST;
+	}
+	AddInfoPfen($add);
+}
+elseif($enews=="AddFava")//增加收藏
+{
+	$cid=$_POST['cid'];
+	$id=$_POST['id'];
+	$classid=$_POST['classid'];
+	$from=$_POST['from'];
+	AddFava($id,$classid,$cid,$from);
+}
+elseif($enews=="DelFava_All")//删除收藏
+{
+	$favaid=$_POST['favaid'];
+	DelFava_All($favaid);
+}
+elseif($enews=="DelFava")//删除收藏
+{
+	$favaid=$_GET['favaid'];
+	DelFava($favaid);
+}
+elseif($enews=="CardGetFen")//点卡冲值
+{
+	$username=$_POST['username'];
+	$reusername=$_POST['reusername'];
+	$card_no=$_POST['card_no'];
+	$password=$_POST['password'];
+	CardGetFen($username,$reusername,$card_no,$password);
+}
+elseif($enews=="DownSoft")//下载软件
+{
+	$classid=$_GET['classid'];
+	$id=$_GET['id'];
+	$pathid=$_GET['pathid'];
+	$p=$_GET['p'];
+	$pass=$_GET['pass'];
+	DownSoft($classid,$id,$pathid,$p,$pass);
+}
+elseif($enews=="GetSofturl")//取得软件地址
+{
+	$classid=$_GET['classid'];
+	$id=$_GET[id];
+	$pathid=$_GET[pathid];
+	$p=$_GET[p];
+	$pass=$_GET['pass'];
+	$onlinetime=$_GET['onlinetime'];
+	$onlinepass=$_GET['onlinepass'];
+	$movtime=20;
+	GetSofturl($classid,$id,$pathid,$p,$pass,$onlinetime,$onlinepass);
+}
+elseif($enews=="ClearBuycar")//清空购物车
+{
+	ClearBuycar();
+}
+elseif($enews=="AddBuycar")//加入购物车
+{
+	$classid=$_GET['classid'];
+	$id=$_GET['id'];
+	AddBuycar($classid,$id);
+}
+elseif($enews=="EditBuycar")//修改购物车
+{
+	EditBuycar($_POST);
+}
+elseif($enews=="AddDd")//增加定单
+{
+	AddDd($_POST);
+}
+elseif($enews=="ShopDdToPay")//未付款的继续支付
+{
+	$ddid=$_GET['ddid'];
+	ShopDdToPay($ddid);
+}
+elseif($enews=="AddFavaClass")//增加收藏夹分类
+{
+	AddFavaClass($_POST);
+}
+elseif($enews=="EditFavaClass")//修改收藏夹分类
+{
+	EditFavaClass($_POST);
+}
+elseif($enews=="DelFavaClass")//删除收藏夹分类
+{
+	$cid=$_GET['cid'];
+	$doing=$_GET['doing'];
+	DelFavaClass($cid,$doing);
+}
+elseif($enews=="MoveFava_All")//移动收藏夹
+{
+	$favaid=$_POST['favaid'];
+	$cid=$_POST['cid'];
+	MoveFava_All($favaid,$cid);
+}
+elseif($enews=="AddGbook")//增加留言
+{
+	AddGbook($_POST);
+}
+elseif($enews=="AddFeedback")//增加反馈
+{
+	$doetran=1;
+	AddFeedback($_POST);
+}
+elseif($enews=="AddError")//增加错误报告
+{
+	AddError($_POST);
+}
+elseif($enews=="AddMsg")//发送短信息
+{
+	AddMsg($_POST);
+}
+elseif($enews=="AddOutMsg")//保存发件箱
+{
+	AddOutMsg($_POST);
+}
+elseif($enews=="DelMsg")//删除短信息
+{
+	DelMsg($_GET['mid'],$_GET['out']);
+}
+elseif($enews=="DelMsg_all")//批量删除短信息
+{
+	DelMsg_all($_POST['mid'],$_POST['out']);
+}
+elseif($enews=="AddFriend")//添加好友
+{
+	AddFriend($_POST);
+}
+elseif($enews=="EditFriend")//修改好友
+{
+	EditFriend($_POST);
+}
+elseif($enews=="DelFriend")//删除好友
+{
+	DelFriend($_GET);
+}
+elseif($enews=='SendPassword')//发送取回密码邮件
+{
+	SendGetPasswordEmail($_POST);
+}
+elseif($enews=='DoGetPassword')//重设密码
+{
+	DoGetPassword($_POST);
+}
+elseif($enews=='DoActUser')//激活帐号
+{
+	DoActUser($_GET);
+}
+elseif($enews=='RegSend')//重发激活邮件
+{
+	DoRegSend($_POST);
+}
+else
+{printerror("ErrorUrl","history.go(-1)",1);}
+db_close();
+$empire=null;
+?>

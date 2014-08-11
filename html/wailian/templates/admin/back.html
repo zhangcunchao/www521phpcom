@@ -1,0 +1,63 @@
+<html>
+<link type="text/css" rel="stylesheet" href="public/css/right.css" />
+<link type="text/css" rel="stylesheet" href="public/css/time.css" />
+ <script type="text/javascript" src="public/scripts/check.js"></script> 
+<body>
+<div class="right">
+  <div class="content">
+      	<form id="form1" name="form1" method="post" action="index.php?m=back&a=back" enctype="multipart/form-data">     	
+        <table style="font-size:12px;" width="100%" border="0" cellspacing="1" cellpadding="0"  align="center" bgcolor="#CCCCCC" class="tab"  >    
+          <tr style="font-weight:bold;" class="font" bgcolor="#FFFFFF" >
+            <td width="3%" align="left" >&nbsp;</td>
+            <td>文件 | 文件夹</td>
+          </tr>
+		  <{if $message neq ''}><tr> <td colspan="7" align="center"><{$message}></td></tr><{/if}>
+          	
+          <{section loop=$_file name=i}>
+          <tr bgcolor="#FFFFFF" height="25">
+          	<td><input name="dfile[]" type="checkbox" value="<{$_file[i].value}>" checked="checked"/></td>
+            <td align="left">
+            	<{$_file[i].file}>               
+            </td>
+          </tr>
+           <{/section}> 
+         
+          <tr  bgcolor="#FFFFFF" height="25">
+            <td colspan="2"> 
+            	压缩文件保存到目录:<input name="todir" type="text" value="<{$file_name}>">&nbsp; 
+                压缩文件名称:<input  name="zipname" type="text" id="zipname" value="<{$file_name}>.zip">
+                <font color="red"> (.zip)</font>
+            </td>
+          </tr>
+          <tr  bgcolor="#FFFFFF" height="25">
+            <td colspan="2">  
+                <input type="submit" name="Submit" value=" 开始压缩 "> 
+                <script language='javascript'> 
+                function selrev() 
+                { 
+                with(document.myform) 
+                { 
+                for(i=0;i<elements.length;i++) 
+                { 
+                thiselm = elements[i]; 
+                if(thiselm.name.match(/dfile\[]/)) 
+                thiselm.checked = !thiselm.checked; 
+                } 
+                } 
+                } 
+                </script>
+            </td>
+          </tr>
+                     
+          <tr class="font" bgcolor="#FFFFFF" height="25">
+            <td colspan="11" align="center"><{$page}></td>
+          </tr>                    
+        </table>
+        </form>
+      </div>
+      <div style="text-align:center; padding-top:10px;" align="center";>
+     </div> 
+  </div>
+</div>
+</body>
+</html>

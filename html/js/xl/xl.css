@@ -1,0 +1,2 @@
+#informationbar{position: fixed;left: 30%;width: 35%;text-indent: 50px;padding: 5px 0;background-color: lightyellow; border: 1px solid black;font: bold 12px Verdana;height:50px;}
+#informationbar{position: absolute;width: expression(document.compatMode=="CSS1Compat"? document.documentElement.clientWidth+"px": body.clientWidth+"px");}

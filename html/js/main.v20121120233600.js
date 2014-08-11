@@ -1,0 +1,1 @@
+require.config({baseUrl:"http://s5.suc.itc.cn/ux_cloud_atlas/js/",paths:{almond:"lib/almond/js/almond"}}),require(["jquery","app/initsize","lib/es5-shim","lib/json2","lib/placeholder","almond","app/fileupload/upload","app/backTop","lib/cookie"],function(e,t){e(function(){t.run()})})

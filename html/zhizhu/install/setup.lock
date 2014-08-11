@@ -1,0 +1,39 @@
+<?php
+
+@$server = $_POST['server'];
+@$sqluser = $_POST['sqluser'];
+@$sqlpass = $_POST['sqlpass'];
+@$sqldb = $_POST['sqldb'];
+@$conn = mysql_connect($server, $sqluser, $sqlpass) or die("<script>alert('数据库无法链接,请检查用户名和密码是否有误');history.back();</script>");
+$db = mysql_select_db($sqldb) or die("<script>alert('数据库无法找到,请检查数据库名称是否填写有误！');history.back();</script>");
+
+
+$sql1="SET FOREIGN_KEY_CHECKS=0";
+$sql2="DROP TABLE IF EXISTS `robots`";
+$sql3="CREATE TABLE `robots` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `robotsname` varchar(200) DEFAULT NULL,
+  `robotsip` varchar(200) DEFAULT NULL,
+  `riqi` date DEFAULT NULL,
+  `shijian` time DEFAULT NULL,
+  `robotspage` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=gbk";
+
+$sql1ok=mysql_query($sql1,$conn);
+$sql2ok=mysql_query($sql2,$conn);
+$sql3ok=mysql_query($sql3,$conn);
+if (!$sql1ok or !$sql2ok or !$sql3ok) {
+    echo "<script>alert('您的Mysql存在严重性故障，程序无法继续安装，请联系程序作者！');location.href='http://www.zhaniao.com';</script>";
+} else
+{
+    $conntext = file_get_contents("conn.setup");
+    $conntext = str_replace("server", $server, $conntext);
+    $conntext = str_replace("user", $sqluser, $conntext);
+    $conntext = str_replace("pass", $sqlpass, $conntext);
+    $conntext = str_replace("mysqldb", $sqldb, $conntext);
+    file_put_contents("../config.php", $conntext);
+    rename("setup.php","setup.lock");
+    echo "<script>alert('恭喜，安装成功！');location.href='../';</script>";
+}
+?>

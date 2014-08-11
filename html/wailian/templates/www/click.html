@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<{include file='www/header.html'}>
+<link href="/<{$css}>public/css/s.css" rel="stylesheet" type="text/css" />
+<style>
+body{position:relative}
+body,form{margin:0!important;padding:0!important}
+#bd_snap{font:14px arial;color:#000;background:#fff;text-align:left;padding:7px 0 0 20px}
+#bd_snap_txt{clear:both;padding:10px 0 }
+#bd_snap_note{font-size:12px;color:#666;padding-bottom:10px}
+#bd_snap a{font:14px arial;color:#00c;text-decoration:underline}
+#bd_snap_head{width:860px;height:44px}
+#bd_snap_logo{width:162px;height:38px;display:block;background:url(http://www.521php.com/images/link.gif) no-repeat;margin-right:15px;float:left}
+#bd_snap_search{width:680px;position:absolute;left:150px;top:17px}
+#bd_snap_kw{width:519px;height:22px;padding:4px 7px;padding:6px 7px 2px\9;margin-right:5px;font:16px arial;background:url(http://www.521php.com/images/i-1.0.0.png) no-repeat -304px 0;_background-attachment:fixed;border:1px solid #cdcdcd;border-color:#9a9a9a #cdcdcd #cdcdcd #9a9a9a;vertical-align:top}
+#bd_snap_su{width:95px;height:32px;font-size:14px;color:#000;padding:0;padding-top:2px\9;border:0;}
+input.bd_snap_btn{background:#ddd url(http://www.521php.com/images/i-1.0.0.png);cursor:pointer}
+input.bd_snap_btn_h{background-position:-100px 0}
+#bd_snap_btn_wr{width:97px;height:34px;display:inline-block;background:url(http://www.521php.com/images/i-1.0.0.png) no-repeat -202px 0;_top:1px;*position:relative}
+#bd_snap_ln{height:1px;border-top:1px solid #ACA899;background:#ECE9D8;overflow:hidden}
+#bd_snap_txt span a{text-decoration:none}
+</style>
+</head>
+<body>
+<{include file='www/nav.html'}>
+<div class="main">
+<{section loop=$list name=i}>
+<table border="0" cellpadding="0" cellspacing="0" class="r">
+<tbody><tr><td>
+<a href="<{$list[i].url}>" onmousedown="this.href='/<{$css}>index.php/reto/id/<{$list[i].id}>'; return true;"  target="_blank"><font size="3"><{$list[i].title}></font></a><br />
+<font size="-1"><{$list[i].description}></font><br />
+<font size="-1"><{$list[i].keywords}></font><br />
+<font style="font-size:13px; color:#999">
+<a class="m" style="color:#008000" href="<{$list[i].url}>" target="_blank" onmousedown="this.href='/<{$css}>index.php/reto/id/<{$list[i].id}>'; return true;" href="<{$list[i].url}>"><{$list[i].url}></a>
+<a class="m" href="<{$list[i].url}>" onmousedown="this.href='/<{$css}>index.php/reto/id/<{$list[i].id}>'; return true;"  style=" color:#008000" target="_blank">|<{$list[i].title}></a></font> 
+<font style=" font-size:13px; color:#008000"><{$list[i].catetime|date_format:"%Y-%m-%d  %H:%I:%S"}></font><br />
+<font style="color:#999; font-size:13px; text-decoration:none;">链入本站:<span style="color:#F00"><{$list[i].innum}></span>次</font> <font style="color:#999; font-size:13px; text-decoration:none;">本站链出:<{$list[i].outnum}>次</font><br />
+<div class="showindex" title="<{$list[i].url2}>">
+<a href="/<{$css}>index.php/html/k/<{$list[i].cateurl}>" title="点击查看该域名快照" target="_blank"><font style="color:#999; font-size:13px;text-decoration:none;"><b>查看域名在本站快照</b></font></a>
+</div>
+</td></tr>
+</tbody></table><br />
+<{/section}>
+</div>
+<div style="padding:0 8px;"> <{$page}></div><br />
+<{include file='www/footer.html'}>
+</body>
+</html>

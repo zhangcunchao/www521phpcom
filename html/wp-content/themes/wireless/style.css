@@ -1,0 +1,63 @@
+/*
+Theme Name: wireless
+Description: wap版主题，wireless-wordpress插件自带
+Version: 1.0
+Author: 乱了感觉
+Author URI: http://messense.me
+Tags: white ,menus,wap
+*/
+body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,legend,button,input,textarea {margin:0;padding:0;}
+img {border: none;}
+body {font-family: "Chalkboard",'Comic Sans MS','Century Gothic','Microsoft YaHei',Helvetica,Lucida,arial,sans-serif;font-size: 10.5pt; color: #595959; background-color: #999;}
+a {text-decoration: none;color: #000000;}
+a:hover {color: #595959;text-decoration: underline}
+a:visited {color: #000000;text-decoration: underline}
+/* blockquote */
+blockquote{border-left:2px solid #D7D7D7;}
+#wrap{width:100%;margin: 0 auto;}
+#header,#footer,#search{background-color:#363636;color: #FFFFFF;padding: 2px 0 2px 5px;}
+#header a,#footer a{color: #BBB;}
+/* nav */
+#nav{background: #D7D7D7;padding:2px 0 2px 5px;line-height: 18px;height:18px;font-size: 15px;}
+#nav ul{list-style: none;}
+#nav ul li{display:inline;}
+#nav ul li a{color: #393939;}
+/* single post */
+#content .post{padding-left: 5px;color: #595959;background: #f4f4f6;}
+#content .post h2{font-size: 16px;}
+#content .post .post-info{border-bottom: 2px solid #EEE;border-top: 2px solid #EEE;}
+.entry p{text-indent: 2em;}
+.login-to-read,.reply-to-read{border: 1px dashed #D7D7D7;color: #BC9458;}
+.login-to-read a,.reply-to-read a{color: #9B703F;}
+.prev-next{background: #EAEAEA;padding-left: 5px;}
+/* related posts */
+#related-posts{background: #f4f4f4;border:1px dashed #EEE;padding-left: 5px;}
+/* postlist */
+#postlist .post{padding-left:5px;}
+#postlist .odd{background-color:#FFFFFF;}
+#postlist .even{background-color:#EAEAEA;}
+/* navigation */
+.navigation{background: #D7D7D7;font-size: 14px;font-weight: bold;}
+.navigation span,.navigation a{font-size: 14px;margin-right:2px;background: #fff;border: 1px solid #e5e5e5;color: #787878;padding: 0 8px 0 8px;text-decoration: none;}
+.navigation a:hover{background: #8391A7;border: 1px solid #fff;color:#fff;}
+.navigation .current{background: #fff;border: 1px solid #8d8d8d;color: #393939;font-size: 14px;padding: 0 8px 0 8px;}
+/* search */
+#search{background: #f4f4f6;color: #999;padding-bottom: 3px;}
+#search #submit{background: #f4f4f6;border:1px solid #D7D7D7;color:#999;}
+/* comments */
+.comments-template{background: #f4f4f6;padding-left: 5px;}
+.commentlist{border-top:1px solid #D7D7D7;border-bottom: 1px solid #D7D7D7;}
+.nocomments{background: #EAEAEA;padding:0;}
+.commentlist li{list-style: none;border-left: 1px solid #D7D7D7;}
+.comment-text{padding-left: 20px;}
+.even .comment-body, .children .even .comment-body{ background:#f4f4f4; }
+.odd .comment-body, .children .odd .comment-body{ background: #EEE; }
+/* respond */
+#respond{border-bottom: 2px solid #EEE;}
+#author-info input{background: transparent;border: 2px solid #D7D7D7;margin-top: 5px;}
+#comment{height:80px;border:2px solid #D7D7D7;background: transparent;color:#777;overflow:auto;margin-top: 5px;}
+#submit{background: #f4f4f6;color: #999;border:2px solid #D7D7D7;margin-top: 5px;padding:0 5px 0 5px;cursor:pointer;font-size:14px;line-height: 20px;font-weight:bold; }
+/* link page*/
+.link-entry{background: #f4f4f6;}
+.link-entry li{list-style-type: none;padding-left: 15px;}
+.link-entry li ul li a{display: block;width:120px;background-color: #f4f4f4;margin:5px 5px 0 0;padding:3px 0 3px 5px;line-height:20px;height:20px;border:1px solid #ccc;}

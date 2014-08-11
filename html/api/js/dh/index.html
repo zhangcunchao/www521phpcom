@@ -1,0 +1,223 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>动态导航插件-我爱你php张存超个人博客</title>
+<style type="text/css">
+<!--
+body, td, th {
+ font-size: 14px;
+ background-color:#FFF
+}
+h1{border-bottom:1px solid #999; margin:50px 60px;}
+
+/*导航默认样式，可根据实际情况修改*/
+* {
+ margin:0;
+ padding:0
+}
+.nav {
+ width:980px;
+ height:30px;
+ left:50%;
+ margin-left:-490px;
+ list-style:none;
+ position:relative;
+}
+.nav li {
+ display:inline-block;
+ margin:0 3px;
+ position:relative;
+ overflow:hidden;
+ height:30px; /*建议此高度大于等于里面的a标签高度*/
+ float:left;
+}
+.nav li span {
+ display:inline-block;
+ overflow:hidden
+}
+.nav li a {
+ text-decoration:none;
+ outline:none;
+ color:#666;
+ display:inline-block;
+ padding:0 10px;  
+ text-align:center;
+ background-color: #E1E1E1;
+ font-weight:bold;
+ height:30px;
+ line-height:30px;
+}
+
+/*鼠标经过时样式*/
+.nav li a.over {
+ background-color:#666;
+ color:#FFF
+}
+-->
+</style>
+<script type=text/javascript src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+<script type="text/javascript">
+(function($){
+    $.fn.dynamicNav=function(options){
+     
+      //默认配置
+     var defaults = {
+      direction:"up", //动画切换方向，总共4种up 、down 、left 、right
+      duration:100  //三种预定速度之一的字符串("slow", "normal", or "fast")或表示动画时长的毫秒数值(如：1000)
+      };   
+      
+                // 覆盖默认配置
+    var opts = $.extend(defaults, options);
+       
+    this.each(function(){
+     var navList=$(this).find("li"),
+      navLink=navList.find("a");
+        
+      //在a标签外侧插入span
+      navList.wrapInner("<span></span>");
+         
+      var span=navLink.parent();
+         
+      //判断是否垂直切换
+      if(opts.direction=="up" || opts.direction=="down"){
+       var v=true;
+          }
+          
+      //判断是否改变span初始位置及a样式  
+      if(opts.direction=="right" || opts.direction=="down"){
+       var restSpan=true;
+         }
+         
+       navLink.each(function(){
+                
+       //获取a高度和宽度
+       var w=$(this).outerWidth(),
+        p=$(this).parent();
+                 
+       //初始复制现有a标签   
+       $(this).clone().appendTo(p).addClass("over");
+              
+        //如果是垂直切换
+        if(v){    
+          p.css("width",w);          
+              }else{
+          p.css("width",2*w).parent().css("width",w); 
+          }
+               
+          });
+         
+      //如果向右或向下切换，改变span初始位置及a样式
+      if(restSpan){
+      span.each(function(){
+             
+         if(opts.direction=="right"){
+         $(this).css({"margin-left":-$(this).outerWidth()/2});
+         }
+              
+        if(opts.direction=="down"){
+         $(this).css({"margin-top" : -$(this).outerHeight()/2});
+         }
+              
+        $(this)
+        .find('a')
+        .last()
+        .removeClass("over")
+        .prev()
+        .addClass("over");
+       });
+         }
+        
+      //鼠标经过时动画函数
+      function over(o){
+         o.animate(v?{"margin-top": -o.outerHeight()/2}:{"margin-left": -o.outerWidth()/2}, opts.duration);
+          }
+        
+      //鼠标移开时动画函数
+      function out(o){
+       o.animate(v?{"margin-top":0}:{"margin-left": 0}, opts.duration);
+         }
+        
+      //鼠标经过和离开 
+      span.hover(function(){
+          restSpan ? out($(this)) : over($(this));
+           },function(){
+            restSpan ? over($(this)) : out($(this));
+           });
+         
+     });
+   };
+     
+ })(jQuery);
+
+    $(function(){
+      
+     //向左  
+     $("#nav1").dynamicNav({
+        direction:"left", //动画切换方向，总共4种up 、down 、left 、right
+        duration:300  //三种预定速度之一的字符串("slow", "normal", or "fast")或表示动画时长的毫秒数值(如：1000)
+        });
+      //向右    
+     $("#nav2").dynamicNav({
+        direction:"right", 
+        duration:200  
+        });
+      //向上
+     $("#nav3").dynamicNav({
+        direction:"up", 
+        duration:100 
+        });
+      //向下    
+     $("#nav4").dynamicNav({
+        direction:"down",
+        duration:400
+        });
+     });
+
+</script>
+</head>
+<body>
+
+<h1>向左（速度300毫秒）</h1>
+<ul class="nav" id="nav1">
+  <li><a href="http://www.muzilei.com/">首页</a></li>
+  <li><a href="http://www.muzilei.com/">前端技术</a></li>
+  <li><a href="http://www.muzilei.com/">视觉设计</a></li>
+  <li><a href="http://www.muzilei.com/">文章归档</a></li>
+  <li><a href="http://www.muzilei.com/">工具/书籍</a></li>
+  <li><a href="http://www.muzilei.com/">关于我</a></li>
+</ul>
+
+<h1>向右（速度200毫秒）</h1>
+<ul class="nav" id="nav2">
+  <li><a href="http://www.muzilei.com/">首页</a></li>
+  <li><a href="http://www.muzilei.com/">前端技术</a></li>
+  <li><a href="http://www.muzilei.com/">视觉设计</a></li>
+  <li><a href="http://www.muzilei.com/">文章归档</a></li>
+  <li><a href="http://www.muzilei.com/">工具/书籍</a></li>
+  <li><a href="http://www.muzilei.com/">关于我</a></li>
+</ul>
+
+
+<h1>向上（速度100毫秒）</h1>
+<ul class="nav" id="nav3">
+  <li><a href="http://www.muzilei.com/">首页</a></li>
+  <li><a href="http://www.muzilei.com/">前端技术</a></li>
+  <li><a href="http://www.muzilei.com/">视觉设计</a></li>
+  <li><a href="http://www.muzilei.com/">文章归档</a></li>
+  <li><a href="http://www.muzilei.com/">工具/书籍</a></li>
+  <li><a href="http://www.muzilei.com/">关于我</a></li>
+</ul>
+
+<h1>向下（速度400毫秒）</h1>
+<ul class="nav" id="nav4">
+  <li><a href="http://www.muzilei.com/">首页</a></li>
+  <li><a href="http://www.muzilei.com/">前端技术</a></li>
+  <li><a href="http://www.muzilei.com/">视觉设计</a></li>
+  <li><a href="http://www.muzilei.com/">文章归档</a></li>
+  <li><a href="http://www.muzilei.com/">工具/书籍</a></li>
+  <li><a href="http://www.muzilei.com/">关于我</a></li>
+</ul>
+<span style="display:none;"><script src="http://s96.cnzz.com/stat.php?id=4200165&web_id=4200165" language="JavaScript"></script></span>
+</body>
+</html>

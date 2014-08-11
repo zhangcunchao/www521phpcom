@@ -1,0 +1,46 @@
+<?php
+require("../../class/connect.php");
+require("../../class/user.php");
+require("../../class/db_sql.php");
+$link=db_connect();
+$empire=new mysqlquery();
+$editor=1;
+//关闭
+if($public_r[register_ok])
+{
+	printerror("CloseRegister","history.go(-1)",1);
+}
+//验证IP
+eCheckAccessDoIp('register');
+//转向注册
+if(!empty($registerurl))
+{
+	Header("Location:$registerurl");
+	exit();
+}
+//已经登陆不能注册
+if(getcvar('mluserid'))
+{
+	printerror("LoginToRegister","history.go(-1)",1);
+}
+if(!empty($changeregisterurl)&&!$_GET['groupid'])
+{
+	Header("Location:$changeregisterurl");
+	exit();
+}
+
+$groupid=(int)$_GET['groupid'];
+$groupid=$groupid?$groupid:$user_groupid;
+CheckMemberGroupCanReg($groupid);
+$formid=GetMemberFormId($groupid);
+if(empty($formid))
+{
+	printerror('ErrorUrl','',1);
+}
+$ecmsfirstpost=1;
+$formfile='../../data/html/memberform'.$formid.'.php';
+//导入模板
+require(ECMS_PATH.'e/template/member/register.php');
+db_close();
+$empire=null;
+?>

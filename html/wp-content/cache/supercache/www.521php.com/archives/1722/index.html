@@ -1,0 +1,833 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="robots" content="all" />
+<title>MySql避免全表扫描 | 我爱你PHP张存超技术博客</title> 
+ 
+<meta name="description" content="对查询进行优化，应尽量避免全表扫描，首先应考虑在where 及order by 涉及的列上建立索引:
+
+.尝试下面的技巧以避免优化器错选了表扫描：
+
+· 使用ANALYZE TABLE tbl_name为扫描的表更新关键字分布。
+..." />
+<meta name="keywords" content="mysql, php, 优化, 数据处理, " />
+	
+<link href="http://www.521php.com/wp-content/themes/zeke/style.css" rel="stylesheet" type="text/css" />
+<link href="http://www.521php.com/wp-content/themes/zeke/miaov_style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="http://www.521php.com/wp-content/themes/zeke/comments-ajax.js"></script>
+<link rel='stylesheet' id='crayon-css'  href='http://www.521php.com/wp-content/plugins/crayon-syntax-highlighter/css/min/crayon.min.css?ver=2.2.0' type='text/css' media='all' />
+<script type='text/javascript' src='http://www.521php.com/wp-includes/js/jquery/jquery.js?ver=1.7.1'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var CrayonSyntaxSettings = {"version":"2.2.0","is_admin":"0","ajaxurl":"http:\/\/www.521php.com\/wp-admin\/admin-ajax.php","prefix":"crayon-","setting":"crayon-setting","selected":"crayon-setting-selected","changed":"crayon-setting-changed","special":"crayon-setting-special","orig_value":"data-orig-value","debug":""};;
+var CrayonSyntaxStrings = {"copy":"\u4f7f\u7528 %s \u590d\u5236\uff0c\u4f7f\u7528 %s \u7c98\u8d34\u3002","minimize":"Click To Expand Code"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://www.521php.com/wp-content/plugins/crayon-syntax-highlighter/js/min/crayon.min.js?ver=2.2.0'></script>
+<script type='text/javascript' src='http://www.521php.com/wp-includes/js/comment-reply.js?ver=20090102'></script>
+<link rel='prev' title='linux下nginx,php运行用户和ftp用户权限分配' href='http://www.521php.com/archives/1716/' />
+<link rel='next' title='linux系统下安装redis' href='http://www.521php.com/archives/1724/' />
+<link rel='canonical' href='http://www.521php.com/archives/1722/' />
+<link rel='shortlink' href='http://www.521php.com/?p=1722' />
+<link rel="Shortcut Icon" type="image/x-icon" href="http://www.521php.com/favicon.ico" /><!--[if lt IE 7]>
+<script type="text/javascript" src="/wp-content/themes/MRjs/iepngfix_tilebg.js"></script>
+<script type="text/javascript">
+// <![CDATA[
+if((window.navigator.appName.toUpperCase().indexOf("MICROSOFT")>=0)&&(document.execCommand))
+try{
+document.execCommand("BackgroundImageCache", false, true);
+}
+catch(e){}
+// ]]>
+</script>
+<![endif]-->
+</head>
+
+<body>
+<div id="wrap">
+<!--头部-->
+	<div id="header">
+    	<div id="top">
+        	<div class="mrlogo"><a href="http://www.521php.com/" title="  MySql避免全表扫描-php个人博客,php技术博客,php博客">  MySql避免全表扫描-php个人博客,php技术博客,php博客</a></div>
+            <div class="search"><form method="get" target="_blank" id="searchform" action="http://www.521php.com/so.php">
+<input type="hidden" name="url" value="521php.com" />
+            <input class="field" name="s" id="s" type="text" value="百度谷歌一起搜！" onfocus="this.value=&#39;&#39;;" onblur="if(this.value==&#39;&#39;){this.value=&#39;百度谷歌一起搜！&#39;;}" />
+            <input name="" type="submit" value="" class="so"id="go"  onmouseout="this.className=&#39;so&#39;" onmouseover="this.className=&#39;soHover&#39;" />
+            </form></div>
+        </div>
+        <div id="nav">
+        	<div class="menuL"><ul id="menu" class="menu"><li id="menu-item-480" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-480"><a title="返回首页" href="http://www.521php.com/"><span>首页</span></a></li>
+<li id="menu-item-41" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-41"><a title="心情随笔" href="http://www.521php.com/archives/category/cclog/"><span>随笔</span></a></li>
+<li id="menu-item-43" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-43"><a title="php技术" href="http://www.521php.com/archives/category/lovephp/"><span>我爱PHP</span></a></li>
+<li id="menu-item-182" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-182"><a title="博采众长" href="http://www.521php.com/archives/category/team/"><span>博采众长</span></a></li>
+<li id="menu-item-1749" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1749"><a href="http://www.521php.com/archives/category/linux/"><span>Linux</span></a></li>
+<li id="menu-item-514" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-514"><a title="小功能" href="http://www.521php.com/archives/category/gongneng/"><span>小功能</span></a></li>
+<li id="menu-item-479" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-479"><a title="联系我" href="http://www.521php.com/message/"><span>关于我</span></a></li>
+<li id="menu-item-1139" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1139"><a title="相册集" href="/xiangce/"><span>相册</span></a></li>
+<li id="menu-item-993" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-993"><a title="友情链接" href="http://www.521php.com/flink/"><span>兄弟链</span></a></li>
+<li id="menu-item-1613" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1613"><a title="cclovepp" href="http://love.521php.com"><span>CClovePP</span></a></li>
+<li id="menu-item-1540" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1540"><a href="http://www.521php.com/video/"><span>我爱直播</span></a></li>
+<li id="menu-item-1239" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1239"><a title="我爱外链" href="http://www.521php.com/wailian/"><span>外链自助</span></a></li>
+</ul><span class="bgic"><img src="/images/bgic.gif"></span></div>
+            <div class="rss_ico"><a href="http://www.521php.com/feed/" target="_blank" rel="nofollow" title="RSS订阅">RSS订阅</a></div>
+        </div>
+    </div>
+<!--头部End-->
+<div class="share_more" id="share_more" style="DISPLAY: none; LEFT: 160px; POSITION: absolute; TOP: 442px;">
+<p onMouseOver="share_more_element.style.display='block';" onmouseout="share_more_element.style.display='none';">
+<A class=share>分享到...</A> 
+<A class="qqt" href="javascript:doShare('qqt');">腾讯微博</A>
+<A class="sinat" href="javascript:doShare('sinat');">新浪微博</A>
+<A class="qqpeng" href="javascript:doShare('qqpeng');">QQ朋友</A>
+<A class="renren" href="javascript:doShare('renren');">人人网</A>
+<A class="douban" href="javascript:doShare('douban');">豆瓣</A></p></div>
+<SCRIPT type=text/javascript>
+var share_more_element = null;
+var share_postid = -1;
+var postArray = [];
+function getPos(obj){
+	var pos = [];
+	pos[0] = obj.offsetLeft;//X
+	pos[1] = obj.offsetTop;//Y
+	while (obj = obj.offsetParent){
+		pos[0] += obj.offsetLeft;
+		pos[1] += obj.offsetTop;
+	}
+	return pos;
+}
+//显示隐藏层
+function share_more(postid, obj){
+	share_postid = postid;
+	var objPos = getPos(obj);
+	objPos[0]-=7;objPos[1]-=5;
+	if(share_more_element == null)share_more_element=document.getElementById("share_more");
+	share_more_element.style.left=objPos[0]+"px";
+	share_more_element.style.top=objPos[1]+"px";
+	share_more_element.style.display="block";
+}
+//添加收藏夹
+function doShare(stype){
+	stitle = postArray[share_postid][0];
+	surl = postArray[share_postid][1];
+	sdire = postArray[share_postid][2];
+	sbanner = postArray[share_postid][3];
+	
+	blogtitle = '张存超技术博客';
+	bloghome = 'http://www.521php.com';
+	
+	stitle = blogtitle + ' - ' + stitle;
+	
+	switch(stype){
+		case "fav":
+			if (document.all){
+				window.external.addFavorite(surl,stitle);
+			}
+			else if (window.sidebar){
+				window.sidebar.addPanel(stitle,surl, "");
+			}
+			else{
+				alert("抱歉,您的浏览器不支持添加到收藏夹,换个浏览器试试?");
+			}
+			break;
+		//腾讯微博
+		case "qqt":
+			u=encodeURIComponent(surl);
+			t=encodeURIComponent('#博客#：' + stitle);
+			b=encodeURIComponent(sbanner);
+			su=encodeURIComponent(bloghome);
+			window.open('http://v.t.qq.com/share/share.php?title='+t+'&url='+u+'&site='+su+'&pic='+b,'_blank');	
+			break;
+		//新浪微博
+		case "sinat":
+			u=encodeURIComponent(surl);
+			t=encodeURIComponent('#博客#：' + stitle);
+			b=encodeURIComponent(sbanner);
+			su=encodeURIComponent(bloghome);
+			window.open('http://v.t.sina.com.cn/share/share.php?title='+t+'&url='+u+'&site='+su+'&pic='+b,'_blank');	
+			break;
+		//QQ朋友
+		case "qqpeng":
+			u=encodeURIComponent(surl);
+			t=encodeURIComponent(stitle);
+			b=encodeURIComponent(sbanner);
+			su=encodeURIComponent(bloghome);
+			window.open('http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?to=pengyou&title='+t+'&url='+u+'&site='+su+'&pic='+b,'_blank');	
+			break;
+		//谷歌
+		case "googlereader":
+			u=encodeURIComponent(surl);
+			t=encodeURIComponent(stitle);
+			su=encodeURIComponent(bloghome);
+			st=encodeURIComponent(blogtitle);
+			window.open('http://www.google.com/reader/link?url='+u+'&title='+t+'&snippet=&srcTitle='+st+'&srcUrl='+su,'_blank');
+			break;
+		//人人网
+		case "renren":
+			u=encodeURIComponent(surl);
+			t=encodeURIComponent(stitle);
+			window.open('http://share.renren.com/share/buttonshare.do?link='+u+'&title='+t+'source=&sourceUrl=','_blank');
+			break;
+		//豆瓣
+		case "douban":
+			u=encodeURIComponent(surl);
+			t=encodeURIComponent(stitle);
+			window.open('http://www.douban.com/recommend/?url='+u+'&title='+t,'_blank');
+			break;
+	}
+}
+</SCRIPT>
+
+<SCRIPT>postArray[0]=[];postArray[0][0]="张存超技术博客";postArray[0][1]="http://www.521php.com";postArray[0][2]="张存超技术博客 - http://www.521php.com";postArray[0][3]="http://www.521php.com/logo.png";</SCRIPT><!--中间内容-->
+    <div id="container">
+    	<div id="content">
+	<div class="content_text">
+          <div class="content_t_top"><!--样式头部--></div>
+           		<div class="content_t_main"><div style="margin-left: 20px;">
+<!--淘宝内容页推广start-->
+		<script type="text/javascript">
+     document.write('<a href="http://www.buydazhe.com" title="买就打折网" target="_blank"><img src="http://www.buydazhe.com/them/img/banner1.png" width="640" height="73" /></a>');
+</script>
+<!--淘宝内容页推广end--></div></div>
+<div class="content_t_bot"><!--样式尾部--></div>
+</div>
+        	<div class="content_text">
+            	<div class="content_t_top"><!--样式头部--></div>
+           		<div class="content_t_main">
+               		<!--ContentTitle-->
+                    					<div class="ContentTitle">
+                    	<div class="Data">
+                        	<div class="DataLeft"><p class="monthB">9</p><p class="dateA">05-2014</p> </div>
+                        </div>
+                        <div class="Title">
+                        	<H3><a href="http://www.521php.com/archives/1722/" rel="bookmark">MySql避免全表扫描</a></H3>
+                            <ul>
+                            	<li class="mrinc name">地狱中仰望天堂</li>
+                                <li class="mrinc date">2014-05-9</li>
+                                <li class="mrinc folder"><a href="http://www.521php.com/archives/category/zong/" title="查看 总结 中的全部文章" rel="category tag">总结</a>,<a href="http://www.521php.com/archives/category/lovephp/" title="查看 我爱PHP 中的全部文章" rel="category tag">我爱PHP</a>,<a href="http://www.521php.com/archives/category/tj/" title="查看 推荐文章 中的全部文章" rel="category tag">推荐文章</a></li>
+                                <LI class="mrinc browse"><a href="#">浏览:59</a></LI>
+                          		<LI class="mrinc like"><a href="http://www.521php.com/archives/1722/#respond" title="《MySql避免全表扫描》上的评论">无评论</a></LI>
+                                <li class="mrinc admin"></li>
+                            </ul>
+                        </div>
+                    </div><!--content_banner-->
+                    <div class="content_banner">
+                    	
+                        <div class="text" id="a1722"><p>对查询进行优化，应尽量避免全表扫描，首先应考虑在where 及order by 涉及的列上建立索引:</p>
+<p>.尝试下面的技巧以避免优化器错选了表扫描：</p>
+<p>· 使用ANALYZE TABLE tbl_name为扫描的表更新关键字分布。</p>
+<p>· 对扫描的表使用FORCE INDEX告知MySQL，相对于使用给定的索引表扫描将非常耗时。</p>
+<p>SELECT * FROM t1, t2 FORCE INDEX (index_for_column)</p>
+<p>WHERE t1.col_name=t2.col_name；</p>
+<p>用&#8211;max-seeks-for-key=1000选项启动mysqld或使用SET max_seeks_for_key=1000告知优化器假设关键字扫描不会超过1,000次关键字搜索。<span id="more-1722"></span></p>
+<p>1. 应尽量避免在where 子句中对字段进行null 值判断，否则将导致引擎放弃使用索引而进行全表扫描，</p>
+<p>如：</p>
+<p>select id from t where num is null</p>
+<p>NULL对于大多数数据库都需要特殊处理，MySQL也不例外，它需要更多的代码，更多的检查和特殊的索引逻辑，有些开发人员完全没有意识到，创建表时NULL是默认值，但大多数时候应该使用NOT NULL，或者使用一个特殊的值，如0，-1作为默 认值。</p>
+<p>不能用null作索引，任何包含null值的列都将不会被包含在索引中。即使索引有多列这样的情况下，只要这些列中有一列含有null，该列 就会从索引中排除。也就是说如果某列存在空值，即使对该列建索引也不会提高性能。 任何在where子句中使用is null或is not null的语句优化器是不允许使用索引的。</p>
+<p>&nbsp;</p>
+<p>此例可以在num上设置默认值0，确保表中num列没有null值，然后这样查询：</p>
+<p>select id from t where num=0</p>
+<p>2. 应尽量避免在where 子句中使用!=或&lt;&gt;操作符，否则将引擎放弃使用索引而进行全表扫描。</p>
+<p>&nbsp;</p>
+<p>MySQL只有对以下操作符才使用索引：&lt;，&lt;=，=，&gt;，&gt;=，BETWEEN，IN，以及某些时候的LIKE。 可以在LIKE操作中使用索引的情形是指另一个操作数不是以通配符（%或者_）开头的情形。例如，“SELECT id FROM t WHERE col LIKE &#8216;Mich%&#8217;;”这个查询将使用索引，但“SELECT id FROM t WHERE col LIKE &#8216;%ike&#8217;;”这个查询不会使用索引。</p>
+<p>&nbsp;</p>
+<p>3. 应尽量避免在where 子句中使用or 来连接条件，否则将导致引擎放弃使用索引而进行全表扫描，</p>
+<p>如：</p>
+<p>select id from t where num=10 or num=20</p>
+<p>可以这样查询：select id from t where num=10 union all select id from t where num=20</p>
+<p>&nbsp;</p>
+<p>4 .in 和not in 也要慎用，否则会导致全表扫描，</p>
+<p>如：</p>
+<p>select id from t where num in(1,2,3)</p>
+<p>对于连续的数值，能用between 就不要用in 了：</p>
+<p>select id from t where num between 1 and 3</p>
+<p>&nbsp;</p>
+<p>5.下面的查询也将导致全表扫描：</p>
+<p>select id from t where name like &#8216;%abc%&#8217; 或者</p>
+<p>select id from t where name like &#8216;%abc&#8217; 或者</p>
+<p>若要提高效率，可以考虑全文检索。</p>
+<p>而select id from t where name like &#8216;abc%&#8217; 才用到索引</p>
+<p>&nbsp;</p>
+<p>7. 如果在where 子句中使用参数，也会导致全表扫描。因为SQL只有在运行时才会解析局部变量，但优化程序不能将访问计划的选择推 迟到运行时；它必须在编译时进行选择。然而，如果在编译时建立访问计划，变量的值还是未知的，因而无法作为索引选择的输入项。如下面语句将进行全表扫描：</p>
+<p>select id from t where num=@num</p>
+<p>可以改为强制查询使用索引：select id from t with(index(索引名)) where num=@num</p>
+<p>&nbsp;</p>
+<p>8.应尽量避免在where 子句中对字段进行表达式操作，这将导致引擎放弃使用索引而进行全表扫描。</p>
+<p>如：</p>
+<p>select id from t where num/2=100</p>
+<p>应改为:</p>
+<p>select id from t where num=100*2</p>
+<p>&nbsp;</p>
+<p>9. 应尽量避免在where子句中对字段进行函数操作，这将导致引擎放弃使用索引而进行全表扫描。</p>
+<p>如：</p>
+<p>select id from t where substring(name,1,3)=&#8217;abc&#8217;&#8211;name</p>
+<p>select id from t where datediff(day,createdate,&#8217;2005-11-30&#8242;)=0&#8211;‘2005-11-30’生成的id 应改为:</p>
+<p>&nbsp;</p>
+<p>select id from t where name like &#8216;abc%&#8217;</p>
+<p>select id from t where createdate&gt;=&#8217;2005-11-30&#8242; and createdate&lt;&#8217;2005-12-1&#8242;</p>
+<p>&nbsp;</p>
+<p>10.不要在where 子句中的“=”左边进行函数、算术运算或其他表达式运算，否则系统将可能无法正确使用索引。</p>
+<p>&nbsp;</p>
+<p>11.在使用索引字段作为条件时，如果该索引是复合索引，那么必须使用到该索引中的第一个字段作为条件时才能保证系统使用该索引，否则该索引将不会被使用，并且应尽可能的让字段顺序与索引顺序相一致。</p>
+<p>&nbsp;</p>
+<p>12.不要写一些没有意义的查询，</p>
+<p>如需要生成一个空表结构：</p>
+<p>select col1,col2 into #t from t where 1=0</p>
+<p>这类代码不会返回任何结果集，但是会消耗系统资源的，应改成这样：create table #t(&#8230;)</p>
+<p>&nbsp;</p>
+<p>13.很多时候用exists 代替in 是一个好的选择：</p>
+<p>select num from a where num in(select num from b)</p>
+<p>用下面的语句替换：</p>
+<p>select num from a where exists(select 1 from b where num=a.num)</p>
+<p>&nbsp;</p>
+<p>14.并不是所有索引对查询都有效，SQL是根据表中数据来进行查询优化的，当索引列有大量数据重复时，SQL查询可能不会去利用索引，如一表中有字段sex，male、female几乎各一半，那么即使在sex上建了索引也对查询效率起不了作用。</p>
+<p>&nbsp;</p>
+<p>15.索引并不是越多越好，索引固然可以提高相应的select 的效率，但同时也降低了insert 及update 的效率，因为insert 或update 时有可能会重建索引，所以怎样建索引需要慎重考虑，视具体情况而定。一个表的索引数最好不要超过6个，若太多则应考虑一些不常使用到的列上建的索引是否有必要。</p>
+<p>&nbsp;</p>
+<p>16.应尽可能的避免更新clustered 索引数据列，因为clustered 索引数据列的顺序就是表记录的物理存储顺序，一旦该列值改变将导致整个表记录的顺序的调整，会耗费相当大的资源。若应用系统需要频繁更新clustered 索引数据列，那么需要考虑是否应将该索引建为clustered 索引。</p>
+<p>&nbsp;</p>
+<p>17.尽量使用数字型字段，若只含数值信息的字段尽量不要设计为字符型，这会降低查询和连接的性能，并会增加存储开销。这是因为引擎在处理查询和连接时会逐个比较字符串中每一个字符，而对于数字型而言只需要比较一次就够了。</p>
+<p>&nbsp;</p>
+<p>18.尽可能的使用varchar/nvarchar 代替char/nchar ，因为首先变长字段存储空间小，可以节省存储空间，其次对于查询来说，在一个相对较小的字段内搜索效率显然要高些。</p>
+<p>&nbsp;</p>
+<p>19.任何地方都不要使用select * from t ，用具体的字段列表代替“*”，不要返回用不到的任何字段。</p>
+<p>&nbsp;</p>
+<p>20.尽量使用表变量来代替临时表。如果表变量包含大量数据，请注意索引非常有限（只有主键索引）。21.避免频繁创建和删除临时表，以减少系统表资源的消耗。</p>
+<p>&nbsp;</p>
+<p>22.临时表并不是不可使用，适当地使用它们可以使某些例程更有效，例如，当需要重复引用大型表或常用表中的某个数据集时。但是，对于一次性事件，最好使用导出表。</p>
+<p>&nbsp;</p>
+<p>23.在新建临时表时，如果一次性插入数据量很大，那么可以使用select into 代替create table，避免造成大量log ，以提高速度；如果数据量不大，为了缓和系统表的资源，应先create table，然后insert。</p>
+<p>&nbsp;</p>
+<p>24.如果使用到了临时表，在存储过程的最后务必将所有的临时表显式删除，先truncate table ，然后drop table ，这样可以避免系统表的较长时间锁定。</p>
+<p>&nbsp;</p>
+<p>25.尽量避免使用游标，因为游标的效率较差，如果游标操作的数据超过1万行，那么就应该考虑改写。</p>
+<p>26.使用基于游标的方法或临时表方法之前，应先寻找基于集的解决方案来解决问题，基于集的方法通常更有效。</p>
+<p>&nbsp;</p>
+<p>27.与临时表一样，游标并不是不可使用。对小型数据集使用FAST_FORWARD 游标通常要优于其他逐行处理方法，尤其是在必须引用几个表才能获得所需的数据时。在结果集中包括“合计”的例程通常要比使用游标执行的速度快。如果开发时间允许，基于游标的方法和基于集的方法都可以尝试一下，看哪一种方法的效果更好。</p>
+<p>&nbsp;</p>
+<p>28.在所有的存储过程和触发器的开始处设置SET NOCOUNT ON ，在结束时设置SET NOCOUNT OFF 。无需在执行存储过程和触发器的每个语句后向客户端发送DONE_IN_PROC 消息。</p>
+<p>&nbsp;</p>
+<p>29.尽量避免大事务操作，提高系统并发能力。</p>
+<p>&nbsp;</p>
+<p>30.尽量避免向客户端返回大数据量，若数据量过大，应该考虑相应需求是否合理。</p>
+<p>&nbsp;</p>
+<p>在以下几种条件下，MySQL就会做全表扫描：<br />
+1) 数据表是在太小了，做一次全表扫描比做索引键的查找来得快多了。当表的记录总数小于10且记录长度比较短时通常这么做。<br />
+2) 没有合适用于 ON 或 WHERE 分句的索引字段。<br />
+3) 让索引字段和常量值比较，MySQL已经计算（基于索引树）到常量覆盖了数据表的很大部分，因此做全表扫描应该会来得更快。<br />
+4) 通过其他字段使用了一个基数很小（很多记录匹配索引键值）的索引键。这种情况下，MySQL认为使用索引键需要大量查找，还不如 全表扫描来得更快。<br />
+对于小表来说，全表扫描通常更合适。但是对大表来说，尝试使用以下技术来避免让优化程序错误地选择全表扫描：<br />
+1) 执行 ANALYZE TABLE tbl_name 更新要扫描的表的索引键分布。<br />
+2) 使用 FORCE INDEX 告诉MySQL，做全表扫描的话会比利用给定的索引更浪费资源。<br />
+SELECT * FROM t1, t2 FORCE INDEX (index_for_column)<br />
+WHERE t1.col_name=t2.col_name;<br />
+3) 启动 mysqld 时使用参数 &#8211;max-seeks-for-key=1000 或者执行 SET max_seeks_for_key=1000 来告诉优化程序，所有的索引都不会导致超过1000次的索引搜索</p>
+                        <p style="color:#17750A;"><b>程序本天成，妙手偶得之！</b></p>
+                         <p>转载请注明：<a href="http://www.521php.com/archives/1722/" title="MySql避免全表扫描" target="_blank">http://www.521php.com/archives/1722/</a></p>
+                        </div>
+                  </div><!--toolBar-->
+                    <div class="toolBar toolBarTwo">
+                    	<UL>
+                            <li class="mrinc2 tags2">Tags:<a href="http://www.521php.com/archives/tag/mysql/" rel="tag">mysql</a>,<a href="http://www.521php.com/archives/tag/php/" rel="tag">php</a>,<a href="http://www.521php.com/archives/tag/youhua/" rel="tag">优化</a>,<a href="http://www.521php.com/archives/tag/shuju/" rel="tag">数据处理</a></li>
+                            <LI class="mrinc2 share_r" onmouseover=share_more(1722,this);><A href="javascript:;">分享到...</A> </LI>
+                        </UL>
+                    </div>
+                    <SCRIPT>postArray[1722]=[];postArray[1722][0]="MySql避免全表扫描";postArray[1722][1]="http://www.521php.com/archives/1722/";postArray[1722][2]="";postArray[1722][3]="http://www.521php.com/wp-content/themes/zeke/img/default.gif";</SCRIPT>
+           		</div>
+                <div class="content_t_bot"><!--样式尾部--></div>
+                </div>
+            <div class="navigation">
+				<p class="navNew"><a href="http://www.521php.com/archives/1724/" rel="next">linux系统下安装redis</a></p>
+				<p class="navOld"><a href="http://www.521php.com/archives/1716/" rel="prev">linux下nginx,php运行用户和ftp用户权限分配</a></p>
+	    </div>
+           
+           <div class="content_text">
+               <div class="content_t_top"></div>
+               <div class="content_t_main"> <div class="ujian-hook"></div></div>
+	       <div class="content_t_bot"><!--样式尾部--></div>
+	   </div>
+	   <div class="content_text">
+               <div class="content_t_top"></div>
+               <div class="content_t_main">
+               <div class="xgwz">
+	       <div>相关文章</div>
+			<li><span class="xtitle"><a href="http://www.521php.com/archives/812/" rel="bookmark" title="配置php.ini实现PHP文件上传功能">配置php.ini实现PHP文件上传功能</a></span> <span class="xtag">2012-12-05 <a href="http://www.521php.com/archives/category/team/" title="查看 博采众长 中的全部文章" rel="category tag">博采众长</a>/<a href="http://www.521php.com/archives/category/lovephp/" title="查看 我爱PHP 中的全部文章" rel="category tag">我爱PHP</a></span></li>
+<li><span class="xtitle"><a href="http://www.521php.com/archives/217/" rel="bookmark" title="织梦的当前页导航样式添加">织梦的当前页导航样式添加</a></span> <span class="xtag">2012-07-11 <a href="http://www.521php.com/archives/category/team/" title="查看 博采众长 中的全部文章" rel="category tag">博采众长</a>/<a href="http://www.521php.com/archives/category/lovephp/" title="查看 我爱PHP 中的全部文章" rel="category tag">我爱PHP</a></span></li>
+<li><span class="xtitle"><a href="http://www.521php.com/archives/708/" rel="bookmark" title="用mysql的存储过程和event来做计划任务">用mysql的存储过程和event来做计划任务</a></span> <span class="xtag">2012-11-22 <a href="http://www.521php.com/archives/category/team/" title="查看 博采众长 中的全部文章" rel="category tag">博采众长</a>/<a href="http://www.521php.com/archives/category/lovephp/" title="查看 我爱PHP 中的全部文章" rel="category tag">我爱PHP</a></span></li>
+<li><span class="xtitle"><a href="http://www.521php.com/archives/441/" rel="bookmark" title="将织梦的后台栏目授权增加至无限分类">将织梦的后台栏目授权增加至无限分类</a></span> <span class="xtag">2012-09-06 <a href="http://www.521php.com/archives/category/gongneng/" title="查看 小功能 中的全部文章" rel="category tag">小功能</a>/<a href="http://www.521php.com/archives/category/lovephp/" title="查看 我爱PHP 中的全部文章" rel="category tag">我爱PHP</a>/<a href="http://www.521php.com/archives/category/tj/" title="查看 推荐文章 中的全部文章" rel="category tag">推荐文章</a></span></li>
+<li><span class="xtitle"><a href="http://www.521php.com/archives/449/" rel="bookmark" title="php无限级分类数据库设计和sql实现">php无限级分类数据库设计和sql实现</a></span> <span class="xtag">2012-09-07 <a href="http://www.521php.com/archives/category/lovephp/" title="查看 我爱PHP 中的全部文章" rel="category tag">我爱PHP</a>/<a href="http://www.521php.com/archives/category/tj/" title="查看 推荐文章 中的全部文章" rel="category tag">推荐文章</a></span></li>
+<li><span class="xtitle"><a href="http://www.521php.com/archives/1075/" rel="bookmark" title="php实现智能分词">php实现智能分词</a></span> <span class="xtag">2013-03-01 <a href="http://www.521php.com/archives/category/gongneng/" title="查看 小功能 中的全部文章" rel="category tag">小功能</a>/<a href="http://www.521php.com/archives/category/lovephp/" title="查看 我爱PHP 中的全部文章" rel="category tag">我爱PHP</a></span></li>
+<li><span class="xtitle"><a href="http://www.521php.com/archives/461/" rel="bookmark" title="PHP 获取服务器详细信息">PHP 获取服务器详细信息</a></span> <span class="xtag">2012-09-11 <a href="http://www.521php.com/archives/category/team/" title="查看 博采众长 中的全部文章" rel="category tag">博采众长</a>/<a href="http://www.521php.com/archives/category/lovephp/" title="查看 我爱PHP 中的全部文章" rel="category tag">我爱PHP</a></span></li>
+<li><span class="xtitle"><a href="http://www.521php.com/archives/1257/" rel="bookmark" title="百度权重、pagerank、alexa及百度和谷歌收录情况查询接口">百度权重、pagerank、alexa及百度和谷歌收录情况查询接口</a></span> <span class="xtag">2013-05-03 <a href="http://www.521php.com/archives/category/gongneng/" title="查看 小功能 中的全部文章" rel="category tag">小功能</a>/<a href="http://www.521php.com/archives/category/zong/" title="查看 总结 中的全部文章" rel="category tag">总结</a></span></li>
+<li><span class="xtitle"><a href="http://www.521php.com/archives/1388/" rel="bookmark" title="简述一下php中 == 和 === 的区别和应用">简述一下php中 == 和 === 的区别和应用</a></span> <span class="xtag">2013-08-06 <a href="http://www.521php.com/archives/category/zong/" title="查看 总结 中的全部文章" rel="category tag">总结</a>/<a href="http://www.521php.com/archives/category/lovephp/" title="查看 我爱PHP 中的全部文章" rel="category tag">我爱PHP</a>/<a href="http://www.521php.com/archives/category/tj/" title="查看 推荐文章 中的全部文章" rel="category tag">推荐文章</a></span></li>
+<li><span class="xtitle"><a href="http://www.521php.com/archives/1406/" rel="bookmark" title="PHP漏洞全解(四)-xss跨站脚本攻击">PHP漏洞全解(四)-xss跨站脚本攻击</a></span> <span class="xtag">2013-08-13 <a href="http://www.521php.com/archives/category/team/" title="查看 博采众长 中的全部文章" rel="category tag">博采众长</a>/<a href="http://www.521php.com/archives/category/safe/" title="查看 安全 中的全部文章" rel="category tag">安全</a>/<a href="http://www.521php.com/archives/category/lovephp/" title="查看 我爱PHP 中的全部文章" rel="category tag">我爱PHP</a>/<a href="http://www.521php.com/archives/category/tj/" title="查看 推荐文章 中的全部文章" rel="category tag">推荐文章</a></span></li>
+</div>
+           <div class="content_t_bot"></div>
+	   </div>
+<!-- You can start editing here. -->
+<div id="comment_body">
+			<!-- If comments are open, but there are no comments. -->
+	 		</div>
+<div class="navigation_comments">
+		<div class="pagination"></div>
+</div>
+  <div id="respond">
+            	<div class="excerpt_top"></div>
+                <div class="excerpt_main">
+<h3 class="givetext">发表评论</h3>
+<div class="cancel-comment-reply">
+		<!--<div id="real-avatar">
+			<img alt='' src='http://0.gravatar.com/avatar/?d=http://www.521php.com/wp-content/themes/zeke/MRimg/gravatar.png&amp;s=40' class='avatar avatar-40 photo avatar-default' height='40' width='40' />	</div>-->
+			<small><a rel="nofollow" id="cancel-comment-reply-link" href="/archives/1722/#respond" style="display:none;">点击这里取消回复。</a></small>
+		</div>
+<form action="http://www.521php.com/wp-comments-post.php" method="post" id="commentform">
+<div class="form_box">
+<div class="form_infobody">
+ 	<div id="comment-author-info" class="form_info">
+		<div class="author">昵称：<input type="text" class="textfield" name="author" id="author" tabindex="1" value=""></div>
+        <p style="height:15px"></p>
+		<div class="email">邮箱：<input type="text" class="textfield" name="email" id="email" tabindex="2" value=""></div>
+        <p style="height:15px"></p>
+		<div class="url">网址：<input type="text" class="textfield" name="url" id="url" tabindex="3" value=""></div>
+    </div>
+</div>
+    <div class="form_text"><textarea name="comment" id="comment" class="textarea"  tabindex="4"  onfocus="if (this.value == 'Make Comments on this Article') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Make Comments on this Article';}">Make Comments on this Article</textarea></div>
+</div>
+<p></p>
+<div class="ajax_box" id="comment_jstext">eg.博客主题调用的是Gravatar头像,你可以通过邮箱注册获得头像.</div>
+<div class="form_btn">
+<div class="submit_box"><div class="aLeft"><input class="submit" name="submit" type="submit" id="submit" tabindex="5" value="提交留言"><input class="reset" name="reset" type="reset" id="reset" tabindex="6" value="重写"></div><div class="aRight"><input type="checkbox" name="comment_mail_notify" id="comment_mail_notify" value="comment_mail_notify" checked="checked" style="margin-left:0px;" /><label for="comment_mail_notify" style="display: inline;">有人回复时邮件通知我</label> / 快捷键：Ctrl+Enter</label><input type='hidden' name='comment_post_ID' value='1722' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</div></div>
+</div>
+<script type="text/javascript">	//Crel+Enter
+			$(document).keypress(function(e){
+				if(e.ctrlKey && e.which == 13 || e.which == 10) { 
+					$(".submit").click();
+					document.body.focus();
+				} else if (e.shiftKey && e.which==13 || e.which == 10) {
+					$(".submit").click();
+				}          
+			})
+		</script>
+</form>
+                </div>
+                <div class="excerpt_bot"></div>
+            </div>
+</div>
+        </div>
+        <div id="sidebar">
+			<!--自我介绍-->
+			<div class="sidebar_body">
+           	  <div class="sidebar_b_top"><!--样式头部--></div>
+                <div class="sidebar_b_main">
+                	<div class="sid_ify">
+                    	<div class="sid_ify_bg">
+                            <H3>本站公告</H3>
+                        </div>
+                    </div>
+                    <div class="sid_body"><div><img src="http://www.521php.com/wp-content/themes/zeke/fly.gif" width="200" height="180" /></div>
+					<p style="text-align:left; font-size:12px;">程序本天成，妙手偶得之！
+<br />趣赔集团刚成立，如果您想投资可直接转入支付宝，和我联系<br /><script>document.write('<a href="http://www.521php.com/payme/" target="_blank"><img src="/wp-content/themes/zeke/btn-index.png" height="40" /></a>');</script> <img src="/wp-content/themes/zeke/gx.gif" height="40" />			
+					</p>
+                    </div>
+                </div>
+                <div class="sidebar_b_bot"><!--样式尾部--></div>
+            </div>
+			<!--日志分类-->
+
+        	<div class="sidebar_body">
+           	  <div class="sidebar_b_top"><!--样式头部--></div>
+                <div class="sidebar_b_main">
+                	<div class="sid_ify">
+                    	<div class="sid_ify_bg">
+                            <H3>文章分类</H3>
+                        </div>
+                    </div>
+                    <div class="sid_body">
+                    	<ul class="sid_lm">
+                        		<li class="cat-item cat-item-61"><a href="http://www.521php.com/archives/category/linux/" title="linux服务器">Linux</a> (16)
+</li>
+	<li class="cat-item cat-item-15"><a href="http://www.521php.com/archives/category/wordpress/" title="在其位，谋其政！">WordPress</a> (8)
+</li>
+	<li class="cat-item cat-item-41"><a href="http://www.521php.com/archives/category/team/" title="取长补短，好的学习习惯可以让我们少走很多弯路！">博采众长</a> (68)
+</li>
+	<li class="cat-item cat-item-71"><a href="http://www.521php.com/archives/category/safe/" title="查看 安全 下的所有文章">安全</a> (7)
+</li>
+	<li class="cat-item cat-item-52"><a href="http://www.521php.com/archives/category/gongneng/" title="查看 小功能 下的所有文章">小功能</a> (55)
+</li>
+	<li class="cat-item cat-item-12"><a href="http://www.521php.com/archives/category/zong/" title="合理的总结我们的工作，工作就是学习！">总结</a> (62)
+</li>
+	<li class="cat-item cat-item-10"><a href="http://www.521php.com/archives/category/lovephp/" title="我们共同的php技术博客！总结php知识，交流php编程心得！">我爱PHP</a> (127)
+</li>
+	<li class="cat-item cat-item-70"><a href="http://www.521php.com/archives/category/tj/" title="查看 推荐文章 下的所有文章">推荐文章</a> (71)
+</li>
+	<li class="cat-item cat-item-46"><a href="http://www.521php.com/archives/category/else/" title="读书心得，视频感悟，社会舆论，杂七杂八">杂谈</a> (31)
+</li>
+	<li class="cat-item cat-item-4"><a href="http://www.521php.com/archives/category/cclog/" title="我们不知道人生到底有多长，但是我知道当我们回首看这些的时候一定会深深的感动！">随笔</a> (33)
+</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sidebar_b_bot"><!--样式尾部--></div>
+            </div>
+
+	    			<div class="sidebar_body">
+           	  <div class="sidebar_b_top"><!--样式头部--></div>
+                <div class="sidebar_b_main">
+                	<div class="sid_ify">
+                    	<div class="sid_ify_bg">
+                            <H3><a href="/tg/" title="进入本站推广">进入本站推广</a></H3>
+                        </div>
+                    </div>
+                    <div class="sid_body" align="center">
+<iframe name="alimamaifrm" frameborder="0" marginheight="0" marginwidth="0" border="0" scrolling="no" width="210" height="200" src="http://www.taobao.com/go/app/tbk_app/chongzhi_210_200.php?pid=mm_30958902_3426892_13314114&page=chongzhi_210_200.php&size_w=210&size_h=200&stru_phone=1&stru_game=1&stru_travel=1" ></iframe>
+                    </div>
+                </div>
+                <div class="sidebar_b_bot"><!--样式尾部--></div>
+            </div>
+<!--本站接口-->
+            <div class="sidebar_body">
+           	  <div class="sidebar_b_top"><!--样式头部--></div>
+                <div class="sidebar_b_main">
+                	<div class="sid_ify">
+                    	<div class="sid_ify_bg">
+                            <H3>本站接口</H3>
+                        </div>
+                    </div>
+                    <div class="sid_body">
+                    	<ul class="sid_link_text">
+                        <li><a href="http://www.521php.com/api/pinyin.php" title="php将中文转化为拼音接口" target="_blank">php将中文转化为拼音接口</a></li>
+<li><a href="http://www.521php.com/api/ip.php" title="php获取ip归属地接口" target="_blank">php获取ip归属地接口</a></li>
+<li><a href="http://www.521php.com/archives/913/" title="百度谷歌一起搜接口" target="_blank">百度谷歌一起搜接口</a></li>
+<li><a href="http://www.521php.com/api/qr/" title="二维码在线生成工具" target="_blank">二维码在线生成工具</a></li>
+<li><a href="http://www.521php.com/api/fenci/" title="php智能分词功能" target="_blank">php智能分词功能</a></li>
+<li><a href="http://www.521php.com/api/fav/" title="获取指定网站favicon.ico图标接口" target="_blank">获取指定网站favicon.ico图标接口</a></li>
+<li><a href="http://www.521php.com/api/pr/" title="权重,pr,alexa及收录情况查询接口" target="_blank">权重,pr,alexa及收录情况查询接口</a></li>
+<li><a href="http://www.521php.com/api/sl/" title="php扫雷小游戏" target="_blank">php扫雷小游戏</a></li>
+                      </ul>
+                    </div>
+                </div>
+                <div class="sidebar_b_bot"><!--样式尾部--></div>
+            </div>
+            <!--本站接口-->
+            <!--博客归档OR最新文章OR随机日志-->
+            <div class="sidebar_body">
+           	  <div class="sidebar_b_top"><!--样式头部--></div>
+                <div class="sidebar_b_main">
+                	<div class="sid_ify">
+                    	<div class="sid_ify_bg">
+                            <H3><a href="/archives/category/tj/" title="推荐文章">推荐文章</a></H3>
+                        </div>
+                    </div>
+                    <div class="sid_body">
+                    	<ul class="sid_Archives sid_link_text">
+<li><a href="http://www.521php.com/archives/1728/" title="转-技术人员如何参与产品设计讨论：激活那一潭死水" rel="bookmark">
+转-技术人员如何参与产品设计讨论：激活那一潭死水</a></li>
+<li><a href="http://www.521php.com/archives/1253/" title="外链自助上线了" rel="bookmark">
+外链自助上线了</a></li>
+<li><a href="http://www.521php.com/archives/996/" title="php捕捉各大搜索引擎的蜘蛛、爬虫记录" rel="bookmark">
+php捕捉各大搜索引擎的蜘蛛、爬虫记录</a></li>
+<li><a href="http://www.521php.com/archives/1365/" title="可逆的php字符加密算法" rel="bookmark">
+可逆的php字符加密算法</a></li>
+<li><a href="http://www.521php.com/archives/913/" title="本站百度和谷歌一起搜接口！(推荐)" rel="bookmark">
+本站百度和谷歌一起搜接口！(推荐)</a></li>
+<li><a href="http://www.521php.com/archives/1369/" title="php 自定义json_encode和json_decode函数" rel="bookmark">
+php 自定义json_encode和json_decode函数</a></li>
+<li><a href="http://www.521php.com/archives/682/" title="导医系统开发总结之自己的编程心得" rel="bookmark">
+导医系统开发总结之自己的编程心得</a></li>
+<li><a href="http://www.521php.com/archives/1203/" title="纯php代码实现伪静态的方法" rel="bookmark">
+纯php代码实现伪静态的方法</a></li>
+<li><a href="http://www.521php.com/archives/1187/" title="织梦内置标签小优化之四—dede:channelartlist标签" rel="bookmark">
+织梦内置标签小优化之四—dede:channelartlist标签</a></li>
+<li><a href="http://www.521php.com/archives/1172/" title="织梦内置标签小优化之二——dede:channel标签优化" rel="bookmark">
+织梦内置标签小优化之二——dede:channel标签优化</a></li>
+</ul>
+                    </div>
+                </div>
+                <div class="sidebar_b_bot"><!--样式尾部--></div>
+            </div>
+			<div class="sidebar_body">
+           	  <div class="sidebar_b_top"><!--样式头部--></div>
+                <div class="sidebar_b_main">
+                	<div class="sid_ify">
+                    	<div class="sid_ify_bg">
+                            <H3><a href="/archives/category/lovephp/" title="技术心得">学习之所得</a></H3>
+                        </div>
+                    </div>
+                    <div class="sid_body">
+                    	<ul class="sid_Archives sid_link_text">
+<li><a href="http://www.521php.com/archives/1752/" title="php脚本实现redis数据库指定库号迁移" rel="bookmark">
+php脚本实现redis数据库指定库号迁移</a></li>
+<li><a href="http://www.521php.com/archives/1746/" title="php批量去除指定目录的bom头" rel="bookmark">
+php批量去除指定目录的bom头</a></li>
+<li><a href="http://www.521php.com/archives/1739/" title="一键式虚拟主机搭建shell脚本" rel="bookmark">
+一键式虚拟主机搭建shell脚本</a></li>
+<li><a href="http://www.521php.com/archives/1735/" title="shell脚本做nginx日志分析工具" rel="bookmark">
+shell脚本做nginx日志分析工具</a></li>
+<li><a href="http://www.521php.com/archives/1722/" title="MySql避免全表扫描" rel="bookmark">
+MySql避免全表扫描</a></li>
+<li><a href="http://www.521php.com/archives/1716/" title="linux下nginx,php运行用户和ftp用户权限分配" rel="bookmark">
+linux下nginx,php运行用户和ftp用户权限分配</a></li>
+<li><a href="http://www.521php.com/archives/1708/" title="php的pcntl_fork多进程小解" rel="bookmark">
+php的pcntl_fork多进程小解</a></li>
+<li><a href="http://www.521php.com/archives/1703/" title="鸟枪换大炮了" rel="bookmark">
+鸟枪换大炮了</a></li>
+<li><a href="http://www.521php.com/archives/1697/" title="两种方式实现js，ajax的跨域" rel="bookmark">
+两种方式实现js，ajax的跨域</a></li>
+<li><a href="http://www.521php.com/archives/1694/" title="redis小解及centos下php-redis扩展安装" rel="bookmark">
+redis小解及centos下php-redis扩展安装</a></li>
+</ul>
+                    </div>
+                </div>
+                <div class="sidebar_b_bot"><!--样式尾部--></div>
+            </div>
+			
+		<div class="sidebar_body">
+           	  <div class="sidebar_b_top"><!--样式头部--></div>
+                <div class="sidebar_b_main">
+                	<div class="sid_ify">
+                    	<div class="sid_ify_bg">
+                            <H3><a href="/archives/category/cclog/" title="日志">生活之所感</a></H3>
+                        </div>
+                    </div>
+                    <div class="sid_body">
+                    	<ul class="sid_Archives sid_link_text">
+<li><a href="http://www.521php.com/archives/1756/" title="4年了，给您汇报一下" rel="bookmark">
+4年了，给您汇报一下</a></li>
+<li><a href="http://www.521php.com/archives/1662/" title="近期的一点小感悟" rel="bookmark">
+近期的一点小感悟</a></li>
+<li><a href="http://www.521php.com/archives/1654/" title="不误正业" rel="bookmark">
+不误正业</a></li>
+<li><a href="http://www.521php.com/archives/1650/" title="论我的电脑为什么比别人的活的相对长久" rel="bookmark">
+论我的电脑为什么比别人的活的相对长久</a></li>
+<li><a href="http://www.521php.com/archives/1639/" title="没有正确的标题，只有正确的人" rel="bookmark">
+没有正确的标题，只有正确的人</a></li>
+<li><a href="http://www.521php.com/archives/1295/" title="阶段性小总结20130525" rel="bookmark">
+阶段性小总结20130525</a></li>
+<li><a href="http://www.521php.com/archives/1044/" title="职场白领的“攻薪技”" rel="bookmark">
+职场白领的“攻薪技”</a></li>
+<li><a href="http://www.521php.com/archives/1014/" title="天空海阔，要做最坚强的泡沫" rel="bookmark">
+天空海阔，要做最坚强的泡沫</a></li>
+<li><a href="http://www.521php.com/archives/985/" title="致师弟师妹的一封信" rel="bookmark">
+致师弟师妹的一封信</a></li>
+<li><a href="http://www.521php.com/archives/905/" title="2012年12月22日总结" rel="bookmark">
+2012年12月22日总结</a></li>
+</ul>
+                    </div>
+                </div>
+                <div class="sidebar_b_bot"><!--样式尾部--></div>
+            </div>
+			<div class="sidebar_body">
+           	  <div class="sidebar_b_top"><!--样式头部--></div>
+                <div class="sidebar_b_main">
+                	<div class="sid_ify">
+                    	<div class="sid_ify_bg">
+                            <H3><a href="/archives/category/else/" title="杂谈">杂七杂八</a></H3>
+                        </div>
+                    </div>
+                    <div class="sid_body">
+                    	<ul class="sid_Archives sid_link_text">
+<li><a href="http://www.521php.com/archives/1728/" title="转-技术人员如何参与产品设计讨论：激活那一潭死水" rel="bookmark">
+转-技术人员如何参与产品设计讨论：激活那一潭死水</a></li>
+<li><a href="http://www.521php.com/archives/1654/" title="不误正业" rel="bookmark">
+不误正业</a></li>
+<li><a href="http://www.521php.com/archives/1650/" title="论我的电脑为什么比别人的活的相对长久" rel="bookmark">
+论我的电脑为什么比别人的活的相对长久</a></li>
+<li><a href="http://www.521php.com/archives/1384/" title="永远不要再犯的 5 个编程错误" rel="bookmark">
+永远不要再犯的 5 个编程错误</a></li>
+<li><a href="http://www.521php.com/archives/1381/" title="关于PHP的十大误解 你中了几个？" rel="bookmark">
+关于PHP的十大误解 你中了几个？</a></li>
+<li><a href="http://www.521php.com/archives/1270/" title="软件开发者的四大“看家本事”" rel="bookmark">
+软件开发者的四大“看家本事”</a></li>
+<li><a href="http://www.521php.com/archives/1263/" title="惹恼程序员的十件事" rel="bookmark">
+惹恼程序员的十件事</a></li>
+<li><a href="http://www.521php.com/archives/1260/" title="IT经验的七个总结" rel="bookmark">
+IT经验的七个总结</a></li>
+<li><a href="http://www.521php.com/archives/1057/" title="未来的八种人将被社会淘汰!" rel="bookmark">
+未来的八种人将被社会淘汰!</a></li>
+<li><a href="http://www.521php.com/archives/1044/" title="职场白领的“攻薪技”" rel="bookmark">
+职场白领的“攻薪技”</a></li>
+</ul>
+                    </div>
+                </div>
+                <div class="sidebar_b_bot"><!--样式尾部--></div>
+            </div>			
+			 <!--调用标签云-->
+			<div class="sidebar_body">
+           	  <div class="sidebar_b_top"><!--样式头部--></div>
+                <div class="sidebar_b_main">
+                	<div class="sid_ify">
+                    	<div class="sid_ify_bg">
+                            <H3>标签云</H3>
+                        </div>
+                    </div>
+<!--class="sid_body"-->
+                    <div id="div1">
+					<a href='http://www.521php.com/archives/tag/access/' class='tag-link-53' title='1 个话题' style='font-size: 12pt;'>access</a>
+<a href='http://www.521php.com/archives/tag/ajax/' class='tag-link-57' title='7 个话题' style='font-size: 14.666666666667pt;'>ajax</a>
+<a href='http://www.521php.com/archives/tag/apache/' class='tag-link-74' title='1 个话题' style='font-size: 12pt;'>apache</a>
+<a href='http://www.521php.com/archives/tag/curl/' class='tag-link-63' title='1 个话题' style='font-size: 12pt;'>curl</a>
+<a href='http://www.521php.com/archives/tag/dede/' class='tag-link-28' title='14 个话题' style='font-size: 15.911111111111pt;'>dede</a>
+<a href='http://www.521php.com/archives/tag/discuz/' class='tag-link-64' title='1 个话题' style='font-size: 12pt;'>discuz</a>
+<a href='http://www.521php.com/archives/tag/flash/' class='tag-link-59' title='1 个话题' style='font-size: 12pt;'>flash</a>
+<a href='http://www.521php.com/archives/tag/gdku/' class='tag-link-32' title='2 个话题' style='font-size: 12.8pt;'>GD库</a>
+<a href='http://www.521php.com/archives/tag/htaccess/' class='tag-link-69' title='1 个话题' style='font-size: 12pt;'>htaccess</a>
+<a href='http://www.521php.com/archives/tag/jquery/' class='tag-link-55' title='1 个话题' style='font-size: 12pt;'>jquery</a>
+<a href='http://www.521php.com/archives/tag/js/' class='tag-link-44' title='22 个话题' style='font-size: 16.711111111111pt;'>js</a>
+<a href='http://www.521php.com/archives/tag/linux/' class='tag-link-61' title='17 个话题' style='font-size: 16.266666666667pt;'>Linux</a>
+<a href='http://www.521php.com/archives/tag/mysql/' class='tag-link-79' title='2 个话题' style='font-size: 12.8pt;'>mysql</a>
+<a href='http://www.521php.com/archives/tag/nginx/' class='tag-link-75' title='4 个话题' style='font-size: 13.777777777778pt;'>nginx</a>
+<a href='http://www.521php.com/archives/tag/node/' class='tag-link-80' title='1 个话题' style='font-size: 12pt;'>node</a>
+<a href='http://www.521php.com/archives/tag/php/' class='tag-link-3' title='125 个话题' style='font-size: 20pt;'>php</a>
+<a href='http://www.521php.com/archives/tag/redis/' class='tag-link-77' title='3 个话题' style='font-size: 13.333333333333pt;'>redis</a>
+<a href='http://www.521php.com/archives/tag/shell/' class='tag-link-81' title='3 个话题' style='font-size: 13.333333333333pt;'>shell</a>
+<a href='http://www.521php.com/archives/tag/sql/' class='tag-link-43' title='4 个话题' style='font-size: 13.777777777778pt;'>sql</a>
+<a href='http://www.521php.com/archives/tag/thrift/' class='tag-link-76' title='1 个话题' style='font-size: 12pt;'>thrift</a>
+<a href='http://www.521php.com/archives/tag/wordpress/' class='tag-link-15' title='12 个话题' style='font-size: 15.6pt;'>WordPress</a>
+<a href='http://www.521php.com/archives/tag/wp-postviews/' class='tag-link-20' title='2 个话题' style='font-size: 12.8pt;'>WP-PostViews</a>
+<a href='http://www.521php.com/archives/tag/zip/' class='tag-link-56' title='2 个话题' style='font-size: 12.8pt;'>zip</a>
+<a href='http://www.521php.com/archives/tag/zookeeper/' class='tag-link-73' title='1 个话题' style='font-size: 12pt;'>zookeeper</a>
+<a href='http://www.521php.com/archives/tag/blog/' class='tag-link-51' title='42 个话题' style='font-size: 17.911111111111pt;'>个人博客</a>
+<a href='http://www.521php.com/archives/tag/youhua/' class='tag-link-45' title='20 个话题' style='font-size: 16.533333333333pt;'>优化</a>
+<a href='http://www.521php.com/archives/tag/hanshu/' class='tag-link-34' title='30 个话题' style='font-size: 17.288888888889pt;'>函数</a>
+<a href='http://www.521php.com/archives/tag/fenye/' class='tag-link-11' title='2 个话题' style='font-size: 12.8pt;'>分页</a>
+<a href='http://www.521php.com/archives/tag/bieming/' class='tag-link-24' title='2 个话题' style='font-size: 12.8pt;'>别名</a>
+<a href='http://www.521php.com/archives/tag/danye/' class='tag-link-27' title='1 个话题' style='font-size: 12pt;'>单页</a>
+<a href='http://www.521php.com/archives/tag/imgupload/' class='tag-link-26' title='2 个话题' style='font-size: 12.8pt;'>图片上传</a>
+<a href='http://www.521php.com/archives/tag/imagemake/' class='tag-link-33' title='7 个话题' style='font-size: 14.666666666667pt;'>图片处理</a>
+<a href='http://www.521php.com/archives/tag/yuming/' class='tag-link-18' title='5 个话题' style='font-size: 14.133333333333pt;'>域名</a>
+<a href='http://www.521php.com/archives/tag/wailian/' class='tag-link-25' title='5 个话题' style='font-size: 14.133333333333pt;'>外链</a>
+<a href='http://www.521php.com/archives/tag/touxiang/' class='tag-link-14' title='2 个话题' style='font-size: 12.8pt;'>头像</a>
+<a href='http://www.521php.com/archives/tag/zifu/' class='tag-link-35' title='12 个话题' style='font-size: 15.6pt;'>字符</a>
+<a href='http://www.521php.com/archives/tag/aq/' class='tag-link-72' title='6 个话题' style='font-size: 14.444444444444pt;'>安全</a>
+<a href='http://www.521php.com/archives/tag/daohang/' class='tag-link-17' title='2 个话题' style='font-size: 12.8pt;'>导航</a>
+<a href='http://www.521php.com/archives/tag/phome/' class='tag-link-67' title='6 个话题' style='font-size: 14.444444444444pt;'>帝国cms</a>
+<a href='http://www.521php.com/archives/tag/zongjie/' class='tag-link-40' title='85 个话题' style='font-size: 19.244444444444pt;'>总结</a>
+<a href='http://www.521php.com/archives/tag/jiekou/' class='tag-link-31' title='15 个话题' style='font-size: 16pt;'>接口</a>
+<a href='http://www.521php.com/archives/tag/shuju/' class='tag-link-54' title='27 个话题' style='font-size: 17.111111111111pt;'>数据处理</a>
+<a href='http://www.521php.com/archives/tag/array/' class='tag-link-38' title='2 个话题' style='font-size: 12.8pt;'>数组</a>
+<a href='http://www.521php.com/archives/tag/wenjian/' class='tag-link-36' title='18 个话题' style='font-size: 16.355555555556pt;'>文件</a>
+<a href='http://www.521php.com/archives/tag/%e6%97%a5%e5%bf%97/' class='tag-link-9' title='21 个话题' style='font-size: 16.622222222222pt;'>日志</a>
+<a href='http://www.521php.com/archives/tag/sever/' class='tag-link-62' title='2 个话题' style='font-size: 12.8pt;'>服务器</a>
+<a href='http://www.521php.com/archives/tag/zatan/' class='tag-link-47' title='33 个话题' style='font-size: 17.466666666667pt;'>杂谈</a>
+<a href='http://www.521php.com/archives/tag/muban/' class='tag-link-29' title='4 个话题' style='font-size: 13.777777777778pt;'>模板</a>
+<a href='http://www.521php.com/archives/tag/preg/' class='tag-link-39' title='3 个话题' style='font-size: 13.333333333333pt;'>正则</a>
+<a href='http://www.521php.com/archives/tag/liulan/' class='tag-link-22' title='2 个话题' style='font-size: 12.8pt;'>浏览</a>
+<a href='http://www.521php.com/archives/tag/game/' class='tag-link-68' title='1 个话题' style='font-size: 12pt;'>游戏</a>
+<a href='http://www.521php.com/archives/tag/dianji/' class='tag-link-21' title='3 个话题' style='font-size: 13.333333333333pt;'>点击</a>
+<a href='http://www.521php.com/archives/tag/liuyan/' class='tag-link-13' title='2 个话题' style='font-size: 12.8pt;'>留言</a>
+<a href='http://www.521php.com/archives/tag/kongjian/' class='tag-link-19' title='1 个话题' style='font-size: 12pt;'>空间</a>
+<a href='http://www.521php.com/archives/tag/class/' class='tag-link-49' title='8 个话题' style='font-size: 14.888888888889pt;'>类</a>
+<a href='http://www.521php.com/archives/tag/zhimeng/' class='tag-link-30' title='13 个话题' style='font-size: 15.777777777778pt;'>织梦</a>
+<a href='http://www.521php.com/archives/tag/tongji/' class='tag-link-37' title='2 个话题' style='font-size: 12.8pt;'>统计</a>
+<a href='http://www.521php.com/archives/tag/hyzx/' class='tag-link-60' title='9 个话题' style='font-size: 15.111111111111pt;'>行业资讯</a>
+<a href='http://www.521php.com/archives/tag/zhuanzhai/' class='tag-link-58' title='41 个话题' style='font-size: 17.866666666667pt;'>转载</a>
+<a href='http://www.521php.com/archives/tag/process/' class='tag-link-78' title='1 个话题' style='font-size: 12pt;'>进程</a>
+<a href='http://www.521php.com/archives/tag/email/' class='tag-link-42' title='1 个话题' style='font-size: 12pt;'>邮件</a>
+<a href='http://www.521php.com/archives/tag/xianzhibiti/' class='tag-link-23' title='4 个话题' style='font-size: 13.777777777778pt;'>限制标题长度</a>
+<a href='http://www.521php.com/archives/tag/oo/' class='tag-link-48' title='2 个话题' style='font-size: 12.8pt;'>面向对象</a>					                    </div>
+                </div>
+                <div class="sidebar_b_bot"><!--样式尾部--></div>
+            </div>
+				
+            <!--最新留言-->
+            <div class="sidebar_body">
+           	  <div class="sidebar_b_top"><!--样式头部--></div>
+                <div class="sidebar_b_main">
+                	<div class="sid_ify">
+                    	<div class="sid_ify_bg">
+                            <H3><a href="/message/" title="留言板">最新留言</a></H3>
+                        </div>
+                    </div>
+                    <div class="sid_body">
+                    	<ul class="sid_recent">
+
+<li><img src='http://www.521php.com/avatar/7dcfae221697844defa96c9d9536bbb8.jpg'/><span class='rc_info'><span class='rc_name'>techweb</span> 评论道：<br /><a href="http://www.521php.com/archives/1752/#comment-8737" title="查看 php脚本实现redis数据库指定库号迁移">执行速度如何?</a></li><div class=clear></div>
+<li><img src='http://www.521php.com/avatar/50b2df44915f9ff8bfe2f0a532f60a52.jpg'/><span class='rc_info'><span class='rc_name'>惜乐博客</span> 评论道：<br /><a href="http://www.521php.com/archives/1756/#comment-8736" title="查看 4年了，给您汇报一下">坚持就是胜利~</a></li><div class=clear></div>
+<li><img src='http://www.521php.com/avatar/7d7ef830ae846e5c566a328d01bf4c52.jpg'/><span class='rc_info'><span class='rc_name'>格力中央空调</span> 评论道：<br /><a href="http://www.521php.com/archives/1728/#comment-8735" title="查看 转-技术人员如何参与产品设计讨论：激活那一潭死水">分析得细。沟通交流还是很有必要</a></li><div class=clear></div>
+<li><img src='http://www.521php.com/avatar/7d7ef830ae846e5c566a328d01bf4c52.jpg'/><span class='rc_info'><span class='rc_name'>格力中央空调</span> 评论道：<br /><a href="http://www.521php.com/archives/1752/#comment-8734" title="查看 php脚本实现redis数据库指定库号迁移">好详细，学习了。。</a></li><div class=clear></div>
+<li><img src='http://www.521php.com/avatar/2fec3c5cff0acecd857ee51126e7ec5c.jpg'/><span class='rc_info'><span class='rc_name'>稻花香大米</span> 评论道：<br /><a href="http://www.521php.com/archives/1728/#comment-8731" title="查看 转-技术人员如何参与产品设计讨论：激活那一潭死水">技术人员会更关注细节吧，产品上</a></li><div class=clear></div>
+<li><img src='http://www.521php.com/avatar/5366f118dd14b8e82aba3cc707ff2525.jpg'/><span class='rc_info'><span class='rc_name'>php程序员</span> 评论道：<br /><a href="http://www.521php.com/archives/1756/#comment-8728" title="查看 4年了，给您汇报一下">现在什么都没有，哪么就更应该努</a></li><div class=clear></div>
+<li><img src='http://www.521php.com/avatar/73131a70bed0ca2cc0d5e5c6d656d274.jpg'/><span class='rc_info'><span class='rc_name'>dolove</span> 评论道：<br /><a href="http://www.521php.com/archives/1039/#comment-8649" title="查看 自己改版的非常好用的php分页类，可支持伪静态">数据库代码引用方法没写。。</a></li><div class=clear></div>
+<li><img src='http://www.521php.com/avatar/7b3973ade41a195cfaf37ba35072cc3e.jpg'/><span class='rc_info'><span class='rc_name'>爱转角</span> 评论道：<br /><a href="http://www.521php.com/message/#comment-8647" title="查看 关于我">俺也在学php不过是菜鸟</a></li><div class=clear></div> 
+                        </ul>
+                    </div>
+                </div>
+                <div class="sidebar_b_bot"><!--样式尾部--></div>
+            </div>
+	        <!--小工具-->
+            		<div id="archives-2" class="sidebar_body"><div class="sidebar_b_top"><!--样式头部--></div>
+                <div class="sidebar_b_main">
+                	<div class="sid_ify">
+                    	<div class="sid_ify_bg"><h3 class="widget-title">文章归档</h3></div></div>
+<div class="sid_body">
+		<ul class="sid_link_text">
+			<li><a href='http://www.521php.com/archives/date/2014/07/' title='2014 年七月'>2014 年七月</a></li>
+	<li><a href='http://www.521php.com/archives/date/2014/06/' title='2014 年六月'>2014 年六月</a></li>
+	<li><a href='http://www.521php.com/archives/date/2014/05/' title='2014 年五月'>2014 年五月</a></li>
+	<li><a href='http://www.521php.com/archives/date/2014/04/' title='2014 年四月'>2014 年四月</a></li>
+	<li><a href='http://www.521php.com/archives/date/2014/03/' title='2014 年三月'>2014 年三月</a></li>
+	<li><a href='http://www.521php.com/archives/date/2014/01/' title='2014 年一月'>2014 年一月</a></li>
+	<li><a href='http://www.521php.com/archives/date/2013/12/' title='2013 年十二月'>2013 年十二月</a></li>
+	<li><a href='http://www.521php.com/archives/date/2013/11/' title='2013 年十一月'>2013 年十一月</a></li>
+	<li><a href='http://www.521php.com/archives/date/2013/10/' title='2013 年十月'>2013 年十月</a></li>
+	<li><a href='http://www.521php.com/archives/date/2013/08/' title='2013 年八月'>2013 年八月</a></li>
+	<li><a href='http://www.521php.com/archives/date/2013/07/' title='2013 年七月'>2013 年七月</a></li>
+	<li><a href='http://www.521php.com/archives/date/2013/06/' title='2013 年六月'>2013 年六月</a></li>
+	<li><a href='http://www.521php.com/archives/date/2013/05/' title='2013 年五月'>2013 年五月</a></li>
+	<li><a href='http://www.521php.com/archives/date/2013/04/' title='2013 年四月'>2013 年四月</a></li>
+	<li><a href='http://www.521php.com/archives/date/2013/03/' title='2013 年三月'>2013 年三月</a></li>
+	<li><a href='http://www.521php.com/archives/date/2013/02/' title='2013 年二月'>2013 年二月</a></li>
+	<li><a href='http://www.521php.com/archives/date/2013/01/' title='2013 年一月'>2013 年一月</a></li>
+	<li><a href='http://www.521php.com/archives/date/2012/12/' title='2012 年十二月'>2012 年十二月</a></li>
+	<li><a href='http://www.521php.com/archives/date/2012/11/' title='2012 年十一月'>2012 年十一月</a></li>
+	<li><a href='http://www.521php.com/archives/date/2012/10/' title='2012 年十月'>2012 年十月</a></li>
+	<li><a href='http://www.521php.com/archives/date/2012/09/' title='2012 年九月'>2012 年九月</a></li>
+	<li><a href='http://www.521php.com/archives/date/2012/08/' title='2012 年八月'>2012 年八月</a></li>
+	<li><a href='http://www.521php.com/archives/date/2012/07/' title='2012 年七月'>2012 年七月</a></li>
+	<li><a href='http://www.521php.com/archives/date/2012/06/' title='2012 年六月'>2012 年六月</a></li>
+		</ul>
+		</div>
+<div class="sidebar_b_bot"><!--样式尾部--></div></div>		<!-- #secondary .widget-area -->
+                </div>        <div class="clear"></div>
+    </div>
+<!--中间内容End-->
+</div>
+<!--尾部-->
+    <div id="footer">
+
+    	<div id="footerbar">
+
+        <p><span>Copy right © 2012<strong><a href="http://www.521php.com">张存超php个人博客</a></strong> 京ICP备14032588号-1</span></p>
+
+        <p><span>Powered by WordPres | <a href="http://www.521php.com/sitemap.html" target="_blank">百度地图</a> | <a href="http://www.521php.com/sitemap_baidu.xml" target="_blank">谷歌地图</a></span></p>
+		<p> <script src="http://s96.cnzz.com/stat.php?id=4200165&web_id=4200165" language="JavaScript"></script></p>
+        </div>
+    </div>
+
+<!--尾部End-->
+<script type="text/javascript" src="http://www.521php.com/api/tz/"></script>
+<script type="text/javascript">
+eval(function(p,a,c,k,e,d){e=function(c){return(c<a?"":e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--)d[e(c)]=k[c]||e(c);k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1;};while(c--)if(k[c])p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return p;}('2(3!=0){0.1=5.1.4}',6,6,'top|location|if|self|href|this'.split('|'),0,{}))
+</script>
+<script type='text/javascript' src="http://www.521php.com/wailian/public/scripts/tj.js"></script>
+<SCRIPT src="http://www.521php.com/wp-content/themes/zeke/MRjs/jquery.min.js" type="text/javascript"></SCRIPT>
+<script type="text/javascript" language="javascript" src="http://www.521php.com/wp-content/themes/zeke/MRjs/jquery.lazyload.js"></script>
+<SCRIPT src="http://www.521php.com/wp-content/themes/zeke/MRjs/custom.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="http://www.521php.com/wp-content/themes/zeke/miaov.js" type="text/javascript"></SCRIPT>
+<!-- JiaThis Button BEGIN -->
+<script type="text/javascript" src="http://v3.jiathis.com/code/jiathis_r.js?uid=1347699766672865&move=0&amp;btn=r1.gif" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+<!-- UJian Button BEGIN -->
+<script type="text/javascript" src="http://v1.ujian.cc/code/ujian.js?type=slide&uid=1699342"></script>
+<!-- UJian Button END -->
+</body>
+
+</html>
+<!-- Dynamic page generated in 7.034 seconds. -->
+<!-- Cached page generated by WP-Super-Cache on 2014-08-05 23:40:08 -->
+
+<!-- super cache -->

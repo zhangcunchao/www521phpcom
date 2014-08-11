@@ -1,0 +1,158 @@
+<html>
+<link type="text/css" rel="stylesheet" href="public/css/right.css" />
+<link type="text/css" rel="stylesheet" href="public/css/time.css" />
+<script type="text/javascript" src="public/xheditor/jquery-1.4.4.min.js"></script>
+<script type="text/javascript" src="public/xheditor/xheditor-1.1.13-zh-cn.min.js"></script>  
+<script type="text/javascript" src="public/scripts/time.js"></script> 
+<body>
+<div class="right">
+<{if $action eq 'addposition'}>
+  <div class="content">
+  <form id="form1" name="form1" method="post" action="admin.php?m=position&a=doAddPosition" enctype="multipart/form-data">
+  <table  border="0" cellspacing="1" cellpadding="0" >
+      <tr class="font">
+        <td align="left"><{$title}></td>
+      </tr>
+      <tr>
+        <td align="left" width="10%"><label>广告描述：</label> </td>
+        <td><textarea name="position" rows="10" cols="80"></textarea></td>
+      </tr>
+      <tr>
+        <td align="left"><label>广告价钱：</label> </td>
+        <td><input type="text" name="price" id="price"/></td>
+      </tr>
+      <tr>
+        <td align="left"><label>投放站点：</label> </td>
+      	<td>
+       <select name="website">
+       	<{$hospital}>
+       </select>
+       </td>
+      </tr>
+      <tr>
+        <td align="left"><label>广告位尺寸：</label> </td>
+        <td><input type="text" name="size" id="size" size="50"/></td>
+      </tr>
+      <tr>
+        <td align="left"><label>展示位置：</label> </td>
+        <td><input type="file" name="location" id="location"/></td>
+      </tr>
+      <tr>
+        <td align="left"><label>展示效果：</label> </td>
+        <td><input type="file" name="style" id="style"/></td>
+      </tr>
+<!--      <tr>
+        <td align="left"><label>内容摘要：</label></td >
+        <td><textarea name="description" rows="5" id="description" style="width:60%;height:80px"></textarea><span style="color:red;">*</span></td>
+      </tr>-->
+     
+      <tr class="font">
+        <td align="center"><input class="btn" type="submit" value="添加" onClick="return chack();"/></td>
+      </tr>
+    </table>
+    </form>
+  </div>
+<{elseif $action eq 'positionlist'}>
+<div class="content">
+  <form id="form1" name="form1" method="post" action="admin.php?m=position&a=doAddPosition" enctype="multipart/form-data">
+  <table  border="0" cellspacing="1" cellpadding="0" >
+      <tr class="font">
+        <td align="left" colspan="5"><{$title}></td>
+      </tr>
+      <tr>
+        <th align="center" width="5%">价钱</th>
+        <th align="center" width="10%">尺寸</th>
+        <th align="center">广告描述</th>
+        <th align="center" width="10%">投放站点</th>
+        <th align="center" width="10%">操作</th>
+      </tr>
+       <{section loop=$position name=i}>
+       <tr>
+        <td align="center" ><{$position[i].price}></td>
+        <td align="center" ><{$position[i].size}></td>
+        <td align="center" ><{$position[i].position}></td>
+        <td align="center"><{$position[i].website}></td>
+        <td align="center" ><a href="admin.php?m=position&a=editPosition&id=<{$position[i].id}>">编辑</a> <a href="admin.php?m=position&a=delPosition&id=<{$position[i].id}>">删除</a></td>
+      </tr>
+      <{/section}>
+    </table>
+    </form>
+  </div>
+<{elseif $action eq 'editposition'}>
+  <div class="content">
+  <form id="form1" name="form1" method="post" action="admin.php?m=position&a=doEditPosition" enctype="multipart/form-data">
+  <input type="hidden" name="id" value="<{$position.id}>" />
+  <table  border="0" cellspacing="1" cellpadding="0" >
+      <tr class="font">
+        <td align="left"><{$title}></td>
+      </tr>
+      <tr>
+        <td align="left" width="10%"><label>广告描述：</label> </td>
+        <td><textarea name="position" rows="10" cols="80"><{$position.position}></textarea></td>
+      </tr>
+      <tr>
+        <td align="left"><label>广告价钱：</label> </td>
+        <td><input type="text" name="price" id="price" value="<{$position.price}>" /></td>
+      </tr>
+      <tr>
+        <td align="left"><label>投放站点：</label> </td>
+      	<td>
+       <{$website}>
+       </td>
+      </tr>
+      <tr>
+        <td align="left"><label>广告位尺寸：</label> </td>
+        <td><input type="text" name="size" id="size" size="50" value="<{$position.size}>" /></td>
+      </tr>
+      <tr>
+        <td align="left"><label>展示位置：</label> </td>
+        <td><{if $position.location neq "''"}><img src="<{$position.location}>"><{/if}><input type="file" name="location" id="location"/></td>
+      </tr>
+      <tr>
+        <td align="left"><label>展示效果：</label> </td>
+        <td><{if $position.style neq "''"}><img src="<{$position.style}>"><{/if}><input type="file" name="style" id="style"/></td>
+      </tr>
+<!--      <tr>
+        <td align="left"><label>内容摘要：</label></td >
+        <td><textarea name="description" rows="5" id="description" style="width:60%;height:80px"></textarea><span style="color:red;">*</span></td>
+      </tr>-->
+     
+      <tr class="font">
+        <td align="center"><input class="btn" type="submit" value="编辑" onClick="return chack();"/></td>
+      </tr>
+    </table>
+    </form>
+  </div>
+<{elseif $action eq 'oldbyposition'}>
+<div class="content">
+  <form id="form1" name="form1" method="post" action="admin.php?m=position&a=doAddPosition" enctype="multipart/form-data">
+  <table  border="0" cellspacing="1" cellpadding="0" >
+      <tr class="font">
+        <td align="left" colspan="5"><{$title}></td>
+      </tr>
+      <tr>
+        <th align="center" width="15%">广告名称</th>
+        <th align="center" width="15%">广告主</th>
+        <th align="center" width="10%">成交价格</th>
+        <th align="center">投放时间</th>
+        <th align="center" width="20%">投放站点</th>
+        <th align="center" width="15%">交易状态</th>
+      </tr>
+       <{section loop=$position name=i}>
+       <tr>
+        <td align="left" >&nbsp;<{$position[i].position}></td>
+        <td align="center" ><{$position[i].username}></td>
+        <td align="center" ><{$position[i].price}></td>
+        <td align="center" ><{$position[i].buyer_start_time}>—<{$position[i].buyer_end_time}></td>
+        <td align="center"><{$position[i].website}></td>
+        <td align="center" ><{$position[i].state}></td>
+      </tr>
+      <{/section}>
+      <tr><td colspan="6" align="center"><{$page}></td></tr>
+    </table>
+    </form>
+  </div>
+<{/if}>
+</div>
+</body>
+</html>

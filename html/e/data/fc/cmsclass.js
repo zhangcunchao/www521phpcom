@@ -1,0 +1,1 @@
+document.write("<option value=\'1\' style=\'background:#99C4E3\'>|-相册集</option><option value=\'2\' style=\'background:#99C4E3\'>|-每天赚2元中奖名单</option>");

@@ -1,0 +1,74 @@
+.container{ width:780px; margin:10px auto;}
+.container #logo{ cursor: pointer;}
+.container #logo:hover{ text-decoration: none;}
+.container h1{ font-size: 24px; font-family: "Î¢ÈíÑÅºÚ"; font-weight: normal;  height:44px; padding-left: 6px; ;
+}
+.QRcode-editor{ width:410px;}
+.QRcode-show{ width:350px;}
+.QRcode-class{ border-bottom: 1px solid #999;}
+.QRcode-class li{ cursor:pointer;float: left; _display:inline; margin-left:5px; width:90px; height:26px; line-height:26px; border: 1px solid #999; border-bottom: none; font-size: 16px; text-align: center; font-family: "Î¢ÈíÑÅºÚ"; background:#f5f5f5; position: relative; z-index:2; border-radius: 3px 3px 0px 0px;}
+.QRcode-class li.active{ background:#179ccf; border: 1px solid #179ccf; border-bottom: none; color:#fff;}
+.corner{ color:#179ccf; left:45px; top:16px; font-size: 14px; font-family: 'ËÎÌå';}
+.QRcode-classContent textarea, .QRcode-classContent input.text{ border:2px solid #999; width:394px; padding:6px; font-size: 18px; border-radius:6px;}
+.QRcode-classContent textarea{ min-height: 112px; _height:112px;}
+.QRcode-classContent label{ position: absolute; left:0px; top:0px; padding:5px; color:#666; font-size: 18px;}
+.QRcode-classContent .explain{ font-size: 14px; margin:10px auto;}
+.QRcode-editor .quick{ padding:10px; background:#f3f3f3; border:1px dashed #ddd; margin-top: 10px;}
+.getQRcode{ display: inline-block; width:191px; height:37px; background: url(../images/btn.png) no-repeat left top;
+	text-align: center; font-size: 24px; line-height: 36px; font-family: "Î¢ÈíÑÅºÚ"; color:#b8e5f4;
+}
+.getQRcode:hover{ text-decoration: none; background: url(../images/btn.png) no-repeat left bottom;}
+#status{ height:32px; line-height:32px; left:95px; top:100px; width:160px; text-align:center;}
+.warn { background: none repeat scroll 0 0 #FFFF66; border: 1px solid #FFCC00;}
+.successed {
+    background: none repeat scroll 0 0 #CCFF99;
+    border: 1px solid #99FF00;
+}
+.tooltip {
+    background-color: #000000;
+    border: 1px solid #FFFFFF;
+    color: #FFFFFF;
+    display: none;
+    font-size: 12px;
+    padding: 10px 15px;
+    text-align: left;
+    width: 200px;
+}
+.qrIntro{ border:2px dashed #999; padding:8px 10px; border-radius: 6px; background: #f3f3f3;}
+
+
+/*
+ **QRSoftDownload
+ */
+ .downloadBtn a { display: inline-block; height:37px; text-decoration:none;
+    font-size: 24px; line-height: 36px; font-family: "Î¢ÈíÑÅºÚ"; color:#f1f1f1;
+ }
+ .downloadBtn .androidBtnUn{ padding-left:60px; width:131px; 
+    background:url(../images/unclick.png) no-repeat left center;
+ }
+ .downloadBtn .iPhoneBtnUn{ padding-left:46px; width:145px; 
+    background:url(../images/unclick.png) no-repeat right center;
+ }
+ .downloadBtn .androidBtn{ background:url(../images/download.png) no-repeat; padding-left:60px; width:131px; }
+ .downloadBtn .androidBtn:hover{ background-position: left bottom;}
+ .downloadBtn .iPhoneBtn{ background:url(../images/download.png) no-repeat right top; padding-left:46px; width:145px; }
+ .downloadBtn .iPhoneBtn:hover{ background-position: right bottom;}
+
+ .downloadBox{ border:1px solid #ccc; border-radius: 3px; padding: 0px 10px; width:600px;}
+ .downloadContent{ padding:10px 0px;}
+ .downloadSubBtn{ display: inline-block; width:100px; height:26px; border:1px solid #ccc; border-radius: 5px;
+    background:#f1f1f1; line-height: 26px; text-align: center;
+ }
+ .downloadSubBtn:hover{ text-decoration: none; background:#e0e0e0;}
+ .qrImgBox img{ border: 1px solid #ccc; margin-bottom: 5px; width:100px; height:100px;}
+ .bb-d{ border-bottom: 1px dashed #ccc;}
+ .qrSoftIntro-t{ width: 200px; height: 35px; border:1px solid #ccc; border-radius:6px; line-height: 35px;
+    font-size: 18px; font-family: 'Î¢ÈíÑÅºÚ'; text-align: center; background: #f3f3f3;
+ }
+ .qrSoftIntro-c{ border:2px dashed #999; padding:8px 10px; border-radius: 6px; background: #f3f3f3; }
+ .articleBox{ width:658px; border:1px solid #ddd; padding:20px; margin:15px auto 0px;}
+ .articleBox-title{ padding-bottom:5px; border-bottom:1px solid #ddd; }
+ 
+ .readMore-t{ height:30px; line-height:30px; color:#fff; padding-left:15px; background:#808080; font-size:14px;}
+ .readMore-list{ background:#f1f1f1;}
+ .readMore-list li{ height:30px; line-height:30px; border-bottom:1px dashed #ddd; padding-left:15px;}

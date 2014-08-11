@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>百川登陆界面</title>
+<link type="text/css" rel="stylesheet" href="public/css/login.css" />
+<script type="text/javascript" src="public/scripts/login.js"></script>
+</head>
+
+<body>
+<div id="box">
+   <div class="logo">
+     <div class="logoImg"><img src="public/images/logoImg.jpg"  /></div>
+     
+     <div class="loading">
+     <form name="form1" method="post" action="admin.php?m=Login&a=Login">
+     <div class="inputTxt">
+      <div class="inp"><label class="lab">用户名：</label> <input name="username" class="input" type="text" /></span></div>
+      <div class="inp"><label class="lab">密 码：</label> <input class="input" type="password"  name="pwd"/></div>
+      <div class="inp"><label class="lab">验证码：</label><input class="num" name="verify" type="text" /> <span><img id="vdimgck" onClick="show(this)" align="absmiddle" style="cursor: pointer;" alt="看不清？点击更换" src="admin.php?m=Login&a=verify"/></span></div> 
+      <div class="but"><input class="submit" type="submit" value="" onclick="return logincheck()"/><input class="reset" type="reset" value="" /></div>
+      </div>
+      </form>
+   </div>
+</div>
+</div>
+<script language="javascript">
+   function show(obj){
+	   	 obj.src="admin.php?m=Login&a=verify";
+	}
+</script>
+</body>
+</html>

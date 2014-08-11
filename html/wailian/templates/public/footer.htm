@@ -1,0 +1,41 @@
+<div class="footer">
+	<p class="foot-nav"><a href="/">导航</a> - <a href="/">合作</a> - <a href="/">书签</a> - <a href="/">收藏</a> - <a href="/">留言</a></p>
+    <p>Copyright&copy;2012 Baichuan<br>
+    <span id="time"></span>
+	<script  language="javascript">
+		function time(){
+		var today=new Date();
+		var year=today.getFullYear();
+		var day=today.getDay();
+		var month=today.getMonth()+1;
+		var date=today.getDate();
+		var hour=today.getHours();
+		var minutes=today.getMinutes();
+		var sencond=today.getSeconds();
+		if(sencond<10){sencond="0"+sencond}
+		if(minutes<10){minutes="0"+minutes}
+		if(hour<10){hour="0"+hour}
+		var newTime="报时 "+year+"-"+month+"-"+date+" "+hour+":"+minutes+":"+sencond;
+		document.getElementById("time").innerHTML = newTime;
+		}
+		setInterval("time()",1000);
+		window.onload=time;
+	</script>
+	</p>
+</div>
+
+<script type="text/javascript">
+function toggleMenu(the,id){
+	var the = document.getElementById(the);
+	var obj = document.getElementById(id);
+	if(obj.className == 'hidden'){
+		obj.className = 'show';
+		the.className = ''
+	}else{
+		obj.className = 'hidden';
+		the.className = 'close'
+	}
+}
+</script>
+</body>
+</html>

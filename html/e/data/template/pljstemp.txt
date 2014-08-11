@@ -1,0 +1,48 @@
+<?php
+require("../../class/connect.php");
+$id=(int)$_GET['id'];
+$classid=(int)$_GET['classid'];
+if(empty($id)||empty($classid))
+{
+    exit();
+}
+$num=(int)$_GET['num'];
+if($num<1||$num>80)
+{
+	$num=10;
+}
+require("../../class/db_sql.php");
+require("../../class/q_functions.php");
+$link=db_connect();
+$empire=new mysqlquery();
+$sql=$empire->query("select plid,saytime,sayip,username,zcnum,fdnum,userid,stb from {$dbtbpre}enewspl where id='$id' and classid='$classid' and checked=0 order by plid desc limit ".$num);
+?>
+document.write("<!--empire.listtemp.top-->");
+<?php
+while($r=$empire->fetch($sql))
+{
+	$plusername=$r[username];
+	if(empty($r[username]))
+	{
+		$plusername='匿名';
+	}
+	if($r[userid])
+	{
+		$plusername="<a href='$public_r[newsurl]e/space/?userid=$r[userid]' target='_blank'>$r[username]</a>";
+	}
+	//ip
+	$sayip=ToReturnXhIp($r[sayip]);
+	//副表
+	$fr=$empire->fetch1("select * from {$dbtbpre}enewspl_data_".$r[stb]." where plid='$r[plid]'");
+	$saytext=str_replace("\r\n","",$fr['saytext']);
+	$saytext=addslashes(RepPltextFace(stripSlashes($saytext)));//替换表情
+?>
+document.write("<!--empire.listtemp.center-->");
+<?php
+}
+?>
+document.write("<!--empire.listtemp.footer-->");
+<?php
+db_close();
+$empire=null;
+?>

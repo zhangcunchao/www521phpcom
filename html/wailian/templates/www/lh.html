@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title><{$title}>-<{$title2}></title>
+<style>
+body{font-size:12px;}
+</style>
+<style>
+body{position:relative}
+body,form{margin:0!important;padding:0!important}
+#bd_snap{font:14px arial;color:#000;background:#fff;text-align:left;padding:7px 0 0 20px}
+#bd_snap_txt{clear:both;padding:10px 0 }
+#bd_snap_note{font-size:12px;color:#666;padding-bottom:10px}
+#bd_snap a{font:14px arial;color:#00c;text-decoration:underline}
+#bd_snap_head{width:860px;height:44px}
+#bd_snap_logo{width:162px;height:38px;display:block;background:url(http://www.521php.com/images/link.gif) no-repeat;margin-right:15px;float:left}
+#bd_snap_search{width:680px;position:absolute;left:150px;top:17px}
+#bd_snap_kw{width:519px;height:22px;padding:4px 7px;padding:6px 7px 2px\9;margin-right:5px;font:16px arial;background:url(http://www.521php.com/images/i-1.0.0.png) no-repeat -304px 0;_background-attachment:fixed;border:1px solid #cdcdcd;border-color:#9a9a9a #cdcdcd #cdcdcd #9a9a9a;vertical-align:top}
+#bd_snap_su{width:95px;height:32px;font-size:14px;color:#000;padding:0;padding-top:2px\9;border:0;}
+input.bd_snap_btn{background:#ddd url(http://www.521php.com/images/i-1.0.0.png);cursor:pointer}
+input.bd_snap_btn_h{background-position:-100px 0}
+#bd_snap_btn_wr{width:97px;height:34px;display:inline-block;background:url(http://www.521php.com/images/i-1.0.0.png) no-repeat -202px 0;_top:1px;*position:relative}
+#bd_snap_ln{height:1px;border-top:1px solid #ACA899;background:#ECE9D8;overflow:hidden}
+#bd_snap_txt span a{text-decoration:none}
+</style>
+</head>
+
+<body>
+<{include file='www/nav.html'}>
+如果您的域名被误举报，请联系我们！<br /><br /><br />
+<div class="main">
+<{section loop=$list name=i}>
+&nbsp;&nbsp;<{$smarty.section.i.rownum}>、<{$list[i].title}>&nbsp;&nbsp;<{$list[i].url2}><br /><br />
+<{/section}>
+<{$page}>
+</div>
+<{include file='www/footer.html'}>
+</body>
+</html>

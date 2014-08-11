@@ -1,0 +1,49 @@
+<?php
+
+class RetoAction extends Action
+{
+
+    function __construct()
+    {
+		
+        parent::__construct();
+        $this->tmp_mod = new RetoModel();
+        $this->assign('css',DIRS);
+        $this->index();      
+    }
+	
+    function index(){
+		$id  = $_GET['id'];
+		$url = $_GET['url'];
+		if($id||$url){
+			if($url){
+				$domain = parse_url($url);
+			    $l = $domain['scheme'].'://'.$domain['host'].'/';
+				$d = substr_count($url,'http://');
+				if(1<$d){
+					$url = str_ireplace($l,'',$url);
+				}else{
+					$url = str_ireplace('://','#+#+#',$url);
+					$url = str_ireplace('//','/',$url);
+					$url = str_ireplace('#+#+#','://',$url);
+				}
+			}
+			$rs = $this->tmp_mod->getOneWeb($id,$l);
+			if($rs){
+				$url = $url?$url:$rs['url'];
+				$data['outnum'] = $rs['outnum']+1;
+				$this->tmp_mod->updateWeb($rs['id'],$data);
+				$this->assign('title',$rs['title']);
+				$this->assign('url',$url);
+				$this->assign('outnum',$data['outnum']);
+				$this->display('www/reto.html');
+			}else{
+				$this->jsAlert('本站没有收录该网站','http://www.521php.com/wailian/');
+				exit;
+			}
+		}else{
+			header("location:/".DIRS);
+			exit;
+		}
+    }     
+}

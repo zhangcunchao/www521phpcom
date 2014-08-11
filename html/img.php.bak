@@ -1,0 +1,12 @@
+<?php
+set_time_limit(0);
+header('Content-type:text/html; charset=utf-8');
+    require "lib/imgHelper.php";
+	$dir1='d/file/xiangce/2013-04-07/';
+	$dir2='d/file/xiangce/2/';
+    $imgHelper = new imgHelper( "$dir1" );
+    $imgHelper->setOutputDir( "$dir2" );
+	$imgHelper->setOutputSize(800);
+    //默认输出在1024 768 下等比缩放，需要自定义时，$imgHelper->setOutputSize(1440,900);
+    $imgHelper->execution();
+?>

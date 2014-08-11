@@ -1,0 +1,19 @@
+body {font:normal 14px arial;	background-color: #fff; 	margin:0 auto;	height: 100%;}
+a{text-decoration:underline;color: #00C;}
+form{margin:4px 0;padding:0;}
+span{margin:0 8px;padding:0;}
+.r{width: 800px;table-layout: fixed;}
+.main {padding: 10px;}
+.b{height:2.2em;width:5.6em;margin:0 3px;vertical-align: top;}
+.i {height: 1.4em;font-size:16px;padding-top:3px}
+.f{border-left:1px solid #e1e1e1;padding-left:10px;word-break:break-all;word-wrap:break-word;float:right;width:20em;}
+h1, h2, h3, h4{font-weight:100;}
+h1 {font-size: 24px;	clear:both;	margin: 4px;	font-weight: bold;	float:left;}
+h2 {font-size: 16px;	font-weight: 100;	font-weight: bold;}
+h3 {margin-top: 9px;font-size: 12px;font-weight: bold;color: #333;}
+h3 a {color: #333;}
+h4 {float: left;margin-top: 9px;filter: DropShadow(Color=#cccccc, OffX=1, OffY=1, Positive=1);font-size: 12px;}
+.footer {line-height:20px;	clear:both;background-color: #E6E6E6;margin: 0 atuo;text-align: center;	padding: 0 3px;	font-size: 12px;}
+.tip {	line-height:20px;	clear:both;background-color: #D9E1F7;margin: 0 atuo;	padding: 0 3px;	font-size: 12px;color:#f00}
+.tags{	line-height:20px;clear:both;background-color: #eff2fa;margin: 0 atuo;padding: 8px;font-size: 12px}
+.prev {FILTER: none; VISIBILITY: visible! important; WORD-BREAK: break-all; ZOOM: 1! important; FONT-FAMILY: Arial; WORD-WRAP: break-word; moz-opacity: 1;}

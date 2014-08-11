@@ -1,0 +1,3 @@
+[04-Jan-2013 01:02:07] PHP Fatal error:  Call to undefined function  add_action() in /home/phpcom/public_html/wp-admin/includes/user.php on line 322
+[28-Mar-2013 00:15:53] PHP Fatal error:  Call to undefined function  add_action() in /home/phpcom/public_html/wp-admin/includes/user.php on line 322
+[28-Mar-2013 00:27:53] PHP Fatal error:  Call to undefined function  add_action() in /home/phpcom/public_html/wp-admin/includes/user.php on line 322

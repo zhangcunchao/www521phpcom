@@ -1,0 +1,68 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dd, dl, dt, li, ol, ul, fieldset, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, form {margin:0; padding:0; border:0;}
+body {font-size:12px; color:#999; line-height:2em; font-family:"微软雅黑","宋体", Arial, Helvetica, sans-serif; background:url(../images/img_clond_global_bg.jpg);} 
+ul,ol {list-style-type:none;}
+em,i{ font-style:normal;}
+select, input, img, select {vertical-align:middle; font-family:"微软雅黑","宋体",Arial, Helvetica, sans-serif;}
+table {border-collapse: collapse;}
+img ,input,textarea{ border:none;}
+img{ vertical-align:top;}
+textarea {overflow: auto;}
+ul:after {clear: both; display: block; height: 0; visibility: hidden;}
+.clear {clear:both; height:0; overflow:hidden; line-height:0; font-size:0;}
+h1,h2,h3,h4,h5,h6{ font-size:12px;}
+a{ text-decoration:none; color:#999; noFocusLine:expression(this.onFocus=this.blur()); outline:none;}
+a:hover{ color:#333;}
+
+/*边距 part*/
+.mt5{ margin-top:5px;}
+.mt10{ margin-top:10px;}
+.mt25{ margin-top:25px;}
+.mt40{ margin-top:40px;}
+
+/*mod part*/
+.mod{ overflow:hidden; clear:both;}
+.fleft{ float:left;}
+.fr{ float:right;}
+
+#top{ height:42px; overflow:hidden;}
+#header{ width:100%; height:41px; background:#fff; box-shadow: 2px 2px 2px rgba(204, 204, 204, 0.2); border-bottom:1px solid #E5E5E5; position:fixed; top:0; left:0; z-index:1;}
+.navbar{ display:inline; margin-left:58px;}
+.navbar .logo{ width:150px; height:22px; float:left; display:inline; background:url(../images/clond_logo.png) no-repeat; _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true', sizingMethod='scale', src="images/clond_logo.png"); _background:none; margin:10px 20px 0 10px;}
+.navbar ul{ float:left;}
+.navbar ul li{ float:left;}
+.navbar ul li a{ display:block; margin:8px 25px 0; font-size:14px; font-family:"微软雅黑"; padding-bottom:5px;}
+.navbar ul li.active a{ border-bottom:4px solid #73B7E4; color:#333;}
+.navbar ul li a:hover{ color:#333;}
+.pull{ display:inline; margin-right:66px;}
+.pull .sc{ width:97px; height:28px; float:left; font-size:14px; margin-top:7px;}
+.pull .sc a{ height:28px; display:block; background:url(../images/nav_01.png) no-repeat; color:#fff; padding-left:32px; line-height:26px;}
+.pull .sc a:hover{ background:url(../images/nav_02.png) no-repeat;}
+.pull .sc_1{ float:left; display:inline; margin:7px 0 0 10px;}
+.pull .sc_1 a{ padding:0 10px; line-height:26px; font-size:14px;}
+
+#footer{ width:100%;  border-top: 1px solid #DDDDDD;  box-shadow: 0 1px 0 #FFFFFF inset;  height: 40px; line-height: 40px;}
+#footer span{ float:left; padding-left:60px;}
+#footer .pull-right{ float:right; padding-right:58px;} 
+ 
+.grid-shell{ width:958px; margin:20px auto; border: 1px solid #E8E8E8; box-shadow: 1px 6px 12px -6px #C6C6C6; border-radius: 4px 4px 4px 4px; background:#fff;}
+.art{ padding:9px 15px; height:100%;}
+.co_1{ width:55%;}
+.co_1 img{ float:left; border-radius: 5px 5px 5px 5px; margin-right:10px;}
+.co_1 p{ display:block;}
+.co_1 p.name a { color: #666666; font-size: 16px; text-decoration: none;}
+.co_1 .ic1{ background:url(../images/nav_08.png) no-repeat left center; padding-left:15px;}
+.co_1 .ic1 a{ color:#2E99E4;}
+.co_1 .ic2{ background:url(../images/nav_04.png) no-repeat 10px center; padding-left:25px;}
+.gap { margin: 0 10px;}
+.si_1{ width:45%; float:right;}
+.follow-container .btn{ width:98px; height:34px; float:right; background:url(../images/nav_03.png) no-repeat; text-align:center; color:#fff; font-size:14px; line-height:34px; margin-top:10px;}
+
+.art_1{ padding-bottom:20px; height:100%;}
+.art_1 .pic{ padding:10px 10px 0; text-align:center;}
+.art_1 .pic img{border-radius: 5px 5px 5px 5px;}
+.art_1 .text{ border-top: 1px solid #DDDDDD; box-shadow: 0 1px 0 #FFFFFF inset; padding:10px 20px 5px;}
+.art_1 .text span{ width:70%; float:left; line-height:20px;}
+.art_1 .text p{ float:right; text-align:center;}
+.art_1 .text p i{ display:block; font-size:14px; font-weight:bold; color:#333;}
+.art_1 .text p em{ display:block;}
+.fenx{ float:right; padding:0 20px; line-height:16px;}

@@ -1,0 +1,60 @@
+<?php
+require("../../class/connect.php");
+require("../../class/q_functions.php");
+require("../../class/db_sql.php");
+require("../../class/user.php");
+require("../../data/dbcache/MemberLevel.php");
+$link=db_connect();
+$empire=new mysqlquery();
+$editor=1;
+if($public_r['showinfolevel'])
+{
+	$user=islogin();
+	if($level_r[$user[groupid]]['level']<$level_r[$public_r[showinfolevel]]['level'])
+	{
+		printerror("NotLevelShowInfo","",1);
+	}
+}
+$userid=(int)$_GET['userid'];
+if($userid)
+{
+	$where=$user_userid."='$userid'";
+	$username='';
+}
+else
+{
+	$username=RepPostVar($_GET['username']);
+	if(empty($username))
+	{
+		printerror("NotUsername","",1);
+	}
+	$utfusername=doUtfAndGbk($username,0);
+	$where=$user_username."='$utfusername'";
+}
+$r=$empire->fetch1("select ".$user_userid.",".$user_username.",".$user_email.",".$user_group.",".$user_userfen.",".$user_userdate.",".$user_registertime." from ".$user_tablename." where ".$where." limit 1");
+if(empty($r[$user_userid]))
+{
+	printerror("NotUsername","",1);
+}
+if(empty($username))
+{
+	$username=doUtfAndGbk($r[$user_username],1);
+}
+if($user_register)
+{
+	$registertime=date("Y-m-d H:i:s",$r[$user_registertime]);
+}
+else
+{
+	$registertime=$r[$user_registertime];
+}
+$email=doUtfAndGbk($r[$user_email],1);
+$addr=$empire->fetch1("select * from {$dbtbpre}enewsmemberadd where userid='".$r[$user_userid]."' limit 1");
+//取得表单
+$formid=GetMemberFormId($r[$user_group]);
+$formr=$empire->fetch1("select filef,imgf,tobrf,viewenter from {$dbtbpre}enewsmemberform where fid='$formid'");
+//导入模板
+require(ECMS_PATH.'e/template/member/ShowInfo.php');
+db_close();
+$empire=null;
+?>
