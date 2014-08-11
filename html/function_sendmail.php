@@ -27,7 +27,7 @@ if(!isset($mailconf) || !is_array($mailconf)){
 	'mailhost'=>'smtp.163.com',
 	'mailport'=>25,
 	'mailuser'=>'zhangcunchao_cn@163.com',
-	'mailpass'=>'zcc5574302,./',
+	'mailpass'=>'xxxxx',
 	//'mailuser'=>'zhu_201001@163.com',
 	//'mailpass'=>'zhuyan',
 	'mailtype'=>'html'
