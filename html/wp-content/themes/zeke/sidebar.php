@@ -154,26 +154,7 @@
                 </div>
                 <div class="sidebar_b_bot"><!--样式尾部--></div>
             </div>
-			<div class="sidebar_body">
-           	  <div class="sidebar_b_top"><!--样式头部--></div>
-                <div class="sidebar_b_main">
-                	<div class="sid_ify">
-                    	<div class="sid_ify_bg">
-                            <H3><a href="/archives/category/else/" title="杂谈">杂七杂八</a></H3>
-                        </div>
-                    </div>
-                    <div class="sid_body">
-                    	<ul class="sid_Archives sid_link_text">
-<?php $recent = new WP_Query("cat=46&showposts=10"); while($recent->have_posts()) : $recent->the_post();?>
-<li><a href="<?php the_permalink() ?>" title="<?php the_title(); ?>" rel="bookmark">
-<?php the_title(); ?>
-</a></li>
-<?php endwhile; ?>
-</ul>
-                    </div>
-                </div>
-                <div class="sidebar_b_bot"><!--样式尾部--></div>
-            </div>			
+						
 			 <!--调用标签云-->
 			<div class="sidebar_body">
            	  <div class="sidebar_b_top"><!--样式头部--></div>
