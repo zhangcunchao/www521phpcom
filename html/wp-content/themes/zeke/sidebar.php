@@ -65,7 +65,11 @@
                         </div>
                     </div>
                     <div class="sid_body" align="center">
-<iframe name="alimamaifrm" frameborder="0" marginheight="0" marginwidth="0" border="0" scrolling="no" width="210" height="200" src="http://www.taobao.com/go/app/tbk_app/chongzhi_210_200.php?pid=mm_30958902_3426892_13314114&page=chongzhi_210_200.php&size_w=210&size_h=200&stru_phone=1&stru_game=1&stru_travel=1" ></iframe>
+<script type="text/javascript">
+    /*200*200 创建于 2014-08-12*/
+    var cpro_id = "u1655068";
+</script>
+<script src="http://cpro.baidustatic.com/cpro/ui/c.js" type="text/javascript"></script>
                     </div>
                 </div>
                 <div class="sidebar_b_bot"><!--样式尾部--></div>

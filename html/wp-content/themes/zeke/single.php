@@ -6,9 +6,11 @@
           <div class="content_t_top"><!--样式头部--></div>
            		<div class="content_t_main"><div style="margin-left: 20px;">
 <!--淘宝内容页推广start-->
-		<script type="text/javascript">
-     document.write('<a href="http://www.buydazhe.com" title="买就打折网" target="_blank"><img src="http://www.buydazhe.com/them/img/banner1.png" width="640" height="73" /></a>');
+<script type="text/javascript">
+    /*640*60 创建于 2014-08-12*/
+    var cpro_id = "u1655033";
 </script>
+<script src="http://cpro.baidustatic.com/cpro/ui/c.js" type="text/javascript"></script>
 <!--淘宝内容页推广end--></div></div>
 <div class="content_t_bot"><!--样式尾部--></div>
 </div>
