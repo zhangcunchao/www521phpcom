@@ -1,5 +1,5 @@
 <?php
-$conn=mysql_connect("localhost","phpcom_lovephp","zcc5574302,./")or die("Êý¾Ý¿âÁ¬½ÓÊ§°Ü");
-$db=mysql_select_db("phpcom_wwwphp")or die("Ã»ÓÐÕÒµ½¿â,¿ÉÄÜÊä´íÁË");
+$conn=mysql_connect("localhost","","")or die("æ•°æ®åº“è¿žæŽ¥å¤±è´¥");
+$db=mysql_select_db("")or die("æ²¡æœ‰æ‰¾åˆ°åº“,å¯èƒ½è¾“é”™äº†");
 mysql_query("set names GBK");
 ?>
