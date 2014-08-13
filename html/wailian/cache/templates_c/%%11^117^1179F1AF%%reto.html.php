@@ -1,8 +1,8 @@
-<?php /* Smarty version 2.6.25, created on 2013-08-05 11:15:55
+<?php /* Smarty version 2.6.25, created on 2014-08-13 17:15:33
          compiled from www/reto.html */ ?>
 <html>
 <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<meta http-equiv="refresh" content="0.5;url=<?php echo $this->_tpl_vars['url']; ?>
+<meta http-equiv="refresh" content="4;url=<?php echo $this->_tpl_vars['url']; ?>
 ">
 <title><?php echo $this->_tpl_vars['title']; ?>
 </title>
@@ -16,6 +16,12 @@
 】被点击<?php echo $this->_tpl_vars['outnum']; ?>
 次</b></font>=====</p>
 <p>所花时间取决于该站的连接速度和当前网速,请耐心等待，或直接点击下面的连接</p>
+<p><script type="text/javascript">
+    /*728*90 跳转页面创建于 2014-08-13*/
+    var cpro_id = "u1658574";
+</script>
+<script src="http://cpro.baidustatic.com/cpro/ui/c.js" type="text/javascript"></script>
+</p>
 <p><a href="<?php echo $this->_tpl_vars['url']; ?>
 "><strong>点此打开--【<?php echo $this->_tpl_vars['title']; ?>
 】</strong></a>&nbsp;&nbsp;网址：<a href="<?php echo $this->_tpl_vars['url']; ?>

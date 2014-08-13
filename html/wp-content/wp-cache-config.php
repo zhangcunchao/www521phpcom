@@ -101,5 +101,5 @@ $wp_cache_not_logged_in = 0; //Added by WP-Cache Manager
 $wp_cache_clear_on_post_edit = 0; //Added by WP-Cache Manager
 $wp_cache_hello_world = 0; //Added by WP-Cache Manager
 $wp_cache_mobile_enabled = 1; //Added by WP-Cache Manager
-$wp_cache_cron_check = 0;
+$wp_cache_cron_check = 1; //Added by WP-Cache Manager
 ?>
