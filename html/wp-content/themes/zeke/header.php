@@ -9,10 +9,10 @@ include('includes/seo.php');
  ?>	
 <link href="<?php bloginfo('stylesheet_url'); ?>" rel="stylesheet" type="text/css" />
 <link href="<?php bloginfo('template_directory'); ?>/miaov_style.css" rel="stylesheet" type="text/css" />
+<?php wp_head(); ?>
 <?php if ( is_singular() ){ ?>
 <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/comments-ajax.js"></script>
 <?php } ?>
-<?php wp_head(); ?>
 <!--[if lt IE 7]>
 <script type="text/javascript" src="/wp-content/themes/MRjs/iepngfix_tilebg.js"></script>
 <script type="text/javascript">
