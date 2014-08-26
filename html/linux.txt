@@ -1,48 +1,48 @@
-1¡¢Ğè°²×°ºóÊ¹ÓÃµÄÃüÁî
+1ã€éœ€å®‰è£…åä½¿ç”¨çš„å‘½ä»¤
 
-1.1¡¢sz|rz ÃüÁîÓÃÓÚÉÏ´«ÏÂÔØ
-          yum install lrzsz °²×°
-	  rz -y¸²¸ÇÉÏ´«
+1.1ã€sz|rz å‘½ä»¤ç”¨äºä¸Šä¼ ä¸‹è½½
+          yum install lrzsz å®‰è£…
+	  rz -yè¦†ç›–ä¸Šä¼ 
 
-1.2¡¢²é¿´ÊÇ·ñ°²×°Ä³Èí¼ş
+1.2ã€æŸ¥çœ‹æ˜¯å¦å®‰è£…æŸè½¯ä»¶
 rpm -qa|grep ftp
-yumÃüÁîyum search
+yumå‘½ä»¤yum search
 
-2¡¢ÏµÍ³·şÎñÅäÖÃÃüÁî
+2ã€ç³»ç»ŸæœåŠ¡é…ç½®å‘½ä»¤
 
-2.1¡¢·À»ğÇ½ÉèÖÃ
-£¨1£© ÖØÆôºóÓÀ¾ÃĞÔÉúĞ§£º
-¿ªÆô£ºchkconfig iptables on
-¹Ø±Õ£ºchkconfig iptables off
-£¨2£© ¼´Ê±ÉúĞ§£¬ÖØÆôºóÊ§Ğ§£º
-¿ªÆô£ºservice iptables start
-¹Ø±Õ£ºservice iptables stop
+2.1ã€é˜²ç«å¢™è®¾ç½®
+ï¼ˆ1ï¼‰ é‡å¯åæ°¸ä¹…æ€§ç”Ÿæ•ˆï¼š
+å¼€å¯ï¼šchkconfig iptables on
+å…³é—­ï¼šchkconfig iptables off
+ï¼ˆ2ï¼‰ å³æ—¶ç”Ÿæ•ˆï¼Œé‡å¯åå¤±æ•ˆï¼š
+å¼€å¯ï¼šservice iptables start
+å…³é—­ï¼šservice iptables stop
 
-2.2¡¢¼ÓÈë¿ª»úÆô¶¯Ïî
+2.2ã€åŠ å…¥å¼€æœºå¯åŠ¨é¡¹
 chkconfig vsftpd on
 
-2.3¡¢Ìí¼ÓÓÃ»§
-adduser -d /vsftphome/mmc1 -g ftp -s /sbin/nologin mmc1 ¼ÒÄ¿Â¼ ²»ÄÜµÇÂ½ ftpÕËºÅ
-useradd ÓÃ»§Ãû
-passwd ÓÃ»§Ãû
-ÊäÈëÃÜÂë¼´¿É
+2.3ã€æ·»åŠ ç”¨æˆ·
+adduser -d /vsftphome/mmc1 -g ftp -s /sbin/nologin mmc1 å®¶ç›®å½• ä¸èƒ½ç™»é™† ftpè´¦å·
+useradd ç”¨æˆ·å
+passwd ç”¨æˆ·å
+è¾“å…¥å¯†ç å³å¯
 
-2.4¡¢ÇĞ»»ÓÃ»§
+2.4ã€åˆ‡æ¢ç”¨æˆ·
 su - root
 
-2.5¡¢²é¿´¶Ë¿Ú
-²é¿´½ø³ÌÕ¼ÓÃµÄ¶Ë¿ÚºÅ
+2.5ã€æŸ¥çœ‹ç«¯å£
+æŸ¥çœ‹è¿›ç¨‹å ç”¨çš„ç«¯å£å·
 netstat -anp
-netstat -anp | grep ½ø³ÌÃû³Æ
-²é¿´Ê¹ÓÃ¶Ë¿ÚºÅµÄ½ø³Ì
+netstat -anp | grep è¿›ç¨‹åç§°
+æŸ¥çœ‹ä½¿ç”¨ç«¯å£å·çš„è¿›ç¨‹
 lsof
-lsof -i:  ¶Ë¿ÚºÅ
+lsof -i:  ç«¯å£å·
 
-2.6¡¢×·×Ù½ø³Ì 
+2.6ã€è¿½è¸ªè¿›ç¨‹ 
 strace -p 10747
 
-2.7ÅäÖÃip
-ÉèÖÃ¾²Ì¬ip
+2.7é…ç½®ip
+è®¾ç½®é™æ€ip
 
 /etc/sysconfig/network-scripts/ifcfg-eth0
 
@@ -63,25 +63,25 @@ GATEWAY=192.168.19.1
 
 TYPE=Ethernet
 
-¶¯Ì¬ip
-DEVICE=eth0  (Íø¿¨Ãû³Æ)
-BOOTPROTO=dhcp  (¶¯Ì¬»ñÈ¡IP)
-ONBOOT=yes  (¿ªÆôÆô¶¯´ËÍø¿¨)
+åŠ¨æ€ip
+DEVICE=eth0  (ç½‘å¡åç§°)
+BOOTPROTO=dhcp  (åŠ¨æ€è·å–IP)
+ONBOOT=yes  (å¼€å¯å¯åŠ¨æ­¤ç½‘å¡)
 /etc/init.d/network restart
-ÉèÖÃCentOS¾²Ì¬IP£ºĞéÄâ»úĞèÒªÈ¥µôdscpÉèÖÃ
+è®¾ç½®CentOSé™æ€IPï¼šè™šæ‹Ÿæœºéœ€è¦å»æ‰dscpè®¾ç½®
 
-Éæ¼°µ½Èı¸öÅäÖÃÎÄ¼ş£¬·Ö±ğÊÇ£º
+æ¶‰åŠåˆ°ä¸‰ä¸ªé…ç½®æ–‡ä»¶ï¼Œåˆ†åˆ«æ˜¯ï¼š
 
 /etc/sysconfig/network/etc/sysconfig/network-scripts/ifcfg-eth0/etc/resolv.conf
- Ê×ÏÈĞŞ¸Ä/etc/sysconfig/networkÈçÏÂ£º
+ é¦–å…ˆä¿®æ”¹/etc/sysconfig/networkå¦‚ä¸‹ï¼š
 
 NETWORKING=
 yes
 HOSTNAME
 =localhost.localdomainGATEWAY=192.168.129.2
-Ö¸¶¨Íø¹ØµØÖ·¡£
+æŒ‡å®šç½‘å…³åœ°å€ã€‚
 
-È»ºóĞŞ¸Ä/etc/sysconfig/network-scripts/ifcfg-eth0£º
+ç„¶åä¿®æ”¹/etc/sysconfig/network-scripts/ifcfg-eth0ï¼š
 
 
 DEVICE="eth0"#BOOTPROTO="dhcp"
@@ -89,81 +89,81 @@ BOOTPROTO="static"
 IPADDR=192.168.129.129
 NETMASK=255.255.255.0HWADDR="00:0C:29:56:8F:AD"IPV6INIT="no"NM_CONTROLLED="yes"ONBOOT="yes"TYPE="Ethernet"UUID="ba48a4c0-f33d-4e05-98bd-248b01691c20"DNS1=192.168.129.2
 
-×¢Òâ£ºÕâÀïDNS1ÊÇ±ØĞëÒªÉèÖÃµÄ·ñÔòÎŞ·¨½øĞĞÓòÃû½âÎö¡£
+æ³¨æ„ï¼šè¿™é‡ŒDNS1æ˜¯å¿…é¡»è¦è®¾ç½®çš„å¦åˆ™æ— æ³•è¿›è¡ŒåŸŸåè§£æã€‚
 
-×îºóÅäÖÃÏÂ/etc/resolv.conf£º
+æœ€åé…ç½®ä¸‹/etc/resolv.confï¼š
 
 nameserver 192.168.129.2
-ÆäÊµÕâÒ»²½¿ÉÒÔÊ¡µô£¬ÉÏÃæÉèÖÃÁËDNS ServerµÄµØÖ·ºóÏµÍ³»á×Ô¶¯ĞŞ¸ÄÕâ¸öÅäÖÃÎÄ¼ş¡£
+å…¶å®è¿™ä¸€æ­¥å¯ä»¥çœæ‰ï¼Œä¸Šé¢è®¾ç½®äº†DNS Serverçš„åœ°å€åç³»ç»Ÿä¼šè‡ªåŠ¨ä¿®æ”¹è¿™ä¸ªé…ç½®æ–‡ä»¶ã€‚
 
  
 
-ÕâÑùºÜ¼òµ¥¼¸¸ö²½ÖèºóĞéÄâ»úµÄIP¾ÍÒ»Ö±ÊÇ192.168.129.129ÁË¡£
+è¿™æ ·å¾ˆç®€å•å‡ ä¸ªæ­¥éª¤åè™šæ‹Ÿæœºçš„IPå°±ä¸€ç›´æ˜¯192.168.129.129äº†ã€‚
 
-2.8¡¢·Ö¸îÎÄ¼ş
+2.8ã€åˆ†å‰²æ–‡ä»¶
 split -b 100m filename
 
-2.9¡¢ÉèÖÃÎÄ¼şÄ¿Â¼È¨ÏŞ
+2.9ã€è®¾ç½®æ–‡ä»¶ç›®å½•æƒé™
 chmod -R 644 ./*.*
-find /path -type f -exec chmod 644 {} \;  //ÉèÖÃÎÄ¼şÈ¨ÏŞÎª644
+find /path -type f -exec chmod 644 {} \;  //è®¾ç½®æ–‡ä»¶æƒé™ä¸º644
 
-find /path -type d -exec chmod 755 {} \;  //ÉèÖÃÄ¿Â¼È¨ÏŞÎª755
+find /path -type d -exec chmod 755 {} \;  //è®¾ç½®ç›®å½•æƒé™ä¸º755
 
-2.10¡¢Ìæ»»×Ö·û
+2.10ã€æ›¿æ¢å­—ç¬¦
 sed -n/-i "s/a/b/g" file
 awk -F ' ' '{printf}'
 cat access_20130704.log | awk '{print $1}'| sort | uniq -c | sort -nr | head -20
 
-2.11¡¢ÎÄ¼ş²Ù×÷
+2.11ã€æ–‡ä»¶æ“ä½œ
 awk -F "=" 'BEGIN {count=0;}{count=count+$3;}END {print "count is ", count}' log.txt
 grep -a "ddd" file
 tail -n +5 www.abc.com.log
 
-2.12¡¢¸´ÖÆ¸²¸Ç
+2.12ã€å¤åˆ¶è¦†ç›–
 yes|cp -avpf a/ b/
 
-3¡¢ÆäËûÃüÁî
-3.1¡¢mysqlÃüÁî
-3.1.1¡¢µ¼³ösql
+3ã€å…¶ä»–å‘½ä»¤
+3.1ã€mysqlå‘½ä»¤
+3.1.1ã€å¯¼å‡ºsql
 mysqldump -u$root2 -p$pwd2 -h$ip2 --opt $db2 amc_advertise_idea_relation >> $sqlfile
 
-3.1.2¡¢µ¼Èë
+3.1.2ã€å¯¼å…¥
 mysql -u$root3 -p$pwd3 -h$ip3 --default-character-set=utf8 $db3 < $sqlfile
 
-3.1.3¡¢Ö´ĞĞsql
+3.1.3ã€æ‰§è¡Œsql
 mysql -h${HOSTNAME}  -P${PORT}  -u${USERNAME} -p${PASSWORD} -e "{create_db_sql}"
 
-3.1.4¡¢Ìí¼ÓÓÃ»§
+3.1.4ã€æ·»åŠ ç”¨æˆ·
 insert into mysql.user(Host,User,Password) values('localhost','jeecn',password('jeecn'));
 
-3.11¡¢Ë¢ĞÂÏµÍ³È¨ÏŞ±í
+3.11ã€åˆ·æ–°ç³»ç»Ÿæƒé™è¡¨
 flush privileges;
 
-3.12¡¢grant all  on jeecnDB.* to jeecn@localhost identified by ¡®ÃÜÂë¡¯;
-//Ë¢ĞÂÏµÍ³È¨ÏŞ±í
+3.12ã€grant all  on jeecnDB.* to jeecn@localhost identified by â€˜å¯†ç â€™;
+//åˆ·æ–°ç³»ç»Ÿæƒé™è¡¨
 mysql>flush privileges;
-mysql>ÆäËü²Ù×÷
-//Èç¹ûÏëÖ¸¶¨²¿·ÖÈ¨ÏŞ¸øÒ»ÓÃ»§£¬¿ÉÒÔÕâÑùÀ´Ğ´:
-mysql>grant select,update on jeecnDB.* to jeecn@localhost identified by ¡®ÃÜÂë¡¯;
+mysql>å…¶å®ƒæ“ä½œ
+//å¦‚æœæƒ³æŒ‡å®šéƒ¨åˆ†æƒé™ç»™ä¸€ç”¨æˆ·ï¼Œå¯ä»¥è¿™æ ·æ¥å†™:
+mysql>grant select,update on jeecnDB.* to jeecn@localhost identified by â€˜å¯†ç â€™;
 
-3.13¡¢ÉèÖÃÔ¶³ÌÁ¬½Ó
+3.13ã€è®¾ç½®è¿œç¨‹è¿æ¥
 mysql>update user set host = '%' where user = 'root';
 mysql>flush privileges;
 
-3.14¡¢date
+3.14ã€date
 date -s 2010-02-03 12:00:00
-½«ÏµÍ³Ê±¼äĞ´ÈëÓ²¼ş
+å°†ç³»ç»Ÿæ—¶é—´å†™å…¥ç¡¬ä»¶
 clock --systohc
 
-¶ÁÈ¡Ó²¼şÊ±¼äµ½ÏµÍ³
+è¯»å–ç¡¬ä»¶æ—¶é—´åˆ°ç³»ç»Ÿ
 clock --hctosys
 
-4¡¢´íÎóĞÅÏ¢ĞŞ¸ÄÃüÁî
+4ã€é”™è¯¯ä¿¡æ¯ä¿®æ”¹å‘½ä»¤
 
-4.1¡¢Can't connect to MySQL server on 'localhost' (13) ´íÎó½â¾ö·½·¨ ¡¾Ö÷ÒªÊÇlinuxÏÂphpÁ¬½Ó²»ÉÏmysqÊ±¡¿
+4.1ã€Can't connect to MySQL server on 'localhost' (13) é”™è¯¯è§£å†³æ–¹æ³• ã€ä¸»è¦æ˜¯linuxä¸‹phpè¿æ¥ä¸ä¸Šmysqæ—¶ã€‘
 setsebool -P httpd_can_network_connect=1
 
-4.2¡¢vim³õÊ¼
+4.2ã€vimåˆå§‹
   set cursorline                                                                                                                                                              
   set nu
   
@@ -171,3 +171,11 @@ setsebool -P httpd_can_network_connect=1
 iptables -I INPUT -s 112.216.56.86 -j DROP
 
 iptables -D INPUT -s 112.216.56.86 -j DROP
+
+5ã€git
+$ git remote add origin git@github.com:michaelliao/learngit.git æ·»åŠ è¿œç¨‹åº“
+$ git push -u origin master å¼ºæ¨æœ¬åœ°åº“
+
+$ git config --global user.name "zhang.cunchao"
+$ git config --global user.email "zhangcunchao_cn@163.com"
+$ ssh-keygen -t rsa -C â€œzhangcunchao_cn@163.comâ€
