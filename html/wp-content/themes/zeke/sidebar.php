@@ -35,27 +35,6 @@
                 <div class="sidebar_b_bot"><!--样式尾部--></div>
             </div>
 
-	    <?php
-			if (!is_single()){
-	    ?>
-            <!--腾讯微博-->
-            <div class="sidebar_body">
-           	  <div class="sidebar_b_top"><!--样式头部--></div>
-                <div class="sidebar_b_main">
-                	<div class="sid_ify">
-                    	<div class="sid_ify_bg">
-                            <H3>我的微博</H3>
-                        </div>
-                    </div>
-                    <!--微博等嵌入式框架宽度为230px-->
-                    <div class="sid_body sid_Blog">
-<iframe width="226" height="550" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=226&height=550&fansRow=2&ptype=1&speed=300&skin=3&isTitle=1&noborder=1&isWeibo=1&isFans=1&uid=2785059384&verifier=8c3b9a87&dpc=1"></iframe>											
-					</div>
-                </div>
-                <div class="sidebar_b_bot"><!--样式尾部--></div>
-            </div>
-	    <?php
-	     }?>
 			<div class="sidebar_body">
            	  <div class="sidebar_b_top"><!--样式头部--></div>
                 <div class="sidebar_b_main">
