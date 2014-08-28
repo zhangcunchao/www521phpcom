@@ -31,9 +31,9 @@
 		<category><![CDATA[文件]]></category>
 
 		<guid isPermaLink="false">http://www.521php.com/?p=1784</guid>
-		<description><![CDATA[启动MongoDB有2种方式，一是直接指定配置参数，二是指定配置文件。这里先介绍配置文件，启动方式如下： [crayon-53fe0385952a9/] 配置如下： verbose：日志信息冗余。默认false。提高内部报告标准输出或记录到logpath配置的日志文件中。要启用verbose或启用verbosity 用vvvv参数，如： [crayon-53fe038595349/] ps：启动verbose冗长信息，它的级别有 vv~vvvvv，v越多级别越高，在日志文件中记录的信息越详细。 port：端口。默认27017，MongoDB的默认服务TCP端口，监听客户端连接。要是端口设置小于1024，比如1021，则需要root权限启动，不能用mongodb帐号启动，（普通帐号即使是27017也起不来）否则报错：[mongo --port=1021 连接] [crayon-53fe0385953c5/] [crayon-53fe03859543d/] bind_ip：绑定地址。默认127.0.0.1，只能通过本地连接。进程绑定和监听来自这个地址上的应用连接。要是需要给其他服务器连接，则需要注释掉这个或则把IP改成本机地址，如192.168.200.201[其他服务器用 mongo --host=192.168.200.201 连接] ，可以用一个逗号分隔的列表绑定多个IP地址。 [crayon-53fe0385954b5/] maxConns：最大连接数。默认值：取决于系统（即的ulimit和文件描述符）限制。MongoDB中不会限制其自身的连接。当设置大于系统的限制，则无效，以系统限制为准。这对于客户端创建很多“表”，允许连接超时而不关闭“表”的时候很有用。设置该值的高于连接池和总连接数的大小，以防止尖峰时候的连接。注意：不能设置该值大于20000。 [crayon-53fe03859552f/] objcheck:强制验证客户端请求。2.4的默认设置为objcheck成为true，在早期版本objcheck默认为false。因为它强制验证客户端请求，确保客户端绝不插入无效文件到数据库中。对于嵌套文档的对象，会有一点性能影响。设置noobjcheck 关闭。 [crayon-53fe0385955cc/] noobjcheck：同上，默认关闭false。 [crayon-53fe038595b18/] logpath：指定日志文件，该文件将保存所有的日志记录、诊断信息。除非另有指定，mongod将所有的日志信息输出到标准输出。如果没有指定logappend，重启则日志会进行覆盖操作。 [crayon-53fe038595b94/] logappend：写日志的模式：设置为true为追加。默认是覆盖。如果未指定此设置，启动时MongoDB的将覆盖现有的日志文件。 [crayon-53fe0385962f0/] syslog：日志输出都发送到主机的syslog系统，而不是标准输出到logpath指定日志文件。syslog和logpath不能一起用，会报错： [crayon-53fe038596abf/] [crayon-53fe038596b3d/] pidfilepath：进程ID，没有指定则启动时候就没有PID文件。默认缺省。 [crayon-53fe038597286/] keyFile：指定存储身份验证信息的密钥文件的路径。默认缺省。详情见：&#8221; Replica Set Security&#8221; and “Replica &#8230;]]></description>
+		<description><![CDATA[启动MongoDB有2种方式，一是直接指定配置参数，二是指定配置文件。这里先介绍配置文件，启动方式如下： [crayon-53ff0e31ba85e/] 配置如下： verbose：日志信息冗余。默认false。提高内部报告标准输出或记录到logpath配置的日志文件中。要启用verbose或启用verbosity 用vvvv参数，如： [crayon-53ff0e31bacdd/] ps：启动verbose冗长信息，它的级别有 vv~vvvvv，v越多级别越高，在日志文件中记录的信息越详细。 port：端口。默认27017，MongoDB的默认服务TCP端口，监听客户端连接。要是端口设置小于1024，比如1021，则需要root权限启动，不能用mongodb帐号启动，（普通帐号即使是27017也起不来）否则报错：[mongo --port=1021 连接] [crayon-53ff0e31bad59/] [crayon-53ff0e31badbd/] bind_ip：绑定地址。默认127.0.0.1，只能通过本地连接。进程绑定和监听来自这个地址上的应用连接。要是需要给其他服务器连接，则需要注释掉这个或则把IP改成本机地址，如192.168.200.201[其他服务器用 mongo --host=192.168.200.201 连接] ，可以用一个逗号分隔的列表绑定多个IP地址。 [crayon-53ff0e31bae38/] maxConns：最大连接数。默认值：取决于系统（即的ulimit和文件描述符）限制。MongoDB中不会限制其自身的连接。当设置大于系统的限制，则无效，以系统限制为准。这对于客户端创建很多“表”，允许连接超时而不关闭“表”的时候很有用。设置该值的高于连接池和总连接数的大小，以防止尖峰时候的连接。注意：不能设置该值大于20000。 [crayon-53ff0e31bb4b9/] objcheck:强制验证客户端请求。2.4的默认设置为objcheck成为true，在早期版本objcheck默认为false。因为它强制验证客户端请求，确保客户端绝不插入无效文件到数据库中。对于嵌套文档的对象，会有一点性能影响。设置noobjcheck 关闭。 [crayon-53ff0e31bbc85/] noobjcheck：同上，默认关闭false。 [crayon-53ff0e31bbd13/] logpath：指定日志文件，该文件将保存所有的日志记录、诊断信息。除非另有指定，mongod将所有的日志信息输出到标准输出。如果没有指定logappend，重启则日志会进行覆盖操作。 [crayon-53ff0e31bbd9c/] logappend：写日志的模式：设置为true为追加。默认是覆盖。如果未指定此设置，启动时MongoDB的将覆盖现有的日志文件。 [crayon-53ff0e31bbe2b/] syslog：日志输出都发送到主机的syslog系统，而不是标准输出到logpath指定日志文件。syslog和logpath不能一起用，会报错： [crayon-53ff0e31bbeb4/] [crayon-53ff0e31bbf37/] pidfilepath：进程ID，没有指定则启动时候就没有PID文件。默认缺省。 [crayon-53ff0e31bbfb9/] keyFile：指定存储身份验证信息的密钥文件的路径。默认缺省。详情见：&#8221; Replica Set Security&#8221; and “Replica &#8230;]]></description>
 		<wfw:commentRss>http://www.521php.com/archives/1784/feed/</wfw:commentRss>
-		<slash:comments>1</slash:comments>
+		<slash:comments>2</slash:comments>
 		</item>
 		<item>
 		<title>php操作mongodb类库</title>
@@ -49,7 +49,7 @@
 		<category><![CDATA[类]]></category>
 
 		<guid isPermaLink="false">http://www.521php.com/?p=1775</guid>
-		<description><![CDATA[php操作mongodb类库，需要特别注意的就是update方法，$set是可以局部字段修改的。 [crayon-53fe03869d818/] &#160;]]></description>
+		<description><![CDATA[php操作mongodb类库，需要特别注意的就是update方法，$set是可以局部字段修改的。 [crayon-53ff0e3308960/] &#160;]]></description>
 		<wfw:commentRss>http://www.521php.com/archives/1775/feed/</wfw:commentRss>
 		<slash:comments>0</slash:comments>
 		</item>
@@ -66,7 +66,7 @@
 		<category><![CDATA[php]]></category>
 
 		<guid isPermaLink="false">http://www.521php.com/?p=1769</guid>
-		<description><![CDATA[mogodb安装 1。下载安装包： 32位 [crayon-53fe0386addd8/] 64位 http://fastdl.mongodb.org/linux/mongodb-linux-x86_64-2.4.9.tgz 或 http://pan.baidu.com/s/1mgyRB8c &#160; 2。解压： [crayon-53fe0386ae5ae/] 3。指定安装目录： [crayon-53fe0386aed63/] 4。新建mongodb数据文件存放目录： [crayon-53fe0386af539/] 5.  cd /usr/local/mongodb/bin 6.新建配置文件，mongodb支持把参数写进配置文件，然后以配置文件的配置来启动，我们此处也使用此方式。执行： vi mongodb.conf [crayon-53fe0386afcfe/] 重新绑定mongodb的配置文件地址和访问IP： [crayon-53fe0386b04e8/] 7。启动Mongo程序，使用配置文件mongodb.conf定义的参数启动 [crayon-53fe0386b0caf/] 开机自动启动mongodb [crayon-53fe0386b148c/] 安装Mongodb PHP扩展] 1:安装 pecl mongodb 扩展 wget http://pecl.php.net/get/mongo-1.2.7.tgz [该版本要求 php &#62;= 5.1] tar zxvf &#8230;]]></description>
+		<description><![CDATA[mogodb安装 1。下载安装包： 32位 [crayon-53ff0e3330dd2/] 64位 http://fastdl.mongodb.org/linux/mongodb-linux-x86_64-2.4.9.tgz 或 http://pan.baidu.com/s/1mgyRB8c &#160; 2。解压： [crayon-53ff0e33315bd/] 3。指定安装目录： [crayon-53ff0e3332550/] 4。新建mongodb数据文件存放目录： [crayon-53ff0e3332d0d/] 5.  cd /usr/local/mongodb/bin 6.新建配置文件，mongodb支持把参数写进配置文件，然后以配置文件的配置来启动，我们此处也使用此方式。执行： vi mongodb.conf [crayon-53ff0e33334d8/] 重新绑定mongodb的配置文件地址和访问IP： [crayon-53ff0e3334787/] 7。启动Mongo程序，使用配置文件mongodb.conf定义的参数启动 [crayon-53ff0e3334ef0/] 开机自动启动mongodb [crayon-53ff0e3334f86/] 安装Mongodb PHP扩展] 1:安装 pecl mongodb 扩展 wget http://pecl.php.net/get/mongo-1.2.7.tgz [该版本要求 php &#62;= 5.1] tar zxvf &#8230;]]></description>
 		<wfw:commentRss>http://www.521php.com/archives/1769/feed/</wfw:commentRss>
 		<slash:comments>0</slash:comments>
 		</item>
@@ -85,7 +85,7 @@
 		<category><![CDATA[文件]]></category>
 
 		<guid isPermaLink="false">http://www.521php.com/?p=1761</guid>
-		<description><![CDATA[git是目前十分流行的分布式项目版本管理系统，较之svn有很大的优势，昨天就想着应该好好利用一下git,于是就想着可以利用git的版本回退等做一个简单的项目自动备份和恢复功能。这样既可以使用git做项目的版本管理，又可以利用git做备份。这样项目进行迁移，备份等等都是非常方便的。 功能和实现的确非常之简单，但是这里有这样几个前提条件，首先就是需要有自己的linux服务器，会一些简单的shell编程，最后要熟悉git的一些相关命令。 github是目前git的一个十分流行的远程库，我的项目因为都是个人的，并且没有什么商业或安全性质，所以就使用了github做远程库，如果对这方面有要求的，可以给github交一些保护费，使用其私有的保护版本库，或者，在自己的服务器，搭建一个远程库服务，也很简单，网上git的资料很多。https://github.com/zhangcunchao，这是我的第一个github账号，我会陆续的将自己的一些开发项目，学习所得放到上面进行管理，因为这样是非常方便的。 实现的步骤非常简单， 首先，在自己的服务器安装git，centos使用yum install git即可 这里给大家推荐一个非常简单、易懂的教程网站，http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000 这个教程不长，基本看下来，git的使用基本没有问题了 然后，我们在github或者自己的远程版本库，创建版本库，将本地项目git库，与远程库同步， 最后，shell脚本，做定时任务，进行git push同步远程 因为我没有日志分析脚本和数据备份脚本，会对项目做更改，所以每天我会自动同步一次，即备份一次项目到github 所以我将其放到了我数据备份的脚本中 [crayon-53fe0386c3d83/] 如果你需要恢复某个版本，只需要checkout一个远程库版本即可 git这种分布式的版本管理系统和svn还是有很多差别的，有很多优点的。这个备份使用ssh协议，速度是非常快的。git还有很多优点，希望大家能学习使用一下吧。 ps:为了尽量安全一下，你可以设置.gitignore来屏蔽一些同步目录的，这样你可以在里面将敏感的配置文件屏蔽，并且可以用一个目录来专门存放。]]></description>
+		<description><![CDATA[git是目前十分流行的分布式项目版本管理系统，较之svn有很大的优势，昨天就想着应该好好利用一下git,于是就想着可以利用git的版本回退等做一个简单的项目自动备份和恢复功能。这样既可以使用git做项目的版本管理，又可以利用git做备份。这样项目进行迁移，备份等等都是非常方便的。 功能和实现的确非常之简单，但是这里有这样几个前提条件，首先就是需要有自己的linux服务器，会一些简单的shell编程，最后要熟悉git的一些相关命令。 github是目前git的一个十分流行的远程库，我的项目因为都是个人的，并且没有什么商业或安全性质，所以就使用了github做远程库，如果对这方面有要求的，可以给github交一些保护费，使用其私有的保护版本库，或者，在自己的服务器，搭建一个远程库服务，也很简单，网上git的资料很多。https://github.com/zhangcunchao，这是我的第一个github账号，我会陆续的将自己的一些开发项目，学习所得放到上面进行管理，因为这样是非常方便的。 实现的步骤非常简单， 首先，在自己的服务器安装git，centos使用yum install git即可 这里给大家推荐一个非常简单、易懂的教程网站，http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000 这个教程不长，基本看下来，git的使用基本没有问题了 然后，我们在github或者自己的远程版本库，创建版本库，将本地项目git库，与远程库同步， 最后，shell脚本，做定时任务，进行git push同步远程 因为我没有日志分析脚本和数据备份脚本，会对项目做更改，所以每天我会自动同步一次，即备份一次项目到github 所以我将其放到了我数据备份的脚本中 [crayon-53ff0e3374409/] 如果你需要恢复某个版本，只需要checkout一个远程库版本即可 git这种分布式的版本管理系统和svn还是有很多差别的，有很多优点的。这个备份使用ssh协议，速度是非常快的。git还有很多优点，希望大家能学习使用一下吧。 ps:为了尽量安全一下，你可以设置.gitignore来屏蔽一些同步目录的，这样你可以在里面将敏感的配置文件屏蔽，并且可以用一个目录来专门存放。]]></description>
 		<wfw:commentRss>http://www.521php.com/archives/1761/feed/</wfw:commentRss>
 		<slash:comments>3</slash:comments>
 		</item>
@@ -118,7 +118,7 @@
 		<category><![CDATA[数据处理]]></category>
 
 		<guid isPermaLink="false">http://www.521php.com/?p=1752</guid>
-		<description><![CDATA[redis普通的数据库迁移，只能整个redis save，或者利用主从，当然也可以安装一个redis-dump，不过比较麻烦，这里提供一种php的脚本，实现指定库号的迁移，其实也就是遍历根据存储类型，读出来，插入新库；效果是这样： [crayon-53fe0386d79c1/] 上代码： [crayon-53fe0386d818e/] &#160;]]></description>
+		<description><![CDATA[redis普通的数据库迁移，只能整个redis save，或者利用主从，当然也可以安装一个redis-dump，不过比较麻烦，这里提供一种php的脚本，实现指定库号的迁移，其实也就是遍历根据存储类型，读出来，插入新库；效果是这样： [crayon-53ff0e338d829/] 上代码： [crayon-53ff0e338dedc/] &#160;]]></description>
 		<wfw:commentRss>http://www.521php.com/archives/1752/feed/</wfw:commentRss>
 		<slash:comments>3</slash:comments>
 		</item>
@@ -136,7 +136,7 @@
 		<category><![CDATA[总结]]></category>
 
 		<guid isPermaLink="false">http://www.521php.com/?p=1746</guid>
-		<description><![CDATA[php批量去除指定目录的bom头，创建文件的时候，一定注意，utf-8等格式都是区分bom的，单个文件可以另存，批量的话可以用下面的脚本。 [crayon-53fe0386e4cb0/] &#160;]]></description>
+		<description><![CDATA[php批量去除指定目录的bom头，创建文件的时候，一定注意，utf-8等格式都是区分bom的，单个文件可以另存，批量的话可以用下面的脚本。 [crayon-53ff0e33aaf1e/] &#160;]]></description>
 		<wfw:commentRss>http://www.521php.com/archives/1746/feed/</wfw:commentRss>
 		<slash:comments>0</slash:comments>
 		</item>
@@ -155,7 +155,7 @@
 		<category><![CDATA[shell]]></category>
 
 		<guid isPermaLink="false">http://www.521php.com/?p=1739</guid>
-		<description><![CDATA[今天下午写了一个简单的一键式自动虚拟主机搭建shell脚本，脚本实现自动配置nginx虚拟主机，自动创建ftp账户，自动创建数据库，用户，并自动实现mysql自动定时备份，日志切割，程序备份。 这里因为其他原因，就将备份机制去掉了，代码如下。 首先需要一个基础的nginx虚拟主机配置文件，一般情况下，我们配置虚拟主机都是建一个vhost目录，这里我在/etc/nginx下面建了一个default.conf文件 [crayon-53fe0386f3ee4/] 注意里面一些关键路径，我用特殊字符组合来表示，这样方便我们添加虚拟注意的时候进行匹配替换 host.sh脚本如下 [crayon-53fe038700479/] 看一下运行效果，sh host.sh [crayon-53fe038700c37/] 系统会逐个询问输入参数，并且参数是先统一填完，然后程序进行执行，避免中间不小心输入错误无法修改，然后如果无需创建数据库，那么database参数不输入即可。 感兴趣的可以看一下。 &#160;]]></description>
+		<description><![CDATA[今天下午写了一个简单的一键式自动虚拟主机搭建shell脚本，脚本实现自动配置nginx虚拟主机，自动创建ftp账户，自动创建数据库，用户，并自动实现mysql自动定时备份，日志切割，程序备份。 这里因为其他原因，就将备份机制去掉了，代码如下。 首先需要一个基础的nginx虚拟主机配置文件，一般情况下，我们配置虚拟主机都是建一个vhost目录，这里我在/etc/nginx下面建了一个default.conf文件 [crayon-53ff0e33b8dd2/] 注意里面一些关键路径，我用特殊字符组合来表示，这样方便我们添加虚拟注意的时候进行匹配替换 host.sh脚本如下 [crayon-53ff0e33b9d48/] 看一下运行效果，sh host.sh [crayon-53ff0e33ba50d/] 系统会逐个询问输入参数，并且参数是先统一填完，然后程序进行执行，避免中间不小心输入错误无法修改，然后如果无需创建数据库，那么database参数不输入即可。 感兴趣的可以看一下。 &#160;]]></description>
 		<wfw:commentRss>http://www.521php.com/archives/1739/feed/</wfw:commentRss>
 		<slash:comments>0</slash:comments>
 		</item>
@@ -173,7 +173,7 @@
 		<category><![CDATA[shell]]></category>
 
 		<guid isPermaLink="false">http://www.521php.com/?p=1735</guid>
-		<description><![CDATA[以前使用虚拟主机的时候，查看网站运行日志，就发现了很多异常的恶意的访问。当时因为自己并没有系统权限没办法对这些行为进行屏蔽。现在有了自己的云主机，前端时间查看日志，又发现了很多恶意访问。正好可以通过最近对shell的学习，来做一个简单的日志分析工具，来屏蔽一些这样的操作。 首先，所谓的分析工具，肯定是建立在人为的分析的基础上的。我们来看一点我的域名运行日志： [crayon-53fe038712d4f/] 很明显可以看到有ip在恶意暴力破解我的登录信息，还有一个ip在尝试下载我的网站程序。这样的ip我们对比正常的访问日志会发现，他没有头信息，即你浏览器等等的信息，而且一般访问都是get或者post访问，而这里有head访问。所以我们可以将这样的ip加入防火墙或者nginx的ip黑名单，当然还可以有其他规则，比较访问的频次，404出现的频次，当然有的访问你会发现他访问你的首页，却没有加载你的js，css等，当然这里也有缓存的影响，但是即使缓存也会发送304的确认信息。当然还有很多其他的恶意访问行为。 然后，针对这些规则，我们来写处理逻辑和操作即可，写这个之前，我们先做一个nginx的ip黑名单。我这里没有再使用linux的防火墙，因为防火墙操作不太方便，频繁重启有一定的影响，而nginx的黑名单，是可以平滑重启的，而且是让指定ip显示403错误，但是可以访问的，这样就给人家一个改过自新的机会啊是吧，如果人家访问正常了，就可以将此ip移除黑名单。 配置nginx ip黑名单： 在你的nginx.conf配置文件中，包含一个blocksip.conf; blocksip.conf 存放黑名单ip； 这样写 [crayon-53fe038713519/] 然后我们写个shell脚本，自动添加、移除ip，并平滑重启nginx，并发送邮件通知 editblocksip.sh [crayon-53fe038713ce6/] 使用比较简单 [crayon-53fe0387144c7/] 最后，我们只需要写个脚本，来分析nginx日志文件，有符合条件的记录，来触发这个shell脚本添加ip黑名单即可 思路是这样的，首先记录日志最大行号，然后每次执行分析脚本，从指定行号读取剩下所有记录（tail -n +5 file），并再次记录最大行号（wc）,然后使用awk，逐行分析记录，并切割字符进行匹配判断，符合条件的，提取ip，加入ip黑名单； 这个分析脚本，可以用crontab 或者 做成守护进程来跑。根据自己网站的运行情况，定义执行频次，几秒，几分钟等等。 这样就实现了一个简单的日志分析工具！]]></description>
+		<description><![CDATA[以前使用虚拟主机的时候，查看网站运行日志，就发现了很多异常的恶意的访问。当时因为自己并没有系统权限没办法对这些行为进行屏蔽。现在有了自己的云主机，前端时间查看日志，又发现了很多恶意访问。正好可以通过最近对shell的学习，来做一个简单的日志分析工具，来屏蔽一些这样的操作。 首先，所谓的分析工具，肯定是建立在人为的分析的基础上的。我们来看一点我的域名运行日志： [crayon-53ff0e33d0cb6/] 很明显可以看到有ip在恶意暴力破解我的登录信息，还有一个ip在尝试下载我的网站程序。这样的ip我们对比正常的访问日志会发现，他没有头信息，即你浏览器等等的信息，而且一般访问都是get或者post访问，而这里有head访问。所以我们可以将这样的ip加入防火墙或者nginx的ip黑名单，当然还可以有其他规则，比较访问的频次，404出现的频次，当然有的访问你会发现他访问你的首页，却没有加载你的js，css等，当然这里也有缓存的影响，但是即使缓存也会发送304的确认信息。当然还有很多其他的恶意访问行为。 然后，针对这些规则，我们来写处理逻辑和操作即可，写这个之前，我们先做一个nginx的ip黑名单。我这里没有再使用linux的防火墙，因为防火墙操作不太方便，频繁重启有一定的影响，而nginx的黑名单，是可以平滑重启的，而且是让指定ip显示403错误，但是可以访问的，这样就给人家一个改过自新的机会啊是吧，如果人家访问正常了，就可以将此ip移除黑名单。 配置nginx ip黑名单： 在你的nginx.conf配置文件中，包含一个blocksip.conf; blocksip.conf 存放黑名单ip； 这样写 [crayon-53ff0e33d1c18/] 然后我们写个shell脚本，自动添加、移除ip，并平滑重启nginx，并发送邮件通知 editblocksip.sh [crayon-53ff0e33d23e5/] 使用比较简单 [crayon-53ff0e33d33ad/] 最后，我们只需要写个脚本，来分析nginx日志文件，有符合条件的记录，来触发这个shell脚本添加ip黑名单即可 思路是这样的，首先记录日志最大行号，然后每次执行分析脚本，从指定行号读取剩下所有记录（tail -n +5 file），并再次记录最大行号（wc）,然后使用awk，逐行分析记录，并切割字符进行匹配判断，符合条件的，提取ip，加入ip黑名单； 这个分析脚本，可以用crontab 或者 做成守护进程来跑。根据自己网站的运行情况，定义执行频次，几秒，几分钟等等。 这样就实现了一个简单的日志分析工具！]]></description>
 		<wfw:commentRss>http://www.521php.com/archives/1735/feed/</wfw:commentRss>
 		<slash:comments>0</slash:comments>
 		</item>
@@ -189,12 +189,12 @@
 		<category><![CDATA[node]]></category>
 
 		<guid isPermaLink="false">http://www.521php.com/?p=1732</guid>
-		<description><![CDATA[事件驱动，承受高并发……这些耀眼的光环，使开发者不能不去学习NodeJS。今天简单搞了一下 1. 下载node [crayon-53fe038722761/] 2. 解压 [crayon-53fe038722f2b/] &#160; [crayon-53fe0387236e8/] 3. 查看配置是否完整 [crayon-53fe038723eb8/] 如果显示如下，则证明环境充分，缺少的就进行安装 [crayon-53fe038724689/] 4. 安装 [crayon-53fe038724e62/] 时间可能较长，耐心等待。。。 5. 检查是否安装成功，输入 [crayon-53fe03872563a/] 显示版本号，恭喜你，安装成功！ 6. 编写测试页 [crayon-53fe038725e09/] 7. 运行 [crayon-53fe0387265c9/] 这样浏览器直接访问机器的8181端口即可 或者使用nginx反向代理域名访问 [crayon-53fe03872663a/] 此代码加入nginx的配置中，重启nginx 修改hosts，配置域名指向， 浏览器访问即可]]></description>
+		<description><![CDATA[事件驱动，承受高并发……这些耀眼的光环，使开发者不能不去学习NodeJS。今天简单搞了一下 1. 下载node [crayon-53ff0e33e6dba/] 2. 解压 [crayon-53ff0e33e712c/] &#160; [crayon-53ff0e33e722d/] 3. 查看配置是否完整 [crayon-53ff0e33e7271/] 如果显示如下，则证明环境充分，缺少的就进行安装 [crayon-53ff0e33e77f9/] 4. 安装 [crayon-53ff0e33e783d/] 时间可能较长，耐心等待。。。 5. 检查是否安装成功，输入 [crayon-53ff0e33e7fd7/] 显示版本号，恭喜你，安装成功！ 6. 编写测试页 [crayon-53ff0e33e87e9/] 7. 运行 [crayon-53ff0e33e8f66/] 这样浏览器直接访问机器的8181端口即可 或者使用nginx反向代理域名访问 [crayon-53ff0e33e8fa2/] 此代码加入nginx的配置中，重启nginx 修改hosts，配置域名指向， 浏览器访问即可]]></description>
 		<wfw:commentRss>http://www.521php.com/archives/1732/feed/</wfw:commentRss>
 		<slash:comments>0</slash:comments>
 		</item>
 	</channel>
 </rss>
 
-<!-- Dynamic page generated in 18.744 seconds. -->
-<!-- Cached page generated by WP-Super-Cache on 2014-08-28 00:12:57 -->
+<!-- Dynamic page generated in 18.184 seconds. -->
+<!-- Cached page generated by WP-Super-Cache on 2014-08-28 19:10:48 -->
