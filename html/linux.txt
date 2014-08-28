@@ -136,21 +136,24 @@ mysql -h${HOSTNAME}  -P${PORT}  -u${USERNAME} -p${PASSWORD} -e "{create_db_sql}"
 3.1.4、添加用户
 insert into mysql.user(Host,User,Password) values('localhost','jeecn',password('jeecn'));
 
-3.11、刷新系统权限表
+3.1.5、刷新系统权限表
 flush privileges;
 
-3.12、grant all  on jeecnDB.* to jeecn@localhost identified by ‘密码’;
+3.1.6、grant all  on jeecnDB.* to jeecn@localhost identified by ‘密码’;
 //刷新系统权限表
 mysql>flush privileges;
 mysql>其它操作
 //如果想指定部分权限给一用户，可以这样来写:
 mysql>grant select,update on jeecnDB.* to jeecn@localhost identified by ‘密码’;
 
-3.13、设置远程连接
+3.1.7、设置远程连接
 mysql>update user set host = '%' where user = 'root';
 mysql>flush privileges;
 
-3.14、date
+3.1.8、查看mysql连接状态
+show full processlist;
+
+3.2、date
 date -s 2010-02-03 12:00:00
 将系统时间写入硬件
 clock --systohc
