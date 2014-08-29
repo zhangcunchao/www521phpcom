@@ -182,3 +182,9 @@ $ git push -u origin master 强推本地库
 $ git config --global user.name "zhang.cunchao"
 $ git config --global user.email "zhangcunchao_cn@163.com"
 $ ssh-keygen -t rsa -C “zhangcunchao_cn@163.com”
+
+5.2 git添加一个空目录
+# Ignore everything in this directory
+*
+# Except this file
+!.gitignore
