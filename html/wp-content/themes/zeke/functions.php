@@ -1129,7 +1129,7 @@ function getPostViews($postID){
  
  
  /* HTTP Gzip */
-$host = $_SERVER['HTTP_HOST'];
+/*$host = $_SERVER['HTTP_HOST'];
 if ( !strstr($host, '192.168') && !strstr($host, '127.0.0') && !stristr($host, 'localhost') ) { // 本地調試不用
 function wp_gzip() {
   // Don't use on Admin HTML editor
@@ -1144,6 +1144,7 @@ function wp_gzip() {
 }
 add_action('init', 'wp_gzip');
 }
+*/
 // -- END ----------------------------------------
  
  
