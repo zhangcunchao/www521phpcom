@@ -11,12 +11,15 @@ if(!$word){
 	$word = '521PHP';
 }
 $url  = 'http://www.baidu.com/baidu?word='.$word.'&ct=2097152&ie=utf-8&s=on';
-	$url2 = 'http://www.google.com.tw/custom?hl=zh-CN&inlang=zh-CN&newwindow=1&client=pub-65730051336577460000006&ie=utf-8&q='.$word;
+	//$url2 = 'http://www.google.com.tw/custom?hl=zh-CN&inlang=zh-CN&newwindow=1&client=pub-65730051336577460000006&ie=utf-8&q='.$word;
+	$url2 = 'http://173.194.130.4/custom?hl=zh-CN&inlang=zh-CN&newwindow=1&client=pub-655163035859445&cof=FORID%3A1%3BGL%3A1%3BLBGC%3A336699%3BLC%3A%230000ff%3BVLC%3A%23663399%3BGFNT%3A%230000ff%3BGIMP%3A%230000ff%3BDIV%3A%23336699%3B&ie=UTF8&oe=UTF8&btnG=Google+%CB%D1%CB%F7&meta=&q='.$word;
 	if($u){
 		$url  .='&si='.$u;
-		$url2 .='+inurl%3A'.$u;
+		//$url2 .='+inurl%3A'.$u;
+		$url2 .='+'.$u;
 	}else{
 		$url .='&pn='.$pn;
+		//$url2 .='&start='.$start;
 		$url2 .='&start='.$start;
 	}
 ?>
@@ -39,7 +42,17 @@ $url  = 'http://www.baidu.com/baidu?word='.$word.'&ct=2097152&ie=utf-8&s=on';
 </head>
 <body>
 <div id="top"><form action="" method="get"><input type="hidden" name="url" value="<?php echo $u;?>"><span id="title">
-百度谷歌一起搜：</span><input type="text" name="s" size="80" value="<?php echo $word;?>" />&nbsp;&nbsp;<input type="submit" value="搜索" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;技术支持：<a href="http://www.521php.com" target="_blank">521PHP</a>
+百度谷歌一起搜：</span><input type="text" name="s" size="40" value="<?php echo $word;?>" />&nbsp;&nbsp;<input type="submit" value="搜索" />
+<span style="float:right;margin-right:100px">
+<script type="text/javascript">
+    /*百度谷歌一起搜468*15 创建于 2014-09-03*/
+    var cpro_id = "u1698110";
+</script>
+<script src="http://cpro.baidustatic.com/cpro/ui/c.js" type="text/javascript"></script>
+
+</span> 
+ 
+技术支持：<a href="http://www.521php.com" target="_blank">521PHP</a>
 </form></div>
 <div id="zong">
 	<span id="left">

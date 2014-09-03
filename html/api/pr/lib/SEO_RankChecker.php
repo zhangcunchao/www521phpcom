@@ -120,7 +120,8 @@ class SEO_RankChecker
 	public function getIndexedGoogle()
 	{
 		$url = $this->url;
-		$url = 'https://www.google.com.tw/search?q=site%3A'.urlencode($url);
+		//$url = 'https://www.google.com.tw/search?q=site%3A'.urlencode($url);
+		$url = 'http://209.116.186.231/#q=site%3A'.urlencode($url);
 		$data = $this->getContent($url);
 		preg_match('/找到约([0-9\,]+)条/si', $data, $p);
 		$value = isset($p[1]) ? $this->toInt($p[1]) : 0;
@@ -135,7 +136,8 @@ class SEO_RankChecker
 	public function getBacklinksGoogle()
 	{
 		$url = $this->url;
-		$url = 'http://www.google.com/search?q=link%3A'.urlencode($url);
+		//$url = 'http://www.google.com/search?q=link%3A'.urlencode($url);
+		$url = 'http://209.116.186.231/#q=link%3A'.urlencode($url);
 		$data = $this->getContent($url);
 		preg_match('/About (.*) results/si', $data, $p);
 		$value = isset($p[1]) ? $this->toInt($p[1]) : 0;
