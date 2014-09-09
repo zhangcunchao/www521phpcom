@@ -11,8 +11,10 @@ if($url){
 		echo $file;
 	}else{
 		$w = @file_get_contents("http://$url/",0,null,0,2000);
-		@preg_match('|<link rel="shortcut icon" href="(.*?)" />|',$w,$a);
-		if($a[1]){
+		//@preg_match('|<link rel=\"shortcut icon\" href=\"(.*?)\".*>|ius',$w,$a);
+		@preg_match('|href=\"(.*?)\.ico\"|i',$w,$a);
+                if($a[1]){
+                        $a[1] .='.ico';
 			$f = @file_get_contents($a[1]);
 			if($f){
 				echo $f;
