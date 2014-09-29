@@ -32,7 +32,7 @@
                             	<li class="mrinc name"><?php the_author(); ?></li>
                                 <li class="mrinc date"><?php the_time(__('Y')) ?>-<?php the_time(__('m')) ?>-<?php the_time(__('j')) ?></li>
                                 <li class="mrinc folder"><?php the_category(','); ?></li>
-                                <LI class="mrinc browse"><a href="#">浏览:<?php echo getPostViews(get_the_ID()); ?></a></LI>
+                                <LI class="mrinc browse"><a href="#">浏览:<script src="/wp-view.php?id=<?php echo get_the_ID();/*getPostViews(get_the_ID());*/ ?>&add=true"></script></a></LI>
                           		<LI class="mrinc like"><?php comments_popup_link('无评论', '评论:1 ', '评论:%'); ?></LI>
                                 <li class="mrinc admin"><?php edit_post_link(); ?></li>
                             </ul>

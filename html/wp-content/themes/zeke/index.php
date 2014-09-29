@@ -43,7 +43,7 @@
                   </div><!--toolBar-->
                     <div class="toolBar">
                     	<UL>
-                        	<LI class="mrinc2 browse2"><a href="#">浏览:<?php echo getPostViews(get_the_ID()); ?></a></LI>
+                        	<LI class="mrinc2 browse2"><a href="#">浏览:<script src="/wp-view.php?id=<?php echo get_the_ID();?>"></script></a></LI>
                             <LI class="mrinc2 like2"><?php comments_popup_link('无评论', '评论:1 ', '评论:%'); ?></LI>
                             <LI class="mrinc2 share2" onmouseover=share_more(<?php the_ID(); ?>,this);><A href="javascript:;">分享到...</A> </LI>
                             <LI class="mrinc2 more"><A href="<?php echo get_permalink(); ?>" title="阅读全文" class="moretx"><span class="morehover" style="opacity: 0; "></span></A></LI>
