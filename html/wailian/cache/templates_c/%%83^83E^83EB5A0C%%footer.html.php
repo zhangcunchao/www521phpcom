@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.25, created on 2014-08-13 17:08:57
+<?php /* Smarty version 2.6.25, created on 2014-10-08 12:00:00
          compiled from www/footer.html */ ?>
 <div class="tags"><div>注意：本站从未表明收录成人站|垃圾站和其他一些不合法网站的意愿，此类站不收录。<br></div></div>
 <form action="/<?php echo $this->_tpl_vars['css']; ?>
@@ -14,11 +14,6 @@
 var cpro_id = "u1658531";
 </script>
 <script src="http://cpro.baidustatic.com/cpro/ui/f.js" type="text/javascript"></script>
-  <script type="text/javascript">
-    /*300*250 快照页创建于 2014-08-13*/
-    var cpro_id = "u1658559";
-</script>
-<script src="http://cpro.baidustatic.com/cpro/ui/s.js" type="text/javascript"></script>
 <script type="text/javascript" src="http://www.521php.com/api/tz/"></script>
 <div style="display:none">
 <script src="http://s96.cnzz.com/stat.php?id=4200165&web_id=4200165" language="JavaScript"></script>
