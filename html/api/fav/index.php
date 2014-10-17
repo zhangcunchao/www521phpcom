@@ -41,6 +41,7 @@ if($url){
                     echo $f2;
 		}
 	}
+        if($f2)
         @file_put_contents($fav,$f2);
 }else{
 	header("Content-Type:text/html;charset=utf-8");
@@ -50,6 +51,7 @@ if($url){
 v2.0升级：
 此接口可以直接放到img的src之后使用，即<pre>&ltimg src="http://www.521php.com/api/fav/?url=www.521php.com"&gt</pre><br /><br />
 本接口会对查询过的域名做缓存，缓存每周日删除一次，如果要手动删除缓存，请使用下面接口<br />
+缓存目录为：<a href="http://www.521php.com/api/fav/images/" target="_blank">http://www.521php.com/api/fav/images/</a><br>
 <form action="del.php">
 域名，不加http:<input type="test" name="host" value="" /><br />
 <input type="submit" value="提交" >
