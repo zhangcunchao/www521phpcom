@@ -113,6 +113,7 @@ find /path -type d -exec chmod 755 {} \;  //设置目录权限为755
 sed -n/-i "s/a/b/g" file
 awk -F ' ' '{printf}'
 cat access_20130704.log | awk '{print $1}'| sort | uniq -c | sort -nr | head -20
+cat www.521php.com.log |grep '/api/fav/' | awk '{print $11}'| sort | uniq  | awk -F'[/:]' '{print $4}'|uniq
 
 2.11、文件操作
 awk -F "=" 'BEGIN {count=0;}{count=count+$3;}END {print "count is ", count}' log.txt
