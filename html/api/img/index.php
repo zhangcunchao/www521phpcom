@@ -26,6 +26,6 @@ function curl_json($url,$data_string=''){
 		echo  $html = curl_json($p);
 	}else{
 		echo 'like this <br />';
-                echo '<pre>img src="http://www.521php.com/api/img/index.php?p=http://www.521php.com/logo.png"</pre>';
+                echo '<pre>&ltimg src="http://www.521php.com/api/img/index.php?p=http://www.521php.com/logo.png" &gt</pre>';
 	}
 ?> 
