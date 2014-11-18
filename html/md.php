@@ -23,7 +23,7 @@
 		<?php
 			$dir = opendir($dir);
 			while (($f = readdir($dir)) !== false){
-				if('.' !=$f || '..' != $f){
+				if('.' !=$f && '..' != $f){
 				$href = $f;
 				if(is_dir($dir.$f))
 				$href = $f.'/index.md';
@@ -33,7 +33,7 @@
 				<span class="octicon octicon-file-directory"></span>
 			  </td>
 			  <td class="content">
-				<span class="css-truncate css-truncate-target"><a href="/zhangcunchao/www521phpcom/tree/master/bak/sql" class="js-directory-link" title=""><?php echo $file;?></a></span>
+				<span class="css-truncate css-truncate-target"><a href="<?php echo $href;?>" class="js-directory-link" title=""><?php echo $file;?></a></span>
 			  </td>
 			  <td class="message">
 				<span class="css-truncate css-truncate-target">
