@@ -1,4 +1,7 @@
 <?php
+   $file = @$_GET['file'];
+   if(!is_file($file))
+   header("HTTP/1.0 404 Not Found");
    header("Content-type: text/html; charset=utf-8");
 ?>
 <link href="https://assets-cdn.github.com/assets/github-59da74dcbe2f1d555e306461652274f8741238a64e7b1fe8cc5a286232044835.css" media="all" rel="stylesheet" type="text/css">
@@ -8,7 +11,6 @@
 <br />
 <article class="markdown-body entry-content" itemprop="mainContentOfPage">
 <?php
-   $file = @$_GET['file'];
    echo system('/usr/bin/kramdown  '.$file);
 ?>
 </article>
