@@ -33,7 +33,7 @@
             <a class="header-nav-link" href="/archives/category/tj/" data-ga-click="Header, go to gist, text:gist">推荐文章</a>
           </li>
           <li class="header-nav-item">
-            <a class="header-nav-link" href="/xiangce/" data-ga-click="Header, go to blog, text:blog">相册</a>
+            <a class="header-nav-link" href="/xiangce/" target="_blank" data-ga-click="Header, go to blog, text:blog">相册</a>
           </li>
 		  <li class="header-nav-item">
             <a class="header-nav-link" href="/flink/" data-ga-click="Header, go to blog, text:blog">兄弟链</a>
