@@ -9,9 +9,7 @@
    $odir = rtrim($file,$filename);
 ?>
 <head>
-<title>
-<?php echo $filename;?>
-</title>
+<title><?php echo $filename;?></title>
 <link href="https://assets-cdn.github.com/assets/github-59da74dcbe2f1d555e306461652274f8741238a64e7b1fe8cc5a286232044835.css" media="all" rel="stylesheet" type="text/css">
 <link href="https://assets-cdn.github.com/assets/github2-22a0054564248c6dd87336e91bca068b1ab49e28ee1062519b3a0722d29da804.css" media="all" rel="stylesheet" type="text/css">
 </head>
@@ -19,7 +17,6 @@
 <div class="header header-logged-in true" role="banner">
   <div class="container clearfix">
     <a class="header-logo-invertocat" href="/" data-hotkey="g d" aria-label="Homepage" ga-data-click="Header, go to dashboard, icon:logo">
-  <span class="mega-octicon octicon-mark-github"></span>
 </a>
 
       <ul class="header-nav left" role="navigation">
@@ -63,7 +60,6 @@
 		?>
 			<tr>
 			  <td class="icon">
-				<span class="octicon octicon-file-directory"></span>
 			  </td>
 			  <td class="content">
 				<span class="css-truncate css-truncate-target"><a href="<?php echo $href;?>" class="js-directory-link" title=""><?php echo $f;?></a></span>
