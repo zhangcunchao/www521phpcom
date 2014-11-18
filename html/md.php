@@ -5,7 +5,7 @@
    header("Content-type: text/html; charset=utf-8");
    $filename = strrchr($file,'/');
    $filename = ltrim($filename,'/');
-   $dir = rtrim($file,$filename);
+   $odir = rtrim($file,$filename);
 ?>
 <head>
 <title>
@@ -21,13 +21,13 @@
 	  <table class="files" data-pjax="">
 		<tbody>
 		<?php
-			$dir = opendir($dir);
+			$dir = opendir($odir);
 			while (($f = readdir($dir)) !== false){
 				if('.' !=$f && '..' != $f){
 				$href = $f;
 				if(is_dir($dir.$f))
 				$href = $f.'/index.md';
-				$f = ltrim($f,$dir);
+				$f = ltrim($f,$odir);
 		?>
 			<tr>
 			  <td class="icon">
