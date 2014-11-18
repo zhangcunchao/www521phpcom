@@ -19,7 +19,7 @@
 <div class="header header-logged-in true" role="banner">
   <div class="container clearfix">
     <a class="header-logo-invertocat" href="/" data-hotkey="g d" aria-label="Homepage" ga-data-click="Header, go to dashboard, icon:logo">
-  <span class="mega-octicon octicon-mark-github"></span>
+  <span class="mega-octicon octicon-mark-github">首页</span>
 </a>
 
       <ul class="header-nav left" role="navigation">
@@ -99,4 +99,10 @@
 		</div>
 	</div>
 </div>
+<span style="display:none"><script src="http://s96.cnzz.com/stat.php?id=4200165&web_id=4200165" language="JavaScript"></script></span>
+<script type="text/javascript">
+    /*120*300 创建于 2014-08-12*/
+var cpro_id = "u1655076";
+</script>
+<script src="http://cpro.baidustatic.com/cpro/ui/f.js" type="text/javascript"></script>
 </body>
