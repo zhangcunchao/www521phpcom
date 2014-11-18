@@ -27,6 +27,7 @@
 				$href = $f;
 				if(is_dir($dir.$f))
 				$href = $f.'/index.md';
+				$f = ltrim($f,$dir);
 		?>
 			<tr>
 			  <td class="icon">
