@@ -27,14 +27,13 @@
 				$href = $f;
 				if(is_dir($dir.$f))
 				$href = $f.'/index.md';
-				$f = ltrim($f,$dir);
 		?>
 			<tr>
 			  <td class="icon">
 				<span class="octicon octicon-file-directory"></span>
 			  </td>
 			  <td class="content">
-				<span class="css-truncate css-truncate-target"><a href="<?php echo $href;?>" class="js-directory-link" title=""><?php echo $file;?></a></span>
+				<span class="css-truncate css-truncate-target"><a href="<?php echo $href;?>" class="js-directory-link" title=""><?php echo $f;?></a></span>
 			  </td>
 			  <td class="message">
 				<span class="css-truncate css-truncate-target">
