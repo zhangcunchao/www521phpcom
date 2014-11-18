@@ -6,7 +6,7 @@
 
         <p><span>Copy right © 2012<strong><a href="http://www.521php.com">张存超php个人博客</a></strong> 京ICP备14032588号-1</span></p>
 
-        <p><span>Powered by WordPres | <a href="http://www.521php.com/sitemap.html" target="_blank">百度地图</a> | <a href="http://www.521php.com/sitemap_baidu.xml" target="_blank">谷歌地图</a></span></p>
+        <p><span>Powered by WordPress | <a href="http://www.521php.com/sitemap.html" target="_blank">百度地图</a> | <a href="http://www.521php.com/sitemap_baidu.xml" target="_blank">谷歌地图</a></span></p>
 		<p> <script src="http://s96.cnzz.com/stat.php?id=4200165&web_id=4200165" language="JavaScript"></script></p>
         </div>
     </div>

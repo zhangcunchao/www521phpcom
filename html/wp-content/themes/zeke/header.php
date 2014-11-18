@@ -7,7 +7,7 @@
 <?php
 include('includes/seo.php');
  ?>
-<base target="_blank" />
+<!--<base target="_blank" />-->
 <link href="<?php bloginfo('stylesheet_url'); ?>" rel="stylesheet" type="text/css" />
 <link href="<?php bloginfo('template_directory'); ?>/miaov_style.css" rel="stylesheet" type="text/css" />
 <?php wp_head(); ?>
