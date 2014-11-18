@@ -19,13 +19,16 @@
 <div class="header header-logged-in true" role="banner">
   <div class="container clearfix">
     <a class="header-logo-invertocat" href="/" data-hotkey="g d" aria-label="Homepage" ga-data-click="Header, go to dashboard, icon:logo">
-  <span class="mega-octicon octicon-mark-github">首页</span>
+  <span class="mega-octicon octicon-mark-github"></span>
 </a>
 
       <ul class="header-nav left" role="navigation">
         <li class="header-nav-item explore">
-          <a class="header-nav-link" href="/archives/category/lovephp/" data-ga-click="Header, go to explore, text:explore">我爱php</a>
+          <a class="header-nav-link" href="/archives/category/lovephp/" data-ga-click="Header, go to explore, text:explore">站点首页</a>
         </li>
+		<li class="header-nav-item">
+            <a class="header-nav-link" href="/archives/category/lovephp/" data-ga-click="Header, go to gist, text:gist">我爱php</a>
+          </li>
           <li class="header-nav-item">
             <a class="header-nav-link" href="/archives/category/tj/" data-ga-click="Header, go to gist, text:gist">推荐文章</a>
           </li>
