@@ -27,6 +27,7 @@
 				$href = $f;
 				if(is_dir($dir.$f))
 				$href = $f.'/index.md';
+				$f = ltrim($f,$dir);
 		?>
 			<tr>
 			  <td class="icon">
@@ -40,7 +41,7 @@
 				</span>
 			  </td>
 			  <td class="age">
-				<span class="css-truncate css-truncate-target"><time datetime="2014-11-17T17:00:09Z" is="time-ago" title="2014年11月18日 GMT+8上午1:00">9 hours ago</time></span>
+				<span class="css-truncate css-truncate-target"></span>
 			  </td>
 			</tr>
 			<?php
