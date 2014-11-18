@@ -25,9 +25,8 @@
 			while (($f = readdir($dir)) !== false){
 				if('.' !=$f && '..' != $f){
 				$href = $f;
-				if(is_dir($dir.$f))
+				if(is_dir($odir.$f))
 				$href = $f.'/index.md';
-				$f = ltrim($f,$odir);
 		?>
 			<tr>
 			  <td class="icon">
