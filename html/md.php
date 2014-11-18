@@ -30,7 +30,7 @@
 					$href = $f.'/index.md';
 					$type = 'Dir';
 				}
-				$time = date('Y-m-d H:i:s',filemtime($f));
+				$time = date('Y-m-d H:i:s',filemtime($odir.$f));
 		?>
 			<tr>
 			  <td class="icon">
