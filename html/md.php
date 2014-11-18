@@ -3,6 +3,7 @@
    if(!is_file($file))
    header("HTTP/1.0 404 Not Found");
    header("Content-type: text/html; charset=utf-8");
+   date_default_timezone_set('Asia/Shanghai');
    $filename = strrchr($file,'/');
    $filename = ltrim($filename,'/');
    $odir = rtrim($file,$filename);
