@@ -16,6 +16,31 @@
 <link href="https://assets-cdn.github.com/assets/github2-22a0054564248c6dd87336e91bca068b1ab49e28ee1062519b3a0722d29da804.css" media="all" rel="stylesheet" type="text/css">
 </head>
 <body>
+<div class="header header-logged-in true" role="banner">
+  <div class="container clearfix">
+    <a class="header-logo-invertocat" href="/" data-hotkey="g d" aria-label="Homepage" ga-data-click="Header, go to dashboard, icon:logo">
+  <span class="mega-octicon octicon-mark-github"></span>
+</a>
+
+      <ul class="header-nav left" role="navigation">
+        <li class="header-nav-item explore">
+          <a class="header-nav-link" href="/archives/category/lovephp/" data-ga-click="Header, go to explore, text:explore">我爱php</a>
+        </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="/archives/category/tj/" data-ga-click="Header, go to gist, text:gist">推荐文章</a>
+          </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="/xiangce/" data-ga-click="Header, go to blog, text:blog">相册</a>
+          </li>
+		  <li class="header-nav-item">
+            <a class="header-nav-link" href="/flink/" data-ga-click="Header, go to blog, text:blog">兄弟链</a>
+          </li>
+        <li class="header-nav-item">
+          <a class="header-nav-link" href="/message/" data-ga-click="Header, go to help, text:help">关于我</a>
+        </li>
+      </ul>
+  </div>
+</div>
 <div class="container">
 	<div id="js-repo-pjax-container" class="repository-content context-loader-container" data-pjax-container="">
 	<div class="file-wrap">
