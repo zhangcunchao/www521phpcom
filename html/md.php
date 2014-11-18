@@ -28,7 +28,7 @@
 				$type = 'File';
 				if(is_dir($odir.$f)){
 					$href = $f.'/index.md';
-					$type = 'Dir'
+					$type = 'Dir';
 				}
 				$time = date('Y-m-d H:i:s',filemtime($f));
 		?>
