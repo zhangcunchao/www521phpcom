@@ -22,11 +22,11 @@
 		<tbody>
 		<?php
 			$dir = opendir($dir);
-			while (($file = readdir($dir)) !== false){
-				if('.' !=$file || '..' !=$file){
-				$href = $file;
-				if(is_dir($dir.$file))
-				$href = $file.'/index.md';
+			while (($f = readdir($dir)) !== false){
+				if('.' !=$f || '..' != $f){
+				$href = $f;
+				if(is_dir($dir.$f))
+				$href = $f.'/index.md';
 		?>
 			<tr>
 			  <td class="icon">
