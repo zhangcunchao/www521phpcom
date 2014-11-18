@@ -25,8 +25,12 @@
 			while (($f = readdir($dir)) !== false){
 				if('.' !=$f && '..' != $f){
 				$href = $f;
-				if(is_dir($odir.$f))
-				$href = $f.'/index.md';
+				$type = 'File';
+				if(is_dir($odir.$f)){
+					$href = $f.'/index.md';
+					$type = 'Dir'
+				}
+				$time = date('Y-m-d H:i:s',filemtime($f));
 		?>
 			<tr>
 			  <td class="icon">
@@ -37,10 +41,11 @@
 			  </td>
 			  <td class="message">
 				<span class="css-truncate css-truncate-target">
+				<?php echo $type;?>
 				</span>
 			  </td>
 			  <td class="age">
-				<span class="css-truncate css-truncate-target"></span>
+				<span class="css-truncate css-truncate-target"><?php echo $time;?></span>
 			  </td>
 			</tr>
 			<?php
