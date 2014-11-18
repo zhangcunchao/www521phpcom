@@ -17,8 +17,41 @@
 <body>
 <div class="container">
 	<div id="js-repo-pjax-container" class="repository-content context-loader-container" data-pjax-container="">
+	<div class="file-wrap">
+	  <table class="files" data-pjax="">
+		<tbody>
+		<?php
+			$dir = opendir($dir);
+			while (($file = readdir($dir)) !== false){
+				if('.' !=$file || '..' !=$file){
+				$href = $file;
+				if(is_dir($dir.$file))
+				$href = $file.'/index.md';
+		?>
+			<tr>
+			  <td class="icon">
+				<span class="octicon octicon-file-directory"></span>
+			  </td>
+			  <td class="content">
+				<span class="css-truncate css-truncate-target"><a href="/zhangcunchao/www521phpcom/tree/master/bak/sql" class="js-directory-link" title=""><?php echo $file;?></a></span>
+			  </td>
+			  <td class="message">
+				<span class="css-truncate css-truncate-target">
+				</span>
+			  </td>
+			  <td class="age">
+				<span class="css-truncate css-truncate-target"><time datetime="2014-11-17T17:00:09Z" is="time-ago" title="2014年11月18日 GMT+8上午1:00">9 hours ago</time></span>
+			  </td>
+			</tr>
+			<?php
+				}
+			}
+		    ?>
+		</tbody>
+	  </table>
+	</div>
 		<div class="file-box">
-                    <div class="file">
+           <div class="file">
 			<div class="meta clearfix">
 			  <div class="info file-name">
 				  <span><?php echo $filename;?></span>
