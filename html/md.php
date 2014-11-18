@@ -4,6 +4,7 @@
    header("HTTP/1.0 404 Not Found");
    header("Content-type: text/html; charset=utf-8");
    $filename = strrchr($file,'/');
+   $filename = ltrim($filename,'/');
    $dir = rtrim($file,$filename);
 ?>
 <head>
@@ -17,6 +18,7 @@
 <div class="container">
 	<div id="js-repo-pjax-container" class="repository-content context-loader-container" data-pjax-container="">
 		<div class="file-box">
+                    <div class="file">
 			<div class="meta clearfix">
 			  <div class="info file-name">
 				  <span><?php echo $filename;?></span>
@@ -29,6 +31,7 @@
 				?>
 				</article>
 			</div>
+		   </div>
 		</div>
 	</div>
 </div>
