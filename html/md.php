@@ -5,7 +5,7 @@
    header("Content-type: text/html; charset=utf-8");
    date_default_timezone_set('Asia/Shanghai');
    function markUrl($url){
-	   echo $url;
+	   echo $url.'<br />';
 	  $root = '/data/www/www.521php.com/html/';
 	  $url  = rtrim($url,'/');
 	  $url  = ltrim($url,$root);
@@ -101,7 +101,7 @@
            <div class="file">
 			<div class="meta clearfix">
 			  <div class="info file-name">
-				  <span><?php echo markUrl($odir);?>/<?php echo $filename;?></span>
+				  <span><?php echo markUrl($file);?></span>
 			  </div>
 			</div>
 			<div id="readme" class="blob instapaper_body">
