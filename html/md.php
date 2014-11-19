@@ -4,6 +4,18 @@
    header("HTTP/1.0 404 Not Found");
    header("Content-type: text/html; charset=utf-8");
    date_default_timezone_set('Asia/Shanghai');
+   function markUrl($url){
+	  $root = '/data/www/www.521php.com/html/';
+	  $url  = ltrim($url,$root);
+	  $d = explode('/',$url);
+	  $u = '';
+	  $l = '';
+	  foreach($d as $val){
+		$u .= '/'.$val;
+		$l .= '/<a href="'.$u.'">'.$val.'</a>'; 
+	  }
+	  return $l;
+   }
    $filename = strrchr($file,'/');
    $filename = ltrim($filename,'/');
    $odir = rtrim($file,$filename);
@@ -87,7 +99,7 @@
            <div class="file">
 			<div class="meta clearfix">
 			  <div class="info file-name">
-				  <span><?php echo $filename;?></span>
+				  <span><?php echo markUrl($odir);?>/<?php echo $filename;?></span>
 			  </div>
 			</div>
 			<div id="readme" class="blob instapaper_body">
