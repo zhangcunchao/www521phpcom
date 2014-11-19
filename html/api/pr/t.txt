@@ -1,4 +1,4 @@
-<!doctype html><!--status ok--><html><head><meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1"><meta http-equiv="content-type" content="text/html;charset=utf-8"><title>site:yandex.ru_百度搜索</title><style data-for="result"  id="css_newi_result">body{color:#333;background:#fff;padding:6px 0 0;margin:0;position:relative;min-width:900px}body,th,td,.p1,.p2{font-family:arial}p,form,ol,ul,li,dl,dt,dd,h3{margin:0;padding:0;list-style:none}input{padding-top:0;padding-bottom:0;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box}table,img{border:0}td{font-size:9pt;line-height:18px}em{font-style:normal;color:#c00}a em{text-decoration:underline}cite{font-style:normal;color:#008000}.m,a.m{color:#666}a.m:visited{color:#606}.g,a.g{color:#008000}.c{color:#77c}.f14{font-size:14px}.f10{font-size:10.5pt}.f16{font-size:16px}.f13{font-size:13px}.bg{background-image:url(http://s1.bdstatic.com/r/www/cache/static/global/img/icons_3bfb8e45.png);background-repeat:no-repeat;_background-image:url(http://s1.bdstatic.com/r/www/cache/static/global/img/icons_f72fb1cc.gif);background-repeat:no-repeat}.bg_tuiguang_browser{width:16px;height:16px;background-position:-600px 0;display:inline-block;vertical-align:text-bottom;font-style:normal;overflow:hidden;margin-right:5px}
+<!doctype html><!--status ok--><html><head><meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1"><meta http-equiv="content-type" content="text/html;charset=utf-8"><title>site:www.516680.com_百度搜索</title><style data-for="result"  id="css_newi_result">body{color:#333;background:#fff;padding:6px 0 0;margin:0;position:relative;min-width:900px}body,th,td,.p1,.p2{font-family:arial}p,form,ol,ul,li,dl,dt,dd,h3{margin:0;padding:0;list-style:none}input{padding-top:0;padding-bottom:0;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box}table,img{border:0}td{font-size:9pt;line-height:18px}em{font-style:normal;color:#c00}a em{text-decoration:underline}cite{font-style:normal;color:#008000}.m,a.m{color:#666}a.m:visited{color:#606}.g,a.g{color:#008000}.c{color:#77c}.f14{font-size:14px}.f10{font-size:10.5pt}.f16{font-size:16px}.f13{font-size:13px}.bg{background-image:url(http://s1.bdstatic.com/r/www/cache/static/global/img/icons_3bfb8e45.png);background-repeat:no-repeat;_background-image:url(http://s1.bdstatic.com/r/www/cache/static/global/img/icons_f72fb1cc.gif);background-repeat:no-repeat}.bg_tuiguang_browser{width:16px;height:16px;background-position:-600px 0;display:inline-block;vertical-align:text-bottom;font-style:normal;overflow:hidden;margin-right:5px}
 .bg_tuiguang_browser_big{width:56px;height:56px;position:absolute;left:10px;top:10px;background-position:-600px -24px}.bg_tuiguang_weishi{width:56px;height:56px;position:absolute;left:10px;top:10px;background-position:-672px -24px}#u,#head,#tool,#search,#foot{font-size:12px}.logo{width:117px;height:38px;cursor:pointer}.p1{line-height:120%;margin-left:-12pt}.p2{width:100%;line-height:120%;margin-left:-12pt}#wrapper{_zoom:1}#container{word-break:break-all;word-wrap:break-word}.container_s{width:1002px}.container_l{width:1222px}#content_left{width:636px;float:left;padding-left:35px}#content_right{border-left:1px solid #e1e1e1;float:right}.container_s #content_right{width:271px}.container_l #content_right{width:434px}.content_none{padding-left:35px}#u{color:#999;white-space:nowrap;position:absolute;right:10px;top:4px;z-index:299}#u a{color:#00c;margin:0 5px}#u .reg{margin:0}#u .last{margin-right:0}#u .un{font-weight:bold;margin-right:5px}#u ul{width:100%;background:#fff;border:1px solid #9b9b9b}
 #u li{height:25px}#u li a{width:100%;height:25px;line-height:25px;display:block;text-align:left;text-decoration:none;text-indent:6px;margin:0;filter:none\9}#u li a:hover{background:#ebebeb}#u li.nl{border-top:1px solid #ebebeb}#user{position:relative;display:inline-block}#user_center{position:relative;display:inline-block}#user_center .user_center_btn{margin-right:5px}.usermenu{width:64px;position:absolute;right:7px;_right:2px;top:15px;top:14px\9;*top:15px;padding-top:4px;display:none;*background:#fff}#head{padding-left:35px;margin-bottom:20px;width:900px}.fm{clear:both;position:relative;z-index:297}.nv a,.nv b,.btn,#page,#more{font-size:14px}.s_nav{height:45px}.s_nav .s_logo{margin-right:20px;float:left}.s_nav .s_logo img{border:0;display:block}.s_tab{line-height:18px;padding:20px 0 0;float:left}.s_nav a{color:#00c;font-size:14px}.s_nav b{font-size:14px}.s_ipt_wr{width:536px;height:30px;display:inline-block;margin-right:5px;background-position:0 -96px;border:1px solid #b6b6b6;border-color:#7b7b7b #b6b6b6 #b6b6b6 #7b7b7b;vertical-align:top}
 .s_ipt{width:523px;height:22px;font:16px/18px arial;line-height:22px\9;margin:5px 0 0 7px;padding:0;background:#fff;border:0;outline:0;-webkit-appearance:none}.s_btn{width:95px;height:32px;padding-top:2px\9;font-size:14px;padding:0;background-color:#ddd;background-position:0 -48px;border:0;cursor:pointer}.s_btn_h{background-position:-240px -48px}.s_btn_wr{width:97px;height:34px;display:inline-block;background-position:-120px -48px;*position:relative;z-index:0;vertical-align:top}.sethf{padding:0;margin:0;font-size:14px}.set_h{display:none;behavior:url(#default#homepage)}.set_f{display:none}.shouji{margin-left:19px}.shouji a{text-decoration:none}.bdsug{position:absolute;width:536px;background:#fff;display:none;border:1px solid #817f82}.bdsug li{width:520px;color:#000;font:14px arial;line-height:25px;padding:0 8px;position:relative;cursor:default}.bdsug li.bdsug-s{background:#ebebeb}#head .bdsug{top:31px}#search form{position:relative}#search form .bdsug{bottom:33px}.bdsug-store span,.bdsug-store b{color:#7a77c8}
@@ -48,10 +48,230 @@ a.icon-gw:active{height:15px;_height:13px;line-height:15px;_line-height:13px;pad
 .c-tool-rate{background-position:-144px -144px}.c-tool-conversion{background-position:-288px -144px}.c-tool-ads{background-position:-360px -144px}#seth{display:none;behavior:url(#default#homepage)}#setf{display:none}#sekj{margin-left:14px}#st,#sekj{display:none}.s_ipt_wr{border:1px solid #b6b6b6;border-color:#7b7b7b #b6b6b6 #b6b6b6 #7b7b7b;background:#fff;display:inline-block;vertical-align:top;width:539px;margin-right:0;border-right-width:0;border-color:#b8b8b8 transparent #ccc #b8b8b8;overflow:hidden}.wrapper_s .s_ipt_wr{width:439px}.wrapper_s .s_ipt{width:434px}.wrapper_s .s_ipt_tip{width:434px}.s_ipt_wr:hover,.s_ipt_wr.ipthover{border-color:#999 transparent #b3b3b3 #999}.s_ipt_wr.iptfocus{border-color:#4791ff transparent #4791ff #4791ff}.s_ipt_tip{color:#aaa;position:absolute;z-index:10;font:16px/22px arial;height:32px;line-height:32px;padding-left:7px;overflow:hidden;width:526px}.s_ipt{width:526px;height:22px;font:16px/18px arial;line-height:22px\9;margin:6px 0 0 7px;padding:0;background:transparent;border:0;outline:0;-webkit-appearance:none}
 #kw{position:relative}#u .username i{background-position:-408px -144px}.bdpfmenu,.usermenu{border:1px solid #d1d1d1;position:absolute;width:105px;top:36px;padding:1px 0;z-index:302;overflow:hidden;box-shadow:1px 1px 5px #d1d1d1;-webkit-box-shadow:1px 1px 5px #d1d1d1;-moz-box-shadow:1px 1px 5px #d1d1d1;-o-box-shadow:1px 1px 5px #d1d1d1}.bdpfmenu{font-size:12px}.bdpfmenu a,.usermenu a{display:block;text-align:left;margin:0!important;padding:0 9px;line-height:26px;text-decoration:none}.briiconsbg{background-repeat:no-repeat;background-size:300px 18px;background-image:url(http://s1.bdstatic.com/r/www/cache/static/home/img/icons_c3b33b92.png);background-image:url(http://s1.bdstatic.com/r/www/cache/static/home/img/icons_0a1fc6ac.gif)\9}#u{z-index:301;position:absolute;right:0;top:0;margin:25px 9px 5px 0;padding:0}.wrapper_s #u{margin-right:3px}#u a{text-decoration:underline;color:#333;margin:0 7px}.wrapper_s #u a{margin-right:0 6px}#u div a{text-decoration:none}#u a:hover{text-decoration:underline}
 #u .back_org{color:#666;float:left;display:inline-block;height:24px;line-height:24px}#u .bri{display:inline-block;width:24px;height:24px;float:left;line-height:24px;color:transparent;background:url(http://s1.bdstatic.com/r/www/cache/static/home/img/icons_c3b33b92.png) no-repeat 4px 3px;background-size:300px 18px;background-image:url(http://s1.bdstatic.com/r/www/cache/static/home/img/icons_0a1fc6ac.gif)\9;overflow:hidden}#u .bri:hover,#u .bri.brihover{background-position:-18px 3px}#mcon #imesicon{background-position:-408px -144px;margin-left:0}#mcon span{color:#333}.bdpfmenu a:link,.bdpfmenu a:visited,#u .usermenu a:link,#u .usermenu a:visited{background:white;color:#333}.bdpfmenu a:hover,.bdpfmenu a:active,#u .usermenu a:hover,#u .usermenu a:active{background:#38f;text-decoration:none;color:white}.bdpfmenu{width:70px}.usermenu{width:68px;right:8px}#wrapper .bdnuarrow{width:24px;height:13px;position:absolute;z-index:303;top:24px;background:url(http://s1.bdstatic.com/r/www/cache/static/home/img/icons_c3b33b92.png) no-repeat -90px -1px;background-size:300px 21px;background-image:url(http://s1.bdstatic.com/r/www/cache/static/home/img/icons_0a1fc6ac.gif)\9}
-#prefpanel{background:#fafafa;display:none;opacity:0;position:fixed;_position:absolute;top:-359px;z-index:500;width:100%;min-width:960px;height:359px;border-bottom:1px solid #ebebeb}#prefpanel form{_width:850px}#kw_tip{cursor:default;display:none}#bds-message-wrapper{top:43px}.quickdelete-wrap{position:relative;width:100%;height:100%}.quickdelete-wrap input{width:500px}.wrapper_l .quickdelete-wrap input{width:500px}.wrapper_s .quickdelete-wrap input{width:402px}input::-ms-clear{display:none}.quickdelete{width:32px;height:32px;background:url(http://s1.bdstatic.com/r/www/cache/static/global/img/quickdelete_9c14b01a.png) no-repeat;background-position:10px 10px;position:absolute;display:block}.quickdelete:hover{background-position:10px -24px}</style><noscript><meta http-equiv="refresh" content="0; url=/s?wd=site%3ayandex.ru&oq=site%3ayandex.ru&ie=utf-8&rsv_pq=dfb582de0000a072&rsv_t=be3evfjfb8o7vbcifvk4ipac1%2btfkdzv3cmsz65xxwyrrfyhydvfruzqbba&nojs=1&bqid=dfb582de0000a072"/></noscript><script>var hashmatch = document.location.href.match(/#+(.*wd=[^&].+)/);if (hashmatch && hashmatch[0] && hashmatch[1]) {document.location.replace("http://"+location.host+"/s?"+hashmatch[1]);}var bds = {comm:{loginaction : []},se:{},su:{urdata:[],ursendclick:function(){}},util:{},use:{},_base64:{domain : "http://b1.bdstatic.com/",b64exp : -1,pdc : -1}};var al_arr=[];var selfopen = window.open;eval("var open = selfopen;");var isie=navigator.useragent.indexof("msie")!=-1&&!window.opera;var e = bds.ecom= {};bds.util.domain = (function(){var list = {"kankan.baidu.com":"http://kankan.baidu.com","xapp.baidu.com":"http://xapp.baidu.com","dr.dh.baidu.com":"http://dr.dh.baidu.com","xiaodu.baidu.com":"http://xiaodu.baidu.com","s1.bdstatic.com":"http://s1.bdstatic.com","olime.baidu.com":"http://olime.baidu.com","app.baidu.com":"http://app.baidu.com","i.baidu.com":"http://i.baidu.com","c.baidu.com":"http://c.baidu.com","sclick.baidu.com":"http://sclick.baidu.com","nsclick.baidu.com":"http://nsclick.baidu.com","eclick.baidu.com":"http://eclick.baidu.com","api.map.baidu.com":"http://api.map.baidu.com","ecma.bdimg.com":"http://ecma.bdimg.com","t10.baidu.com":"http://t10.baidu.com","t11.baidu.com":"http://t11.baidu.com","t12.baidu.com":"http://t12.baidu.com","i7.baidu.com":"http://i7.baidu.com","i8.baidu.com":"http://i8.baidu.com","i9.baidu.com":"http://i9.baidu.com","b1.bdstatic.com":"http://b1.bdstatic.com","su.bdimg.com":"http://su.bdimg.com","opendata.baidu.com":"http://opendata.baidu.com","api.open.baidu.com":"http://api.open.baidu.com","tag.baidu.com":"http://tag.baidu.com","f3.baidu.com":"http://f3.baidu.com","s.share.baidu.com":"http://s.share.baidu.com","bdimg.share.baidu.com":"http://bdimg.share.baidu.com"};var get = function(url) {if(location.protocol === "http") {return url;}var reg = /^(http[s]?:\/\/)?([^\/]+)(.*)/,matches = url.match(reg);url = list.hasownproperty(matches[2])&&(list[matches[2]] + matches[3]) || url;return url;},set = function(kdomain,vdomain) {list[kdomain] = vdomain;}; return {get : get,set : set}})();</script>
+#prefpanel{background:#fafafa;display:none;opacity:0;position:fixed;_position:absolute;top:-359px;z-index:500;width:100%;min-width:960px;height:359px;border-bottom:1px solid #ebebeb}#prefpanel form{_width:850px}#kw_tip{cursor:default;display:none}#bds-message-wrapper{top:43px}.quickdelete-wrap{position:relative;width:100%;height:100%}.quickdelete-wrap input{width:500px}.wrapper_l .quickdelete-wrap input{width:500px}.wrapper_s .quickdelete-wrap input{width:402px}input::-ms-clear{display:none}.quickdelete{width:32px;height:32px;background:url(http://s1.bdstatic.com/r/www/cache/static/global/img/quickdelete_9c14b01a.png) no-repeat;background-position:10px 10px;position:absolute;display:block}.quickdelete:hover{background-position:10px -24px}</style><noscript><meta http-equiv="refresh" content="0; url=/s?wd=site%3awww.516680.com&oq=site%3awww.516680.com&ie=utf-8&rsv_pq=cbf89efb000176cc&rsv_t=4b2drhf%2blcbur1ohenqwfnjfjfqs9fbhu6bfzvgxqhrrvtdhded4zuckeea&nojs=1&bqid=cbf89efb000176cc"/></noscript><script>var hashmatch = document.location.href.match(/#+(.*wd=[^&].+)/);if (hashmatch && hashmatch[0] && hashmatch[1]) {document.location.replace("http://"+location.host+"/s?"+hashmatch[1]);}var bds = {comm:{loginaction : []},se:{},su:{urdata:[],ursendclick:function(){}},util:{},use:{},_base64:{domain : "http://b1.bdstatic.com/",b64exp : -1,pdc : -1}};var al_arr=[];var selfopen = window.open;eval("var open = selfopen;");var isie=navigator.useragent.indexof("msie")!=-1&&!window.opera;var e = bds.ecom= {};bds.util.domain = (function(){var list = {"kankan.baidu.com":"http://kankan.baidu.com","xapp.baidu.com":"http://xapp.baidu.com","dr.dh.baidu.com":"http://dr.dh.baidu.com","xiaodu.baidu.com":"http://xiaodu.baidu.com","s1.bdstatic.com":"http://s1.bdstatic.com","olime.baidu.com":"http://olime.baidu.com","app.baidu.com":"http://app.baidu.com","i.baidu.com":"http://i.baidu.com","c.baidu.com":"http://c.baidu.com","sclick.baidu.com":"http://sclick.baidu.com","nsclick.baidu.com":"http://nsclick.baidu.com","eclick.baidu.com":"http://eclick.baidu.com","api.map.baidu.com":"http://api.map.baidu.com","ecma.bdimg.com":"http://ecma.bdimg.com","t10.baidu.com":"http://t10.baidu.com","t11.baidu.com":"http://t11.baidu.com","t12.baidu.com":"http://t12.baidu.com","i7.baidu.com":"http://i7.baidu.com","i8.baidu.com":"http://i8.baidu.com","i9.baidu.com":"http://i9.baidu.com","b1.bdstatic.com":"http://b1.bdstatic.com","su.bdimg.com":"http://su.bdimg.com","opendata.baidu.com":"http://opendata.baidu.com","api.open.baidu.com":"http://api.open.baidu.com","tag.baidu.com":"http://tag.baidu.com","f3.baidu.com":"http://f3.baidu.com","s.share.baidu.com":"http://s.share.baidu.com","bdimg.share.baidu.com":"http://bdimg.share.baidu.com"};var get = function(url) {if(location.protocol === "http") {return url;}var reg = /^(http[s]?:\/\/)?([^\/]+)(.*)/,matches = url.match(reg);url = list.hasownproperty(matches[2])&&(list[matches[2]] + matches[3]) || url;return url;},set = function(kdomain,vdomain) {list[kdomain] = vdomain;}; return {get : get,set : set}})();</script>
 <script type="text/javascript" data-for="result">if(!window.a){function g(a){return document.getelementbyid(a)}window.bds=window.bds||{};bds.util=bds.util||{};bds.util.getwinwidth=function(){return window.document.documentelement.clientwidth};bds.util.setcontainerwidth=function(){var f=g("container"),b=g("wrapper"),a=function(c,g){g.classname=g.classname.replace(c,"")},e=function(c,g){g.classname=(g.classname+" "+c).replace(/^\s+/g,"")},d=function(c,g){return c.test(g.classname)};if(bds.util.getwinwidth()<1207){if(f){a(/\bcontainer_l\b/g,f);if(!d(/\bcontainer_s\b/,f)){e("container_s",f)}}if(b){a(/\bwrapper_l\b/g,b);if(!d(/\bwrapper_s\b/,b)){e("wrapper_s",b)}}bds.comm.containersize="s"}else{if(f){a(/\bcontainer_s\b/g,f);if(!d(/\bcontainer_l\b/,f)){e("container_l",f)}}if(b){a(/\bwrapper_s\b/g,b);if(!d(/\bwrapper_l\b/,b)){e("wrapper_l",b)}}bds.comm.containersize="l"}};(function(){var c=[],f=false;var b=function(h,g){try{h.call(g)}catch(i){}},d=function(){this.ids=[];this.has=true;this.list=[];this.logs=[];this.loadtimes=[];this.groupdata=[];
 this.mergefns=[];this._currentcontainer=null};window.a=bds.aladdin={};b(d,window.a);bds.ready=function(g){if(typeof g!="function"){return}if(f){b(g)}else{c.push(g)}};bds.doready=function(){f=true;while(c.length){b(c.shift())}};bds.clearready=function(){f=false;c=[]};a.__reset=d;var a=(function(){var g=document.getelementsbytagname("script");return function(){var i=g[g.length-1];if(window.currentscriptelem){i=window.currentscriptelem}var h=i;while(h){if(h.classname){if(/(?:^|\s)result(?:-op)?(?:$|\s)/.test(h.classname)){if(tplname=h.getattribute("tpl")){return h}}}h=h.parentnode}}})(),e=function(g,j,h){var l;if(!g.initindex){l={container:g,data:{},handlers:[]};g.initindex=a.groupdata.length+1;a.groupdata.push(l)}else{l=a.groupdata[g.initindex-1]}if(typeof j=="function"){l.handlers.push(j)}else{if(typeof j=="object"){for(var m in j){if(j.hasownproperty(m)){l.data[m]=j[m]}}}else{l.data[j]=h}}};a.init=a.setup=function(i,h){if(i===undefined||i===null){return}var g=a._currentcontainer||a();if(!g){return
-}e(g,i,h)};a.merge=function(h,g){a.mergefns.push({tplname:h,fn:g})}})()}function ns_c_pj(a,c){var b=encodeuricomponent(window.document.location.href),h="",f="",i="",e=bds.comm.queryenc,d=bds&&bds.util&&bds.util.domain?bds.util.domain.get("http://nsclick.baidu.com"):"http://nsclick.baidu.com",g=window["bd_ps_c"+(new date()).gettime()]=new image();for(v in a){switch(v){case"title":f=encodeuricomponent(a[v].replace(/<[^<>]+>/g,""));break;case"url":f=encodeuricomponent(a[v]);break;default:f=a[v]}h+=v+"="+f+"&"}i="&mu="+b;g.src=d+"/v.gif?pid=201&"+(c||"")+h+"path="+b+"&wd="+e+"&rsv_sid="+bds.comm.sid+"&t="+new date().gettime();return true}function ns_c(a){return ns_c_pj(a,"pj=www&")};</script></head><body link="#0000cc"><div id="wrapper" class="wrapper_l"><script>if(window.bds&&bds.util&&bds.util.setcontainerwidth){bds.util.setcontainerwidth();}</script><div id="head"><div class="head_wrapper"><div class="s_form"><div class="s_form_wrapper"><div id="lg"><img hidefocus="true" src="//www.baidu.com/img/bd_logo1.png" width="270" height="129"></div><a href="/" id="result_logo" onmousedown="return c({'fm':'tab','tab':'logo'})"><img src="//www.baidu.com/img/baidu_jgylogo3.gif" alt="到百度首页" title="到百度首页"></a><form id="form" name="f" action="/s" class="fm"><input type="hidden" name="ie" value="utf-8"><input type="hidden" name="f" value="8"><input type="hidden" name="rsv_bp" value="1"><input type=hidden name=ch value=""><input type=hidden name=tn value="baidu"><input type=hidden name=bar value=""><span class="bg s_ipt_wr"><input id="kw" name="wd" class="s_ipt" value="site:yandex.ru" maxlength="100" autocomplete="off"></span><span class="bg s_btn_wr"><input type="submit" id="su" value="百度一下" class="bg s_btn"></span><span class="tools"><span id="mholder"><div id="mcon"><span>输入法</span></div><ul id="mmenu"><li><a href="javascript:;" name="ime_hw">手写</a></li><li><a href="javascript:;" name="ime_py">拼音</a></li><li class="ln"></li><li><a href="javascript:;" name="ime_cl">关闭</a></li></ul></span></span><input type="hidden" name="rsv_pq" value="dfb582de0000a072"><input type="hidden" name="rsv_t" value="be3evfjfb8o7vbcifvk4ipac1+tfkdzv3cmsz65xxwyrrfyhydvfruzqbba"></form><div id="m"></div></div></div><div id="u"><a class="toindex" href="/">百度首页</a><span class="toindex">|</span><a href="javascript:;" name="tj_settingicon" class="pf">设置<i class="c-icon c-icon-triangle-down"></i></a>|<a href="https://passport.baidu.com/v2/?login&tpl=mn&u=http%3a%2f%2fwww.baidu.com%2f" name="tj_login" class="lb" onclick="return false;">登录</a></div><div id="u1"><a href="http://news.baidu.com" name="tj_trnews" class="mnav">新闻</a><a href="http://www.hao123.com" name="tj_trhao123" class="mnav">hao123</a><a href="http://map.baidu.com" name="tj_trmap" class="mnav">地图</a><a href="http://v.baidu.com" name="tj_trvideo" class="mnav">视频</a><a href="http://tieba.baidu.com" name="tj_trtieba" class="mnav">贴吧</a><a href="https://passport.baidu.com/v2/?login&amp;tpl=mn&amp;u=http%3a%2f%2fwww.baidu.com%2f" name="tj_login" class="lb" onclick="return false;">登录</a><a href="http://www.baidu.com/gaoji/preferences.html" name="tj_settingicon" class="pf" class="">设置</a><a href="http://www.baidu.com/more/" name="tj_briicon" class="bri" style="display: block;">更多产品</a></div></div></div><script>bds.base64 = (function () {var _opt = bds._base64;var _containerallid = "container",_containerleftid = "content_left",_containerrightid = "content_right",_bottaglsname = "base64_bottag",_domain = bds._base64.domain, _imgwatch = [], _domloaded = [], _data = [], _dataloaded = [], _finish = [], _hasspimg = false, _expgroup = 0, _reqtime = 0, _reqend = 0, _reqendl = 0, _rsst = 0, _rest = 0, _dt = 1, _loadstate = {}, _haspreload = 0, _ispdc = false; var prexhrs = [],$ = window.$;if($) {$(window).on("swap_begin",function(){_imgwatch = []; _domloaded = []; _data = []; _dataloaded = []; _finish = []; _hasspimg = false; _expgroup = 0; _reqtime = 0; _reqend = 0; _reqendl = 0; _rsst = 0; _rest = 0; _dt = 1; _ispdc = false; for(var i = 0 ; i < prexhrs.length; i++) {prexhrs[i].abort();}});}var init = function(imgright,imgleft,ispreload){var imgarr = imgright || [], imgarr2 = imgleft || [];if(window.__is_img_prefetch){function filter(img){return !window.__is_img_prefetch.hasownproperty(img);}imgarr=$.grep(imgarr,filter);imgarr2=$.grep(imgarr2,filter);}if(window.__img_preload && ispreload) {_loadstate["cbr"] = 0;_loadstate["cbpr"] = 0;_haspreload = 1; var imgpreloadlist = window.__img_preload = {};for(var i = 0; i < imgarr.length; i++) {if(!imgpreloadlist.hasownproperty(imgarr[i])) {window.__img_preload[imgarr[i]] = true;}}} else if(window.__img_preload && !ispreload) {var tmparr = [];for(var i = 0; i < imgarr.length; i++){if(!window.__img_preload.hasownproperty(imgarr[i])) {tmparr.push(imgarr[i]);}}imgarr = tmparr;}if(_opt.b64exp) {_expgroup = _opt.b64exp;if(_expgroup == 1){_domain = "http://b2.bdstatic.com/"; _dt = 2;}}_ispdc= _opt.pdc>0 ? true : false;_reqtime = new date()*1;if(_expgroup==2){if(imgarr2.length>0){_hasspimg = true;loadjs(_domain + "image?imglist=" + imgarr2.join(",") + "&cb=bds.base64.cbl");}if(!ispreload) {cbl({});}}if(imgarr.length>0){if(ispreload) {loadjs(_domain + "image?imglist=" + imgarr.join(",") + "&cb=bds.base64.cbpr");} else {loadjs(_domain + "image?imglist=" + imgarr.join(",") + "&cb=bds.base64.cbr");}if(_ispdc){if(bds.ready){bds.ready(function(){settimeout(function(){var _bottag = bottag.get();var logstr = "dt=" + _dt + "&time=" + ((_reqend>0)?(_reqend-_reqtime):0) + "&bot=" + _bottag + "&rcount=" + imgarr.length;window._b64_req_log = ((_reqend>0)?(_reqend-_reqtime):0) + "_" + imgarr.length;if(_expgroup==2 && _reqendl>0){var _apics = document.getelementbyid("ala_img_pics");var _lcount = (_apics&&_apics.children)?_apics.children.length:0;logstr += "&time2=" + (_reqendl-_reqtime) + "&lcount=" + _lcount;}if(math.random()*100<10){sendlog(logstr);}}, 2000);});}}} else {if(!ispreload) {cbr({});}}if(imgarr.length>0 || imgarr2.length>0){if(!ispreload) {watchreq(imgarr.length);}}};function crc32 (str) {if(typeof str=="string"){var i,crc=0,j=0;for(i=0;i<str.length;i++){j=i%20+1;crc+=str.charcodeat(i)<<j;}return math.abs(crc);}return 0;}var loadjs = function (url) {var matchs = url.match(/.*(bds\.base64\.cb[rl])/);if(!matchs){return;}var imglist=url.match(/imglist=([^&]*)/);if(!imglist||!imglist[1]){return;}callback_name=crc32(imglist[1].replace(/,/g,""));callback_name="cb_"+(callback_name+"").substr(math.max(0,callback_name.length-8),8)+"_0";window[callback_name]=function(data){if(matchs[1] == "bds.base64.cbr") {cbr(data);}else if(matchs[1] == "bds.base64.cbl") {cbl(data); }window[callback_name]=null;};var url = matchs[0].replace(/bds\.base64\.cb[rl]/,callback_name);var a = document.createelement("script");a.setattribute("type", "text/javascript");a.setattribute("src", url);a.setattribute("defer", "defer");a.setattribute("async", "true");document.getelementsbytagname("head")[0].appendchild(a);};var imgload = function(data,side){if(_finish[side]){return; }_finish[side] = true;if(side=="right"){bottag.ot(false); }var imgs = document.getelementbyid(_expgroup!=1?((side=="left")?_containerleftid:_containerrightid):_containerallid).getelementsbytagname("img");for(var i=0;i<imgs.length;i++){var b64id = imgs[i].getattribute("data-b64-id");if(b64id){var find = false;if(data.hasownproperty(b64id)) {setsrc(imgs[i],data[b64id]);find = true;} if(!find){failover(imgs[i]);}}}fail_ie7();};function fail_ie7(){settimeout(function(){for( var i=0; i<_imgwatch.length; i++ ){var n = _imgwatch[i];if(!n.loaded){failover(n.obj);}}_imgwatch=[];},200);}function setsrc(img,data){try{img.onerror = function(){failover(this);};_imgwatch.push({obj:img,loaded:false});img.onload = function(){for( var i=0; i<_imgwatch.length; i++ ){var m = _imgwatch[i];if(m.obj == this){m.loaded = true;}}};img.src = "data:image\/jpeg;base64," + data;}catch(e){failover(img);}}var failover = function(img){if(img.getattribute("data-b64-id")!=null && img.getattribute("data-b64-id")!="" && img.getattribute("data-src")!=null){img.src = img.getattribute("data-src");}};var watchreq = function(len){var wt = 1250;if(len<6){wt = 1000;}else if(len>10){ wt = 1500; } settimeout(function(){ if( !_dataloaded["right"] ){ var imgs = document.getelementbyid(_containerrightid).getelementsbytagname("img"); for(var i=0;i<imgs.length;i++){failover(imgs[i]);}_finish["right"] = true; bottag.ot(true);}settimeout(function(){if(_hasspimg && !_dataloaded["left"]){var imgs = document.getelementbyid(_containerleftid).getelementsbytagname("img");for(var i=0;i<imgs.length;i++){failover(imgs[i]);}_finish["left"] = true; }},500);},wt);};var bottag = {ot : function(isinc){var _bottag = bottag.get();if(isinc){if(_bottag<6){_bottag++;}}else{if(_bottag>0){_bottag--;}}if( _bottag>=2 ){var date = new date();date.settime(date.gettime() + 24*3600*1000*5);document.cookie = "b64_bot=1; expires=" + date.togmtstring();}else if( _bottag<1 ){if(document.cookie.match('b64_bot=1')){document.cookie = "b64_bot=0;";}}try{if(window.localstorage){window.localstorage[_bottaglsname] = _bottag;}}catch(e){}},get : function(){try{if(window.localstorage){var _bottag = window.localstorage[_bottaglsname];_bottag = _bottag?parseint(_bottag):0;}else{return 0;}return _bottag;}catch(e){return 0;}}};var cbr = function(data){_reqend = new date()*1;if(_ispdc && bds.comm && _reqtime>0 && _reqend>0){bds.comm.cusval = "b64_" + _dt + "_" + ( _reqend - _reqtime );}_loadstate["cbr"] = 1;callback(data, "right");};var cbl = function(data){_reqendl = new date()*1;callback(data, "left");};var cbpr = function(data){_loadstate["cbpr"] = 1;callback(data, "right");};var callback = function(data, side){_dataloaded[side] = _haspreload ? (_loadstate.cbpr && _loadstate.cbr) : true;if(data) {if(_data[side] === undefined) {_data[side] = {}};for(var key in data) {if(data.hasownproperty(key)) {_data[side][key] = data[key];}}}if(_domloaded[side] && _dataloaded[side]){imgload(_data[side], side);}};var setdomload = function(side){_domloaded[side] = true;if(_dataloaded[side]){imgload(_data[side],side);}};var predictimg = false; var sendlog = function (src) {var loghost = "http://nsclick.baidu.com/v.gif?pid=315&rsv_yc_log=3&";var n = "b64log__" + (new date()).gettime(),c = window[n] = new image();c.onload = (c.onerror = function () {window[n] = null;});c.src = loghost + src + "&_t=" + new date()*1; c = null; };cbs = function(data){_rest = new date()*1;if( (_rest - _rsst) < 1500 ){bottag.ot(false); }else{bottag.ot(true); }};ts = function(){_expgroup = 3;_rsst = new date()*1;loadjs(_domain + "image?imglist=1241886729_3226161681_58,1072899117_2953388635_58,2469877062_2085031320_58,155831992_309216365_58,2539127170_1607411613_58,1160777122_283857721_58,1577144716_3149119526_58,2339041784_1038484334_58&cb=bds.base64.cbs");};return {init : init,cbl : cbl,cbr : cbr,cbpr : cbpr,setdomload : setdomload,cbs : cbs,ts : ts,predictimg : predictimg}})();</script><div class="s_tab" id="s_tab"><b>网页</b><a href="http://news.baidu.com/ns?cl=2&rn=20&tn=news&word=site:yandex.ru" wdfield="word"  onmousedown="return c({'fm':'tab','tab':'news'})">新闻</a><a href="http://tieba.baidu.com/f?kw=site:yandex.ru&fr=wwwt" wdfield="kw"  onmousedown="return c({'fm':'tab','tab':'tieba'})">贴吧</a><a href="http://zhidao.baidu.com/q?ct=17&pn=0&tn=ikaslist&rn=10&word=site:yandex.ru&fr=wwwt" wdfield="word"  onmousedown="return c({'fm':'tab','tab':'zhidao'})">知道</a><a href="http://music.baidu.com/search?fr=ps&key=site:yandex.ru" wdfield="key"  onmousedown="return c({'fm':'tab','tab':'music'})">音乐</a><a href="http://image.baidu.com/i?tn=baiduimage&ps=1&ct=201326592&lm=-1&cl=2&nc=1&word=site:yandex.ru" wdfield="word"  onmousedown="return c({'fm':'tab','tab':'pic'})">图片</a><a href="http://v.baidu.com/v?ct=301989888&rn=20&pn=0&db=0&s=25&word=site:yandex.ru" wdfield="word"   onmousedown="return c({'fm':'tab','tab':'video'})">视频</a><a href="http://map.baidu.com/m?word=site:yandex.ru&fr=ps01000" wdfield="word"  onmousedown="return c({'fm':'tab','tab':'map'})">地图</a><a href="http://wenku.baidu.com/search?word=site:yandex.ru&lm=0&od=0" wdfield="word"  onmousedown="return c({'fm':'tab','tab':'wenku'})">文库</a><a href="//www.baidu.com/more/"  onmousedown="return c({'fm':'tab','tab':'more'})">更多»</a></div><div id="wrapper_wrapper"><!--[if ie 8]><style>.c-input input{padding-top:4px}</style><![endif]--><style> .opr-toplist-table .opr-toplist-right{text-align:right}.opr-toplist-info{color:#666;text-align:right}.opr-toplist-info a{color:#666}.opr-toplist-narrow{width:259px}.opr-toplist-st{float:right;margin-top:2px}</style><script id="head_script">bds.comm.domain = "http://www.baidu.com";bds.comm.ubsurl = "http://sclick.baidu.com/w.gif";bds.comm.tn = "baidu";bds.comm.tng = "organic";bds.comm.tnuka = "0";bds.comm.queryenc = "site%3ayandex%2eru";bds.comm.queryid = "dfb582de0000a072";bds.comm.inter = "";bds.comm.restemplatename = "baidu";bds.comm.sughost = "http://suggestion.baidu.com/su";bds.comm.ishome = 0;bds.comm.query = "site:yandex.ru";bds.comm.qid = "dfb582de0000a072";bds.comm.cid = "0";bds.comm.sid = "8343_1434_7800_9753_9932_10017_9498_10051_10065_9770_9758_10007_9453_9978_9024";bds.comm.stoken = "";bds.comm.servertime = "1416309667";bds.comm.user = "";bds.comm.username = "";bds.comm.userid = "0";bds.comm.isbaixiaoduon = "";bds.comm.__rdnum = "8151";bds.comm.usefavo = "";bds.comm.pinyin = "";bds.comm.favoon = "";bds.comm.curresultnum = "10";bds.comm.rightresultexist = false;bds.comm.protectnum = 0;bds.comm.zxlnum = 0;bds.comm.pagenum = parseint('1')||1;bds.comm.pagesize = parseint('10')||10;bds.comm.enctn = '349duh5jyr86a6teqxpnyhzcjwn+0cx0hfu76dzql1ujbhbjqkvtxvpbs6g';bds.se.mon = {'loadeditems':[],'load':function(){},'srvt':-1};try {bds.se.mon.srvt = parseint(document.cookie.match(new regexp("(^| )bdsvrtm=([^;]*)(;|$)"))[2]);document.cookie="bdsvrtm=;expires=sat, 01 jan 2000 00:00:00 gmt"; }catch(e){bds.se.mon.srvt=-1; }bduser = bds.comm.user?bds.comm.user:null;bdquery = bds.comm.query;bdusefavo = bds.comm.usefavo;bdfavoon = bds.comm.favoon;bdcid = bds.comm.cid;bdsid = bds.comm.sid;bdservertime = bds.comm.servertime;bdqid = bds.comm.queryid;bdstoken = bds.comm.stoken;login_success = [];bds.comm.seinfo = {'fm':'se','t':'1416309667','y':'ef5af6ae','rsv_cache': (bds.se.mon.srvt>0)?0:1 };bds.comm.cgif = "http://c.baidu.com/c.gif?t=0&q=site%3ayandex%2eru&p=0&pn=1";bds.comm.upn = {"browser":"chrome","ie":"","os":"windows","win":"xp","browsertype":"chrome"};bds.comm.imgzoomhover = false;bds.comm.imgzoomhover1 = false;bds.comm.imgzoomhover2 = false;bds.comm.imgzoomhover3 = false;</script><script>if( bds.ready && document.cookie.match('b64_bot=1') ){bds.ready(function(){settimeout(function(){if( bds.base64 && bds.base64.ts ){bds.base64.ts();}},2000)})}</script><div id="container" class="container_s"><script>bds.util.setcontainerwidth();bds.ready(function(){$(window).on("resize",function(){bds.util.setcontainerwidth();bds.event.trigger("se.window_resize");});bds.util.setcontainerwidth();});</script><div id="content_right" class="cr-offset"><table cellpadding="0" cellspacing="0"><tr><td align="left"><div></div><div id="con-ar"><div class="result-op xpath-log" tpl="right_hotlist" data-click="{fm:'alxr',p1:'1',rsv_srcid:'6852',mu:'http://www.baidu.com/6852',rsv_stl:'0'}"> 
+}e(g,i,h)};a.merge=function(h,g){a.mergefns.push({tplname:h,fn:g})}})()}function ns_c_pj(a,c){var b=encodeuricomponent(window.document.location.href),h="",f="",i="",e=bds.comm.queryenc,d=bds&&bds.util&&bds.util.domain?bds.util.domain.get("http://nsclick.baidu.com"):"http://nsclick.baidu.com",g=window["bd_ps_c"+(new date()).gettime()]=new image();for(v in a){switch(v){case"title":f=encodeuricomponent(a[v].replace(/<[^<>]+>/g,""));break;case"url":f=encodeuricomponent(a[v]);break;default:f=a[v]}h+=v+"="+f+"&"}i="&mu="+b;g.src=d+"/v.gif?pid=201&"+(c||"")+h+"path="+b+"&wd="+e+"&rsv_sid="+bds.comm.sid+"&t="+new date().gettime();return true}function ns_c(a){return ns_c_pj(a,"pj=www&")};</script></head><body link="#0000cc"><div id="wrapper" class="wrapper_l"><script>if(window.bds&&bds.util&&bds.util.setcontainerwidth){bds.util.setcontainerwidth();}</script><div id="head"><div class="head_wrapper"><div class="s_form"><div class="s_form_wrapper"><div id="lg"><img hidefocus="true" src="//www.baidu.com/img/bd_logo1.png" width="270" height="129"></div><a href="/" id="result_logo" onmousedown="return c({'fm':'tab','tab':'logo'})"><img src="//www.baidu.com/img/baidu_jgylogo3.gif" alt="到百度首页" title="到百度首页"></a><form id="form" name="f" action="/s" class="fm"><input type="hidden" name="ie" value="utf-8"><input type="hidden" name="f" value="8"><input type="hidden" name="rsv_bp" value="1"><input type=hidden name=ch value=""><input type=hidden name=tn value="baidu"><input type=hidden name=bar value=""><span class="bg s_ipt_wr"><input id="kw" name="wd" class="s_ipt" value="site:www.516680.com" maxlength="100" autocomplete="off"></span><span class="bg s_btn_wr"><input type="submit" id="su" value="百度一下" class="bg s_btn"></span><span class="tools"><span id="mholder"><div id="mcon"><span>输入法</span></div><ul id="mmenu"><li><a href="javascript:;" name="ime_hw">手写</a></li><li><a href="javascript:;" name="ime_py">拼音</a></li><li class="ln"></li><li><a href="javascript:;" name="ime_cl">关闭</a></li></ul></span></span><input type="hidden" name="rsv_pq" value="cbf89efb000176cc"><input type="hidden" name="rsv_t" value="4b2drhf+lcbur1ohenqwfnjfjfqs9fbhu6bfzvgxqhrrvtdhded4zuckeea"></form><div id="m"></div></div></div><div id="u"><a class="toindex" href="/">百度首页</a><span class="toindex">|</span><a href="javascript:;" name="tj_settingicon" class="pf">设置<i class="c-icon c-icon-triangle-down"></i></a>|<a href="https://passport.baidu.com/v2/?login&tpl=mn&u=http%3a%2f%2fwww.baidu.com%2f" name="tj_login" class="lb" onclick="return false;">登录</a></div><div id="u1"><a href="http://news.baidu.com" name="tj_trnews" class="mnav">新闻</a><a href="http://www.hao123.com" name="tj_trhao123" class="mnav">hao123</a><a href="http://map.baidu.com" name="tj_trmap" class="mnav">地图</a><a href="http://v.baidu.com" name="tj_trvideo" class="mnav">视频</a><a href="http://tieba.baidu.com" name="tj_trtieba" class="mnav">贴吧</a><a href="https://passport.baidu.com/v2/?login&amp;tpl=mn&amp;u=http%3a%2f%2fwww.baidu.com%2f" name="tj_login" class="lb" onclick="return false;">登录</a><a href="http://www.baidu.com/gaoji/preferences.html" name="tj_settingicon" class="pf" class="">设置</a><a href="http://www.baidu.com/more/" name="tj_briicon" class="bri" style="display: block;">更多产品</a></div></div></div><script>bds.base64 = (function () {var _opt = bds._base64;var _containerallid = "container",_containerleftid = "content_left",_containerrightid = "content_right",_bottaglsname = "base64_bottag",_domain = bds._base64.domain, _imgwatch = [], _domloaded = [], _data = [], _dataloaded = [], _finish = [], _hasspimg = false, _expgroup = 0, _reqtime = 0, _reqend = 0, _reqendl = 0, _rsst = 0, _rest = 0, _dt = 1, _loadstate = {}, _haspreload = 0, _ispdc = false; var prexhrs = [],$ = window.$;if($) {$(window).on("swap_begin",function(){_imgwatch = []; _domloaded = []; _data = []; _dataloaded = []; _finish = []; _hasspimg = false; _expgroup = 0; _reqtime = 0; _reqend = 0; _reqendl = 0; _rsst = 0; _rest = 0; _dt = 1; _ispdc = false; for(var i = 0 ; i < prexhrs.length; i++) {prexhrs[i].abort();}});}var init = function(imgright,imgleft,ispreload){var imgarr = imgright || [], imgarr2 = imgleft || [];if(window.__is_img_prefetch){function filter(img){return !window.__is_img_prefetch.hasownproperty(img);}imgarr=$.grep(imgarr,filter);imgarr2=$.grep(imgarr2,filter);}if(window.__img_preload && ispreload) {_loadstate["cbr"] = 0;_loadstate["cbpr"] = 0;_haspreload = 1; var imgpreloadlist = window.__img_preload = {};for(var i = 0; i < imgarr.length; i++) {if(!imgpreloadlist.hasownproperty(imgarr[i])) {window.__img_preload[imgarr[i]] = true;}}} else if(window.__img_preload && !ispreload) {var tmparr = [];for(var i = 0; i < imgarr.length; i++){if(!window.__img_preload.hasownproperty(imgarr[i])) {tmparr.push(imgarr[i]);}}imgarr = tmparr;}if(_opt.b64exp) {_expgroup = _opt.b64exp;if(_expgroup == 1){_domain = "http://b2.bdstatic.com/"; _dt = 2;}}_ispdc= _opt.pdc>0 ? true : false;_reqtime = new date()*1;if(_expgroup==2){if(imgarr2.length>0){_hasspimg = true;loadjs(_domain + "image?imglist=" + imgarr2.join(",") + "&cb=bds.base64.cbl");}if(!ispreload) {cbl({});}}if(imgarr.length>0){if(ispreload) {loadjs(_domain + "image?imglist=" + imgarr.join(",") + "&cb=bds.base64.cbpr");} else {loadjs(_domain + "image?imglist=" + imgarr.join(",") + "&cb=bds.base64.cbr");}if(_ispdc){if(bds.ready){bds.ready(function(){settimeout(function(){var _bottag = bottag.get();var logstr = "dt=" + _dt + "&time=" + ((_reqend>0)?(_reqend-_reqtime):0) + "&bot=" + _bottag + "&rcount=" + imgarr.length;window._b64_req_log = ((_reqend>0)?(_reqend-_reqtime):0) + "_" + imgarr.length;if(_expgroup==2 && _reqendl>0){var _apics = document.getelementbyid("ala_img_pics");var _lcount = (_apics&&_apics.children)?_apics.children.length:0;logstr += "&time2=" + (_reqendl-_reqtime) + "&lcount=" + _lcount;}if(math.random()*100<10){sendlog(logstr);}}, 2000);});}}} else {if(!ispreload) {cbr({});}}if(imgarr.length>0 || imgarr2.length>0){if(!ispreload) {watchreq(imgarr.length);}}};function crc32 (str) {if(typeof str=="string"){var i,crc=0,j=0;for(i=0;i<str.length;i++){j=i%20+1;crc+=str.charcodeat(i)<<j;}return math.abs(crc);}return 0;}var loadjs = function (url) {var matchs = url.match(/.*(bds\.base64\.cb[rl])/);if(!matchs){return;}var imglist=url.match(/imglist=([^&]*)/);if(!imglist||!imglist[1]){return;}callback_name=crc32(imglist[1].replace(/,/g,""));callback_name="cb_"+(callback_name+"").substr(math.max(0,callback_name.length-8),8)+"_0";window[callback_name]=function(data){if(matchs[1] == "bds.base64.cbr") {cbr(data);}else if(matchs[1] == "bds.base64.cbl") {cbl(data); }window[callback_name]=null;};var url = matchs[0].replace(/bds\.base64\.cb[rl]/,callback_name);var a = document.createelement("script");a.setattribute("type", "text/javascript");a.setattribute("src", url);a.setattribute("defer", "defer");a.setattribute("async", "true");document.getelementsbytagname("head")[0].appendchild(a);};var imgload = function(data,side){if(_finish[side]){return; }_finish[side] = true;if(side=="right"){bottag.ot(false); }var imgs = document.getelementbyid(_expgroup!=1?((side=="left")?_containerleftid:_containerrightid):_containerallid).getelementsbytagname("img");for(var i=0;i<imgs.length;i++){var b64id = imgs[i].getattribute("data-b64-id");if(b64id){var find = false;if(data.hasownproperty(b64id)) {setsrc(imgs[i],data[b64id]);find = true;} if(!find){failover(imgs[i]);}}}fail_ie7();};function fail_ie7(){settimeout(function(){for( var i=0; i<_imgwatch.length; i++ ){var n = _imgwatch[i];if(!n.loaded){failover(n.obj);}}_imgwatch=[];},200);}function setsrc(img,data){try{img.onerror = function(){failover(this);};_imgwatch.push({obj:img,loaded:false});img.onload = function(){for( var i=0; i<_imgwatch.length; i++ ){var m = _imgwatch[i];if(m.obj == this){m.loaded = true;}}};img.src = "data:image\/jpeg;base64," + data;}catch(e){failover(img);}}var failover = function(img){if(img.getattribute("data-b64-id")!=null && img.getattribute("data-b64-id")!="" && img.getattribute("data-src")!=null){img.src = img.getattribute("data-src");}};var watchreq = function(len){var wt = 1250;if(len<6){wt = 1000;}else if(len>10){ wt = 1500; } settimeout(function(){ if( !_dataloaded["right"] ){ var imgs = document.getelementbyid(_containerrightid).getelementsbytagname("img"); for(var i=0;i<imgs.length;i++){failover(imgs[i]);}_finish["right"] = true; bottag.ot(true);}settimeout(function(){if(_hasspimg && !_dataloaded["left"]){var imgs = document.getelementbyid(_containerleftid).getelementsbytagname("img");for(var i=0;i<imgs.length;i++){failover(imgs[i]);}_finish["left"] = true; }},500);},wt);};var bottag = {ot : function(isinc){var _bottag = bottag.get();if(isinc){if(_bottag<6){_bottag++;}}else{if(_bottag>0){_bottag--;}}if( _bottag>=2 ){var date = new date();date.settime(date.gettime() + 24*3600*1000*5);document.cookie = "b64_bot=1; expires=" + date.togmtstring();}else if( _bottag<1 ){if(document.cookie.match('b64_bot=1')){document.cookie = "b64_bot=0;";}}try{if(window.localstorage){window.localstorage[_bottaglsname] = _bottag;}}catch(e){}},get : function(){try{if(window.localstorage){var _bottag = window.localstorage[_bottaglsname];_bottag = _bottag?parseint(_bottag):0;}else{return 0;}return _bottag;}catch(e){return 0;}}};var cbr = function(data){_reqend = new date()*1;if(_ispdc && bds.comm && _reqtime>0 && _reqend>0){bds.comm.cusval = "b64_" + _dt + "_" + ( _reqend - _reqtime );}_loadstate["cbr"] = 1;callback(data, "right");};var cbl = function(data){_reqendl = new date()*1;callback(data, "left");};var cbpr = function(data){_loadstate["cbpr"] = 1;callback(data, "right");};var callback = function(data, side){_dataloaded[side] = _haspreload ? (_loadstate.cbpr && _loadstate.cbr) : true;if(data) {if(_data[side] === undefined) {_data[side] = {}};for(var key in data) {if(data.hasownproperty(key)) {_data[side][key] = data[key];}}}if(_domloaded[side] && _dataloaded[side]){imgload(_data[side], side);}};var setdomload = function(side){_domloaded[side] = true;if(_dataloaded[side]){imgload(_data[side],side);}};var predictimg = false; var sendlog = function (src) {var loghost = "http://nsclick.baidu.com/v.gif?pid=315&rsv_yc_log=3&";var n = "b64log__" + (new date()).gettime(),c = window[n] = new image();c.onload = (c.onerror = function () {window[n] = null;});c.src = loghost + src + "&_t=" + new date()*1; c = null; };cbs = function(data){_rest = new date()*1;if( (_rest - _rsst) < 1500 ){bottag.ot(false); }else{bottag.ot(true); }};ts = function(){_expgroup = 3;_rsst = new date()*1;loadjs(_domain + "image?imglist=1241886729_3226161681_58,1072899117_2953388635_58,2469877062_2085031320_58,155831992_309216365_58,2539127170_1607411613_58,1160777122_283857721_58,1577144716_3149119526_58,2339041784_1038484334_58&cb=bds.base64.cbs");};return {init : init,cbl : cbl,cbr : cbr,cbpr : cbpr,setdomload : setdomload,cbs : cbs,ts : ts,predictimg : predictimg}})();</script><div class="s_tab" id="s_tab"><b>网页</b><a href="http://news.baidu.com/ns?cl=2&rn=20&tn=news&word=site:www.516680.com" wdfield="word"  onmousedown="return c({'fm':'tab','tab':'news'})">新闻</a><a href="http://tieba.baidu.com/f?kw=site:www.516680.com&fr=wwwt" wdfield="kw"  onmousedown="return c({'fm':'tab','tab':'tieba'})">贴吧</a><a href="http://zhidao.baidu.com/q?ct=17&pn=0&tn=ikaslist&rn=10&word=site:www.516680.com&fr=wwwt" wdfield="word"  onmousedown="return c({'fm':'tab','tab':'zhidao'})">知道</a><a href="http://music.baidu.com/search?fr=ps&key=site:www.516680.com" wdfield="key"  onmousedown="return c({'fm':'tab','tab':'music'})">音乐</a><a href="http://image.baidu.com/i?tn=baiduimage&ps=1&ct=201326592&lm=-1&cl=2&nc=1&word=site:www.516680.com" wdfield="word"  onmousedown="return c({'fm':'tab','tab':'pic'})">图片</a><a href="http://v.baidu.com/v?ct=301989888&rn=20&pn=0&db=0&s=25&word=site:www.516680.com" wdfield="word"   onmousedown="return c({'fm':'tab','tab':'video'})">视频</a><a href="http://map.baidu.com/m?word=site:www.516680.com&fr=ps01000" wdfield="word"  onmousedown="return c({'fm':'tab','tab':'map'})">地图</a><a href="http://wenku.baidu.com/search?word=site:www.516680.com&lm=0&od=0" wdfield="word"  onmousedown="return c({'fm':'tab','tab':'wenku'})">文库</a><a href="//www.baidu.com/more/"  onmousedown="return c({'fm':'tab','tab':'more'})">更多»</a></div><div id="wrapper_wrapper"><!--[if ie 8]><style>.c-input input{padding-top:4px}</style><![endif]--><style> .opr_article_title{font-size:1.07em;font-weight:700}.opr_article_list li{line-height:1.9}.opr-toplist-table .opr-toplist-right{text-align:right}.opr-toplist-info{color:#666;text-align:right}.opr-toplist-info a{color:#666}.opr-toplist-narrow{width:259px}.opr-toplist-st{float:right;margin-top:2px}</style><script id="head_script">bds.comm.domain = "http://www.baidu.com";bds.comm.ubsurl = "http://sclick.baidu.com/w.gif";bds.comm.tn = "baidu";bds.comm.tng = "organic";bds.comm.tnuka = "0";bds.comm.queryenc = "site%3awww%2e516680%2ecom";bds.comm.queryid = "cbf89efb000176cc";bds.comm.inter = "";bds.comm.restemplatename = "baidu";bds.comm.sughost = "http://suggestion.baidu.com/su";bds.comm.ishome = 0;bds.comm.query = "site:www.516680.com";bds.comm.qid = "cbf89efb000176cc";bds.comm.cid = "0";bds.comm.sid = "10049_9009_1424_9593_7801_9754_9451_9475_10033_10017_9499_10052_10066_9769_9909_9757_10008_9454_9978_9023";bds.comm.stoken = "";bds.comm.servertime = "1416394634";bds.comm.user = "";bds.comm.username = "";bds.comm.userid = "0";bds.comm.isbaixiaoduon = "";bds.comm.__rdnum = "603";bds.comm.usefavo = "";bds.comm.pinyin = "";bds.comm.favoon = "";bds.comm.curresultnum = "10";bds.comm.rightresultexist = false;bds.comm.protectnum = 0;bds.comm.zxlnum = 0;bds.comm.pagenum = parseint('1')||1;bds.comm.pagesize = parseint('10')||10;bds.comm.enctn = 'fb6addee4by4ro885gicb8eb5nbf7cbqf2ap9jrcryvykvvpwidwnqim+5u';bds.se.mon = {'loadeditems':[],'load':function(){},'srvt':-1};try {bds.se.mon.srvt = parseint(document.cookie.match(new regexp("(^| )bdsvrtm=([^;]*)(;|$)"))[2]);document.cookie="bdsvrtm=;expires=sat, 01 jan 2000 00:00:00 gmt"; }catch(e){bds.se.mon.srvt=-1; }bduser = bds.comm.user?bds.comm.user:null;bdquery = bds.comm.query;bdusefavo = bds.comm.usefavo;bdfavoon = bds.comm.favoon;bdcid = bds.comm.cid;bdsid = bds.comm.sid;bdservertime = bds.comm.servertime;bdqid = bds.comm.queryid;bdstoken = bds.comm.stoken;login_success = [];bds.comm.seinfo = {'fm':'se','t':'1416394634','y':'eb3f37ad','rsv_cache': (bds.se.mon.srvt>0)?0:1 };bds.comm.cgif = "http://c.baidu.com/c.gif?t=0&q=site%3awww%2e516680%2ecom&p=0&pn=1";bds.comm.upn = {"browser":"chrome","ie":"","os":"windows","win":"xp","browsertype":"chrome"};bds.comm.imgzoomhover = false;bds.comm.imgzoomhover1 = false;bds.comm.imgzoomhover2 = false;bds.comm.imgzoomhover3 = false;</script><script>if( bds.ready && document.cookie.match('b64_bot=1') ){bds.ready(function(){settimeout(function(){if( bds.base64 && bds.base64.ts ){bds.base64.ts();}},2000)})}</script><div id="container" class="container_s"><script>bds.util.setcontainerwidth();bds.ready(function(){$(window).on("resize",function(){bds.util.setcontainerwidth();bds.event.trigger("se.window_resize");});bds.util.setcontainerwidth();});</script><div id="content_right" class="cr-offset"><table cellpadding="0" cellspacing="0"><tr><td align="left"><div></div><div id="con-ar"><div class="result-op xpath-log" tpl="right_article" data-click="{fm:'alxr',p1:'1',rsv_srcid:'11323',mu:'http://zhanzhang.baidu.com',rsv_stl:'0'}"> 
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+    
+    
+
+
+<div class="cr-content cr-content-narrow">
+    
+
+
+<p class="opr_article_title">站长资讯</p>
+<ul class="opr_article_list">
+        <li>
+        <span class="opr_article_list_date">11-18</span><span class="c-gap-left-small c-gap-right-small">-</span><a href="http://zhanzhang.baidu.com/wiki/341" target="_blank" title="移动搜索冰桶算法2.0更新公告">移动搜索冰桶算法2.0更新公告</a>
+    </li>
+        <li>
+        <span class="opr_article_list_date">11-13</span><span class="c-gap-left-small c-gap-right-small">-</span><a href="http://zhanzhang.baidu.com/wiki/336" target="_blank" title="防止网站内部搜索被他人恶意利用">防止网站内部搜索被他人恶意利用</a>
+    </li>
+        <li>
+        <span class="opr_article_list_date">11-10</span><span class="c-gap-left-small c-gap-right-small">-</span><a href="http://bbs.zhanzhang.baidu.com/thread-14533-1-1.html" target="_blank" title="站长沙龙徐州站精华分享">站长沙龙徐州站精华分享</a>
+    </li>
+        <li>
+        <span class="opr_article_list_date">10-29</span><span class="c-gap-left-small c-gap-right-small">-</span><a href="http://zhanzhang.baidu.com/wiki/330" target="_blank" title="301跳转常见问题汇总">301跳转常见问题汇总</a>
+    </li>
+        <li>
+        <span class="opr_article_list_date">10-23</span><span class="c-gap-left-small c-gap-right-small">-</span><a href="http://zhanzhang.baidu.com/wiki/328" target="_blank" title="编辑必看：撰写搜索引擎喜爱的标题">编辑必看：撰写搜索引擎喜爱的...</a>
+    </li>
+    </ul>
+
+</div>
+</div><div class="result-op xpath-log" tpl="right_tabs" data-click="{fm:'alxr',p1:'2',rsv_srcid:'12561',mu:'http://baidu.com/',rsv_stl:'0'}"> 
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+    
+    
+    
+
+<div class="cr-content cr-content-narrow">
+    
+<style>.opr_tabs_title{font-size:1.07em;font-weight:700}.c-tabs-nav .opr_tabs_li{padding:3px 14px}</style>
+
+<p class="opr_tabs_title c-gap-bottom-small">深度合作</p>
+<div class="c-tabs">
+    <ul class="c-tabs-nav">
+        	    	<li class="c-tabs-nav-li opr_tabs_li c-tabs-nav-selected">百度信誉v</li>
+        	<li class="c-tabs-nav-sep"></li>    	<li class="c-tabs-nav-li opr_tabs_li ">开放平台</li>
+        	<li class="c-tabs-nav-sep"></li>    	<li class="c-tabs-nav-li opr_tabs_li ">官网认证</li>
+        </ul>
+        <div class="c-tabs-content c-gap-top-small opr_tabs_content" >
+        <p>百度开放<i class="c-icon c-icon-v-noborder"></i>计划，让搜索引擎发现您的价值</p>
+        <p><a href="http://xinyu.baidu.com" target="_blank"><img src="http://t11.baidu.com/it/u=3881850973,381008455&fm=58"/></a></p>
+    </div>
+        <div class="c-tabs-content c-gap-top-small opr_tabs_content" style="display:none">
+        <p><a target="_blank" href="http://open.baidu.com/" class="op_lamp c-gap-icon-right-small"></a>框计算、开放云，优秀合作伙伴，共享大平台，同赢新机遇！</p>
+        <p><a href="http://open.baidu.com" target="_blank"><img link="http://t10.baidu.com/it/u=3331686015,4023279962&fm=58"/></a></p>
+    </div>
+        <div class="c-tabs-content c-gap-top-small opr_tabs_content" style="display:none">
+        <p><i class="c-text c-text-public c-text-mult c-gap-icon-right-small">官网</i>认证是百度通过对网站资质，网站安全性，权威性等进行核查后标记官网。</p>
+        <p><a href="http://guanwang.baidu.com" target="_blank"><img link="http://t12.baidu.com/it/u=4021856324,315945869&fm=58"/></a></p>
+    </div>
+    </div>
+
+
+
+</div>
+</div><div class="result-op xpath-log" tpl="right_links" data-click="{fm:'alxr',p1:'3',rsv_srcid:'12570',mu:'http://www.baidu.com',rsv_stl:'0'}"> 
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+    
+    
+
+
+<div class="cr-content cr-content-narrow">
+    
+<style>.opr_links_title{font-size:1.07em;font-weight:700}.opr_links_list td{line-height:1.7;padding-right:20px}</style>
+
+<p class="opr_links_title">工具导航</p>
+<table class="opr_links_list">
+        <tr>							        <td><a href="http://zhanzhang.baidu.com" target="_blank" title="站长平台">站长平台</a></td>
+                    							        <td><a href="http://union.baidu.com" target="_blank" title="百度联盟">百度联盟</a></td>
+            </tr>        <tr>							        <td><a href="http://zhanzhang.baidu.com/search/index" target="_blank" title="站内搜索">站内搜索</a></td>
+                    							        <td><a href="http://share.baidu.com" target="_blank" title="百度分享">百度分享</a></td>
+            </tr>        <tr>							        <td><a href="http://tongji.baidu.com" target="_blank" title="百度统计">百度统计</a></td>
+                    							        <td><a href="http://index.baidu.com" target="_blank" title="百度指数">百度指数</a></td>
+            </tr>    </table>
+
+</div>
+</div><div class="result-op xpath-log" tpl="right_hotlist" data-click="{fm:'alxr',p1:'4',rsv_srcid:'6852',mu:'http://www.baidu.com/6852',rsv_stl:'0'}"> 
 
     
 
@@ -125,389 +345,240 @@ this.mergefns=[];this._currentcontainer=null};window.a=bds.aladdin={};b(d,window
                                                 <tr>
             <td>
                 <span class="c-index  c-index-hot1 c-gap-icon-right-small">1</span>
-                <a target="_blank" href="/s?usm=2&wd=%e5%a5%b3%e5%ad%90%e5%85%a8%e8%ba%ab%e9%95%bf%e6%8c%87%e7%94%b2&ie=utf-8&rsv_dl=0_right_hotlist_6852" title="女子全身长指甲">女子全身长指甲</a>
+                <a target="_blank" href="/s?wd=%e4%ba%ba%e5%86%8d%e5%9b%a7%e9%80%94%e4%b9%8b%e6%b8%af%e5%9b%a7&ie=utf-8&rsv_dl=0_right_hotlist_6852" title="人再囧途之港囧">人再囧途之港囧</a>
             </td>
-            <td class="opr-toplist-right">91151</td>
+            <td class="opr-toplist-right">67792</td>
         </tr>
                 <tr>
             <td>
                 <span class="c-index  c-index-hot2 c-gap-icon-right-small">2</span>
-                <a target="_blank" href="/s?usm=2&wd=%e6%9c%80%e9%95%bf%e5%af%92%e5%81%87&ie=utf-8&rsv_dl=0_right_hotlist_6852" title="最长寒假">最长寒假</a>
+                <a target="_blank" href="/s?wd=%e5%8d%81%e7%be%8a%e4%b9%9d%e4%b8%8d%e5%85%a8&ie=utf-8&rsv_dl=0_right_hotlist_6852" title="十羊九不全">十羊九不全</a>
             </td>
-            <td class="opr-toplist-right">90968</td>
+            <td class="opr-toplist-right">33468</td>
         </tr>
                 <tr>
             <td>
                 <span class="c-index  c-index-hot3 c-gap-icon-right-small">3</span>
-                <a target="_blank" href="/s?usm=2&wd=%e4%b8%89%e5%a4%a7%e6%a0%b8%e7%94%b5%e9%a1%b9%e7%9b%ae%e5%b0%86%e5%90%af%e5%8a%a8&ie=utf-8&rsv_dl=0_right_hotlist_6852" title="三大核电项目将启动">三大核电项目将启动</a>
+                <a target="_blank" href="/s?wd=%e4%b8%ad%e6%97%a5%e6%9a%97%e6%88%98g20%e4%b8%bb%e5%8a%9e%e6%9d%83&ie=utf-8&rsv_dl=0_right_hotlist_6852" title="中日暗战g20主办权">中日暗战g20主办权</a>
             </td>
-            <td class="opr-toplist-right">45281</td>
+            <td class="opr-toplist-right">19910</td>
         </tr>
                 <tr>
             <td>
                 <span class="c-index  c-gap-icon-right-small">4</span>
-                <a target="_blank" href="/s?usm=2&wd=%e7%ba%a2%e6%97%97l5&ie=utf-8&rsv_dl=0_right_hotlist_6852" title="红旗l5">红旗l5</a>
+                <a target="_blank" href="/s?wd=%e4%bf%a1%e8%aa%89%e6%9f%a5%e8%af%a2&ie=utf-8&rsv_dl=0_right_hotlist_6852" title="信誉查询">信誉查询</a>
             </td>
-            <td class="opr-toplist-right">27912</td>
+            <td class="opr-toplist-right">8790</td>
         </tr>
                 <tr>
             <td>
                 <span class="c-index  c-gap-icon-right-small">5</span>
-                <a target="_blank" href="/s?usm=2&wd=%e6%9d%ad%e5%b7%9e%e5%9c%b0%e9%93%812%e5%8f%b7%e7%ba%bf&ie=utf-8&rsv_dl=0_right_hotlist_6852" title="杭州地铁2号线">杭州地铁2号线</a>
+                <a target="_blank" href="/s?wd=%e6%bd%8d%e5%9d%8a%e9%9b%85%e6%80%9d%e5%9f%b9%e8%ae%ad&ie=utf-8&rsv_dl=0_right_hotlist_6852" title="潍坊雅思培训">潍坊雅思培训</a>
             </td>
-            <td class="opr-toplist-right">8179</td>
+            <td class="opr-toplist-right">669</td>
         </tr>
                 <tr>
             <td>
                 <span class="c-index  c-gap-icon-right-small">6</span>
-                <a target="_blank" href="/s?usm=2&wd=%e7%a6%8f%e7%89%b9mustang&ie=utf-8&rsv_dl=0_right_hotlist_6852" title="福特mustang">福特mustang</a>
+                <a target="_blank" href="/s?wd=%e8%bd%a6%e6%99%93&ie=utf-8&rsv_dl=0_right_hotlist_6852" title="车晓">车晓</a>
             </td>
-            <td class="opr-toplist-right">5928</td>
+            <td class="opr-toplist-right">577</td>
         </tr>
                 <tr>
             <td>
                 <span class="c-index  c-gap-icon-right-small">7</span>
-                <a target="_blank" href="/s?usm=2&wd=%e4%b8%ad%e6%97%a5%e6%9a%97%e6%88%98g20%e4%b8%bb%e5%8a%9e%e6%9d%83&ie=utf-8&rsv_dl=0_right_hotlist_6852" title="中日暗战g20主办权">中日暗战g20主办权</a>
+                <a target="_blank" href="/s?wd=%e9%ab%98%e4%bb%93%e5%81%a5&ie=utf-8&rsv_dl=0_right_hotlist_6852" title="高仓健">高仓健</a>
             </td>
-            <td class="opr-toplist-right">668</td>
+            <td class="opr-toplist-right">570</td>
         </tr>
                 <tr>
             <td>
                 <span class="c-index  c-gap-icon-right-small">8</span>
-                <a target="_blank" href="/s?usm=2&wd=%e7%ba%a2%e9%ab%98%e7%b2%b1%e7%94%b5%e8%a7%86%e5%89%a7&ie=utf-8&rsv_dl=0_right_hotlist_6852" title="红高粱电视剧">红高粱电视剧</a>
+                <a target="_blank" href="/s?wd=%e6%98%9f%e9%99%85%e7%a9%bf%e8%b6%8a&ie=utf-8&rsv_dl=0_right_hotlist_6852" title="星际穿越">星际穿越</a>
             </td>
-            <td class="opr-toplist-right">561</td>
+            <td class="opr-toplist-right">549</td>
         </tr>
                 <tr>
             <td>
                 <span class="c-index  c-gap-icon-right-small">9</span>
-                <a target="_blank" href="/s?usm=2&wd=%e6%98%9f%e9%99%85%e7%a9%bf%e8%b6%8a&ie=utf-8&rsv_dl=0_right_hotlist_6852" title="星际穿越">星际穿越</a>
+                <a target="_blank" href="/s?wd=%e8%bd%a6%e6%99%93%e5%89%8d%e5%a4%ab%e7%a0%b4%e4%ba%a7&ie=utf-8&rsv_dl=0_right_hotlist_6852" title="车晓前夫破产">车晓前夫破产</a>
             </td>
-            <td class="opr-toplist-right">555</td>
+            <td class="opr-toplist-right">542</td>
         </tr>
                 <tr>
             <td>
                 <span class="c-index  c-gap-icon-right-small">10</span>
-                <a target="_blank" href="/s?usm=2&wd=%e6%8a%98800&ie=utf-8&rsv_dl=0_right_hotlist_6852" title="折800">折800</a>
+                <a target="_blank" href="/s?wd=%e6%96%97%e9%b1%bctv&ie=utf-8&rsv_dl=0_right_hotlist_6852" title="斗鱼tv">斗鱼tv</a>
             </td>
-            <td class="opr-toplist-right">542</td>
+            <td class="opr-toplist-right">541</td>
         </tr>
                     </table>
 </div>
 
 </div>
-</div><div style="text-align:right;"><a href="javascript:;" onclick="return false;" class="c-gray c-feedback">给百度提建议</a></div></div><div></div><div></div></td></tr></table></div><div class="nums">百度为您找到相关结果约19,500个</div><div id="content_left"> 
+</div><div style="text-align:right;"><a href="javascript:;" onclick="return false;" class="c-gray c-feedback">给百度提建议</a></div></div><div></div><div></div></td></tr></table></div><div class="nums">百度为您找到相关结果约56个</div><div id="content_left"><div class="c-border c-row site_tip"><div class="c-span3 site_tip_icon"></div><div class="c-span21 c-span-last"><p><b>找到相关结果数约56个</b></p><p class="c-gap-top">数字为估算值。网站管理员如需了解更准确的索引量，请使用<a href="http://zhanzhang.baidu.com/" target="_blank">百度站长平台</a></p></div></div><div class="result c-container " id="1" srcid="1599" tpl="se_com_default"  data-click="{'rsv_bdr':'0' }"  ><h3 class="t"><a 
+	        data-click="{
+			'f':'778717ea',
+			'f1':'9d73f1e4',
+			'f2':'cca6de6b',
+			'f3':'54e5243f',
+			't':'1416394634',
+						'y':'dfddfbee'
+			 
+									}"
+        href = "http://www.baidu.com/link?url=gce9psgjvbol4j2ipsyr9apakbxxxy0yawpminpgmgc"
 
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-              
-                    
-
-    
-    
-    
-
-<div class="result-op c-container"  srcid="6735"  fk="site:yandex.ru" id="1" tpl="site" mu="http://yandex.ru" data-op="{'y':'7f45dfed'}" data-click="{'p1':'1','rsv_bdr':'0','fm':'alop',rsv_stl:'0'}">
-            <style>.op_site_domain_title{font-family:"microsoft yahei",simhei;font-size:1.15em;color:#333}.op_site_domain_append{color:#999}.op_site_main{border-top:1px solid #ebebeb;padding:0 10px 10px;background:#fcfcfc}.op_site_box_gap_top{margin-top:19px}.op_site_box_title{font-size:.92em}.op_site_box_subkey{width:100%;border-collapse:collapse;border-spacing:0}.op_site_box_subkey a{text-decoration:none}.op_site_box_subkey a:hover{text-decoration:underline}.op_site_box_subkey td{width:50%;background:#fff;border:1px solid #f5f5f5;padding:6px 0 6px 10px}.op_site_box_subkey dd,.op_site_box_subkey dt{float:left;font-size:.92em}.op_site_box_subkey dt{width:40%}.op_site_box_subkey dd{color:#999}.op_site_box_tools{margin-top:19px}.op_site_box_tools table td{width:auto;padding:6px 0;text-align:center}</style>
-
-<div class="c-border">
-    <div class="op_site_domain c-row">
-                <div class="c-span3">
-                        <i class="c-tool c-tool-other"></i>
-                    </div>
-                <div class="c-span21 c-span-last">
-            <p class="op_site_domain_title">yandex.ru的站点信息</p>
-            <p class="op_site_domain_append">备案方：暂无数据</p>
-        </div>
-    </div>
-
-    <div class="op_site_main c-gap-top-small">
-                                            <div class="op_site_box c-gap-top">
-            <p class="op_site_box_title"><b>收录诊断：</b><span>该网站共有<b style="color:#333">17,633</b>个网页被百度收录</span><a class="c-gap-left" href="http://zhanzhang.baidu.com/indexs/index" target="_blank">到站长平台分析收录量&gt;&gt;</a></p>
-            <table class="op_site_box_subkey c-gap-top-small">
-                                <tr>                    <td>
-                        <dl>
-                            <dt>连通率</dt>
-                            <dd><i class="c-icon c-icon-right-empty c-gap-icon-right-small"></i>100%</dd>
-                        </dl>
-                    </td>
-                                                                                        <td>
-                        <dl>
-                            <dt>robots封禁</dt>
-                            <dd><i class="c-icon c-icon-right-empty c-gap-icon-right-small"></i>无</dd>
-                        </dl>
-                    </td>
-                                    </tr>                                <tr>                    <td>
-                        <dl>
-                            <dt>重要页面404</dt>
-                            <dd><i class="c-icon c-icon-right-empty c-gap-icon-right-small"></i>未发现</dd>
-                        </dl>
-                    </td>
-                                                                                        <td>
-                        <dl>
-                            <dt>收录中含死链</dt>
-                            <dd><i class="c-icon c-icon-right-empty c-gap-icon-right-small"></i>正常</dd>
-                        </dl>
-                    </td>
-                                    </tr>                            </table>
-        </div>
-                        <div class="op_site_box_tools">
-            <p class="op_site_box_title"><b>站长工具</b></p>
-            <table class="op_site_box_subkey c-gap-top-small">
-                                <tr>                    <td><a href="http://zhanzhang.baidu.com/prompt/index" target="_blank">异常消息提醒</a></td>
-                                                                                        <td><a href="http://zhanzhang.baidu.com/keywords/index" target="_blank">搜索关键词</a></td>
-                                                                                        <td><a href="http://zhanzhang.baidu.com/inbound/index" target="_blank">外链分析</a></td>
-                                                                                        <td><a href="http://zhanzhang.baidu.com/rewrite/index" target="_blank">网站改版</a></td>
-                                                                                        <td><a href="http://zhanzhang.baidu.com/sitemap/index" target="_blank">sitemap提交</a></td>
-                                                                                        <td><a href="http://zhanzhang.baidu.com/badlink/index" target="_blank">死链提交</a></td>
-                                    </tr>                            </table>
-        </div>
-            </div>
-</div>
-    
-</div>
-<div class="result c-container " id="2" srcid="1599" tpl="se_com_default"  data-click="{'rsv_bdr':'0' }"  ><h3 class="t"><a 
+		            target="_blank"
+        		
+		>博客导航网—优秀个人博客大全,独立博客主的上网主页</a></h3><div class="c-abstract">站内通告:(已收录4923个博客):站长个人原因,15元旦前会更新较慢(一周一次),希望大家积极推荐优秀博客,反馈死链!(更多博客请进分类页浏览)——2014.11.12...</div><div class="f13"><span class="g">www.516680.com/&nbsp;2014-11-11&nbsp;</span><div class="c-tools" id="tools_15359232643700728347_1" data-tools='{"title":"博客导航网—优秀个人博客大全,独立博客主的上网主页","url":"http://www.baidu.com/link?url=gce9psgjvbol4j2ipsyr9apakbxxxy0yawpminpgmgc"}'><a class="c-tip-icon"><i class="c-icon c-icon-triangle-down-g"></i></a></div><span class="c-icons-outer"><span class="c-icons-inner"></span></span>&nbsp;-&nbsp;<a data-nolog href="http://cache.baiducontent.com/c?m=9d78d513d9d706ef06e2ce384b54c0676a499d267992c71508d3904c976e59564711b2e6783f&p=c93ddd15d9c047e605fec7710f0c&newp=c0769a47a49f11a05bebd664465e92695c16ed614e8b&user=baidu&fm=sc&query=site%3awww%2e516680%2ecom&qid=cbf89efb000176cc&p1=1" 
+						target="_blank" 
+                    class="m">百度快照</a>&nbsp;-&nbsp;<a href="http://www.baidu.com/tools?url=http%3a%2f%2fwww.baidu.com%2flink%3furl%3dgce9psgjvbol4j2ipsyr9apakbxxxy0yawpminpgmgc&jump=http%3a%2f%2fkoubei.baidu.com%2fwomc%2fp%2fsentry%3ftitle%3d%01%e5%8d%9a%e5%ae%a2%01%e5%af%bc%e8%88%aa%01%e7%bd%91%01%e2%80%94%01%e4%bc%98%e7%a7%80%01%e4%b8%aa%e4%ba%ba%01%e5%8d%9a%e5%ae%a2%01%e5%a4%a7%e5%85%a8%01%2c%01%e7%8b%ac%e7%ab%8b%01%e5%8d%9a%e5%ae%a2%01%e4%b8%bb%01%e7%9a%84%01%e4%b8%8a%e7%bd%91%01%e4%b8%bb%e9%a1%b5%01%26q%3dsite:www.516680.com&key=surl" target="_blank" class="m">评价</a></div><div class="c-gap-top c-recommend" style="display:none;" data-extquery="博客大全&nbsp;独立博客导航&nbsp;个人博客导航&nbsp;博客&nbsp;个人博客大全&nbsp;"><i class="c-icon c-icon-bear-circle c-gap-right-small"></i><span class="c-gray">为您推荐：</span><a href="/s?wd=%e5%8d%9a%e5%ae%a2%e5%a4%a7%e5%85%a8&ie=utf-8&rsv_crq=7&bs=site%3awww.516680.com" target="_blank" class="res-gap-right16">博客大全</a><a href="/s?wd=%e7%8b%ac%e7%ab%8b%e5%8d%9a%e5%ae%a2%e5%af%bc%e8%88%aa&ie=utf-8&rsv_crq=7&bs=site%3awww.516680.com" target="_blank" class="res-gap-right16">独立博客导航</a><a href="/s?wd=%e4%b8%aa%e4%ba%ba%e5%8d%9a%e5%ae%a2%e5%af%bc%e8%88%aa&ie=utf-8&rsv_crq=7&bs=site%3awww.516680.com" target="_blank" class="res-gap-right16">个人博客导航</a><a href="/s?wd=%e5%8d%9a%e5%ae%a2&ie=utf-8&rsv_crq=7&bs=site%3awww.516680.com" target="_blank" class="res-gap-right16">博客</a><a href="/s?wd=%e4%b8%aa%e4%ba%ba%e5%8d%9a%e5%ae%a2%e5%a4%a7%e5%85%a8&ie=utf-8&rsv_crq=7&bs=site%3awww.516680.com" target="_blank">个人博客大全</a></div></div><div class="result c-container " id="2" srcid="1599" tpl="se_com_default"  data-click="{'rsv_bdr':'0' }"  ><h3 class="t"><a 
 	        data-click="{
 			'f':'778717ea',
 			'f1':'9d73f1e4',
 			'f2':'4ca6de6b',
 			'f3':'54e5243f',
-			't':'1416309667',
-						'y':'fecffff9'
+			't':'1416394634',
+						'y':'e98dfe9b'
 			 
 									}"
-        href = "http://www.baidu.com/link?url=swmjykts7y9mjxdxopoc5eo4cd9v6zjbbmgsjxbmacu"
+        href = "http://www.baidu.com/link?url=hdmoypixnl4hnbfrcwrmeti87qt_9abwl0vqzmfd83jqsblv0pwvbqx8_lzvxoem"
 
 		            target="_blank"
         		
-		>Яндекс</a></h3><div class="c-abstract"> Погода+5 °c ночью +2,  утром +7 08/11  usd ЦБ 47,8847,8774  eur ЦБ 59,3259,3153  cny ЦБ 78,...</div><div class="f13"><span class="g">www.yandex.ru/&nbsp;2014-11-09&nbsp;</span><div class="c-tools" id="tools_1972782253614470908_2" data-tools='{"title":"Яндекс","url":"http://www.baidu.com/link?url=swmjykts7y9mjxdxopoc5eo4cd9v6zjbbmgsjxbmacu"}'><a class="c-tip-icon"><i class="c-icon c-icon-triangle-down-g"></i></a></div><span class="c-icons-outer"><span class="c-icons-inner"></span></span>&nbsp;-&nbsp;<a data-nolog href="http://cache.baiducontent.com/c?m=9f65cb4a8c8507ed4fece763105392230e54f7286f8b864235c3933fd3234655023ba3ed28&p=8666c64ad4af08ff57ea92255951&newp=9072df15d9c447fd0be29666574f92695d0fc20e39d4d047&user=baidu&fm=sc&query=site%3ayandex%2eru&qid=dfb582de0000a072&p1=2" 
+		>网站提交 - 博客导航网—优秀个人博客大全,独立博客主的上网主页</a></h3><div class="c-abstract"> 文字链接:  网站说明: 博客导航网—优秀个人博客大全,独立博客主的上网主页 首页地址:  图片链接: 博客导航网—优秀个人博客大全,独立博客主的上网主页 首页地址...</div><div class="f13"><span class="g">www.516680.com/url-sub...&nbsp;2014-11-07&nbsp;</span><div class="c-tools" id="tools_8388148180261709990_2" data-tools='{"title":"网站提交 - 博客导航网—优秀个人博客大全,独立博客主的上网主页","url":"http://www.baidu.com/link?url=hdmoypixnl4hnbfrcwrmeti87qt_9abwl0vqzmfd83jqsblv0pwvbqx8_lzvxoem"}'><a class="c-tip-icon"><i class="c-icon c-icon-triangle-down-g"></i></a></div><span class="c-icons-outer"><span class="c-icons-inner"></span></span>&nbsp;-&nbsp;<a data-nolog href="http://cache.baiducontent.com/c?m=9f65cb4a8c8507ed4fece763105392230e54f7643fd3d41f7dc3933fc239045c0026bdac27545143839a27211cbb0c01aaa639&p=c4769a4786cc40af03b2c26f1c42&newp=8b2a9737ca8711a059edc66d5c5592695d0fc20e3fd7db676390&user=baidu&fm=sc&query=site%3awww%2e516680%2ecom&qid=cbf89efb000176cc&p1=2" 
 						target="_blank" 
-                    class="m">百度快照</a>&nbsp;-&nbsp;<a href="http://www.baidu.com/tools?url=http%3a%2f%2fwww.baidu.com%2flink%3furl%3dswmjykts7y9mjxdxopoc5eo4cd9v6zjbbmgsjxbmacu&jump=http%3a%2f%2fkoubei.baidu.com%2fwomc%2fp%2fsentry%3ftitle%3d%01%d0%af%01%d0%bd%01%d0%b4%01%d0%b5%01%d0%ba%01%d1%81%01%26q%3dsite:yandex.ru&key=surl" target="_blank" class="m">评价</a></div><div class="c-gap-top c-recommend" style="display:none;" data-extquery="谷歌翻译&nbsp;翻译&nbsp;google&nbsp;千亿词霸&nbsp;naver&nbsp;"><i class="c-icon c-icon-bear-circle c-gap-right-small"></i><span class="c-gray">为您推荐：</span><a href="/s?usm=2&wd=%e8%b0%b7%e6%ad%8c%e7%bf%bb%e8%af%91&ie=utf-8&rsv_crq=7&bs=site%3ayandex.ru" target="_blank" class="res-gap-right16">谷歌翻译</a><a href="/s?usm=2&wd=%e7%bf%bb%e8%af%91&ie=utf-8&rsv_crq=7&bs=site%3ayandex.ru" target="_blank" class="res-gap-right16">翻译</a><a href="/s?usm=2&wd=google&ie=utf-8&rsv_crq=7&bs=site%3ayandex.ru" target="_blank" class="res-gap-right16">google</a><a href="/s?usm=2&wd=%e5%8d%83%e4%ba%bf%e8%af%8d%e9%9c%b8&ie=utf-8&rsv_crq=7&bs=site%3ayandex.ru" target="_blank" class="res-gap-right16">千亿词霸</a><a href="/s?usm=2&wd=naver&ie=utf-8&rsv_crq=7&bs=site%3ayandex.ru" target="_blank">naver</a></div></div><div class="result c-container " id="3" srcid="1599" tpl="se_com_default"  data-click="{'rsv_bdr':'0' }"  ><h3 class="t"><a 
+                    class="m">百度快照</a>&nbsp;-&nbsp;<a href="http://www.baidu.com/tools?url=http%3a%2f%2fwww.baidu.com%2flink%3furl%3dhdmoypixnl4hnbfrcwrmeti87qt_9abwl0vqzmfd83jqsblv0pwvbqx8_lzvxoem&jump=http%3a%2f%2fkoubei.baidu.com%2fwomc%2fp%2fsentry%3ftitle%3d%01%e7%bd%91%e7%ab%99%01%e6%8f%90%e4%ba%a4%01%20%01-%01%20%01%e5%8d%9a%e5%ae%a2%01%e5%af%bc%e8%88%aa%01%e7%bd%91%01%e2%80%94%01%e4%bc%98%e7%a7%80%01%e4%b8%aa%e4%ba%ba%01%e5%8d%9a%e5%ae%a2%01%e5%a4%a7%e5%85%a8%01%2c%01%e7%8b%ac%e7%ab%8b%01%e5%8d%9a%e5%ae%a2%01%e4%b8%bb%01%e7%9a%84%01%e4%b8%8a%e7%bd%91%01%e4%b8%bb%e9%a1%b5%01%26q%3dsite:www.516680.com&key=surl" target="_blank" class="m">评价</a></div><div class="c-gap-top c-recommend" style="display:none;" data-extquery="网站提交入口&nbsp;网站收录&nbsp;网址提交&nbsp;网址提交入口&nbsp;"><i class="c-icon c-icon-bear-circle c-gap-right-small"></i><span class="c-gray">为您推荐：</span><a href="/s?wd=%e7%bd%91%e7%ab%99%e6%8f%90%e4%ba%a4%e5%85%a5%e5%8f%a3&ie=utf-8&rsv_crq=7&bs=site%3awww.516680.com" target="_blank" class="res-gap-right16">网站提交入口</a><a href="/s?wd=%e7%bd%91%e7%ab%99%e6%94%b6%e5%bd%95&ie=utf-8&rsv_crq=7&bs=site%3awww.516680.com" target="_blank" class="res-gap-right16">网站收录</a><a href="/s?wd=%e7%bd%91%e5%9d%80%e6%8f%90%e4%ba%a4&ie=utf-8&rsv_crq=7&bs=site%3awww.516680.com" target="_blank" class="res-gap-right16">网址提交</a><a href="/s?wd=%e7%bd%91%e5%9d%80%e6%8f%90%e4%ba%a4%e5%85%a5%e5%8f%a3&ie=utf-8&rsv_crq=7&bs=site%3awww.516680.com" target="_blank">网址提交入口</a></div></div><div class="result c-container " id="3" srcid="1599" tpl="se_com_default"  data-click="{'rsv_bdr':'0' }"  ><h3 class="t"><a 
 	        data-click="{
 			'f':'778717ea',
 			'f1':'9d73f1e4',
 			'f2':'4ca6de6b',
 			'f3':'54e5243f',
-			't':'1416309667',
-						'y':'2f679ff8'
+			't':'1416394634',
+						'y':'ed6affe3'
 			 
 									}"
-        href = "http://www.baidu.com/link?url=jnywg2jbkfdyjdtndpmv8s2id8htgdxtr_07ia4oxp7"
+        href = "http://www.baidu.com/link?url=gi3c-yyvsn8r3vdxeeq8-ql2qjbp0omfibs5rc_t5w_0y3h1uajurgq2ft96mfwn"
 
 		            target="_blank"
         		
-		>Яндекс.Новости: Главныеновости</a></h3><div class="c-abstract">Поиск Почта Карты Маркет Новости Словари Видео Картинки ещё Авто Афиша Б...</div><div class="f13"><span class="g">news.yandex.ru/&nbsp;2014-11-09&nbsp;</span><div class="c-tools" id="tools_7431438410233334590_3" data-tools='{"title":"Яндекс.Новости: Главныеновости","url":"http://www.baidu.com/link?url=jnywg2jbkfdyjdtndpmv8s2id8htgdxtr_07ia4oxp7"}'><a class="c-tip-icon"><i class="c-icon c-icon-triangle-down-g"></i></a></div><span class="c-icons-outer"><span class="c-icons-inner"></span></span>&nbsp;-&nbsp;<a data-nolog href="http://cache.baiducontent.com/c?m=9f65cb4a8c8507ed4fece763104a80235843801477848c43289e8448e4241c5c5323befb712d&p=9074d703c5904ead08e2947c0f5e92&newp=8e759a45d4c113f41ab2c62d021488231610db2151d6d21f2d8fd117c1&user=baidu&fm=sc&query=site%3ayandex%2eru&qid=dfb582de0000a072&p1=3" 
+		>山东-博客导航网—优秀个人博客大全,独立博客主的上网主页</a></h3><div class="c-abstract">山东-博客导航网—优秀个人博客大全,独立博客主的上网主页 博客导航---独立博客主的上网主页百度 站内 谷歌 淘宝 mp3 图片 视频 手写输入 ...</div><div class="f13"><span class="g">www.516680.com/html/sh...&nbsp;2013-11-04&nbsp;</span><div class="c-tools" id="tools_5353673308740830412_3" data-tools='{"title":"山东-博客导航网—优秀个人博客大全,独立博客主的上网主页","url":"http://www.baidu.com/link?url=gi3c-yyvsn8r3vdxeeq8-ql2qjbp0omfibs5rc_t5w_0y3h1uajurgq2ft96mfwn"}'><a class="c-tip-icon"><i class="c-icon c-icon-triangle-down-g"></i></a></div><span class="c-icons-outer"><span class="c-icons-inner"></span></span>&nbsp;-&nbsp;<a data-nolog href="http://cache.baiducontent.com/c?m=9d78d513d9d706ef06e2ce384b54c0676a499d267992c71508d3904c976e59564711b2e6783f4a428c9b61265bfc150ab7ac636f&p=8a79c816d9c117e808e2977d564e&newp=882a9646ce9459fc57efc30c554a92695d0fc20e3fd3d70d28cc&user=baidu&fm=sc&query=site%3awww%2e516680%2ecom&qid=cbf89efb000176cc&p1=3" 
 						target="_blank" 
-                    class="m">百度快照</a>&nbsp;-&nbsp;<a href="http://www.baidu.com/tools?url=http%3a%2f%2fwww.baidu.com%2flink%3furl%3djnywg2jbkfdyjdtndpmv8s2id8htgdxtr_07ia4oxp7&jump=http%3a%2f%2fkoubei.baidu.com%2fwomc%2fp%2fsentry%3ftitle%3d%01%d0%af%01%d0%bd%01%d0%b4%01%d0%b5%01%d0%ba%01%d1%81%01.%01%d0%9d%01%d0%be%01%d0%b2%01%d0%be%01%d1%81%01%d1%82%01%d0%b8%01%3a%01%20%01%d0%93%01%d0%bb%01%d0%b0%01%d0%b2%01%d0%bd%01%d1%8b%01%d0%b5%01%d0%bd%01%d0%be%01%d0%b2%01%d0%be%01%d1%81%01%d1%82%01%d0%b8%01%26q%3dsite:yandex.ru&key=surl" target="_blank" class="m">评价</a></div><div class="c-gap-top c-recommend" style="display:none;" data-extquery="в 02&nbsp;вконтакте&nbsp;www.yandex.ru&nbsp;"><i class="c-icon c-icon-bear-circle c-gap-right-small"></i><span class="c-gray">为您推荐：</span><a href="/s?usm=2&wd=%d0%b2+02&ie=utf-8&rsv_crq=7&bs=site%3ayandex.ru" target="_blank" class="res-gap-right16">в 02</a><a href="/s?usm=2&wd=%d0%b2%d0%ba%d0%be%d0%bd%d1%82%d0%b0%d0%ba%d1%82%d0%b5&ie=utf-8&rsv_crq=7&bs=site%3ayandex.ru" target="_blank" class="res-gap-right16">вконтакте</a><a href="/s?usm=2&wd=www.yandex.ru&ie=utf-8&rsv_crq=7&bs=site%3ayandex.ru" target="_blank">www.yandex.ru</a></div></div><div class="result c-container " id="4" srcid="1599" tpl="se_com_default"  data-click="{'rsv_bdr':'0' }"  ><h3 class="t"><a 
+                    class="m">百度快照</a>&nbsp;-&nbsp;<a href="http://www.baidu.com/tools?url=http%3a%2f%2fwww.baidu.com%2flink%3furl%3dgi3c-yyvsn8r3vdxeeq8-ql2qjbp0omfibs5rc_t5w_0y3h1uajurgq2ft96mfwn&jump=http%3a%2f%2fkoubei.baidu.com%2fwomc%2fp%2fsentry%3ftitle%3d%01%e5%b1%b1%e4%b8%9c%01-%01%e5%8d%9a%e5%ae%a2%01%e5%af%bc%e8%88%aa%01%e7%bd%91%01%e2%80%94%01%e4%bc%98%e7%a7%80%01%e4%b8%aa%e4%ba%ba%01%e5%8d%9a%e5%ae%a2%01%e5%a4%a7%e5%85%a8%01%2c%01%e7%8b%ac%e7%ab%8b%01%e5%8d%9a%e5%ae%a2%01%e4%b8%bb%01%e7%9a%84%01%e4%b8%8a%e7%bd%91%01%e4%b8%bb%e9%a1%b5%01%26q%3dsite:www.516680.com&key=surl" target="_blank" class="m">评价</a></div></div><div class="result c-container " id="4" srcid="1599" tpl="se_com_default"  data-click="{'rsv_bdr':'0' }"  ><h3 class="t"><a 
+	        data-click="{
+			'f':'77a717ea',
+			'f1':'9d73f1e4',
+			'f2':'6ca6de6b',
+			'f3':'54e5243f',
+			't':'1416394634',
+						'y':'3dedce7b'
+			 
+									}"
+        href = "http://www.baidu.com/link?url=l6vhl-kbunfadhs5f73so8eeutyltqlgxwsc8mx-ld25cuqoxm9jg4j4h-ha2xxi"
+
+		            target="_blank"
+        		
+		>资讯热点-博客导航网—优秀个人博客大全,独立博客主的上网主页</a></h3><div class="c-abstract">设为主页 网站提交 换皮肤: 宽屏版 放在桌面 博客导航---独立博客主的上网主页 百度 站内 谷歌 淘宝 mp3 图片 视频 网站不错^_^赞一个 首页 &gt;资讯热点 本...</div><div class="f13"><span class="g">www.516680.com/html/it...&nbsp;2014-8-24&nbsp;</span><div class="c-tools" id="tools_7925227333067071268_4" data-tools='{"title":"资讯热点-博客导航网—优秀个人博客大全,独立博客主的上网主页","url":"http://www.baidu.com/link?url=l6vhl-kbunfadhs5f73so8eeutyltqlgxwsc8mx-ld25cuqoxm9jg4j4h-ha2xxi"}'><a class="c-tip-icon"><i class="c-icon c-icon-triangle-down-g"></i></a></div><span class="c-icons-outer"><span class="c-icons-inner"></span></span>&nbsp;-&nbsp;<a data-nolog href="http://cache.baiducontent.com/c?m=9d78d513d9d706ef06e2ce384b54c0676a499d267992c71508d3904c976e59564711b2e6783f4a428c9b613c47b84e28b6a773332a&p=8b2a9715d9c117dd0c818e604d&newp=8f7bca16d9c111a05aaf82374d53d8304a02c70e3f&user=baidu&fm=sc&query=site%3awww%2e516680%2ecom&qid=cbf89efb000176cc&p1=4" 
+						target="_blank" 
+                    class="m">百度快照</a>&nbsp;-&nbsp;<a href="http://www.baidu.com/tools?url=http%3a%2f%2fwww.baidu.com%2flink%3furl%3dl6vhl-kbunfadhs5f73so8eeutyltqlgxwsc8mx-ld25cuqoxm9jg4j4h-ha2xxi&jump=http%3a%2f%2fkoubei.baidu.com%2fwomc%2fp%2fsentry%3ftitle%3d%01%e8%b5%84%e8%ae%af%01%e7%83%ad%e7%82%b9%01-%01%e5%8d%9a%e5%ae%a2%01%e5%af%bc%e8%88%aa%01%e7%bd%91%01%e2%80%94%01%e4%bc%98%e7%a7%80%01%e4%b8%aa%e4%ba%ba%01%e5%8d%9a%e5%ae%a2%01%e5%a4%a7%e5%85%a8%01%2c%01%e7%8b%ac%e7%ab%8b%01%e5%8d%9a%e5%ae%a2%01%e4%b8%bb%01%e7%9a%84%01%e4%b8%8a%e7%bd%91%01%e4%b8%bb%e9%a1%b5%01%26q%3dsite:www.516680.com&key=surl" target="_blank" class="m">评价</a>&nbsp;-&nbsp;<a href="http://www.baidu.com/link?url=cp3n30ly6f_ppgstnhqamqgyn1tnrsuk7dznidiyh8t7cyxskwri-hjfgocckeg-edoskqggs8kww0kuxvxp8dqk4irxkvxqv13hnsftxstm179glnfwn8tm_gkyacn1lruwm9sucpuhwupa3bpzoggvcelpl-yws_3pyb_co6qyqccpxvtb8n6rfeo5wgfb" target="_blank" class="m">翻译此页</a></div></div><div class="result c-container " id="5" srcid="1599" tpl="se_com_default"  data-click="{'rsv_bdr':'0' }"  ><h3 class="t"><a 
 	        data-click="{
 			'f':'778717ea',
 			'f1':'9d73f1e4',
 			'f2':'4ca6de6b',
 			'f3':'54e5243f',
-			't':'1416309667',
-						'y':'fdf6eafb'
+			't':'1416394634',
+						'y':'adf772d7'
 			 
 									}"
-        href = "http://www.baidu.com/link?url=6w-gdxry0hkqemradear7rlhqkw9ixbbrfnc-ldimho"
+        href = "http://www.baidu.com/link?url=-02j4d3kedt11gn04yooopzizvmx2rpfsjsswc8sbqjtvtxv6o3ycqw5sdjnvgvp"
 
 		            target="_blank"
         		
-		>Яндекс.Авто—выборипоискавтомоби...</a></h3><div class="c-abstract"> lada (ВАЗ) largusp 485 000 – 505 000 Р mazda 2p  infiniti qx80p 3 896 500 – 4 034 700 Р audi q3p  nissan jukep 685 000 – 1 168 ...</div><div class="f13"><span class="g">auto.yandex.ru/&nbsp;2014-11-15&nbsp;</span><div class="c-tools" id="tools_8166237804737897861_4" data-tools='{"title":"Яндекс.Авто—выборипоискавтомоби...","url":"http://www.baidu.com/link?url=6w-gdxry0hkqemradear7rlhqkw9ixbbrfnc-ldimho"}'><a class="c-tip-icon"><i class="c-icon c-icon-triangle-down-g"></i></a></div><span class="c-icons-outer"><span class="c-icons-inner"></span></span>&nbsp;-&nbsp;<a data-nolog href="http://cache.baiducontent.com/c?m=9d78d513d9d706ef06e2ce384b54c0676a499d307b918d027fa3d81bcf320c0b506694fb603f&p=cb3b8d16d9c10ab91abd9b7d0d1086&newp=837dc64ad4db10ff57ee9478590cc4231611c20e3ad1c844&user=baidu&fm=sc&query=site%3ayandex%2eru&qid=dfb582de0000a072&p1=4" 
+		>这样的朋友,值得好好珍惜! –</a></h3><div class="c-abstract">还偏不让别人喊他胖子,另一个是瘦瘦的,平时看似不咋喜欢说话,实际上也是一个特能开玩笑,很搞笑的朋友。胖子做事总喜欢冲动,瘦子却很是会用脑子,胖子看见啥让他...</div><div class="f13"><span class="g">www.516680.com/2011/12...&nbsp;2011-12-13&nbsp;</span><div class="c-tools" id="tools_10654694614431180373_5" data-tools='{"title":"这样的朋友,值得好好珍惜! – ","url":"http://www.baidu.com/link?url=-02j4d3kedt11gn04yooopzizvmx2rpfsjsswc8sbqjtvtxv6o3ycqw5sdjnvgvp"}'><a class="c-tip-icon"><i class="c-icon c-icon-triangle-down-g"></i></a></div><span class="c-icons-outer"><span class="c-icons-inner"></span></span>&nbsp;-&nbsp;<a data-nolog href="http://cache.baiducontent.com/c?m=9d78d513d9d706ef06e2ce384b54c0676a499d267992c71508d3904c976e59564711b2e6783f1006d0c6616401b24a5df7f33d&p=882a9642dd910afc57ef8a24610897&newp=c27ac416d9c116ff57ee93754543c4231610db2151d6d31328&user=baidu&fm=sc&query=site%3awww%2e516680%2ecom&qid=cbf89efb000176cc&p1=5" 
 						target="_blank" 
-                    class="m">百度快照</a>&nbsp;-&nbsp;<a href="http://www.baidu.com/tools?url=http%3a%2f%2fwww.baidu.com%2flink%3furl%3d6w-gdxry0hkqemradear7rlhqkw9ixbbrfnc-ldimho&jump=http%3a%2f%2fkoubei.baidu.com%2fwomc%2fp%2fsentry%3ftitle%3d%01%d0%af%01%d0%bd%01%d0%b4%01%d0%b5%01%d0%ba%01%d1%81%01.%01%d0%90%01%d0%b2%01%d1%82%01%d0%be%01%e2%80%94%01%d0%b2%01%d1%8b%01%d0%b1%01%d0%be%01%d1%80%01%d0%b8%01%d0%bf%01%d0%be%01%d0%b8%01%d1%81%01%d0%ba%01%d0%b0%01%d0%b2%01%d1%82%01%d0%be%01%d0%bc%01%d0%be%01%d0%b1%01%d0%b8%01...%26q%3dsite:yandex.ru&key=surl" target="_blank" class="m">评价</a></div></div><div class="result c-container " id="5" srcid="1599" tpl="se_com_default"  data-click="{'rsv_bdr':'0' }"  ><h3 class="t"><a 
+                    class="m">百度快照</a>&nbsp;-&nbsp;<a href="http://www.baidu.com/tools?url=http%3a%2f%2fwww.baidu.com%2flink%3furl%3d-02j4d3kedt11gn04yooopzizvmx2rpfsjsswc8sbqjtvtxv6o3ycqw5sdjnvgvp&jump=http%3a%2f%2fkoubei.baidu.com%2fwomc%2fp%2fsentry%3ftitle%3d%01%e8%bf%99%e6%a0%b7%01%e7%9a%84%01%e6%9c%8b%e5%8f%8b%01%2c%01%e5%80%bc%e5%be%97%01%e5%a5%bd%e5%a5%bd%01%e7%8f%8d%e6%83%9c%01%21%01%20%01%e2%80%93%01%20%01%26q%3dsite:www.516680.com&key=surl" target="_blank" class="m">评价</a></div></div><div class="result c-container " id="6" srcid="1599" tpl="se_com_default"  data-click="{'rsv_bdr':'0' }"  ><h3 class="t"><a 
+	        data-click="{
+			'f':'778717ea',
+			'f1':'9d73f1e4',
+			'f2':'4ca6de6b',
+			'f3':'54e52437',
+			't':'1416394634',
+						'y':'75f8f9dd'
+			 
+									}"
+        href = "http://www.baidu.com/link?url=np-uopymfmbowoowqukmel1onypw-wwqb-gdhcqliig9_ekmjvlh7kpefr_xxwiefhq0-qzgmwbhvtdwivxpbk"
+
+		            target="_blank"
+        		
+		>新站收录-博客导航网</a></h3><div class="c-abstract">1. 不收录有反动、色情、赌博等不良内容或提供不良内容链接的网站,以及网站名称或内容违反国家有关政策法规的网站;2. 不收录含有病毒、木马,弹出插件或恶意更改...</div><div class="f13"><span class="g">www.516680.com/about/i...&nbsp;2013-11-04&nbsp;</span><div class="c-tools" id="tools_6771552672823691109_6" data-tools='{"title":"新站收录-博客导航网","url":"http://www.baidu.com/link?url=np-uopymfmbowoowqukmel1onypw-wwqb-gdhcqliig9_ekmjvlh7kpefr_xxwiefhq0-qzgmwbhvtdwivxpbk"}'><a class="c-tip-icon"><i class="c-icon c-icon-triangle-down-g"></i></a></div><span class="c-icons-outer"><span class="c-icons-inner"></span></span>&nbsp;-&nbsp;<a data-nolog href="http://cache.baiducontent.com/c?m=9d78d513d9d706ef06e2ce384b54c0676a499d267992c71508d3904c976e59564711b2e6783f43548e823a7a7af31802ada66124200357eddd97&p=8b2a9715d9c047ae0e9fc012170897&newp=8f7bca16d9c111a05beb953c1b5f97231610db2151d3d414&user=baidu&fm=sc&query=site%3awww%2e516680%2ecom&qid=cbf89efb000176cc&p1=6" 
+						target="_blank" 
+                    class="m">百度快照</a>&nbsp;-&nbsp;<a href="http://www.baidu.com/tools?url=http%3a%2f%2fwww.baidu.com%2flink%3furl%3dnp-uopymfmbowoowqukmel1onypw-wwqb-gdhcqliig9_ekmjvlh7kpefr_xxwiefhq0-qzgmwbhvtdwivxpbk&jump=http%3a%2f%2fkoubei.baidu.com%2fwomc%2fp%2fsentry%3ftitle%3d%01%e6%96%b0%e7%ab%99%01%e6%94%b6%e5%bd%95%01-%01%e5%8d%9a%e5%ae%a2%01%e5%af%bc%e8%88%aa%01%e7%bd%91%01%26q%3dsite:www.516680.com&key=surl" target="_blank" class="m">评价</a></div></div><div class="result c-container " id="7" srcid="1599" tpl="se_com_default"  data-click="{'rsv_bdr':'0' }"  ><h3 class="t"><a 
 	        data-click="{
 			'f':'778717ea',
 			'f1':'9d73f1e4',
 			'f2':'4ca6de6b',
 			'f3':'54e5243f',
-			't':'1416309667',
-						'y':'feade6ff'
+			't':'1416394634',
+						'y':'fdf3f2bf'
 			 
 									}"
-        href = "http://www.baidu.com/link?url=xrozgdrgy3trterc6yoefkxn8-g19kqm5bucmx6r3dhqlhkjrnsqqn_nor3fyclx"
+        href = "http://www.baidu.com/link?url=ss8softwvjl9g8llx7sus848gccmrh8b8_tbvk5kbbc1xgro5w2kichjv81kmggdi1r0vasmpafcc_nyms2grq"
 
 		            target="_blank"
         		
-		>Яндекс.Фотки</a></h3><div class="c-abstract">Популярныефотона главнойстраницеЯндекса  ФотодняЗалславы РекаКаменице...</div><div class="f13"><span class="g">fotki.yandex.ru/&nbsp;2014-11-18&nbsp;</span><div class="c-tools" id="tools_3897616802024393186_5" data-tools='{"title":"Яндекс.Фотки","url":"http://www.baidu.com/link?url=xrozgdrgy3trterc6yoefkxn8-g19kqm5bucmx6r3dhqlhkjrnsqqn_nor3fyclx"}'><a class="c-tip-icon"><i class="c-icon c-icon-triangle-down-g"></i></a></div><span class="c-icons-outer"><span class="c-icons-inner"></span></span>&nbsp;-&nbsp;<a data-nolog href="http://cache.baiducontent.com/c?m=9d78d513d9d706ef06e2ce384b54c0676a499d376191894e68d4e403c0380d160d71e3cc67650d&p=cb3b8d16d9c10ab91abd9b7b0a47&newp=837dc64ad4db10ff57e8932a170592695c16ed633dcf81&user=baidu&fm=sc&query=site%3ayandex%2eru&qid=dfb582de0000a072&p1=5" 
+		>广告联盟-博客导航网—优秀个人博客大全,独立博客主的上网主页</a></h3><div class="c-abstract">广告联盟-博客导航网—优秀个人博客大全,独立博客主的上网主页 博客导航-- 独立博客主的上网主页!百度 站内 谷歌 淘宝 音乐 图片 视频...</div><div class="f13"><span class="g">www.516680.com/html/to...&nbsp;2014-10-24&nbsp;</span><div class="c-tools" id="tools_8099690636743817983_7" data-tools='{"title":"广告联盟-博客导航网—优秀个人博客大全,独立博客主的上网主页","url":"http://www.baidu.com/link?url=ss8softwvjl9g8llx7sus848gccmrh8b8_tbvk5kbbc1xgro5w2kichjv81kmggdi1r0vasmpafcc_nyms2grq"}'><a class="c-tip-icon"><i class="c-icon c-icon-triangle-down-g"></i></a></div><span class="c-icons-outer"><span class="c-icons-inner"></span></span>&nbsp;-&nbsp;<a data-nolog href="http://cache.baiducontent.com/c?m=9d78d513d9d706ef06e2ce384b54c0676a499d267992c71508d3904c976e59564711b2e6783f4a428c9b61215ced120df7a36036604366ecda93d41fc0&p=976adc5f85cc43f108e29f7c4257&newp=9370d716d9c11ac308e29f7c175792695d0fc20e36dd8b79&user=baidu&fm=sc&query=site%3awww%2e516680%2ecom&qid=cbf89efb000176cc&p1=7" 
 						target="_blank" 
-                    class="m">百度快照</a>&nbsp;-&nbsp;<a href="http://www.baidu.com/tools?url=http%3a%2f%2fwww.baidu.com%2flink%3furl%3dxrozgdrgy3trterc6yoefkxn8-g19kqm5bucmx6r3dhqlhkjrnsqqn_nor3fyclx&jump=http%3a%2f%2fkoubei.baidu.com%2fwomc%2fp%2fsentry%3ftitle%3d%01%d0%af%01%d0%bd%01%d0%b4%01%d0%b5%01%d0%ba%01%d1%81%01.%01%d0%a4%01%d0%be%01%d1%82%01%d0%ba%01%d0%b8%01%26q%3dsite:yandex.ru&key=surl" target="_blank" class="m">评价</a></div></div><div class="result c-container " id="6" srcid="1599" tpl="se_com_default"  data-click="{'rsv_bdr':'0' }"  ><h3 class="t"><a 
-	        data-click="{
-			'f':'778717ea',
-			'f1':'9d73f1e4',
-			'f2':'4ca6de6e',
-			'f3':'54e5243f',
-			't':'1416309667',
-						'y':'6dc7ff95'
-			 
-									}"
-        href = "http://www.baidu.com/link?url=vkabxhy72zp4mtndfpds3rli_b4qiq5u7y7zecy93pnz98v94jl_kcsuhjlpsph-"
-
-		            target="_blank"
-        		
-		>money</a></h3><div class="c-abstract"> set up reminders and you&#39;ll never miss important payments. discountsand bonuses discounts and bonuses save money and get gifts from our partners when you...</div><div class="f13"><span class="g">money.yandex.ru/&nbsp;2014-11-03&nbsp;</span><div class="c-tools" id="tools_8755817143325412745_6" data-tools='{"title":"money","url":"http://www.baidu.com/link?url=vkabxhy72zp4mtndfpds3rli_b4qiq5u7y7zecy93pnz98v94jl_kcsuhjlpsph-"}'><a class="c-tip-icon"><i class="c-icon c-icon-triangle-down-g"></i></a></div><span class="c-icons-outer"><span class="c-icons-inner"></span></span>&nbsp;-&nbsp;<a data-nolog href="http://cache.baiducontent.com/c?m=9f65cb4a8c8507ed4fece76310498a3a4e1f97634b9c83492983d95f93131b065a72a6e667741f&p=8b2a971cc59e1ce01abd9b7d0610a5&newp=91769a478d9114ff57ee9f784a00a5231610db2151d4d3142486c6&user=baidu&fm=sc&query=site%3ayandex%2eru&qid=dfb582de0000a072&p1=6" 
-						target="_blank" 
-                    class="m">百度快照</a>&nbsp;-&nbsp;<a href="http://www.baidu.com/tools?url=http%3a%2f%2fwww.baidu.com%2flink%3furl%3dvkabxhy72zp4mtndfpds3rli_b4qiq5u7y7zecy93pnz98v94jl_kcsuhjlpsph-&jump=http%3a%2f%2fkoubei.baidu.com%2fwomc%2fp%2fsentry%3ftitle%3d%01money%01%26q%3dsite:yandex.ru&key=surl" target="_blank" class="m">评价</a>&nbsp;-&nbsp;<a href="http://www.baidu.com/link?url=5tueu2pwuppzikereiax0-rlkwcymel4expsvp2ngbsmocmwgcdvahczsq4dmksmicus8_glyegycln25rlrso-lmqzfimpw1tzv00dhxukifdl5e_cxmfzch5jmega_fb4pwhdpmbvpjsajbzezjadmpr-p3nzfe66obdvfj17" target="_blank" class="m">翻译此页</a></div><div class="c-gap-top c-recommend" style="display:none;" data-extquery="yandex mail&nbsp;yandex money提现&nbsp;"><i class="c-icon c-icon-bear-circle c-gap-right-small"></i><span class="c-gray">为您推荐：</span><a href="/s?usm=2&wd=yandex+mail&ie=utf-8&rsv_crq=7&bs=site%3ayandex.ru" target="_blank" class="res-gap-right16">yandex mail</a><a href="/s?usm=2&wd=yandex+money%e6%8f%90%e7%8e%b0&ie=utf-8&rsv_crq=7&bs=site%3ayandex.ru" target="_blank">yandex money提现</a></div></div><div class="result c-container " id="7" srcid="1599" tpl="se_com_default"  data-click="{'rsv_bdr':'0' }"  ><h3 class="t"><a 
+                    class="m">百度快照</a>&nbsp;-&nbsp;<a href="http://www.baidu.com/tools?url=http%3a%2f%2fwww.baidu.com%2flink%3furl%3dss8softwvjl9g8llx7sus848gccmrh8b8_tbvk5kbbc1xgro5w2kichjv81kmggdi1r0vasmpafcc_nyms2grq&jump=http%3a%2f%2fkoubei.baidu.com%2fwomc%2fp%2fsentry%3ftitle%3d%01%e5%b9%bf%e5%91%8a%01%e8%81%94%e7%9b%9f%01-%01%e5%8d%9a%e5%ae%a2%01%e5%af%bc%e8%88%aa%01%e7%bd%91%01%e2%80%94%01%e4%bc%98%e7%a7%80%01%e4%b8%aa%e4%ba%ba%01%e5%8d%9a%e5%ae%a2%01%e5%a4%a7%e5%85%a8%01%2c%01%e7%8b%ac%e7%ab%8b%01%e5%8d%9a%e5%ae%a2%01%e4%b8%bb%01%e7%9a%84%01%e4%b8%8a%e7%bd%91%01%e4%b8%bb%e9%a1%b5%01%26q%3dsite:www.516680.com&key=surl" target="_blank" class="m">评价</a></div><div class="c-gap-top c-recommend" style="display:none;" data-extquery="博客大全&nbsp;个人博客&nbsp;独立博客导航&nbsp;个人博客导航&nbsp;"><i class="c-icon c-icon-bear-circle c-gap-right-small"></i><span class="c-gray">为您推荐：</span><a href="/s?wd=%e5%8d%9a%e5%ae%a2%e5%a4%a7%e5%85%a8&ie=utf-8&rsv_crq=7&bs=site%3awww.516680.com" target="_blank" class="res-gap-right16">博客大全</a><a href="/s?wd=%e4%b8%aa%e4%ba%ba%e5%8d%9a%e5%ae%a2&ie=utf-8&rsv_crq=7&bs=site%3awww.516680.com" target="_blank" class="res-gap-right16">个人博客</a><a href="/s?wd=%e7%8b%ac%e7%ab%8b%e5%8d%9a%e5%ae%a2%e5%af%bc%e8%88%aa&ie=utf-8&rsv_crq=7&bs=site%3awww.516680.com" target="_blank" class="res-gap-right16">独立博客导航</a><a href="/s?wd=%e4%b8%aa%e4%ba%ba%e5%8d%9a%e5%ae%a2%e5%af%bc%e8%88%aa&ie=utf-8&rsv_crq=7&bs=site%3awww.516680.com" target="_blank">个人博客导航</a></div></div><div class="result c-container " id="8" srcid="1599" tpl="se_com_default"  data-click="{'rsv_bdr':'0' }"  ><h3 class="t"><a 
 	        data-click="{
 			'f':'778717ea',
 			'f1':'9d73f1e4',
 			'f2':'4ca6de6b',
 			'f3':'54e5243f',
-			't':'1416309667',
-						'y':'e76b7eff'
+			't':'1416394634',
+						'y':'dbd75e3e'
 			 
 									}"
-        href = "http://www.baidu.com/link?url=df8-pmftl2ab5oxiwh8cmba4o-gf2qnfneykrptb1i74aor4goihc1j7kbzc2t5z"
+        href = "http://www.baidu.com/link?url=0qoezpxo4ftkdrmxdp2lo30bj-of98r4ilqfkcgditbbzwyo6vmznwyf-sygnnz7"
 
 		            target="_blank"
         		
-		>Яндекс.Метрика</a></h3><div class="c-abstract">Веб-аналитикадляповышенияэффективностивашегосайтаЯндекс.Метрика...</div><div class="f13"><span class="g">metrika.yandex.ru/&nbsp;2014-11-17&nbsp;</span><div class="c-tools" id="tools_10309297151563375920_7" data-tools='{"title":"Яндекс.Метрика","url":"http://www.baidu.com/link?url=df8-pmftl2ab5oxiwh8cmba4o-gf2qnfneykrptb1i74aor4goihc1j7kbzc2t5z"}'><a class="c-tip-icon"><i class="c-icon c-icon-triangle-down-g"></i></a></div><span class="c-icons-outer"><span class="c-icons-inner"></span></span>&nbsp;-&nbsp;<a data-nolog href="http://cache.baiducontent.com/c?m=9d78d513d9d706ef06e2ce384b54c0676a499d3c6b91904e26878448e42f081d1131a9ac27555043ce&p=9b6fd415d9c041a91ab7c7710f4490&newp=c357d51985cc43ff57ee9478160c82231611c20e3ad1&user=baidu&fm=sc&query=site%3ayandex%2eru&qid=dfb582de0000a072&p1=7" 
+		>广告服务-博客导航网</a></h3><div class="c-abstract"> 一律先付钱后上广告,广告按月/季/半年支付,广告位租出后3天内可以无条件申请退换。本站不承诺多少点击和效果、能给你带来多少利润。  请您在电子邮件中留下您...</div><div class="f13"><span class="g">www.516680.com/about/i...&nbsp;2013-11-04&nbsp;</span><div class="c-tools" id="tools_17878657804894346395_8" data-tools='{"title":"广告服务-博客导航网","url":"http://www.baidu.com/link?url=0qoezpxo4ftkdrmxdp2lo30bj-of98r4ilqfkcgditbbzwyo6vmznwyf-sygnnz7"}'><a class="c-tip-icon"><i class="c-icon c-icon-triangle-down-g"></i></a></div><span class="c-icons-outer"><span class="c-icons-inner"></span></span>&nbsp;-&nbsp;<a data-nolog href="http://cache.baiducontent.com/c?m=9d78d513d9d706ef06e2ce384b54c0676a499d267992c71508d3904c976e59564711b2e6783f43548e823a7a5af31f0ba0e736056d457f&p=8b2a9715d9c042aa0e9fc012170897&newp=8f7bca16d9c111a05bee913c1b5f97231610db2151d1d710&user=baidu&fm=sc&query=site%3awww%2e516680%2ecom&qid=cbf89efb000176cc&p1=8" 
 						target="_blank" 
-                    class="m">百度快照</a>&nbsp;-&nbsp;<a href="http://www.baidu.com/tools?url=http%3a%2f%2fwww.baidu.com%2flink%3furl%3ddf8-pmftl2ab5oxiwh8cmba4o-gf2qnfneykrptb1i74aor4goihc1j7kbzc2t5z&jump=http%3a%2f%2fkoubei.baidu.com%2fwomc%2fp%2fsentry%3ftitle%3d%01%d0%af%01%d0%bd%01%d0%b4%01%d0%b5%01%d0%ba%01%d1%81%01.%01%d0%9c%01%d0%b5%01%d1%82%01%d1%80%01%d0%b8%01%d0%ba%01%d0%b0%01%26q%3dsite:yandex.ru&key=surl" target="_blank" class="m">评价</a></div></div> 
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-    
-
-
-<div class="result-op c-container xpath-log"  srcid="23"  id="8" tpl="sp_fanyi" mu="http://fanyi.baidu.com" data-op="{'y':'3fef72fd'}" data-click="{'p1':'8','rsv_bdr':'0','fm':'alop',rsv_stl:'0'}">
-             
-<h3 class="t c-gap-bottom-small">
-<a href="http://fanyi.baidu.com/translate?query=site%3ayandex.ru&lang=en2zh" target="_blank">site:yandex.ru的中文翻译_百度翻译</a>
-</h3>
-
-        <div class="c-border"><style>
-    .op_fanyi strong{display:block}
-    .op_fanyi{font-size:1.1em;word-break:normal;}
-        .op_fanyi p{font-family:microsoft yahei}
-            .op_fanyi p{font-size:1.7em;}
-    </style>
-<div class="op_fanyi">
-site:yandex.ru    <p>网站：yandex.ru</p></div>
-</div>        
-        <div class="c-gap-top-small"><span class="c-showurl">fanyi.baidu.com </span></div> 
-        
-    
-</div>
-<div class="result c-container " id="9" srcid="1599" tpl="se_com_default"  data-click="{'rsv_bdr':'0' }"  ><h3 class="t"><a 
+                    class="m">百度快照</a>&nbsp;-&nbsp;<a href="http://www.baidu.com/tools?url=http%3a%2f%2fwww.baidu.com%2flink%3furl%3d0qoezpxo4ftkdrmxdp2lo30bj-of98r4ilqfkcgditbbzwyo6vmznwyf-sygnnz7&jump=http%3a%2f%2fkoubei.baidu.com%2fwomc%2fp%2fsentry%3ftitle%3d%01%e5%b9%bf%e5%91%8a%01%e6%9c%8d%e5%8a%a1%01-%01%e5%8d%9a%e5%ae%a2%01%e5%af%bc%e8%88%aa%01%e7%bd%91%01%26q%3dsite:www.516680.com&key=surl" target="_blank" class="m">评价</a></div></div><div class="result c-container " id="9" srcid="1599" tpl="se_com_default"  data-click="{'rsv_bdr':'0' }"  ><h3 class="t"><a 
 	        data-click="{
 			'f':'778717ea',
 			'f1':'9d73f1e4',
 			'f2':'4ca6de6b',
 			'f3':'54e5243f',
-			't':'1416309667',
-						'y':'9eea7ebf'
+			't':'1416394634',
+						'y':'7fffbaff'
 			 
 									}"
-        href = "http://www.baidu.com/link?url=0rtaehhqyt1zhicq1jopchdvcosj1ytsuglpxvcv49q"
+        href = "http://www.baidu.com/link?url=tedpwoytfz9m5hyv_1nedsdxqmoq6gxjjztcmd1s7v29de9ffjobtdutmcesrktq"
 
 		            target="_blank"
         		
-		>Яндекс.Почта—бесплатнаяэлектрон...</a></h3><div class="c-abstract"> Логин  Пароль  Чужойкомпьютер Вспомнитьпароль Войти Регистрация...</div><div class="f13"><span class="g">mail.yandex.ru/&nbsp;2014-11-07&nbsp;</span><div class="c-tools" id="tools_11898770591208627407_9" data-tools='{"title":"Яндекс.Почта—бесплатнаяэлектрон...","url":"http://www.baidu.com/link?url=0rtaehhqyt1zhicq1jopchdvcosj1ytsuglpxvcv49q"}'><a class="c-tip-icon"><i class="c-icon c-icon-triangle-down-g"></i></a></div><span class="c-icons-outer"><span class="c-icons-inner"></span></span>&nbsp;-&nbsp;<a data-nolog href="http://cache.baiducontent.com/c?m=9d78d513d9d706ef06e2ce384b54c0676a499d3c6f8c8e027fa3d81bcf320c0b506694fb603f&p=c3759a45d5c519b149a5ce2d0214cb&newp=91769a47c8d217b108e2947d0b0895231610db2151d6d11161c5c556&user=baidu&fm=sc&query=site%3ayandex%2eru&qid=dfb582de0000a072&p1=9" 
+		>主机购买-博客导航网—优秀个人博客大全,独立博客主的上网主页</a></h3><div class="c-abstract">主机购买-博客导航网—优秀个人博客大全,独立博客主的上网主页 博客导航---独立博客主的上网主页百度 站内 谷歌 淘宝 mp3 图片 视频 手写输入 ...</div><div class="f13"><span class="g">www.516680.com/html/ho...&nbsp;2014-01-26&nbsp;</span><div class="c-tools" id="tools_10303216863193616329_9" data-tools='{"title":"主机购买-博客导航网—优秀个人博客大全,独立博客主的上网主页","url":"http://www.baidu.com/link?url=tedpwoytfz9m5hyv_1nedsdxqmoq6gxjjztcmd1s7v29de9ffjobtdutmcesrktq"}'><a class="c-tip-icon"><i class="c-icon c-icon-triangle-down-g"></i></a></div><span class="c-icons-outer"><span class="c-icons-inner"></span></span>&nbsp;-&nbsp;<a data-nolog href="http://cache.baiducontent.com/c?m=9d78d513d9d706ef06e2ce384b54c0676a499d267992c71508d3904c976e59564711b2e6783f4a428c9b613d5cee0f41&p=882a9643938605fc57efc0125a59&newp=c9759a46d0d00af40be296351b0a92695d0fc20e39d1d606348f&user=baidu&fm=sc&query=site%3awww%2e516680%2ecom&qid=cbf89efb000176cc&p1=9" 
 						target="_blank" 
-                    class="m">百度快照</a>&nbsp;-&nbsp;<a href="http://www.baidu.com/tools?url=http%3a%2f%2fwww.baidu.com%2flink%3furl%3d0rtaehhqyt1zhicq1jopchdvcosj1ytsuglpxvcv49q&jump=http%3a%2f%2fkoubei.baidu.com%2fwomc%2fp%2fsentry%3ftitle%3d%01%d0%af%01%d0%bd%01%d0%b4%01%d0%b5%01%d0%ba%01%d1%81%01.%01%d0%9f%01%d0%be%01%d1%87%01%d1%82%01%d0%b0%01%e2%80%94%01%d0%b1%01%d0%b5%01%d1%81%01%d0%bf%01%d0%bb%01%d0%b0%01%d1%82%01%d0%bd%01%d0%b0%01%d1%8f%01%d1%8d%01%d0%bb%01%d0%b5%01%d0%ba%01%d1%82%01%d1%80%01%d0%be%01%d0%bd%01...%26q%3dsite:yandex.ru&key=surl" target="_blank" class="m">评价</a></div><div class="c-gap-top c-recommend" style="display:none;" data-extquery="yandex.com&nbsp;яндекс&nbsp;mail.ru&nbsp;"><i class="c-icon c-icon-bear-circle c-gap-right-small"></i><span class="c-gray">为您推荐：</span><a href="/s?usm=2&wd=yandex.com&ie=utf-8&rsv_crq=7&bs=site%3ayandex.ru" target="_blank" class="res-gap-right16">yandex.com</a><a href="/s?usm=2&wd=%d1%8f%d0%bd%d0%b4%d0%b5%d0%ba%d1%81&ie=utf-8&rsv_crq=7&bs=site%3ayandex.ru" target="_blank" class="res-gap-right16">яндекс</a><a href="/s?usm=2&wd=mail.ru&ie=utf-8&rsv_crq=7&bs=site%3ayandex.ru" target="_blank">mail.ru</a></div></div><div class="result c-container " id="10" srcid="1599" tpl="se_com_default"  data-click="{'rsv_bdr':'0' }"  ><h3 class="t"><a 
+                    class="m">百度快照</a>&nbsp;-&nbsp;<a href="http://www.baidu.com/tools?url=http%3a%2f%2fwww.baidu.com%2flink%3furl%3dtedpwoytfz9m5hyv_1nedsdxqmoq6gxjjztcmd1s7v29de9ffjobtdutmcesrktq&jump=http%3a%2f%2fkoubei.baidu.com%2fwomc%2fp%2fsentry%3ftitle%3d%01%e4%b8%bb%e6%9c%ba%01%e8%b4%ad%e4%b9%b0%01-%01%e5%8d%9a%e5%ae%a2%01%e5%af%bc%e8%88%aa%01%e7%bd%91%01%e2%80%94%01%e4%bc%98%e7%a7%80%01%e4%b8%aa%e4%ba%ba%01%e5%8d%9a%e5%ae%a2%01%e5%a4%a7%e5%85%a8%01%2c%01%e7%8b%ac%e7%ab%8b%01%e5%8d%9a%e5%ae%a2%01%e4%b8%bb%01%e7%9a%84%01%e4%b8%8a%e7%bd%91%01%e4%b8%bb%e9%a1%b5%01%26q%3dsite:www.516680.com&key=surl" target="_blank" class="m">评价</a></div></div><div class="result c-container " id="10" srcid="1599" tpl="se_com_default"  data-click="{'rsv_bdr':'0' }"  ><h3 class="t"><a 
 	        data-click="{
 			'f':'778717ea',
-			'f1':'9d43f1e4',
+			'f1':'9d73f1e4',
 			'f2':'4ca6de6b',
 			'f3':'54e5243f',
-			't':'1416309667',
-						'y':'f3f97ff5'
+			't':'1416394634',
+						'y':'edffdfee'
 			 
 									}"
-        href = "http://www.baidu.com/link?url=zu11clqzqpr-tthttyb1piacyt2s7kdi4oozhnpp8gc3d6pbcj2wjr3ry78qag31"
+        href = "http://www.baidu.com/link?url=dz1jptnsqzhutvk_m2kzbrvkqftrwfc-gnkjic5qfdn3rcjyzcyvtptqpuimapim"
 
 		            target="_blank"
         		
-		>Яндекссегодня</a></h3><div class="c-abstract"> Телепрограмма Услуги Фотки Я.ру Мобильный Программы Все сервисы Найти ...</div><div class="f13"><span class="g">company.yandex.ru/&nbsp;2014-11-13&nbsp;</span><div class="c-tools" id="tools_8614828871170934785_10" data-tools='{"title":"Яндекссегодня","url":"http://www.baidu.com/link?url=zu11clqzqpr-tthttyb1piacyt2s7kdi4oozhnpp8gc3d6pbcj2wjr3ry78qag31"}'><a class="c-tip-icon"><i class="c-icon c-icon-triangle-down-g"></i></a></div><span class="c-icons-outer"><span class="c-icons-inner"></span></span>&nbsp;-&nbsp;<a data-nolog href="http://cache.baiducontent.com/c?m=9d78d513d9d706ef06e2ce384b54c0676a499d3261889246239f8448e42f081d1131a9ac27555043ce&p=c3759a46d7c319b149a5ce2d0214cb&newp=91769a47c8d217b108e2977f0d0895231611c20e3fc9c14361&user=baidu&fm=sc&query=site%3ayandex%2eru&qid=dfb582de0000a072&p1=10" 
+		>博客导航网—优秀个人博客大全,独立博客主的上网主页</a></h3><div class="c-abstract">站内通告:目前博客导航网总共收集4900个站点。博客建立容易,更新不易,且更且珍惜!(更多博客请进分类页浏览)——2014.10.9更多»实用查询 alexa ping whios pr...</div><div class="f13"><span class="g">www.516680.com/...html&nbsp;2014-10-09&nbsp;</span><div class="c-tools" id="tools_14447217777816151128_10" data-tools='{"title":"博客导航网—优秀个人博客大全,独立博客主的上网主页","url":"http://www.baidu.com/link?url=dz1jptnsqzhutvk_m2kzbrvkqftrwfc-gnkjic5qfdn3rcjyzcyvtptqpuimapim"}'><a class="c-tip-icon"><i class="c-icon c-icon-triangle-down-g"></i></a></div><span class="c-icons-outer"><span class="c-icons-inner"></span></span>&nbsp;-&nbsp;<a data-nolog href="http://cache.baiducontent.com/c?m=9d78d513d9d706ef06e2ce384b54c0676a499d267992c71508d3904c976e59564711b2e6783f4946c4c50b3d47f017&p=8e6dc20e86cc42ac52f7d72d02149f&newp=c977d65985cc43ff57ee9774454ccf231610db2151ddd11f&user=baidu&fm=sc&query=site%3awww%2e516680%2ecom&qid=cbf89efb000176cc&p1=10" 
 						target="_blank" 
-                    class="m">百度快照</a>&nbsp;-&nbsp;<a href="http://www.baidu.com/tools?url=http%3a%2f%2fwww.baidu.com%2flink%3furl%3dzu11clqzqpr-tthttyb1piacyt2s7kdi4oozhnpp8gc3d6pbcj2wjr3ry78qag31&jump=http%3a%2f%2fkoubei.baidu.com%2fwomc%2fp%2fsentry%3ftitle%3d%01%d0%af%01%d0%bd%01%d0%b4%01%d0%b5%01%d0%ba%01%d1%81%01%d1%81%01%d0%b5%01%d0%b3%01%d0%be%01%d0%b4%01%d0%bd%01%d1%8f%01%26q%3dsite:yandex.ru&key=surl" target="_blank" class="m">评价</a></div></div></div><div style="clear:both;height:0;"></div><p id="page" ><strong><span class="fk fk_cur"><i class="c-icon c-icon-bear-p"></i></span><span class="pc">1</span></strong><a href="/s?wd=site%3ayandex.ru&pn=10&oq=site%3ayandex.ru&ie=utf-8&usm=2&rsv_pq=dfb582de0000a072&rsv_t=349duh5jyr86a6teqxpnyhzcjwn%2b0cx0hfu76dzql1ujbhbjqkvtxvpbs6g"><span class="fk fkd"><i class="c-icon c-icon-bear-pn"></i></span><span class="pc">2</span></a><a href="/s?wd=site%3ayandex.ru&pn=20&oq=site%3ayandex.ru&ie=utf-8&usm=2&rsv_pq=dfb582de0000a072&rsv_t=349duh5jyr86a6teqxpnyhzcjwn%2b0cx0hfu76dzql1ujbhbjqkvtxvpbs6g"><span class="fk"><i class="c-icon c-icon-bear-pn"></i></span><span class="pc">3</span></a><a href="/s?wd=site%3ayandex.ru&pn=30&oq=site%3ayandex.ru&ie=utf-8&usm=2&rsv_pq=dfb582de0000a072&rsv_t=349duh5jyr86a6teqxpnyhzcjwn%2b0cx0hfu76dzql1ujbhbjqkvtxvpbs6g"><span class="fk fkd"><i class="c-icon c-icon-bear-pn"></i></span><span class="pc">4</span></a><a href="/s?wd=site%3ayandex.ru&pn=40&oq=site%3ayandex.ru&ie=utf-8&usm=2&rsv_pq=dfb582de0000a072&rsv_t=349duh5jyr86a6teqxpnyhzcjwn%2b0cx0hfu76dzql1ujbhbjqkvtxvpbs6g"><span class="fk"><i class="c-icon c-icon-bear-pn"></i></span><span class="pc">5</span></a><a href="/s?wd=site%3ayandex.ru&pn=50&oq=site%3ayandex.ru&ie=utf-8&usm=2&rsv_pq=dfb582de0000a072&rsv_t=349duh5jyr86a6teqxpnyhzcjwn%2b0cx0hfu76dzql1ujbhbjqkvtxvpbs6g"><span class="fk fkd"><i class="c-icon c-icon-bear-pn"></i></span><span class="pc">6</span></a><a href="/s?wd=site%3ayandex.ru&pn=60&oq=site%3ayandex.ru&ie=utf-8&usm=2&rsv_pq=dfb582de0000a072&rsv_t=349duh5jyr86a6teqxpnyhzcjwn%2b0cx0hfu76dzql1ujbhbjqkvtxvpbs6g"><span class="fk"><i class="c-icon c-icon-bear-pn"></i></span><span class="pc">7</span></a><a href="/s?wd=site%3ayandex.ru&pn=70&oq=site%3ayandex.ru&ie=utf-8&usm=2&rsv_pq=dfb582de0000a072&rsv_t=349duh5jyr86a6teqxpnyhzcjwn%2b0cx0hfu76dzql1ujbhbjqkvtxvpbs6g"><span class="fk fkd"><i class="c-icon c-icon-bear-pn"></i></span><span class="pc">8</span></a><a href="/s?wd=site%3ayandex.ru&pn=80&oq=site%3ayandex.ru&ie=utf-8&usm=2&rsv_pq=dfb582de0000a072&rsv_t=349duh5jyr86a6teqxpnyhzcjwn%2b0cx0hfu76dzql1ujbhbjqkvtxvpbs6g"><span class="fk"><i class="c-icon c-icon-bear-pn"></i></span><span class="pc">9</span></a><a href="/s?wd=site%3ayandex.ru&pn=90&oq=site%3ayandex.ru&ie=utf-8&usm=2&rsv_pq=dfb582de0000a072&rsv_t=349duh5jyr86a6teqxpnyhzcjwn%2b0cx0hfu76dzql1ujbhbjqkvtxvpbs6g"><span class="fk fkd"><i class="c-icon c-icon-bear-pn"></i></span><span class="pc">10</span></a><a href="/s?wd=site%3ayandex.ru&pn=10&oq=site%3ayandex.ru&ie=utf-8&usm=2&rsv_pq=dfb582de0000a072&rsv_t=349duh5jyr86a6teqxpnyhzcjwn%2b0cx0hfu76dzql1ujbhbjqkvtxvpbs6g&rsv_page=1" class="n">下一页&gt;</a></p></div><script>try{document.cookie="www_st=;expires=sat, 01 jan 2000 00:00:00 gmt";}catch(e){}</script><div id="foot"><span id="help" style="float:left;padding-left:138px"><a href="http://help.baidu.com/question" target="_blank" onmousedown="return c({'fm':'behb','tab':'help','url':this.href,'title':this.innerhtml})">帮助</a><a href="http://www.baidu.com/search/jubao.html" target="_blank" onmousedown="return c({'fm':'behb','tab':'jubao','url':this.href,'title':this.innerhtml})">举报</a><a class="feedback" onclick="return false;" href="http://qingting.baidu.com" target="_blank" onmousedown="return c({'fm':'behb','tab':'feedback','url':this.href,'title':this.innerhtml})">给百度提建议</a></span></div><div class="c-tips-container" id="c-tips-container"></div></div></div></body><script type="text/javascript" src="http://s1.bdstatic.com/r/www/cache/static/jquery/jquery-1.10.2.min_f2fb5194.js"></script>
+                    class="m">百度快照</a>&nbsp;-&nbsp;<a href="http://www.baidu.com/tools?url=http%3a%2f%2fwww.baidu.com%2flink%3furl%3ddz1jptnsqzhutvk_m2kzbrvkqftrwfc-gnkjic5qfdn3rcjyzcyvtptqpuimapim&jump=http%3a%2f%2fkoubei.baidu.com%2fwomc%2fp%2fsentry%3ftitle%3d%01%e5%8d%9a%e5%ae%a2%01%e5%af%bc%e8%88%aa%01%e7%bd%91%01%e2%80%94%01%e4%bc%98%e7%a7%80%01%e4%b8%aa%e4%ba%ba%01%e5%8d%9a%e5%ae%a2%01%e5%a4%a7%e5%85%a8%01%2c%01%e7%8b%ac%e7%ab%8b%01%e5%8d%9a%e5%ae%a2%01%e4%b8%bb%01%e7%9a%84%01%e4%b8%8a%e7%bd%91%01%e4%b8%bb%e9%a1%b5%01%26q%3dsite:www.516680.com&key=surl" target="_blank" class="m">评价</a></div><div class="c-gap-top c-recommend" style="display:none;" data-extquery="博客大全&nbsp;个人博客&nbsp;独立博客导航&nbsp;个人博客导航&nbsp;"><i class="c-icon c-icon-bear-circle c-gap-right-small"></i><span class="c-gray">为您推荐：</span><a href="/s?wd=%e5%8d%9a%e5%ae%a2%e5%a4%a7%e5%85%a8&ie=utf-8&rsv_crq=7&bs=site%3awww.516680.com" target="_blank" class="res-gap-right16">博客大全</a><a href="/s?wd=%e4%b8%aa%e4%ba%ba%e5%8d%9a%e5%ae%a2&ie=utf-8&rsv_crq=7&bs=site%3awww.516680.com" target="_blank" class="res-gap-right16">个人博客</a><a href="/s?wd=%e7%8b%ac%e7%ab%8b%e5%8d%9a%e5%ae%a2%e5%af%bc%e8%88%aa&ie=utf-8&rsv_crq=7&bs=site%3awww.516680.com" target="_blank" class="res-gap-right16">独立博客导航</a><a href="/s?wd=%e4%b8%aa%e4%ba%ba%e5%8d%9a%e5%ae%a2%e5%af%bc%e8%88%aa&ie=utf-8&rsv_crq=7&bs=site%3awww.516680.com" target="_blank">个人博客导航</a></div></div></div><div style="clear:both;height:0;"></div><p id="page" ><strong><span class="fk fk_cur"><i class="c-icon c-icon-bear-p"></i></span><span class="pc">1</span></strong><a href="/s?wd=site%3awww.516680.com&pn=10&oq=site%3awww.516680.com&ie=utf-8&rsv_pq=cbf89efb000176cc&rsv_t=fb6addee4by4ro885gicb8eb5nbf7cbqf2ap9jrcryvykvvpwidwnqim%2b5u"><span class="fk fkd"><i class="c-icon c-icon-bear-pn"></i></span><span class="pc">2</span></a><a href="/s?wd=site%3awww.516680.com&pn=20&oq=site%3awww.516680.com&ie=utf-8&rsv_pq=cbf89efb000176cc&rsv_t=fb6addee4by4ro885gicb8eb5nbf7cbqf2ap9jrcryvykvvpwidwnqim%2b5u"><span class="fk"><i class="c-icon c-icon-bear-pn"></i></span><span class="pc">3</span></a><a href="/s?wd=site%3awww.516680.com&pn=30&oq=site%3awww.516680.com&ie=utf-8&rsv_pq=cbf89efb000176cc&rsv_t=fb6addee4by4ro885gicb8eb5nbf7cbqf2ap9jrcryvykvvpwidwnqim%2b5u"><span class="fk fkd"><i class="c-icon c-icon-bear-pn"></i></span><span class="pc">4</span></a><a href="/s?wd=site%3awww.516680.com&pn=40&oq=site%3awww.516680.com&ie=utf-8&rsv_pq=cbf89efb000176cc&rsv_t=fb6addee4by4ro885gicb8eb5nbf7cbqf2ap9jrcryvykvvpwidwnqim%2b5u"><span class="fk"><i class="c-icon c-icon-bear-pn"></i></span><span class="pc">5</span></a><a href="/s?wd=site%3awww.516680.com&pn=50&oq=site%3awww.516680.com&ie=utf-8&rsv_pq=cbf89efb000176cc&rsv_t=fb6addee4by4ro885gicb8eb5nbf7cbqf2ap9jrcryvykvvpwidwnqim%2b5u"><span class="fk fkd"><i class="c-icon c-icon-bear-pn"></i></span><span class="pc">6</span></a><a href="/s?wd=site%3awww.516680.com&pn=10&oq=site%3awww.516680.com&ie=utf-8&rsv_pq=cbf89efb000176cc&rsv_t=fb6addee4by4ro885gicb8eb5nbf7cbqf2ap9jrcryvykvvpwidwnqim%2b5u&rsv_page=1" class="n">下一页&gt;</a></p></div><script>try{document.cookie="www_st=;expires=sat, 01 jan 2000 00:00:00 gmt";}catch(e){}</script><div id="foot"><span id="help" style="float:left;padding-left:138px"><a href="http://help.baidu.com/question" target="_blank" onmousedown="return c({'fm':'behb','tab':'help','url':this.href,'title':this.innerhtml})">帮助</a><a href="http://www.baidu.com/search/jubao.html" target="_blank" onmousedown="return c({'fm':'behb','tab':'jubao','url':this.href,'title':this.innerhtml})">举报</a><a class="feedback" onclick="return false;" href="http://qingting.baidu.com" target="_blank" onmousedown="return c({'fm':'behb','tab':'feedback','url':this.href,'title':this.innerhtml})">给百度提建议</a></span></div><div class="c-tips-container" id="c-tips-container"></div></div></div></body><script type="text/javascript" src="http://s1.bdstatic.com/r/www/cache/static/jquery/jquery-1.10.2.min_f2fb5194.js"></script>
 <script type="text/javascript">var cookie={set:function(c,e,d,f,a,b){document.cookie=c+"="+(b?e:escape(e))+((a)?"; expires="+a.togmtstring():"")+((f)?"; path="+f:"; path=/")+((d)?"; domain="+d:"")},get:function(c,b){var a=document.cookie.match(new regexp("(^| )"+c+"=([^;]*)(;|$)"));if(a!=null){return unescape(a[2])}return b},clear:function(a,c,b){if(this.get(a)){document.cookie=a+"="+((c)?"; path="+c:"; path=/")+((b)?"; domain="+b:"")+";expires=fri, 02-jan-1970 00:00:00 gmt"}}};(function(){var defaultoptions={sugset:1,sugstoreset:1,isswitch:1,imeswitch:0,resultnum:10,resultlang:0},options={},tmpname;var expire30y=new date();expire30y.settime(expire30y.gettime()+30*365*86400000);try{if(bds&&bds.comm&&bds.comm.personaldata){if(typeof bds.comm.personaldata=="string"){bds.comm.personaldata=eval("("+bds.comm.personaldata+")")}if(!bds.comm.personaldata){return}for(tmpname in bds.comm.personaldata){if(defaultoptions.hasownproperty(tmpname)&&bds.comm.personaldata.hasownproperty(tmpname)){if(bds.comm.personaldata[tmpname].errmsg=="success"){options[tmpname]=bds.comm.personaldata[tmpname].value
 }}}}try{if(!parseint(options.resultnum)){delete (options.resultnum)}if(!parseint(options.resultlang)&&options.resultlang!="0"){delete (options.resultlang)}}catch(e){}writecookie();if(!("sugset" in options)){options.sugset=(cookie.get("sug",3)!=3?0:1)}if(!("sugstoreset" in options)){options.sugstoreset=cookie.get("sugstore",1)}var baiduid=cookie.get("baiduid");if(!("resultnum" in options)){if(/nr=(\d+)/.test(baiduid)){options.resultnum=regexp.$1?parseint(regexp.$1):10}}if(!("resultlang" in options)){if(/sl=(\d+)/.test(baiduid)){options.resultlang=regexp.$1?parseint(regexp.$1):0}}if(!("isswitch" in options)){options.isswitch=(cookie.get("origin",0)==2?0:1)}if(!("imeswitch" in options)){options.imeswitch=cookie.get("bdime",0)}}catch(e){}function save(callback){var optionsstr=[];for(tmpname in options){if(options.hasownproperty(tmpname)){optionsstr.push('"'+tmpname+'":"'+options[tmpname]+'"')}}var str="{"+optionsstr.join(",")+"}";if(bds.comm.personaldata){$.ajax({url:"//www.baidu.com/ups/submit/addtips/?product=ps&tips="+encodeuricomponent(str)+"&_r="+new date().gettime(),success:function(){writecookie();
 if(typeof callback=="function"){callback()}}})}else{writecookie();if(typeof callback=="function"){settimeout(callback,0)}}}function set(optionname,value){options[optionname]=value}function get(optionname){return options[optionname]}function writecookie(){if(options.hasownproperty("sugset")){var value=options.sugset=="0"?"0":"3";clearcookie("sug");cookie.set("sug",value,document.domain,"/",expire30y)}if(options.hasownproperty("sugstoreset")){var value=options.sugstoreset==0?"0":"1";clearcookie("sugstore");cookie.set("sugstore",value,document.domain,"/",expire30y)}if(options.hasownproperty("isswitch")){var value=options.isswitch==0?"2":"0";clearcookie("origin");cookie.set("origin",value,document.domain,"/",expire30y)}if(options.hasownproperty("imeswitch")){var value=options.imeswitch;clearcookie("bdime");cookie.set("bdime",value,document.domain,"/",expire30y)}}function writebaiduid(){var baiduid=cookie.get("baiduid"),nr,fg,sl;if(/fg=(\d+)/.test(baiduid)){fg=regexp.$1}if(/sl=(\d+)/.test(baiduid)){sl=regexp.$1
 }if(/nr=(\d+)/.test(baiduid)){nr=regexp.$1}if(options.hasownproperty("resultnum")){nr=options.resultnum}if(options.hasownproperty("resultlang")){sl=options.resultlang}cookie.set("baiduid",baiduid.replace(/:.*$/,"")+(typeof sl!="undefined"?":sl="+sl:"")+(typeof nr!="undefined"?":nr="+nr:"")+(typeof fg!="undefined"?":fg="+fg:""),".baidu.com","/",expire30y,true)}function clearcookie(name){cookie.clear(name,"/");cookie.clear(name,"/",document.domain);cookie.clear(name,"/","."+document.domain);cookie.clear(name,"/",".baidu.com")}function reset(callback){options=defaultoptions;save(callback)}window.ups={writebaiduid:writebaiduid,reset:reset,get:get,set:set,save:save}})();(function(){var c=(navigator&&navigator.useragent)?navigator.useragent:"";var b=(document&&document.cookie)?document.cookie:"";var a=!!(c.match(/(msie [2-8])/i)||(c.match(/windows.*safari/i)&&!c.match(/chrome/i))||c.match(/(linux.*firefox)/i)||c.match(/chrome\/29/i)||c.match(/mac os x.*firefox/i)||b.match(/\bissw=1/)||b.match(/\borigin=2/));
-if(bds&&bds.comm){bds.comm.supportis=!a;bds.comm.isui=true}window.__restart_confirm_timeout=true;window.__confirm_timeout=8000;window.__disable_is_guide=true;window.__disable_swap_to_empty=true;window.__switch_add_mask=true;if(a){document.write("<script src='http://s1.bdstatic.com/r/www/cache/static/global/js/all_async_popstate1_4a5e2919.js'><\/script>")}else{document.write("<script src='http://s1.bdstatic.com/r/www/cache/static/global/js/all_instant_search1_07606b38.js'><\/script>")}if(bds.comm.newindex){$(window).on("index_off",function(){$('<div class="c-tips-container" id="c-tips-container"></div>').insertafter("#wrapper");if(window.__sample_dynamic_tab){$("#s_tab").remove()}})}})();</script><script id="ecomscript"></script><script>bds.comm.resultpage = 1;bds._base64 = {domain : "http://b1.bdstatic.com/",b64exp : -1,pdc : 0};if(bds.comm.supportis){window.__restart_confirm_timeout=true;window.__confirm_timeout=8000;window.__disable_is_guide=true;window.__disable_swap_to_empty=true;}initpreload({'isui':true,'index_form':"#form",'index_kw':"#kw",'result_form':"#form",'result_kw':"#kw"});</script><script type="text/javascript">_www_srv_t =275.93;</script></html>
+if(bds&&bds.comm){bds.comm.supportis=!a;bds.comm.isui=true}window.__restart_confirm_timeout=true;window.__confirm_timeout=8000;window.__disable_is_guide=true;window.__disable_swap_to_empty=true;window.__switch_add_mask=true;if(a){document.write("<script src='http://s1.bdstatic.com/r/www/cache/static/global/js/all_async_popstate1_4a5e2919.js'><\/script>")}else{document.write("<script src='http://s1.bdstatic.com/r/www/cache/static/global/js/all_instant_search1_a52952f6.js'><\/script>")}if(bds.comm.newindex){$(window).on("index_off",function(){$('<div class="c-tips-container" id="c-tips-container"></div>').insertafter("#wrapper");if(window.__sample_dynamic_tab){$("#s_tab").remove()}})}})();</script><script id="ecomscript"></script><script>a.merge("right_tabs",function(){a.setup(function(){var ala=this,tabs,$dom_tabs=ala.find(".opr_tabs_content");a.use("tabs5",function(){tabs=a.ui.tabs5(ala.find(".c-tabs")[0],{onchange:function(){var $dom_thistabimg=$dom_tabs.eq(this.current).find("img");if($dom_thistabimg.attr("link"))$dom_thistabimg.attr("src",$dom_thistabimg.attr("link")),$dom_thistabimg.removeattr("link")}})}),this.dispose=function(){tabs&&tabs.dispose&&tabs.dispose()}});});bds.comm.resultpage = 1;bds._base64 = {domain : "http://b1.bdstatic.com/",b64exp : -1,pdc : 0};if(bds.comm.supportis){window.__restart_confirm_timeout=true;window.__confirm_timeout=8000;window.__disable_is_guide=true;window.__disable_swap_to_empty=true;}initpreload({'isui':true,'index_form':"#form",'index_kw':"#kw",'result_form':"#form",'result_kw':"#kw"});</script><script type="text/javascript">_www_srv_t =74.95;</script></html>
