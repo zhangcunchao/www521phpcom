@@ -8,5 +8,5 @@
 
 1. [linux简单笔记](linux.md)
 2. [php笔记](php/index.md)
-3. [linux笔记](linux/index.md)
+3. [nginx笔记](nginx/index.md)
 4. [shell笔记](shell/index.md)
