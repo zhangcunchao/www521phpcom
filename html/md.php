@@ -5,7 +5,9 @@
    header("Content-type: text/html; charset=utf-8");
    date_default_timezone_set('Asia/Shanghai');
    function markUrl($url){
+	   echo $url;
 	  $root = '/data/www/www.521php.com/html/';
+	  $url  = rtrim($url,'/');
 	  $url  = ltrim($url,$root);
 	  $d = explode('/',$url);
 	  $u = '';
