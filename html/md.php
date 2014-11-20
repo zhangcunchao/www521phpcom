@@ -115,9 +115,35 @@
 	</div>
 </div>
 <span style="display:none"><script src="http://s96.cnzz.com/stat.php?id=4200165&web_id=4200165" language="JavaScript"></script></span>
+<script src="http://libs.useso.com/js/jquery/1.9.1/jquery.min.js"></script>
 <script type="text/javascript">
     /*120*300 创建于 2014-08-12*/
 var cpro_id = "u1655076";
 </script>
 <script src="http://cpro.baidustatic.com/cpro/ui/f.js" type="text/javascript"></script>
+<script>
+function hid(){
+	$(".file-wrap").animate({opacity: "hide"}, "slow");
+}
+function shw(){
+	$(".file-wrap").animate({opacity: "show"}, "slow");
+}
+$(document).ready(
+    function()
+    {
+        /**
+        *1.delay函数是jquery 1.4.2新增的函数
+        *2.hide函数里必须放一个0,不然延时不起作用
+        */
+        //$('.file-wrap').delay(6000).hide(0);
+		hid();
+		$(".file-wrap").click(function () {
+		hid();
+		});
+		$(".clearfix").click(function () {
+		shw();
+		});
+    }
+);
+</script>
 </body>
