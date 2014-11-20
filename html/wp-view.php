@@ -23,8 +23,22 @@ $id = intval($id);
 		$query = mysql_query($sql);
 	}
 	$sql = "select `meta_value` from `{$table_prefix}postmeta` where `post_id`=$id and `meta_key` = 'post_views_count'";
-	$query = mysql_query($sql);
-	$rs = mysql_fetch_array($query);
-	$count = $rs['meta_value'];
+	$redis = new redis();
+	$redis->connect('127.0.0.1',16379);
+	$redis->select(1);
+	$pre = 'article:';
+	$count = $redis->get($pre.$id);
+	if(!$count){
+		$query = mysql_query($sql);
+		$rs = mysql_fetch_array($query);
+		if(isset($rs['meta_value'])){
+			$count = $rs['meta_value'];
+			$redis->set($pre.$id,$count);
+		}
+	}else{
+		if($add){
+			$redis->set($pre.$id,$count+1);
+		}
+	}
 	echo 'document.write('.$count.')';
 }
