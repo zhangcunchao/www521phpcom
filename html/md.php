@@ -131,18 +131,9 @@ function shw(){
 $(document).ready(
     function()
     {
-        /**
-        *1.delay函数是jquery 1.4.2新增的函数
-        *2.hide函数里必须放一个0,不然延时不起作用
-        */
-        //$('.file-wrap').delay(6000).hide(0);
-		hid();
-		$(".file-wrap").click(function () {
-		hid();
-		});
-		$(".clearfix").click(function () {
-		shw();
-		});
+		setTimeout("hid()",2000);
+		$(".file-wrap").click(function () {hid();});
+		$(".clearfix").click(function () {shw();});
     }
 );
 </script>
