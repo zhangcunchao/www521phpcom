@@ -8,7 +8,7 @@ require_once(ABSPATH . 'wp-config.php');
 $id = @$_GET['id'];
 $id = intval($id);
 	if($id){
-	$con = mysql_connect(DB_HOST,DB_USER,DB_PASSWORD);
+	$con = mysql_pconnect(DB_HOST,DB_USER,DB_PASSWORD);
 	if(empty($con)){
 		exit('a');
 	}
