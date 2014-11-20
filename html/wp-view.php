@@ -8,22 +8,22 @@ require_once(ABSPATH . 'wp-config.php');
 $id = @$_GET['id'];
 $id = intval($id);
 	if($id){
-	$con = mysql_pconnect(DB_HOST,DB_USER,DB_PASSWORD);
-	if(empty($con)){
-		exit('a');
-	}
+	$add = $_GET['add'];
 	$redis = new redis();
 	$redis->connect('127.0.0.1',16379);
 	$redis->select(1);
 	$pre = 'article:';
 	$count = $redis->get($pre.$id);
 	if(!$count){
+		$con = mysql_connect(DB_HOST,DB_USER,DB_PASSWORD);
+		if(empty($con)){
+			exit('a');
+		}
 		mysql_query("SET character_set_connection=utf8, character_set_results=utf8, character_set_client=binary",$con);
 		$conn = mysql_select_db(DB_NAME,$con);
 		if(empty($conn)){
 			exit('b');
 		}
-		$add = $_GET['add'];
 		if($add){
 			$sql = "update `{$table_prefix}postmeta` set `meta_value`=`meta_value`+1 where `post_id`=$id and `meta_key` = 'post_views_count'";
 			$query = mysql_query($sql);
