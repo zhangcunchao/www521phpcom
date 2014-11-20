@@ -12,23 +12,23 @@ $id = intval($id);
 	if(empty($con)){
 		exit('a');
 	}
-	mysql_query("SET character_set_connection=utf8, character_set_results=utf8, character_set_client=binary",$con);
-	$conn = mysql_select_db(DB_NAME,$con);
-	if(empty($conn)){
-		exit('b');
-	}
-	$add = $_GET['add'];
-	if($add){
-		$sql = "update `{$table_prefix}postmeta` set `meta_value`=`meta_value`+1 where `post_id`=$id and `meta_key` = 'post_views_count'";
-		$query = mysql_query($sql);
-	}
-	$sql = "select `meta_value` from `{$table_prefix}postmeta` where `post_id`=$id and `meta_key` = 'post_views_count'";
 	$redis = new redis();
 	$redis->connect('127.0.0.1',16379);
 	$redis->select(1);
 	$pre = 'article:';
 	$count = $redis->get($pre.$id);
 	if(!$count){
+		mysql_query("SET character_set_connection=utf8, character_set_results=utf8, character_set_client=binary",$con);
+		$conn = mysql_select_db(DB_NAME,$con);
+		if(empty($conn)){
+			exit('b');
+		}
+		$add = $_GET['add'];
+		if($add){
+			$sql = "update `{$table_prefix}postmeta` set `meta_value`=`meta_value`+1 where `post_id`=$id and `meta_key` = 'post_views_count'";
+			$query = mysql_query($sql);
+		}
+		$sql = "select `meta_value` from `{$table_prefix}postmeta` where `post_id`=$id and `meta_key` = 'post_views_count'";
 		$query = mysql_query($sql);
 		$rs = mysql_fetch_array($query);
 		if(isset($rs['meta_value'])){
