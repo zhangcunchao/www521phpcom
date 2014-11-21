@@ -2,7 +2,7 @@
 
 1、需安装后使用的命令
 
-1.1、sz|rz 命令用于上传下载
+1.1、sz/rz 命令用于上传下载
 
       yum install lrzsz 安装
 	  rz -y覆盖上传

@@ -43,3 +43,9 @@
 这个命令，我经常使用它 来发送其他没有使用git的人来检查或者集成所修改的。它会输出最近提交的修改类容到一个zip文件中。
 
 	git archive -o ../updated.zip HEAD $(git diff --name-only HEAD^)
+
+9、仅回退commit到某个版本
+
+	git reset --soft git版本号
+	git log --all 可以查看reset之前的log
+	git reflog

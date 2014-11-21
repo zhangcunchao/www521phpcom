@@ -133,7 +133,13 @@ $(document).ready(
     {
 		setTimeout("hid()",2000);
 		$(".file-wrap").click(function () {hid();});
-		$(".clearfix").click(function () {shw();});
+		$(".clearfix").click(function () {
+			if("none"==$('.file-wrap').css('display')){
+				shw();
+			}else{
+				hid();
+			}
+		});
     }
 );
 </script>
