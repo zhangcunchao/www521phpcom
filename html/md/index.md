@@ -1,6 +1,6 @@
-## markdown文档 让你爱上写文档##
+## markdown 让你爱上写文档##
 
-本站点已集成markdown文档渲染，哈哈；
+本站点已集成markdown文档渲染，哈哈........；
 
 > Markdown 的目标是实现「易读易写」。
 > 
