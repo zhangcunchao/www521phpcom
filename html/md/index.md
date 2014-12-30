@@ -6,6 +6,8 @@
 > 
 >PS：Windows 8 用户如果出现预览区域加载失败的情况，[请下载并安装 Awesomium SDK](http://markdownpad.com/download/awesomium_v1.6.6_sdk_win.exe)。
 
+application/x-www-form-urlencoded
+
 1. [linux简单笔记](linux.md)
 2. [php笔记](php/index.md)
 3. [nginx笔记](nginx/index.md)
