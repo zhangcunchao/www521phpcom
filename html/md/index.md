@@ -13,3 +13,4 @@ application/x-www-form-urlencoded
 3. [nginx笔记](nginx/index.md)
 4. [shell笔记](shell/index.md)
 5. [git笔记](git/index.md)
+6. [python笔记](python/index.md)
