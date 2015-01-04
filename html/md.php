@@ -23,8 +23,8 @@
 ?>
 <head>
 <title><?php echo $filename;?></title>
-<link href="https://assets-cdn.github.com/assets/github-59da74dcbe2f1d555e306461652274f8741238a64e7b1fe8cc5a286232044835.css" media="all" rel="stylesheet" type="text/css">
-<link href="https://assets-cdn.github.com/assets/github2-22a0054564248c6dd87336e91bca068b1ab49e28ee1062519b3a0722d29da804.css" media="all" rel="stylesheet" type="text/css">
+<link href="/css/github-2.css" media="all" rel="stylesheet" type="text/css">
+<link href="/css/github-5.css" media="all" rel="stylesheet" type="text/css">
 </head>
 <body>
 <div class="header header-logged-in true" role="banner">
