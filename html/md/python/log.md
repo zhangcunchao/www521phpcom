@@ -1,6 +1,6 @@
-##python实现nginx日志实时监控脚本##
+##python实现nginx日志实时监控脚本1##
 
-此脚本为nginx守护脚本，配合shell进程监控脚本实现简单的恶意访问屏蔽1
+此脚本为nginx守护脚本，配合shell进程监控脚本实现简单的恶意访问屏蔽
 
 	#!/usr/bin/python2.6
 	#coding=utf-8
