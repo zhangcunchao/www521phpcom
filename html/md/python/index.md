@@ -12,3 +12,4 @@ Python的设计具有很强的可读性，相比其他语言经常使用英文�
 
 1. [python基本语法](demo.md)
 2. [nginx日志监控脚本](log.md)
+3. git钩子
