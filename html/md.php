@@ -20,9 +20,12 @@
    $filename = strrchr($file,'/');
    $filename = ltrim($filename,'/');
    $odir = rtrim($file,$filename);
+   $content = shell_exec('/usr/bin/kramdown  '.$file);
+   @preg_match('/<h2.*?>(.*?)<\/h2>/isU',$content,$title);
+   isset($title[1])?$title = $title[1]:$title=$filename;
 ?>
 <head>
-<title><?php echo $filename;?></title>
+<title><?php echo $title;?></title>
 <link href="/css/github-2.css" media="all" rel="stylesheet" type="text/css">
 <link href="/css/github-5.css" media="all" rel="stylesheet" type="text/css">
 </head>
@@ -106,7 +109,7 @@
 			<div id="readme" class="blob instapaper_body">
 				<article class="markdown-body entry-content" itemprop="mainContentOfPage">
 				<?php
-				   echo system('/usr/bin/kramdown  '.$file);
+				   echo $content;
 				?>
 				</article>
 			</div>
