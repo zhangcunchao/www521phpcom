@@ -1,11 +1,9 @@
-<?php /* Smarty version 2.6.25, created on 2014-08-13 17:07:55
+<?php /* Smarty version 2.6.25, created on 2015-01-06 17:18:58
          compiled from www/html.html */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
 smarty_core_load_plugins(array('plugins' => array(array('modifier', 'date_format', 'www/html.html', 27, false),)), $this); ?>
 <!DOCTYPE HTML>
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
-<base href="<?php echo $this->_tpl_vars['url']; ?>
-">
 <style>
 body{position:relative}
 body,form{margin:0!important;padding:0!important}
@@ -27,6 +25,8 @@ input.bd_snap_btn_h{background-position:-100px 0}
 #bd_snap_ln{height:1px;border-top:1px solid #ACA899;background:#ECE9D8;overflow:hidden}
 #bd_snap_txt span a{text-decoration:none}
 </style>
+<base href="<?php echo $this->_tpl_vars['url']; ?>
+">
 <div id="bd_snap">
     <div id="bd_snap_head">
         <a href="<?php echo $this->_tpl_vars['web']; ?>
