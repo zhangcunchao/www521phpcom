@@ -1,26 +1,9 @@
 ##shell相关笔记##
 
-1、守护进程监控
+> 作为命令语言，它交互式解释和执行用户输入的命令或者自动地解释和执行预先设定好的一连串的命令；作为程序设计语言，它定义了各种变量和参数，并提供了许多在高级语言中才具有的控制结构，包括循环和分支。
 
-	#!/bin/bash
-	EMAIL='zhangcunchao_cn@163.com'
-	start()
-	{
-	        c=`ps w -C php|grep $1|wc -l`
-	        if [ $c -lt 1 ]
-	        then
-	          if [ -f "$1" ];then
-	          /usr/local/php/bin/php $1 > /dev/null &
-	          else
-	          `echo 'no such file '$1 | mail -s 'process check error' $EMAIL`
-	          fi
-	        fi
-	}
-	BASE_PATH=`dirname $0`"/"
-	cd $BASE_PATH
-	
-	start del_old_sessions.php
-	start send_sms.php
-	start send_mail.php
+> shell的水平也是linux水平的体现
 
-只需要在crontab里面添加此shell，一分钟一次即可
+1. [php等守护进程监控脚本](check.md)
+2. [nginx add blocksip脚本](blocks.md)
+3. [一键式nginx站点搭建脚本](buildweb.md)
