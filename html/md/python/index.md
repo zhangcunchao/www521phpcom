@@ -10,6 +10,9 @@ Python的设计具有很强的可读性，相比其他语言经常使用英文�
 - **Python是初学者的语言**：Python 对初级程序员而言，是一种伟大的语言，它支持广泛的应用程序开发，从简单的文字处理到 WWW 浏览器再到游戏。
 
 
+	python -m SimpleHTTPServer 8080
+
+
 1. [python基本语法](demo.md)
 2. [nginx日志监控脚本](log.md)
 3. [python实现git钩子](githooks.md)
