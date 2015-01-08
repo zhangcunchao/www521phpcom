@@ -7,3 +7,4 @@
 1. [php等守护进程监控脚本](check.md)
 2. [nginx add blocksip脚本](blocks.md)
 3. [一键式nginx站点搭建脚本](buildweb.md)
+4. [tail -f多文件脚本](tail_n_file.md)
