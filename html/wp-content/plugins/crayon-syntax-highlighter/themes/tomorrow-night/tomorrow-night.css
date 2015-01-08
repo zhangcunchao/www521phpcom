@@ -1,7 +1,7 @@
 /*
 Name: Tomorrow Night
 Description: Based on https://github.com/ChrisKempson/Tomorrow-Theme/
-Version: 1.0
+Version: 1.1
 Author: Aram Kocharyan
 URL: http://aramk.com/
 */
@@ -22,13 +22,6 @@ URL: http://aramk.com/
 	background: #4b4d4f !important;
 	color: #898989 !important;
 	border-right-width: 1px !important;
-}
-.crayon-theme-tomorrow-night *::selection {
-	background: transparent !important;
-}
-.crayon-theme-tomorrow-night .crayon-code *::selection {
-	background: #ddeeff !important;
-	color: #316ba5 !important;
 }
 .crayon-theme-tomorrow-night .crayon-striped-line {
 	background: #202326 !important;
@@ -114,58 +107,61 @@ URL: http://aramk.com/
 	background-color: #bcbcbc !important;
 	color: #FFF;
 }
-.crayon-theme-tomorrow-night .crayon-pre .c {
+.crayon-theme-tomorrow-night .crayon-pre .crayon-c {
 	color: #a7a8a2 !important;
 }
-.crayon-theme-tomorrow-night .crayon-pre .s {
+.crayon-theme-tomorrow-night .crayon-pre .crayon-s {
 	color: #b2af75 !important;
 }
-.crayon-theme-tomorrow-night .crayon-pre .p {
+.crayon-theme-tomorrow-night .crayon-pre .crayon-p {
 	color: #b85c00 !important;
 }
-.crayon-theme-tomorrow-night .crayon-pre .ta {
+.crayon-theme-tomorrow-night .crayon-pre .crayon-ta {
 	color: #e79663 !important;
 }
-.crayon-theme-tomorrow-night .crayon-pre .k {
+.crayon-theme-tomorrow-night .crayon-pre .crayon-k {
 	color: #92afc1 !important;
 }
-.crayon-theme-tomorrow-night .crayon-pre .st {
+.crayon-theme-tomorrow-night .crayon-pre .crayon-st {
 	color: #92afc1 !important;
 }
-.crayon-theme-tomorrow-night .crayon-pre .r {
+.crayon-theme-tomorrow-night .crayon-pre .crayon-r {
 	color: #92afc1 !important;
 }
-.crayon-theme-tomorrow-night .crayon-pre .t {
+.crayon-theme-tomorrow-night .crayon-pre .crayon-t {
 	color: #bba7c5 !important;
 }
-.crayon-theme-tomorrow-night .crayon-pre .m {
+.crayon-theme-tomorrow-night .crayon-pre .crayon-m {
 	color: #bba7c5 !important;
 }
-.crayon-theme-tomorrow-night .crayon-pre .i {
+.crayon-theme-tomorrow-night .crayon-pre .crayon-i {
 	color: #c7c7c7 !important;
 }
-.crayon-theme-tomorrow-night .crayon-pre .e {
+.crayon-theme-tomorrow-night .crayon-pre .crayon-e {
 	color: #e8ce91 !important;
 }
-.crayon-theme-tomorrow-night .crayon-pre .v {
+.crayon-theme-tomorrow-night .crayon-pre .crayon-v {
 	color: #d87c7b !important;
 }
-.crayon-theme-tomorrow-night .crayon-pre .cn {
+.crayon-theme-tomorrow-night .crayon-pre .crayon-cn {
 	color: #e7a37a !important;
 }
-.crayon-theme-tomorrow-night .crayon-pre .o {
+.crayon-theme-tomorrow-night .crayon-pre .crayon-o {
 	color: #99c9c4 !important;
 }
-.crayon-theme-tomorrow-night .crayon-pre .sy {
+.crayon-theme-tomorrow-night .crayon-pre .crayon-sy {
 	color: #c9d2d1 !important;
 }
-.crayon-theme-tomorrow-night .crayon-pre .n {
+.crayon-theme-tomorrow-night .crayon-pre .crayon-n {
 	color: #666 !important;
 	font-style: italic !important;
 }
-.crayon-theme-tomorrow-night .crayon-pre .f {
+.crayon-theme-tomorrow-night .crayon-pre .crayon-f {
 	color: #999 !important;
 }
-.crayon-theme-tomorrow-night .crayon-pre .h {
+.crayon-theme-tomorrow-night .crayon-pre .crayon-h {
 	color: #006fe0 !important;
+}
+.crayon-theme-tomorrow-night .crayon-pre {
+	color: #ffffff !important;
 }

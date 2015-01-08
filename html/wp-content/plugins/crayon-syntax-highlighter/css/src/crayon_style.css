@@ -18,8 +18,10 @@ coloring etc.
     direction: ltr;
     text-align: left;
     box-sizing: border-box;
+    direction: ltr !important;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
+    -webkit-text-size-adjust: none;
 }
 
 .crayon-syntax div {
@@ -149,9 +151,9 @@ coloring etc.
 
 /*.crayon-syntax .crayon-toolbar,*/
 /*.crayon-syntax .crayon-toolbar * {*/
-    /*height: 18px;*/
-    /*line-height: 18px;*/
-    /*padding: 0px;*/
+/*height: 18px;*/
+/*line-height: 18px;*/
+/*padding: 0px;*/
 /*}*/
 
 .crayon-syntax .crayon-toolbar span {
@@ -287,11 +289,6 @@ coloring etc.
     padding-right: 8px !important;
 }
 
-/* Tools */
-/*.crayon-syntax .crayon-toolbar .crayon-tools {
-	padding-right: 2px !important; 
-}*/
-
 .crayon-syntax .crayon-title,
 .crayon-syntax .crayon-language {
     float: left;
@@ -353,12 +350,14 @@ coloring etc.
 /* Code ============================ */
 .crayon-syntax .crayon-pre,
 .crayon-syntax pre {
+    color: #000;
     white-space: pre;
     margin: 0;
     padding: 0;
     overflow: visible;
     background: none !important;
     border: none !important;
+    tab-size: 4;
 }
 
 .crayon-syntax .crayon-line {
@@ -389,6 +388,11 @@ coloring etc.
     font-weight: 500;
 }
 
+.crayon-syntax .crayon-toolbar *::selection,
+.crayon-syntax .crayon-nums *::selection {
+    background: transparent;
+}
+
 /*
 
 This has been disabled to allow more flexibility in changing font sizes.
@@ -401,6 +405,11 @@ This has been disabled to allow more flexibility in changing font sizes.
 	line-height: 15px !important;
 }
 */
+
+.crayon-table .crayon-nums-content {
+    white-space: nowrap; /* Prevent wrapping line numbers in some themes */
+}
+
 .crayon-syntax.crayon-wrapped .crayon-line {
     /*	min-height: 15px;*/
     height: auto;
@@ -414,7 +423,7 @@ This has been disabled to allow more flexibility in changing font sizes.
     font-size: inherit !important;
     line-height: inherit !important;
     font-weight: inherit !important;
-    height: inherit !important;
+    height: inherit;
 }
 
 .crayon-syntax .crayon-toolbar .crayon-button .crayon-button-icon {
@@ -426,17 +435,6 @@ This has been disabled to allow more flexibility in changing font sizes.
     top: 50%;
     margin-top: -8px;
 }
-
-.crayon-syntax .crayon-pre .crayon-line span {
-    display: inline-block;
-    *display: inline;
-    zoom: 1;
-}
-
-/*.crayon-syntax .crayon-toolbar .crayon-tools,*/
-/*.crayon-syntax .crayon-toolbar .crayon-tools * {*/
-/*height: inherit !important;*/
-/*}*/
 
 .crayon-syntax .crayon-toolbar .crayon-tools {
     position: absolute;

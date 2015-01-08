@@ -23,10 +23,10 @@ class CrayonFonts extends CrayonUserResourceCollection {
             $this->user_directory($upload . CRAYON_FONT_DIR);
             if (!is_dir($this->user_directory())) {
                 CrayonGlobalSettings::mkdir($this->user_directory());
-                CrayonLog::debug($this->user_directory(), "THEME DIR");
+                CrayonLog::debug($this->user_directory(), "FONT USER DIR");
             }
         } else {
-            CrayonLog::syslog("Upload directory is empty: " . $upload);
+            CrayonLog::syslog("Upload directory is empty: " . $upload . " cannot load fonts.");
         }
         CrayonLog::debug($this->directory());
         CrayonLog::debug($this->user_directory());

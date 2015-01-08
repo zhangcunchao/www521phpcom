@@ -1,7 +1,7 @@
 /*
 Name: Twilight
 Description: Dark and elegant. 
-Version: 1.3
+Version: 1.4
 Author: Aram Kocharyan
 URL: http://aramk.com/
 */
@@ -31,35 +31,6 @@ URL: http://aramk.com/
 	border-right-style: solid !important;
 	border-right-width: 1px !important;
 	border-right-color: #333 !important;
-}
-.crayon-theme-twilight .crayon-code::selection {
-	background: #ddeeff !important;
-	color: #316ba5 !important;
-}
-.crayon-theme-twilight .crayon-code *::selection {
-	background: #ddeeff !important;
-	color: #316ba5 !important;
-}
-.crayon-theme-twilight::selection {
-	background: transparent !important;
-}
-.crayon-theme-twilight .crayon-toolbar::selection {
-	background: transparent !important;
-}
-.crayon-theme-twilight .crayon-toolbar *::selection {
-	background: transparent !important;
-}
-.crayon-theme-twilight .crayon-info::selection {
-	background: transparent !important;
-}
-.crayon-theme-twilight .crayon-info *::selection {
-	background: transparent !important;
-}
-.crayon-theme-twilight .crayon-nums::selection {
-	background: transparent !important;
-}
-.crayon-theme-twilight .crayon-nums *::selection {
-	background: transparent !important;
 }
 .crayon-theme-twilight .crayon-striped-line {
 	background: #343434 !important;
@@ -153,58 +124,61 @@ URL: http://aramk.com/
 	background-color: #999 !important;
 	color: #ccc;
 }
-.crayon-theme-twilight .crayon-pre .c {
+.crayon-theme-twilight .crayon-pre .crayon-c {
 	color: #7f7b80 !important;
 }
-.crayon-theme-twilight .crayon-pre .p {
+.crayon-theme-twilight .crayon-pre .crayon-p {
 	color: #a19ba2 !important;
 }
-.crayon-theme-twilight .crayon-pre .s {
+.crayon-theme-twilight .crayon-pre .crayon-s {
 	color: #a0ab83 !important;
 }
-.crayon-theme-twilight .crayon-pre .k {
+.crayon-theme-twilight .crayon-pre .crayon-k {
 	color: #d8b584 !important;
 }
-.crayon-theme-twilight .crayon-pre .st {
+.crayon-theme-twilight .crayon-pre .crayon-st {
 	color: #d8b584 !important;
 }
-.crayon-theme-twilight .crayon-pre .r {
+.crayon-theme-twilight .crayon-pre .crayon-r {
 	color: #d8b584 !important;
 }
-.crayon-theme-twilight .crayon-pre .t {
+.crayon-theme-twilight .crayon-pre .crayon-t {
 	color: #d8b584 !important;
 }
-.crayon-theme-twilight .crayon-pre .m {
+.crayon-theme-twilight .crayon-pre .crayon-m {
 	color: #d8b584 !important;
 }
-.crayon-theme-twilight .crayon-pre .ta {
+.crayon-theme-twilight .crayon-pre .crayon-ta {
 	color: #AAA !important;
 }
-.crayon-theme-twilight .crayon-pre .i {
+.crayon-theme-twilight .crayon-pre .crayon-i {
 	color: #fbefb1 !important;
 }
-.crayon-theme-twilight .crayon-pre .v {
+.crayon-theme-twilight .crayon-pre .crayon-v {
 	color: #879ab2 !important;
 }
-.crayon-theme-twilight .crayon-pre .e {
+.crayon-theme-twilight .crayon-pre .crayon-e {
 	color: #ad8258 !important;
 }
-.crayon-theme-twilight .crayon-pre .cn {
+.crayon-theme-twilight .crayon-pre .crayon-cn {
 	color: #db7e64 !important;
 }
-.crayon-theme-twilight .crayon-pre .o {
+.crayon-theme-twilight .crayon-pre .crayon-o {
 	color: #ac99ab !important;
 }
-.crayon-theme-twilight .crayon-pre .h {
+.crayon-theme-twilight .crayon-pre .crayon-h {
 	color: #ac99ab !important;
 }
-.crayon-theme-twilight .crayon-pre .sy {
+.crayon-theme-twilight .crayon-pre .crayon-sy {
 	color: #ac99ab !important;
 }
-.crayon-theme-twilight .crayon-pre .n {
+.crayon-theme-twilight .crayon-pre .crayon-n {
 	color: #726e73 !important;
 	font-style: italic !important;
 }
-.crayon-theme-twilight .crayon-pre .f {
+.crayon-theme-twilight .crayon-pre .crayon-f {
 	color: #595959 !important;
+}
+.crayon-theme-twilight .crayon-pre {
+	color: #ffffff !important;
 }

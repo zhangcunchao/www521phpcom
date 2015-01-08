@@ -1,9 +1,9 @@
 /*
-Name: VS2012 Black
+Name: Vs2012 Black
 Description: Visual Studio 2012 Black Theme
-Version: 0.1
+Version: 1.1
 Author: Nikolay Zahariev
-Url: http://nikolayzahariev.com/
+URL: http://nikolayzahariev.com/
 */
 .crayon-theme-vs2012-black {
 	border-width: 1px !important;
@@ -21,13 +21,6 @@ Url: http://nikolayzahariev.com/
 .crayon-theme-vs2012-black .crayon-table .crayon-nums {
 	background: #363232 !important;
 	color: #1ba2c6 !important;
-}
-.crayon-theme-vs2012-black *::selection {
-	background: transparent !important;
-}
-.crayon-theme-vs2012-black .crayon-code *::selection {
-	background: #ddeeff !important;
-	color: #316ba5 !important;
 }
 .crayon-theme-vs2012-black .crayon-striped-line {
 	background: #363232 !important;
@@ -114,58 +107,61 @@ Url: http://nikolayzahariev.com/
 	background-color: #BCBCBC !important;
 	color: #FFF;
 }
-.crayon-theme-vs2012-black .crayon-pre .c {
+.crayon-theme-vs2012-black .crayon-pre .crayon-c {
 	color: #458b45 !important;
 }
-.crayon-theme-vs2012-black .crayon-pre .s {
+.crayon-theme-vs2012-black .crayon-pre .crayon-s {
 	color: #b78686 !important;
 }
-.crayon-theme-vs2012-black .crayon-pre .p {
+.crayon-theme-vs2012-black .crayon-pre .crayon-p {
 	color: #7f7c79 !important;
 }
-.crayon-theme-vs2012-black .crayon-pre .ta {
+.crayon-theme-vs2012-black .crayon-pre .crayon-ta {
 	color: #FF0000 !important;
 }
-.crayon-theme-vs2012-black .crayon-pre .k {
+.crayon-theme-vs2012-black .crayon-pre .crayon-k {
 	color: #94ccfd !important;
 }
-.crayon-theme-vs2012-black .crayon-pre .st {
+.crayon-theme-vs2012-black .crayon-pre .crayon-st {
 	color: #94ccfd !important;
 }
-.crayon-theme-vs2012-black .crayon-pre .r {
+.crayon-theme-vs2012-black .crayon-pre .crayon-r {
 	color: #94ccfd !important;
 }
-.crayon-theme-vs2012-black .crayon-pre .t {
+.crayon-theme-vs2012-black .crayon-pre .crayon-t {
 	color: #94ccfd !important;
 }
-.crayon-theme-vs2012-black .crayon-pre .m {
+.crayon-theme-vs2012-black .crayon-pre .crayon-m {
 	color: #94ccfd !important;
 }
-.crayon-theme-vs2012-black .crayon-pre .i {
+.crayon-theme-vs2012-black .crayon-pre .crayon-i {
 	color: #6bdacc !important;
 }
-.crayon-theme-vs2012-black .crayon-pre .e {
+.crayon-theme-vs2012-black .crayon-pre .crayon-e {
 	color: #ffffff !important;
 }
-.crayon-theme-vs2012-black .crayon-pre .v {
+.crayon-theme-vs2012-black .crayon-pre .crayon-v {
 	color: #e3e8ea !important;
 }
-.crayon-theme-vs2012-black .crayon-pre .cn {
+.crayon-theme-vs2012-black .crayon-pre .crayon-cn {
 	color: #ffffff !important;
 }
-.crayon-theme-vs2012-black .crayon-pre .o {
+.crayon-theme-vs2012-black .crayon-pre .crayon-o {
 	color: #ffffff !important;
 }
-.crayon-theme-vs2012-black .crayon-pre .sy {
+.crayon-theme-vs2012-black .crayon-pre .crayon-sy {
 	color: #ffffff !important;
 }
-.crayon-theme-vs2012-black .crayon-pre .n {
+.crayon-theme-vs2012-black .crayon-pre .crayon-n {
 	color: #666 !important;
 	font-style: italic !important;
 }
-.crayon-theme-vs2012-black .crayon-pre .f {
+.crayon-theme-vs2012-black .crayon-pre .crayon-f {
 	color: #ffffff !important;
 }
-.crayon-theme-vs2012-black .crayon-pre .h {
+.crayon-theme-vs2012-black .crayon-pre .crayon-h {
 	color: #006fe0 !important;
+}
+.crayon-theme-vs2012-black .crayon-pre {
+	color: #ffffff !important;
 }

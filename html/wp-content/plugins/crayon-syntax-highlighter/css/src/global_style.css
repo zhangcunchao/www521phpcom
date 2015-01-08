@@ -35,12 +35,23 @@
     text-align: left;
 }
 
+.rtl #crayon-te-table th, .rtl #crayon-te-table td {
+    text-align: right;
+}
+
 #crayon-te-table .crayon-tr-center td, #crayon-te-table .crayon-tr-center th {
     vertical-align: middle;
 }
 
 #crayon-te-table .crayon-nowrap {
     white-space: nowrap;
+}
+
+#crayon-te-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
 
 #crayon-te-bar-content {
@@ -128,10 +139,6 @@
     background: #EEE !important;
 }
 
-.mce_crayon_tinymce_highlight, .qt_crayon_highlight {
-    border: 1px solid #7c9dde !important;
-}
-
 .qt_crayon_highlight {
     background-image: -ms-linear-gradient(bottom, #daf2ff, white) !important;
     background-image: -moz-linear-gradient(bottom, #daf2ff, white) !important;
@@ -144,13 +151,34 @@
     background: #ddebf2 !important;
 }
 
-/* .mce_crayon_tinymce_highlight span.mce_crayon_tinymce, */
+.crayon-tag-editor-button-wrapper {
+    display: inline-block;
+}
+
+/* TinyMCE v4 */
+.mce_crayon_tinymce {
+    padding: 0 !important;
+    margin: 2px 3px !important;
+}
+.mce-i-crayon_tinymce,
+.mce_crayon_tinymce {
+    background: url(../images/crayon_tinymce.png) 0 0 !important;
+}
+
+/* TinyMCE v3 - deprecated */
+a.mce_crayon_tinymce {
+  background-position: 2px 0 !important;
+}
 .wp_themeSkin .mceButtonEnabled:hover span.mce_crayon_tinymce,
 .wp_themeSkin .mceButtonActive span.mce_crayon_tinymce {
-    background-position: -20px 0;
+  background-position: -20px 0;
+}
+.wp_themeSkin span.mce_crayon_tinymce {
+  background: none !important;
 }
 
 #crayon-te-table {
+    margin-top: 26px;
     padding: 10px;
     border-collapse: separate !important;
     border-spacing: 2px !important;
@@ -232,10 +260,16 @@
 
 .crayon-question {
     padding: 1px 4px !important;
-    background: #83b3cb !important;
     text-decoration: none !important;
-    color: white !important;
+    color: #83b3cb !important;
     border-radius: 10px !important;
+    height: 15px !important;
+    width: 15px !important;
+}
+
+.crayon-question:hover {
+    background: #83b3cb !important;
+    color: white !important;
     height: 15px !important;
     width: 15px !important;
 }
@@ -266,6 +300,3 @@
     margin-bottom: 5px;
 }
 
-.wp_themeSkin span.mce_crayon_tinymce {
-    background: url(../images/crayon_tinymce.png);
-}

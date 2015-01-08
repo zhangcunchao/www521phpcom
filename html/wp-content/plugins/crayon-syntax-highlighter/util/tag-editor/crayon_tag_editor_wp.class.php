@@ -1,6 +1,6 @@
 <?php
 
-require_once (CRAYON_ROOT_PATH . 'crayon_settings_wp.class.php');
+require_once(CRAYON_ROOT_PATH . 'crayon_settings_wp.class.php');
 
 class CrayonTagEditorWP {
 
@@ -49,7 +49,10 @@ class CrayonTagEditorWP {
                 'hl_css' => '#crayon-highlight',
                 'switch_html' => '#content-html',
                 'switch_tmce' => '#content-tmce',
-                'tinymce_button' => 'a.mce_crayon_tinymce',
+                'tinymce_button_generic' => '.mce-btn',
+                'tinymce_button' => 'a.mce_crayon_tinymce,.mce-i-crayon_tinymce',
+                'tinymce_button_unique' => 'mce_crayon_tinymce',
+                'tinymce_highlight' => 'mce-active',
                 'submit_css' => '#crayon-te-ok',
                 'cancel_css' => '#crayon-te-cancel',
                 'content_css' => '#crayon-te-content',
@@ -59,8 +62,9 @@ class CrayonTagEditorWP {
                 'attr_sep' => CrayonGlobalSettings::val_str(CrayonSettings::ATTR_SEP),
                 'css_sep' => '_',
                 'fallback_lang' => CrayonGlobalSettings::val(CrayonSettings::FALLBACK_LANG),
-                'dialog_title_add' => crayon__('Add Crayon Code'),
-                'dialog_title_edit' => crayon__('Edit Crayon Code'),
+                'add_text' => CrayonGlobalSettings::val(CrayonSettings::TAG_EDITOR_ADD_BUTTON_TEXT),
+                'edit_text' => CrayonGlobalSettings::val(CrayonSettings::TAG_EDITOR_EDIT_BUTTON_TEXT),
+                'quicktag_text' => CrayonGlobalSettings::val(CrayonSettings::TAG_EDITOR_QUICKTAG_BUTTON_TEXT),
                 'submit_add' => crayon__('Add'),
                 'submit_edit' => crayon__('Save'),
                 'bar' => '#crayon-te-bar',
@@ -73,17 +77,16 @@ class CrayonTagEditorWP {
     public static function enqueue_resources() {
         global $CRAYON_VERSION;
         self::init_settings();
-        $path = dirname(dirname(__FILE__));
 
         if (CRAYON_MINIFY) {
-            wp_deregister_script('crayon_js_min');
-            wp_enqueue_script('crayon_js_min', plugins_url(CRAYON_JS_TE_MIN, dirname(dirname(__FILE__))), array('jquery', 'quicktags'), $CRAYON_VERSION);
+            wp_deregister_script('crayon_js');
+            wp_enqueue_script('crayon_js', plugins_url(CRAYON_JS_TE_MIN, dirname(dirname(__FILE__))), array('jquery', 'quicktags'), $CRAYON_VERSION);
             CrayonSettingsWP::init_js_settings();
-            wp_localize_script('crayon_js_min', 'CrayonTagEditorSettings', self::$settings);
+            wp_localize_script('crayon_js', 'CrayonTagEditorSettings', self::$settings);
         } else {
-            wp_enqueue_style('crayon_fancybox', plugins_url(CRAYON_CSS_FANCYBOX, $path), array(), $CRAYON_VERSION);
-            wp_enqueue_script('crayon_fancybox', plugins_url(CRAYON_JS_FANCYBOX, $path), array('jquery'), $CRAYON_VERSION);
-            wp_enqueue_script('crayon_te_js', plugins_url(CRAYON_TAG_EDITOR_JS, __FILE__), array('crayon_fancybox', 'crayon_util_js'), $CRAYON_VERSION);
+            wp_enqueue_script('crayon_colorbox_js', plugins_url(CRAYON_COLORBOX_JS, __FILE__), array('jquery'), $CRAYON_VERSION);
+            wp_enqueue_style('crayon_colorbox_css', plugins_url(CRAYON_COLORBOX_CSS, __FILE__), array(), $CRAYON_VERSION);
+            wp_enqueue_script('crayon_te_js', plugins_url(CRAYON_TAG_EDITOR_JS, __FILE__), array('crayon_util_js', 'crayon_colorbox_js'), $CRAYON_VERSION);
             wp_enqueue_script('crayon_qt_js', plugins_url(CRAYON_QUICKTAGS_JS, __FILE__), array('quicktags', 'crayon_te_js'), $CRAYON_VERSION, TRUE);
             wp_localize_script('crayon_te_js', 'CrayonTagEditorSettings', self::$settings);
             CrayonSettingsWP::other_scripts();
@@ -120,7 +123,7 @@ class CrayonTagEditorWP {
         return $plugin_array;
     }
 
-    // The remaining functions are for priting
+    // The remaining functions are for displayed output.
 
     public static function select_resource($id, $resources, $current, $set_class = TRUE) {
         $id = CrayonSettings::PREFIX . $id;
@@ -155,10 +158,10 @@ class CrayonTagEditorWP {
 
     public static function submit() {
         ?>
-    <input type="button"
-           class="button-primary <?php echo CrayonTagEditorWP::$settings['submit_css']; ?>"
-           value="<?php echo CrayonTagEditorWP::$settings['submit_add']; ?>"
-           name="submit"/>
+        <input type="button"
+               class="button-primary <?php echo CrayonTagEditorWP::$settings['submit_css']; ?>"
+               value="<?php echo CrayonTagEditorWP::$settings['submit_add']; ?>"
+               name="submit"/>
     <?php
     }
 
@@ -174,109 +177,109 @@ class CrayonTagEditorWP {
 
         ?>
 
-    <div id="crayon-te-content" class="crayon-te">
-        <div id="crayon-te-bar">
-            <div id="crayon-te-bar-content">
-                <div id="crayon-te-title">Title</div>
-                <div id="crayon-te-controls">
-                    <a id="crayon-te-ok" href="#"><?php crayon_e('OK'); ?></a> <span
-                        class="crayon-te-seperator">|</span> <a id="crayon-te-cancel"
-                                                                href="#"><?php crayon_e('Cancel'); ?></a>
+        <div id="crayon-te-content" class="crayon-te">
+            <div id="crayon-te-bar">
+                <div id="crayon-te-bar-content">
+                    <div id="crayon-te-title">Title</div>
+                    <div id="crayon-te-controls">
+                        <a id="crayon-te-ok" href="#"><?php crayon_e('OK'); ?></a> <span
+                            class="crayon-te-seperator">|</span> <a id="crayon-te-cancel"
+                                                                    href="#"><?php crayon_e('Cancel'); ?></a>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <table id="crayon-te-table" class="describe">
-            <tr class="crayon-tr-center">
-                <th><?php crayon_e('Title'); ?>
-                </th>
-                <td class="crayon-nowrap"><?php self::textbox('title', array('placeholder' => crayon__('A short description'))); ?>
-                    <span id="crayon-te-sub-section"> <?php self::checkbox('inline'); ?>
-                        <span class="crayon-te-section"><?php crayon_e('Inline'); ?> </span>
+            <table id="crayon-te-table" class="describe">
+                <tr class="crayon-tr-center">
+                    <th><?php crayon_e('Title'); ?>
+                    </th>
+                    <td class="crayon-nowrap"><?php self::textbox('title', array('placeholder' => crayon__('A short description'))); ?>
+                        <span id="crayon-te-sub-section"> <?php self::checkbox('inline'); ?>
+                            <span class="crayon-te-section"><?php crayon_e('Inline'); ?> </span>
 			</span> <span id="crayon-te-sub-section"> <?php self::checkbox('highlight'); ?>
-                        <span class="crayon-te-section"><?php crayon_e("Don't Highlight"); ?>
+                            <span class="crayon-te-section"><?php crayon_e("Don't Highlight"); ?>
 				</span>
 			</span></td>
-            </tr>
-            <tr class="crayon-tr-center">
-                <th><?php crayon_e('Language'); ?>
-                </th>
-                <td class="crayon-nowrap"><?php self::select_resource('lang', $langs, $curr_lang); ?>
-                    <span class="crayon-te-section"><?php crayon_e('Line Range'); ?> </span>
-                    <?php self::textbox('range', array('placeholder' => crayon__('(e.g. 3-5 or 3)'))); ?>
-                    <span class="crayon-te-section"><?php crayon_e('Marked Lines'); ?> </span>
-                    <?php self::textbox('mark', array('placeholder' => crayon__('(e.g. 1,2,3-5)'))); ?>
-                </td>
-            </tr>
-            <tr class="crayon-tr-center" style="text-align: center;">
-                <th>
-                    <div>
-                        <?php crayon_e('Code'); ?>
-                    </div>
-                    <input type="button" id="crayon-te-clear"
-                           class="secondary-primary" value="<?php crayon_e('Clear'); ?>"
-                           name="clear"/>
-                </th>
-                <td><textarea id="crayon-code" name="code"
-                              placeholder="<?php crayon_e('Paste your code here, or type it in manually.'); ?>"></textarea>
-                </td>
-            </tr>
-            <tr class="crayon-tr-center">
-                <th id="crayon-url-th"><?php crayon_e('URL'); ?>
-                </th>
-                <td><?php self::textbox('url', array('placeholder' => crayon__('Relative local path or absolute URL'))); ?>
-                    <div id="crayon-te-url-info" class="crayon-te-info">
-                        <?php
-                        crayon_e("If the URL fails to load, the code above will be shown instead. If no code exists, an error is shown.");
-                        echo ' ';
-                        printf(crayon__('If a relative local path is given it will be appended to %s - which is defined in %sCrayon &gt; Settings &gt; Files%s.'), '<span class="crayon-te-quote">' . get_home_url() . '/' . CrayonGlobalSettings::val(CrayonSettings::LOCAL_PATH) . '</span>', '<a href="options-general.php?page=crayon_settings" target="_blank">', '</a>');
+                </tr>
+                <tr class="crayon-tr-center">
+                    <th><?php crayon_e('Language'); ?>
+                    </th>
+                    <td class="crayon-nowrap"><?php self::select_resource('lang', $langs, $curr_lang); ?>
+                        <span class="crayon-te-section"><?php crayon_e('Line Range'); ?> </span>
+                        <?php self::textbox('range', array('placeholder' => crayon__('(e.g. 3-5 or 3)'))); ?>
+                        <span class="crayon-te-section"><?php crayon_e('Marked Lines'); ?> </span>
+                        <?php self::textbox('mark', array('placeholder' => crayon__('(e.g. 1,2,3-5)'))); ?>
+                    </td>
+                </tr>
+                <tr class="crayon-tr-center" style="text-align: center;">
+                    <th>
+                        <div>
+                            <?php crayon_e('Code'); ?>
+                        </div>
+                        <input type="button" id="crayon-te-clear"
+                               class="secondary-primary" value="<?php crayon_e('Clear'); ?>"
+                               name="clear"/>
+                    </th>
+                    <td><textarea id="crayon-code" name="code"
+                                  placeholder="<?php crayon_e('Paste your code here, or type it in manually.'); ?>"></textarea>
+                    </td>
+                </tr>
+                <tr class="crayon-tr-center">
+                    <th id="crayon-url-th"><?php crayon_e('URL'); ?>
+                    </th>
+                    <td><?php self::textbox('url', array('placeholder' => crayon__('Relative local path or absolute URL'))); ?>
+                        <div id="crayon-te-url-info" class="crayon-te-info">
+                            <?php
+                            crayon_e("If the URL fails to load, the code above will be shown instead. If no code exists, an error is shown.");
+                            echo ' ';
+                            printf(crayon__('If a relative local path is given it will be appended to %s - which is defined in %sCrayon &gt; Settings &gt; Files%s.'), '<span class="crayon-te-quote">' . get_home_url() . '/' . CrayonGlobalSettings::val(CrayonSettings::LOCAL_PATH) . '</span>', '<a href="options-general.php?page=crayon_settings" target="_blank">', '</a>');
+                            ?>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="crayon-te-submit-wrapper" colspan="2"
+                        style="text-align: center;"><?php self::submit(); ?></td>
+                </tr>
+                <!--		<tr>-->
+                <!--			<td colspan="2"><div id="crayon-te-warning" class="updated crayon-te-info"></div></td>-->
+                <!--		</tr>-->
+                <tr>
+                    <td colspan="2"><?php
+                        $admin = isset($_GET['is_admin']) ? intval($_GET['is_admin']) : is_admin();
+                        if (!$admin && !CrayonGlobalSettings::val(CrayonSettings::TAG_EDITOR_SETTINGS)) {
+                            exit();
+                        }
                         ?>
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <td id="crayon-te-submit-wrapper" colspan="2"
-                    style="text-align: center;"><?php self::submit(); ?></td>
-            </tr>
-            <!--		<tr>-->
-            <!--			<td colspan="2"><div id="crayon-te-warning" class="updated crayon-te-info"></div></td>-->
-            <!--		</tr>-->
-            <tr>
-                <td colspan="2"><?php
-                    $admin = isset($_GET['is_admin']) ? intval($_GET['is_admin']) : is_admin();
-                    if (!$admin && !CrayonGlobalSettings::val(CrayonSettings::TAG_EDITOR_SETTINGS)) {
-                        exit();
-                    }
-                    ?>
-                    <hr/>
-                    <div>
-                        <h2 class="crayon-te-heading">
-                            <?php crayon_e('Settings'); ?>
-                        </h2>
-                    </div>
-                    <div id="crayon-te-settings-info" class="crayon-te-info">
-                        <?php
-                        crayon_e('Change the following settings to override their global values.');
-                        echo ' <span class="', CrayonSettings::SETTING_CHANGED, '">';
-                        crayon_e('Only changes (shown yellow) are applied.');
-                        echo '</span><br/>';
-                        echo sprintf(crayon__('Future changes to the global settings under %sCrayon &gt; Settings%s won\'t affect overridden settings.'), '<a href="options-general.php?page=crayon_settings" target="_blank">', '</a>');
-                        ?>
-                    </div>
-                </td>
-            </tr>
-            <?php
-            $sections = array('Theme', 'Font', 'Metrics', 'Toolbar', 'Lines', 'Code');
-            foreach ($sections as $section) {
-                echo '<tr><th>', crayon__($section), '</th><td>';
-                call_user_func('CrayonSettingsWP::' . strtolower($section), TRUE);
-                echo '</td></tr>';
-            }
-            ?>
-        </table>
-    </div>
+                        <hr/>
+                        <div>
+                            <h2 class="crayon-te-heading">
+                                <?php crayon_e('Settings'); ?>
+                            </h2>
+                        </div>
+                        <div id="crayon-te-settings-info" class="crayon-te-info">
+                            <?php
+                            crayon_e('Change the following settings to override their global values.');
+                            echo ' <span class="', CrayonSettings::SETTING_CHANGED, '">';
+                            crayon_e('Only changes (shown yellow) are applied.');
+                            echo '</span><br/>';
+                            echo sprintf(crayon__('Future changes to the global settings under %sCrayon &gt; Settings%s won\'t affect overridden settings.'), '<a href="options-general.php?page=crayon_settings" target="_blank">', '</a>');
+                            ?>
+                        </div>
+                    </td>
+                </tr>
+                <?php
+                $sections = array('Theme', 'Font', 'Metrics', 'Toolbar', 'Lines', 'Code');
+                foreach ($sections as $section) {
+                    echo '<tr><th>', crayon__($section), '</th><td>';
+                    call_user_func('CrayonSettingsWP::' . strtolower($section), TRUE);
+                    echo '</td></tr>';
+                }
+                ?>
+            </table>
+        </div>
 
-    <?php
+        <?php
         exit();
     }
 

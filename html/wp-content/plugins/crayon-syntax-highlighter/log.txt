@@ -1,4 +1,10 @@
 
-[Crayon Syntax Highlighter Log Entry - 12:55:40 AM - 28 Apr 2013]
+[Crayon Syntax Highlighter Log Entry - 9:56:05 AM - 08 Jan 2015]
 
- [SYSTEM LOG] 'Updated from 1.17 to 2.2.0'
+ [SYSTEM LOG] 'Updated from 2.2.0 to 2.6.9'
+
+[Crayon Syntax Highlighter Log Entry - 3:03:52 PM - 08 Jan 2015]
+
+ [SYSTEM LOG] 'Upload directory is empty:  cannot load languages.'
+ [SYSTEM LOG] 'The resource directory is missing, should be at \'\'.'
+ [CrayonUtil::lines()] 'Cannot read lines at \'default/default.txt\'.'

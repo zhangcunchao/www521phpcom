@@ -154,9 +154,12 @@ class CrayonResourceCollection {
 		if (is_string($id) && !empty($id)) {
 			$this->collection[$id] = $resource;
 			asort($this->collection);
-		}
+            CrayonLog::debug('Added resource: ' . $this->path($id));
+		} else {
+            CrayonLog::syslog('Could not add resource: ', $id);
+        }
 	}
-	
+
 	public function add_resource($resource) {
 		$this->add($resource->id(), $resource);
 	}
@@ -181,7 +184,7 @@ class CrayonResourceCollection {
 		}
 		return NULL;
 	}
-	
+
 	public function get_array() {
 		$array = array();
 		foreach ($this->get() as $resource) {
@@ -220,11 +223,11 @@ class CrayonResourceCollection {
             $this->dir = CrayonUtil::path_slash($dir);
         }
 	}
-	
+
 	public function url($id) {
 		return '';
 	}
-	
+
 	public function get_css($id, $ver = NULL) {
 		$resource = $this->get($id);
 		return '<link rel="stylesheet" type="text/css" href="' . $this->url($resource->id()) . ($ver ? "?ver=$ver" : '') . '" />' . CRAYON_NL;
@@ -251,7 +254,7 @@ class CrayonUsedResourceCollection extends CrayonResourceCollection {
 			}
 		}
 	}
-	
+
 	public function set_used($id, $value = TRUE) {
 		$resource = $this->get($id);
 		if ($resource !== NULL && !$resource->used()) {
@@ -260,7 +263,7 @@ class CrayonUsedResourceCollection extends CrayonResourceCollection {
 		}
 		return FALSE;
 	}
-	
+
 	public function get_used() {
 		$used = array();
 		foreach ($this->get() as $resource) {
@@ -270,7 +273,7 @@ class CrayonUsedResourceCollection extends CrayonResourceCollection {
 		}
 		return $used;
 	}
-	
+
 	// XXX Override
 	public function resource_instance($id, $name = NULL) {
 		return new CrayonUsedResource($id, $name);
@@ -297,9 +300,13 @@ class CrayonUserResourceCollection extends CrayonUsedResourceCollection {
 
     // XXX Override
     public function resource_instance($id, $name = NULL) {
-        $resource = new CrayonUserResource($id, $name);
+        $resource = $this->create_user_resource_instance($id, $name);
         $resource->user($this->curr_dir == $this->user_directory());
         return $resource;
+    }
+
+    public function create_user_resource_instance($id, $name = NULL) {
+        return new CrayonUserResource($id, $name);
     }
 
     public function user_directory($dir = NULL) {
@@ -406,17 +413,17 @@ class CrayonResource {
 
 	function name($name = NULL) {
 		if ($name === NULL) {
-			return $this->name; 
+			return $this->name;
 		} else {
 			$this->name = $name;
 		}
 	}
-	
+
 	function clean_id($id) {
         $id = CrayonUtil::space_to_hyphen( strtolower(trim($id)) );
         return preg_replace('#[^\w-]#msi', '', $id);
 	}
-	
+
 	function clean_name($id) {
 		$id = CrayonUtil::hyphen_to_space( strtolower(trim($id)) );
 		return CrayonUtil::ucwords($id);
@@ -450,7 +457,7 @@ class CrayonUserResource extends CrayonUsedResource {
     }
 }
 
-class CrayonVersionResource extends CrayonResource {
+class CrayonVersionResource extends CrayonUserResource {
     // Adds version
 	private $version = '';
 

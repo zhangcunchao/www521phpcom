@@ -1,7 +1,7 @@
 /*
 Name: Neon
 Description: Dark, elegant and electric.
-Version: 1.0
+Version: 1.1
 Author: Di_Skyer
 URL: http://atlocal.net/
 */
@@ -31,35 +31,6 @@ URL: http://atlocal.net/
 	border-right-style: solid !important;
 	border-right-width: 1px !important;
 	border-right-color: #333 !important;
-}
-.crayon-theme-neon .crayon-code::selection {
-	background: #ddeeff !important;
-	color: #316ba5 !important;
-}
-.crayon-theme-neon .crayon-code *::selection {
-	background: #ddeeff !important;
-	color: #316ba5 !important;
-}
-.crayon-theme-neon::selection {
-	background: #777 !important;
-}
-.crayon-theme-neon .crayon-toolbar::selection {
-	background: #777 !important;
-}
-.crayon-theme-neon .crayon-toolbar *::selection {
-	background: #777 !important;
-}
-.crayon-theme-neon .crayon-info::selection {
-	background: #777 !important;
-}
-.crayon-theme-neon .crayon-info *::selection {
-	background: #777 !important;
-}
-.crayon-theme-neon .crayon-nums::selection {
-	background: #777 !important;
-}
-.crayon-theme-neon .crayon-nums *::selection {
-	background: #777 !important;
 }
 .crayon-theme-neon .crayon-line {
 	background: #050505 !important;
@@ -156,60 +127,66 @@ URL: http://atlocal.net/
 	background-color: #999 !important;
 	color: #ccc;
 }
-.crayon-theme-neon .crayon-pre .c {
+.crayon-theme-neon .crayon-pre .crayon-c {
 	color: #888 !important;
 }
-.crayon-theme-neon .crayon-pre .s {
+.crayon-theme-neon .crayon-pre .crayon-s {
 	color: #99CC18 !important;
 }
-.crayon-theme-neon .crayon-pre .k {
+.crayon-theme-neon .crayon-pre .crayon-k {
 	color: #EEEE33 !important;
 	font-weight: bold !important;
 }
-.crayon-theme-neon .crayon-pre .st {
+.crayon-theme-neon .crayon-pre .crayon-st {
 	color: #EEEE33 !important;
 	font-weight: bold !important;
 }
-.crayon-theme-neon .crayon-pre .r {
+.crayon-theme-neon .crayon-pre .crayon-r {
 	color: #EEEE33 !important;
 	font-weight: bold !important;
 }
-.crayon-theme-neon .crayon-pre .t {
+.crayon-theme-neon .crayon-pre .crayon-t {
 	color: #EEEE33 !important;
 	font-weight: bold !important;
 }
-.crayon-theme-neon .crayon-pre .m {
+.crayon-theme-neon .crayon-pre .crayon-m {
 	color: #EEEE33 !important;
 	font-weight: bold !important;
 }
-.crayon-theme-neon .crayon-pre .ta {
+.crayon-theme-neon .crayon-pre .crayon-ta {
 	color: #AAA !important;
 }
-.crayon-theme-neon .crayon-pre .i {
+.crayon-theme-neon .crayon-pre .crayon-i {
 	color: #fbefb1 !important;
 }
-.crayon-theme-neon .crayon-pre .v {
+.crayon-theme-neon .crayon-pre .crayon-v {
 	color: #879ab2 !important;
 }
-.crayon-theme-neon .crayon-pre .e {
+.crayon-theme-neon .crayon-pre .crayon-e {
 	color: #ED7218 !important;
 }
-.crayon-theme-neon .crayon-pre .cn {
+.crayon-theme-neon .crayon-pre .crayon-cn {
 	color: #FF2020 !important;
 }
-.crayon-theme-neon .crayon-pre .o {
+.crayon-theme-neon .crayon-pre .crayon-o {
 	color: #ac99ab !important;
 }
-.crayon-theme-neon .crayon-pre .h {
+.crayon-theme-neon .crayon-pre .crayon-h {
 	color: #ac99ab !important;
 }
-.crayon-theme-neon .crayon-pre .sy {
+.crayon-theme-neon .crayon-pre .crayon-sy {
 	color: #A069F8 !important;
 }
-.crayon-theme-neon .crayon-pre .n {
+.crayon-theme-neon .crayon-pre .crayon-n {
 	color: #726e73 !important;
 	font-style: italic !important;
 }
-.crayon-theme-neon .crayon-pre .f {
+.crayon-theme-neon .crayon-pre .crayon-f {
 	color: #595959 !important;
+}
+.crayon-theme-neon .crayon-pre .crayon-p {
+	color: #a4a4a4 !important;
+}
+.crayon-theme-neon .crayon-pre {
+	color: #ffffff !important;
 }

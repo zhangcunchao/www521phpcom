@@ -1,15 +1,15 @@
 <?php
 /*
 Plugin Name: Crayon Syntax Highlighter
-Plugin URI: http://aramk.com/projects/crayon-syntax-highlighter
+Plugin URI: https://github.com/aramk/crayon-syntax-highlighter
 Description: Supports multiple languages, themes, highlighting from a URL, local file or post text.
-Version: 2.2.0
+Version: 2.6.9
 Author: Aram Kocharyan
 Author URI: http://aramk.com/
 Text Domain: crayon-syntax-highlighter
 Domain Path: /trans/
 License: GPL2
-Copyright 2012	Aram Kocharyan	(email : akarmenia@gmail.com)
+Copyright 2013	Aram Kocharyan	(email : akarmenia@gmail.com)
 This program is free software; you can redistribute it and/or modify
 it under the terms of the GNU General Public License, version 2, as
 published by the Free Software Foundation.
@@ -23,15 +23,15 @@ You should have received a copy of the GNU General Public License
 along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 */
-require_once ('global.php');
-require_once (CRAYON_HIGHLIGHTER_PHP);
+require_once('global.php');
+require_once(CRAYON_HIGHLIGHTER_PHP);
 if (CRAYON_TAG_EDITOR) {
-    require_once (CRAYON_TAG_EDITOR_PHP);
+    require_once(CRAYON_TAG_EDITOR_PHP);
 }
 if (CRAYON_THEME_EDITOR) {
-    require_once (CRAYON_THEME_EDITOR_PHP);
+    require_once(CRAYON_THEME_EDITOR_PHP);
 }
-require_once ('crayon_settings_wp.class.php');
+require_once('crayon_settings_wp.class.php');
 
 if (defined('ABSPATH')) {
     // Used to get plugin version info
@@ -40,6 +40,7 @@ if (defined('ABSPATH')) {
 }
 
 /* The plugin class that manages all other classes and integrates Crayon with WP */
+
 class CrayonWP {
     // Properties and Constants ===============================================
 
@@ -250,6 +251,12 @@ class CrayonWP {
         // Will contain captured crayons and altered $wp_content
         $capture = array('capture' => array(), 'content' => $wp_content, 'has_captured' => FALSE);
 
+        // Do not apply Crayon for posts older than a certain date.
+        $disable_date = trim(CrayonGlobalSettings::val(CrayonSettings::DISABLE_DATE));
+        if ($disable_date && get_post_time('U', true, $wp_id) <= strtotime($disable_date)) {
+            return $capture;
+        }
+
         // Flags for which Crayons to convert
         $in_flag = self::in_flag($flags);
 
@@ -298,6 +305,10 @@ class CrayonWP {
         preg_match_all(self::regex(), $wp_content, $matches);
         $capture['has_captured'] = count($matches[0]) != 0;
         if ($just_check) {
+            // Backticks are matched after other tags, so they need to be captured here.
+            $result = self::replace_backquotes($wp_content);
+            $wp_content = $result['content'];
+            $capture['has_captured'] = $capture['has_captured'] || $result['changed'];
             $capture['content'] = $wp_content;
             return $capture;
         }
@@ -339,6 +350,11 @@ class CrayonWP {
                     for ($j = 0; $j < count($att_matches[1]); $j++) {
                         $atts_array[trim(strtolower($att_matches[1][$j]))] = trim($att_matches[3][$j]);
                     }
+                }
+
+                if (isset($atts_array[CrayonSettings::IGNORE]) && $atts_array[CrayonSettings::IGNORE]) {
+                    // TODO(aramk) Revert to the original content.
+                    continue;
                 }
 
                 // Capture theme
@@ -411,14 +427,24 @@ class CrayonWP {
             $wp_content = self::crayon_remove_ignore($wp_content);
         }
 
-        // Convert `` backquote tags into <code></code>, if needed
-        // XXX Some code may contain `` so must do it after all Crayons are captured
-        if (CrayonGlobalSettings::val(CrayonSettings::BACKQUOTE)) {
-            $wp_content = preg_replace('#(?<!\\\\)`([^`]*)`#msi', '<code>$1</code>', $wp_content);
-        }
+        $result = self::replace_backquotes($wp_content);
+        $wp_content = $result['content'];
 
         $capture['content'] = $wp_content;
         return $capture;
+    }
+
+    public static function replace_backquotes($wp_content) {
+        // Convert `` backquote tags into <code></code>, if needed
+        // XXX Some code may contain `` so must do it after all Crayons are captured
+        $result = array();
+        $prev_count = strlen($wp_content);
+        if (CrayonGlobalSettings::val(CrayonSettings::BACKQUOTE)) {
+            $wp_content = preg_replace('#(?<!\\\\)`([^`]*)`#msi', '<code>$1</code>', $wp_content);
+        }
+        $result['changed'] = $prev_count !== strlen($wp_content);
+        $result['content'] = $wp_content;
+        return $result;
     }
 
     /* Search for Crayons in posts and queue them for creation */
@@ -502,7 +528,7 @@ class CrayonWP {
     }
 
     private static function add_crayon_id($content) {
-        $uid = $content[0] . '-' . uniqid();
+        $uid = $content[0] . '-' . str_replace('.', '', uniqid('', true));
         CrayonLog::debug('add_crayon_id ' . $uid);
         return $uid;
     }
@@ -518,7 +544,7 @@ class CrayonWP {
             global $CRAYON_VERSION;
             if (CRAYON_MINIFY) {
                 wp_enqueue_style('crayon', plugins_url(CRAYON_STYLE_MIN, __FILE__), array(), $CRAYON_VERSION);
-                wp_enqueue_script('crayon_js_min', plugins_url(CRAYON_JS_MIN, __FILE__), array('jquery'), $CRAYON_VERSION);
+                wp_enqueue_script('crayon_js', plugins_url(CRAYON_JS_MIN, __FILE__), array('jquery'), $CRAYON_VERSION);
             } else {
                 wp_enqueue_style('crayon_style', plugins_url(CRAYON_STYLE, __FILE__), array(), $CRAYON_VERSION);
                 wp_enqueue_style('crayon_global_style', plugins_url(CRAYON_STYLE_GLOBAL, __FILE__), array(), $CRAYON_VERSION);
@@ -530,11 +556,8 @@ class CrayonWP {
         }
     }
 
-//    public static function prevent_resources() {
-//        self::$enqueued = TRUE;
-//    }
-
     private static function init_tags_regex($force = FALSE, $flags = NULL, &$tags_regex = NULL) {
+        CrayonSettingsWP::load_settings();
         self::init_tag_bits();
 
         // Default output
@@ -742,7 +765,7 @@ class CrayonWP {
         return $the_excerpt . ' ';
     }
 
-    // Refactored, used to capture pre and span tags which have settings in class attribute
+    // Used to capture pre and span tags which have settings in class attribute
     public static function class_tag($matches) {
         // If class exists, atts is not captured
         $pre_class = $matches[1];
@@ -762,6 +785,10 @@ class CrayonWP {
         }
 
         if (!empty($class)) {
+            if (preg_match('#\bignore\s*:\s*true#', $class)) {
+                // Prevent any changes if ignoring the tag.
+                return $matches[0];
+            }
             // crayon-inline is turned into inline="1"
             $class = preg_replace('#' . self::REGEX_INLINE_CLASS . '#mi', 'inline="1"', $class);
             // "setting[:_]value" style settings in the class attribute
@@ -867,6 +894,14 @@ class CrayonWP {
 
     public static function save_post($update_id, $post) {
         self::refresh_post($post);
+    }
+
+    public static function filter_post_data($data, $postarr) {
+        // Remove the selected CSS that may be present from the tag editor.
+        CrayonTagEditorWP::init_settings();
+        $css_selected = CrayonTagEditorWP::$settings['css_selected'];
+        $data['post_content'] = preg_replace("#(class\s*=\s*(\\\\[\"'])[^\"']*)$css_selected([^\"']*\\2)#msi", '$1$3', $data['post_content']);
+        return $data;
     }
 
     public static function refresh_post($post, $refresh_legacy = TRUE, $save = TRUE) {
@@ -1291,6 +1326,7 @@ if (defined('ABSPATH')) {
         // For marking a post as containing a Crayon
         add_action('update_post', 'CrayonWP::save_post', 10, 2);
         add_action('save_post', 'CrayonWP::save_post', 10, 2);
+        add_filter('wp_insert_post_data', 'CrayonWP::filter_post_data', '99', 2);
     }
     register_activation_hook(__FILE__, 'CrayonWP::install');
     register_deactivation_hook(__FILE__, 'CrayonWP::uninstall');

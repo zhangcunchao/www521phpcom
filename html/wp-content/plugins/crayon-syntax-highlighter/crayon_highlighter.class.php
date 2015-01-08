@@ -28,7 +28,7 @@ class CrayonHighlighter {
 	private $is_mixed = FALSE;
 	// Inline code on a single floating line
 	private $is_inline = FALSE;
-	public $is_highlighted = TRUE;
+	private $is_highlighted = TRUE;
 	
 	// Objects
 	// Stores the CrayonLang being used
@@ -91,7 +91,7 @@ class CrayonHighlighter {
 		// If reading the url locally produced an error or failed, attempt remote request
 		if ($local == FALSE) {
 			if (empty($scheme)) {
-				$url = 'http://' . $url;
+				$url = (CrayonUtil::isSecure() ? 'https://' : 'http://') . $url;
 			}
 			$http_code = 0;
 			// If available, use the built in wp remote http get function, we don't need SSL
@@ -123,7 +123,9 @@ class CrayonHighlighter {
 				curl_setopt($ch, CURLOPT_FOLLOWLOCATION, TRUE);
 				curl_setopt($ch, CURLOPT_FRESH_CONNECT, FALSE);
 				curl_setopt($ch, CURLOPT_MAXREDIRS, 5);
-				curl_setopt($ch, CURLOPT_USERAGENT, $_SERVER['HTTP_USER_AGENT']);
+                if (isset($_SERVER['HTTP_USER_AGENT'])) {
+				    curl_setopt($ch, CURLOPT_USERAGENT, $_SERVER['HTTP_USER_AGENT']);
+                }
 				$content = curl_exec($ch);
 				$error = curl_error($ch);
 				$http_code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
@@ -184,7 +186,7 @@ class CrayonHighlighter {
 					$this->formatted_code = CrayonFormatter::format_code($code, $this->language, $this);
 				} else {
 					// Format the code with Mixed Highlighting
-					$this->formatted_code = CrayonFormatter::format_mixed_code($code, $this->language, $this);					
+					$this->formatted_code = CrayonFormatter::format_mixed_code($code, $this->language, $this);
 				}
 			} catch (Exception $e) {
 				$this->error($e->message());
@@ -226,7 +228,12 @@ class CrayonHighlighter {
 			if ($this->setting_val(CrayonSettings::TRIM_WHITESPACE)) {
 				$code = preg_replace("#(?:^\\s*\\r?\\n)|(?:\\r?\\n\\s*$)#", '', $code);
 			}
-			
+
+            if ($this->setting_val(CrayonSettings::TRIM_CODE_TAG)) {
+                $code = preg_replace('#^\s*<\s*code[^>]*>#msi', '', $code);
+                $code = preg_replace('#</\s*code[^>]*>\s*$#msi', '', $code);
+            }
+
 			$before = $this->setting_val(CrayonSettings::WHITESPACE_BEFORE);
 			if ($before > 0) {
 				$code = str_repeat("\n", $before) . $code;

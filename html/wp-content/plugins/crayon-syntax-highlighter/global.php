@@ -1,10 +1,8 @@
 <?php
 
 // Switches
-
 define('CRAYON_DEBUG', FALSE);
 
-// TODO remove once done
 define('CRAYON_TAG_EDITOR', TRUE);
 define('CRAYON_THEME_EDITOR', TRUE);
 
@@ -15,17 +13,17 @@ define('CRAYON_MINIFY', TRUE);
 // General definitions
 define('CRAYON_DOMAIN', 'crayon-syntax-highlighter');
 
-// These are overriden by functions since v1.1.1
+// These are overridden by functions since v1.1.1
 $CRAYON_VERSION = '1.1.1';
 $CRAYON_DATE = '27th September, 2011';
 $CRAYON_AUTHOR = 'Aram Kocharyan';
-$CRAYON_AUTHOR_SITE = 'http://aramk.com/';
+$CRAYON_AUTHOR_SITE = 'http://aramk.com';
 $CRAYON_DONATE = 'http://bit.ly/crayondonate';
-$CRAYON_WEBSITE = 'http://aramk.com/projects/crayon-syntax-highlighter';
+$CRAYON_WEBSITE = 'https://github.com/aramk/crayon-syntax-highlighter';
 $CRAYON_EMAIL = 'crayon.syntax@gmail.com';
 $CRAYON_TWITTER = 'http://twitter.com/crayonsyntax';
-$CRAYON_GIT = 'http://github.com/aramkocharyan/crayon-syntax-highlighter/';
-$CRAYON_PLUGIN_WP = 'http://wordpress.org/extend/plugins/crayon-syntax-highlighter/';
+$CRAYON_GIT = 'http://github.com/aramk/crayon-syntax-highlighter';
+$CRAYON_PLUGIN_WP = 'http://wordpress.org/extend/plugins/crayon-syntax-highlighter';
 
 // XXX Used to name the class
 
@@ -83,15 +81,13 @@ define('CRAYON_JS_ADMIN', CRAYON_JS_SRC_DIR . 'crayon_admin.js');
 define('CRAYON_JS_UTIL', CRAYON_JS_SRC_DIR . 'util.js');
 define('CRAYON_CSSJSON_JS', CRAYON_JS_SRC_DIR . 'cssjson.js');
 
-define('CRAYON_JS_FANCYBOX', CRAYON_JS_DIR . 'fancybox/jquery.fancybox.init.pack.js');
-define('CRAYON_CSS_FANCYBOX', CRAYON_JS_DIR . 'fancybox/jquery.fancybox.css');
 define('CRAYON_CSS_JQUERY_COLORPICKER', CRAYON_JS_DIR . 'jquery-colorpicker/jquery.colorpicker.css');
 define('CRAYON_JS_JQUERY_COLORPICKER', CRAYON_JS_DIR . 'jquery-colorpicker/jquery.colorpicker.js');
 define('CRAYON_JS_TINYCOLOR', CRAYON_JS_DIR . 'tinycolor-min.js');
-// TODO rename TE
 define('CRAYON_TAG_EDITOR_JS', 'crayon_tag_editor.js');
+define('CRAYON_COLORBOX_JS', 'colorbox/jquery.colorbox-min.js');
+define('CRAYON_COLORBOX_CSS', 'colorbox/colorbox.css');
 define('CRAYON_TAG_EDITOR_PHP', CRAYON_TAG_EDITOR_PATH . 'crayon_tag_editor_wp.class.php');
-// TODO Fix these
 define('CRAYON_TINYMCE_JS', 'crayon_tinymce.js');
 define('CRAYON_QUICKTAGS_JS', 'crayon_qt.js');
 define('CRAYON_STYLE', CRAYON_CSS_SRC_DIR . 'crayon_style.css');

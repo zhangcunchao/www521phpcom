@@ -7,6 +7,7 @@
         var s, te = null;
         var isHighlighted = false;
         var currPre = null;
+        var isInit = false;
         // Switch events
         var switch_html_click = switch_tmce_click = null;
 
@@ -14,11 +15,7 @@
         //	var wasHighlighted = false;
 
         base.setHighlight = function (highlight) {
-            if (highlight) {
-                $(s.tinymce_button).addClass('mce_crayon_tinymce_highlight');
-            } else {
-                $(s.tinymce_button).removeClass('mce_crayon_tinymce_highlight');
-            }
+            $(s.tinymce_button).closest(s.tinymce_button_generic).toggleClass(s.tinymce_highlight, highlight);
             isHighlighted = highlight;
         };
 
@@ -39,11 +36,110 @@
             return false;
         };
 
-        base.init = function (button) {
-            // TODO
+        base.loadTinyMCE = function () {
+            var version = parseInt(tinymce.majorVersion);
+            if (!isNaN(version) && version <= 3) {
+                return this._loadTinyMCEv3();
+            }
+
+            s = CrayonTagEditorSettings;
+            te = CrayonTagEditor;
+
+            // TODO(aramk) find the TinyMCE version 4 compliant command for this.
+            //tinymce.PluginManager.requireLangPack(name);
+
+            tinymce.PluginManager.add(name, function (ed, url) {
+                // TODO(aramk) This is called twice for some reason.
+                ed.on('init', function () {
+                    ed.dom.loadCSS(url + '/crayon_te.css');
+                    if (isInit) {
+                        return;
+                    }
+                    $(s.tinymce_button).parent().addClass(s.tinymce_button_unique);
+                    CrayonTagEditor.bind('.' + s.tinymce_button_unique);
+                    // Remove all selected pre tags
+                    $('.' + s.css_selected, ed.getContent()).removeClass(s.css_selected);
+                    isInit = true;
+                });
+
+                // Prevent <p> on enter, turn into \n
+                ed.on('keyDown', function (e) {
+                    var selection = ed.selection;
+                    if (e.keyCode == 13) {
+                        var node = selection.getNode();
+                        if (node.nodeName == 'PRE') {
+                            selection.setContent('\n', {format: 'raw'});
+                            return tinymce.dom.Event.cancel(e);
+                        } else if (te.isCrayon(node)) {
+                            // Only triggers for inline <span>, ignore enter in inline
+                            return tinymce.dom.Event.cancel(e);
+                        }
+                    }
+                });
+
+                // Remove onclick and call ourselves
+                var switch_html = $(s.switch_html);
+                switch_html.prop('onclick', null);
+                switch_html.click(function () {
+                    // Remove selected pre class when switching to HTML editor
+                    base.selectPreCSS(false);
+                    switchEditors.go('content', 'html');
+                });
+
+                // Highlight selected
+                ed.on('nodeChange', function (event) {
+                    var n = event.element;
+                    if (n != currPre) {
+                        // We only care if we select another same object
+                        if (currPre) {
+                            // If we have a previous pre, remove it
+                            base.selectPreCSS(false);
+                            currPre = null;
+                        }
+                        if (te.isCrayon(n)) {
+                            // Add new pre
+                            currPre = n;
+                            base.selectPreCSS(true);
+                            base.setHighlight(true);
+                        } else {
+                            // No pre selected
+                            base.setHighlight(false);
+                        }
+                    }
+                });
+
+                ed.addButton(name, {
+                    // TODO add translation
+                    title: s.dialog_title_add,
+                    onclick: function () {
+                        te.showDialog({
+                            insert: function (shortcode) {
+                                ed.execCommand('mceInsertContent', 0, shortcode);
+                            },
+                            edit: function (shortcode) {
+                                // This will change the currPre object
+                                var newPre = $(shortcode);
+                                $(currPre).replaceWith(newPre);
+                                // XXX DOM element not jQuery
+                                currPre = newPre[0];
+                            },
+                            select: function () {
+                                return ed.selection.getContent({format: 'text'});
+                            },
+                            editor_str: 'tinymce',
+                            ed: ed,
+                            node: currPre,
+                            input: 'decode',
+                            output: 'encode'
+                        });
+                    }
+                });
+            });
+
         };
 
-        base.loadTinyMCE = function () {
+        // TinyMCE v3 - deprecated.
+        base._loadTinyMCEv3 = function () {
             s = CrayonTagEditorSettings;
             te = CrayonTagEditor;
 
@@ -125,8 +221,8 @@
                                 // No pre selected
                                 base.setHighlight(false);
                             }
-                            var tooltip = currPre ? s.dialog_title_edit : s.dialog_title_add;
-                            $(s.tinymce_button).attr('title', tooltip);
+//                            var tooltip = currPre ? s.dialog_title_edit : s.dialog_title_add;
+//                            $(s.tinymce_button).attr('title', tooltip);
                         }
                     });
 
@@ -155,7 +251,7 @@
                         longname: 'Crayon Syntax Highlighter',
                         author: 'Aram Kocharyan',
                         authorurl: 'http://aramk.com/',
-                        infourl: 'http://bit.ly/crayonsyntax/',
+                        infourl: 'https://github.com/aramk/crayon-syntax-highlighter',
                         version: "1.0"
                     };
                 }

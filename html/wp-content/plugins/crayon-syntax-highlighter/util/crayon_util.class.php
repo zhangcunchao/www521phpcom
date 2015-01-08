@@ -28,7 +28,7 @@ class CrayonUtil {
             $escape_regex = strpos($opts, 'r') !== FALSE;
             $clean_commments = strpos($opts, 'c') !== FALSE;
             $return_string = strpos($opts, 's') !== FALSE;
-//			$escape_hash = strpos($opts, 'h') !== FALSE;
+//          $escape_hash = strpos($opts, 'h') !== FALSE;
         } else {
             $lowercase = $whitespace = $escape_regex = $clean_commments = $return_string = /*$escape_hash =*/
                 FALSE;
@@ -56,10 +56,10 @@ class CrayonUtil {
         if ($escape_regex) {
             for ($i = 0; $i < count($lines); $i++) {
                 $lines[$i] = self::esc_regex($lines[$i]);
-//				if ($escape_hash || true) {
+//              if ($escape_hash || true) {
                 // If we have used \#, then we don't want it to become \\#
                 $lines[$i] = preg_replace('|\\\\\\\\#|', '\#', $lines[$i]);
-//				}
+//              }
             }
         }
 
@@ -334,6 +334,9 @@ EOT;
             return self::$touchscreen;
         }
         if (($devices = self::lines(CRAYON_TOUCH_FILE, 'lw')) !== FALSE) {
+            if (!isset($_SERVER['HTTP_USER_AGENT'])) {
+                return false;
+            }
             // Create array of device strings from file
             $user_agent = strtolower($_SERVER['HTTP_USER_AGENT']);
             self::$touchscreen = (self::strposa($user_agent, $devices) !== FALSE);
@@ -412,7 +415,7 @@ EOT;
     }
 
     public static function html_entity_decode($str) {
-        return html_entity_decode($str, ENT_COMPAT, 'UTF-8');
+        return html_entity_decode($str, ENT_QUOTES, 'UTF-8');
     }
 
     // Converts <, >, & into entities
@@ -525,7 +528,8 @@ EOT;
 
     // Returns the current HTTP URL
     public static function current_url() {
-        return "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+        $p = self::isSecure() ? "https://" : "http://";
+        return $p . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
     }
 
     // Removes crayon plugin path from absolute path
@@ -564,11 +568,32 @@ EOT;
         return str_replace('/', '\\', trim(strval($url)));
     }
 
+    // returns 'true' or 'false' depending on whether this PHP file was served over HTTPS
+    public static function isSecure() {
+        // From https://core.trac.wordpress.org/browser/tags/4.0.1/src/wp-includes/functions.php
+        if ( isset($_SERVER['HTTPS']) ) {
+            if ( 'on' == strtolower($_SERVER['HTTPS']) )
+                return true;
+            if ( '1' == $_SERVER['HTTPS'] )
+                return true;
+        } elseif ( isset($_SERVER['SERVER_PORT']) && ( '443' == $_SERVER['SERVER_PORT'] ) ) {
+            return true;
+        }
+        return false;
+    }
+
+    public static function startsWith($haystack, $needle) {
+        return substr($haystack, 0, strlen($needle)) === $needle;
+    }
+
     // Append either forward slash or backslash based on environment to paths
     public static function path_slash($path) {
         $path = self::pathf($path);
         if (!empty($path) && !preg_match('#\/$#', $path)) {
             $path .= '/';
+        }
+        if (self::startsWith($path, 'http://') && self::isSecure()) {
+            $path = str_replace('http://', 'https://', $path);
         }
         return $path;
     }
@@ -582,6 +607,9 @@ EOT;
         $url = self::pathf($url);
         if (!empty($url) && !preg_match('#\/$#', $url)) {
             $url .= '/';
+        }
+        if (self::startsWith($url, 'http://') && self::isSecure()) {
+            $url = str_replace('http://', 'https://', $url);
         }
         return $url;
     }
