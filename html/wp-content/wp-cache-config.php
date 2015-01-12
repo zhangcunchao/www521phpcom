@@ -17,15 +17,15 @@ $cache_scheduled_time = '00:00'; //Added by WP-Cache Manager
 $wp_cache_mobile_groups = ''; //Added by WP-Cache Manager
 $wp_cache_mobile_prefixes = 'w3c , w3c-, acs-, alav, alca, amoi, audi, avan, benq, bird, blac, blaz, brew, cell, cldc, cmd-, dang, doco, eric, hipt, htc_, inno, ipaq, ipod, jigs, kddi, keji, leno, lg-c, lg-d, lg-g, lge-, lg/u, maui, maxo, midp, mits, mmef, mobi, mot-, moto, mwbp, nec-, newt, noki, palm, pana, pant, phil, play, port, prox, qwap, sage, sams, sany, sch-, sec-, send, seri, sgh-, shar, sie-, siem, smal, smar, sony, sph-, symb, t-mo, teli, tim-, tosh, tsm-, upg1, upsi, vk-v, voda, wap-, wapa, wapi, wapp, wapr, webc, winw, winw, xda , xda-'; //Added by WP-Cache Manager
 $wp_cache_refresh_single_only = '0'; //Added by WP-Cache Manager
-$wp_cache_make_known_anon = 0; //Added by WP-Cache Manager
+$wp_cache_make_known_anon = 1; //Added by WP-Cache Manager
 $wp_cache_mod_rewrite = 0; //Added by WP-Cache Manager
 $wp_cache_front_page_checks = 0; //Added by WP-Cache Manager
 $wp_cache_mfunc_enabled = 0; //Added by WP-Cache Manager
 $wp_supercache_304 = 0; //Added by WP-Cache Manager
 $wp_cache_no_cache_for_get = 0; //Added by WP-Cache Manager
 $wp_cache_disable_utf8 = 0; //Added by WP-Cache Manager
-$cache_time_interval = '600'; //Added by WP-Cache Manager
-$cache_schedule_type = 'time'; //Added by WP-Cache Manager
+$cache_time_interval = '3600'; //Added by WP-Cache Manager
+$cache_schedule_type = 'interval'; //Added by WP-Cache Manager
 $cache_page_secret = 'ffb32899cefbb79a4045c1d12de23f8f'; //Added by WP-Cache Manager
 $wp_cache_slash_check = 1; //Added by WP-Cache Manager
 if ( ! defined('WPCACHEHOME') )
@@ -34,7 +34,7 @@ if ( ! defined('WPCACHEHOME') )
 $cache_compression = 0; //Added by WP-Cache Manager
 $cache_enabled = true; //Added by WP-Cache Manager
 $super_cache_enabled = true; //Added by WP-Cache Manager
-$cache_max_time = 0; //Added by WP-Cache Manager
+$cache_max_time = 86400; //Added by WP-Cache Manager
 //$use_flock = true; // Set it true or false if you know what to use
 $cache_path = WP_CONTENT_DIR . '/cache/';
 $file_prefix = 'wp-cache-';
