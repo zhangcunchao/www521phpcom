@@ -53,6 +53,10 @@
 	lsof
 	lsof -i:  端口号
 
+查看所有僵尸进程
+
+	ps -A -o stat,ppid,pid,cmd | grep -e '^[Zz]'
+
 2.6、追踪进程 
 
 	strace -p 10747
