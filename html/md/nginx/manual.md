@@ -2,25 +2,25 @@
 
 Nginx配置文件nginx.conf中文详解
 
-	#定义Nginx运行的用户和用户组
-	
-	user www www;
-	
-	#nginx进程数，建议设置为等于CPU总核心数.
-	
-	worker_processes 8;
-	
-	#全局错误日志定义类型，[ debug | info | notice | warn | error | crit ]
-	
-	error_log /var/log/nginx/error.log info;
-	
-	#进程文件
-	pid /var/run/nginx.pid;
-	
-	#一个nginx进程打开的最多文件描述符数目，理论值应该是最多打开文件数（系统的值ulimit -n）与nginx进程数相除，但是nginx分配请求并不均匀，所以建议与ulimit -n的值保持一致。
-	worker_rlimit_nofile 65535;
-	
-	#工作模式与连接数上限
+####定义Nginx运行的用户和用户组####
+
+user www www;
+
+####nginx进程数，建议设置为等于CPU总核心数.
+
+worker_processes 8;
+
+####全局错误日志定义类型，[ debug | info | notice | warn | error | crit ]
+
+error_log /var/log/nginx/error.log info;
+
+####进程文件
+pid /var/run/nginx.pid;
+
+####一个nginx进程打开的最多文件描述符数目，理论值应该是最多打开文件数（系统的值ulimit -n）与nginx进程数相除，但是nginx分配请求并不均匀，所以建议与ulimit -n的值保持一致。
+worker_rlimit_nofile 65535;
+
+####工作模式与连接数上限
 	events
 	{
 	#参考事件模型，use [ kqueue | rtsig | epoll | /dev/poll | select | poll ]; epoll模型是Linux 2.6以上版本内核中的高性能网络I/O模型，如果跑在FreeBSD上面，就用kqueue模型。
@@ -28,8 +28,9 @@ Nginx配置文件nginx.conf中文详解
 	#单个进程最大连接数（最大连接数=连接数*进程数）
 	worker_connections 65535;
 	}
-	
-	#设定http服务器
+
+####设定http服务器
+
 	http
 	{
 	include mime.types; #文件扩展名与文件类型映射表
@@ -71,8 +72,9 @@ Nginx配置文件nginx.conf中文详解
 	server 192.168.80.122:80 weight=2;
 	server 192.168.80.123:80 weight=3;
 	}
-	
-	#虚拟主机的配置
+
+####虚拟主机的配置
+
 	server
 	{
 	#监听端口
@@ -96,7 +98,9 @@ Nginx配置文件nginx.conf中文详解
 	{
 	expires 1h;
 	}
-	#日志格式设定
+
+####日志格式设定
+
 	log_format access '$remote_addr - $remote_user [$time_local] "$request" '
 	'$status $body_bytes_sent "$http_referer" '
 	'"$http_user_agent" $http_x_forwarded_for';
@@ -123,8 +127,8 @@ Nginx配置文件nginx.conf中文详解
 	proxy_temp_file_write_size 64k;
 	#设定缓存文件夹大小，大于这个值，将从upstream服务器传
 	}
-	
-	#设定查看Nginx状态的地址
+
+####设定查看Nginx状态的地址
 	location /NginxStatus {
 	stub_status on;
 	access_log on;
