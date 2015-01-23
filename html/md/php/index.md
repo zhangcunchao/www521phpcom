@@ -13,4 +13,4 @@
 1. [php一些好用的内置函数](function.md)
 2. [封装的一些常用公共函数](public_function.md)
 3. [php实现穷举法](qiongju.md)
-4. [二维数组排序](asort.md)
+4. [多维数组排序](asort.md)
