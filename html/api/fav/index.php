@@ -1,7 +1,7 @@
 <?php 
 $url = @$_GET['url'];
 if($url){
-	$url = preg_replace('/http\:\/\//i','',$url);
+	$url = preg_replace('/http(s)?\:\/\//i','',$url);
 	$url = 'http://'.$url;
 	$domain = parse_url($url);
 	$url = $domain['host'];
