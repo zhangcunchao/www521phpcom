@@ -146,6 +146,10 @@ nameserver 192.168.129.2
 	yes|cp -avpf a/ b/
 	/cp
 
+2.13、find
+
+	find -path "*.svn*" -prune -o -regex '.*\.gif\|.*\.png\|.*\.jpg' -print |xargs wc -l #统计行数
+
 3、其他命令
 
 3.1、mysql命令
