@@ -150,6 +150,12 @@ nameserver 192.168.129.2
 
 	find -path "*.svn*" -prune -o -regex '.*\.gif\|.*\.png\|.*\.jpg' -print |xargs wc -l #统计行数
 
+2.14、全文件查找
+
+	grep "string" (dir|file)
+	grep "ffffff" ./*.log
+	grep "fffff"  ./log -R
+
 3、其他命令
 
 3.1、mysql命令
