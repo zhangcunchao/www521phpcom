@@ -28,16 +28,16 @@
 	hosts="/data/www"
 	default="/etc/nginx/default.conf"
 	vhost="/etc/nginx/vhost"
-	echo "1.add ftp user"
-	echo "please input websit:"
+	echo "1.添加ftp账户"
+	echo "请输入域名:"
 	read host
 	if [ -d "$hosts/$host" ]
 	then
 	echo $hosts/$host
-	echo '[warning]dir is already exists!'
+	echo '[warning]域名目录已存在!'
 	exit 0
 	fi
-	echo "add user,please input user name:"
+	echo "添加用户,请输入用户名:"
 	read name
 	del -r $name >/dev/null 2>&1
 	adduser -d $hosts/$host -g ftp -s /sbin/nologin $name
@@ -48,37 +48,37 @@
 	echo "mkdir:"$hosts/$host/html $hosts/$host/bak $hosts/$host/log
 	echo "mkdir:"$hosts/$host/bak/code $hosts/$host/bak/sql
 	chown -R $name:ftp $hosts/$host
-	echo "ok,add user success!name=$name,password=youwrite"
-	echo "please input database name"
+	echo "ok,添加用户成功!name=$name,password=youwrite"
+	echo "请输入需要创建的数据库名,不输入跳过数据库创建步骤"
 	read database
 	if [ -n "$database" ]
 	then
-	echo "please input dbuser"
+	echo "请输入数据库需要创建的用户名"
 	read dbuser
-	echo "please input dbpwd"
+	echo "请输入创建用户的初始密码"
 	read dbpwd
 	HOSTNAME="127.0.0.1"
 	PORT="3306"
 	USERNAME="root"
-	echo "input root pwd"
+	echo "请输入数据库root账户的密码!!!!!!!!!"
 	read PASSWORD
 	fi
-	echo "2.To configure nginx"
+	echo "2.初始化nginx虚拟主机"
 	cat $default | sed -e "s:#hosts#:${hosts}:g"|sed -e "s/#host#/${host}/g" > $vhost/$host.conf
 	/usr/sbin/nginx -s reload
-	echo "config nginx success"
+	echo "nginx配置成功"
 	if [ -z "$database"  ]
 	then
 	echo 'ok,finish!'
 	exit 0
 	fi
-	echo "3.add mysql user database"
+	echo "3.添加mysql用户"
 	
 	create_db_sql="insert into mysql.user(Host,User,Password) values('localhost','${dbuser}',password('${dbpwd}'))"
 	mysql -h${HOSTNAME}  -P${PORT}  -u${USERNAME} -p${PASSWORD} -e "${create_db_sql}"
 	if [ $? -ne 0 ]
 	then
-	echo 'add db user error'
+	echo '添加mysql用户失败'
 	exit 0
 	fi
 	sleep 1
@@ -86,7 +86,7 @@
 	mysql -h${HOSTNAME}  -P${PORT}  -u${USERNAME} -p${PASSWORD} -e "${create_db_sql}"
 	if [ $? -ne 0 ]
 	then
-	echo 'add db error'
+	echo '创建数据库失败'
 	exit 0
 	fi
 	sleep 1
@@ -97,11 +97,10 @@
 	mysql -h${HOSTNAME}  -P${PORT}  -u${USERNAME} -p${PASSWORD} -e "${create_db_sql}"
 	if [ $? -ne 0 ]
 	then
-	echo 'user to db user error'
+	echo '对用户授权数据库权限失败'
 	echo $create_db_sql
 	exit 0
 	fi
 	create_db_sql="flush privileges"
 	mysql -h${HOSTNAME}  -P${PORT}  -u${USERNAME} -p${PASSWORD} -e "${create_db_sql}"
 	echo 'ok,finish!'
-
