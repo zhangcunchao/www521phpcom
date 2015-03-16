@@ -191,7 +191,7 @@ nameserver 192.168.129.2
 
 //如果想指定部分权限给一用户，可以这样来写:
 
-	mysql>grant select,update on jeecnDB.* to jeecn@localhost identified by ‘密码’;
+	mysql>grant select,update on jeecnDB.* to 'jeecn@localhost' identified by '密码';
 
 3.1.7、设置远程连接
 mysql>update user set host = '%' where user = 'root';
