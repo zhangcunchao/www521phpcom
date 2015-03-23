@@ -8,3 +8,4 @@
 2. [nginx add blocksip脚本](blocks.md)
 3. [一键式nginx站点搭建脚本](buildweb.md)
 4. [tail -f多文件脚本](tail_n_file.md)
+5. [windows下查看端口进程](windows_cmd.md)
