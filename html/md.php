@@ -124,6 +124,7 @@
 var cpro_id = "u1655076";
 </script>
 <script src="http://cpro.baidustatic.com/cpro/ui/f.js" type="text/javascript"></script>
+<script type='text/javascript' src="http://www.521php.com/wailian/public/scripts/tj.js"></script>
 <script>
 function hid(){
 	$(".file-wrap").animate({opacity: "hide"}, "slow");
