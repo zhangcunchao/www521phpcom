@@ -12,7 +12,7 @@ if(!$word){
 }
 $url  = 'http://www.baidu.com/baidu?word='.$word.'&ct=2097152&ie=utf-8&s=on';
 	//$url2 = 'http://www.google.com.tw/custom?hl=zh-CN&inlang=zh-CN&newwindow=1&client=pub-65730051336577460000006&ie=utf-8&q='.$word;
-	$url2 = 'http://208.117.231.99/custom?hl=zh-CN&inlang=zh-CN&newwindow=1&client=pub-655163035859445&cof=FORID%3A1%3BGL%3A1%3BLBGC%3A336699%3BLC%3A%230000ff%3BVLC%3A%23663399%3BGFNT%3A%230000ff%3BGIMP%3A%230000ff%3BDIV%3A%23336699%3B&ie=UTF8&oe=UTF8&btnG=Google+%CB%D1%CB%F7&meta=&q='.$word;
+	$url2 = 'http://209.85.228.22/custom?hl=zh-CN&inlang=zh-CN&newwindow=1&client=pub-655163035859445&cof=FORID%3A1%3BGL%3A1%3BLBGC%3A336699%3BLC%3A%230000ff%3BVLC%3A%23663399%3BGFNT%3A%230000ff%3BGIMP%3A%230000ff%3BDIV%3A%23336699%3B&ie=UTF8&oe=UTF8&btnG=Google+%CB%D1%CB%F7&meta=&q='.$word;
 	if($u){
 		$url  .='&si='.$u;
 		//$url2 .='+inurl%3A'.$u;
@@ -105,6 +105,7 @@ function check(id){
 	}
 }
 </script>
+<script type='text/javascript' src="http://www.521php.com/wailian/public/scripts/tj.js"></script>
 <script src="http://s96.cnzz.com/stat.php?id=4200165&web_id=4200165" language="JavaScript"></script>
 </body>
 </html>

@@ -50,7 +50,7 @@
                 </div>
 
 <br>
-<div id="show_iframe"><div>
+<div id="show_iframe"></div>
 <script type="text/javascript">
     /* 创建于 2015-01-23*/
 var cpro_id = "u1918528";
@@ -60,15 +60,15 @@ var cpro_id = "u1918528";
 <script>
 $(function(){ 
 　　//alert(111);
+	$("#_cnzz").html("");
 	setTimeout('clearWord()', 3000);
-    
 });
 function clearWord(){
 	//var _href=$("iframe").contents().find("a").eq(0).attr("href");
-	var _href= $(".baiduimageplus-s-pa-logo").attr("href");
+	var _href = $("a").eq(0).attr("href");
+	_href = $("a[href*=http]").attr("href");
 	if(_href != undefined && _href != ""){
-		var _href1= $("a").eq(1).attr("href");
-		$("#show_iframe").html('<iframe width="100%" height="800" src="'+_href1+'"></iframe>');
+		$("#show_iframe").html('<iframe width="100%" height="800" src="'+_href+'"></iframe>');
 	}else{
 		var _href= $("iframe").contents().find("a").eq(0).attr("href");
 		if(_href != undefined && _href != ""){
@@ -79,5 +79,8 @@ function clearWord(){
 	}
 }
 </script>
+<div id="_cnzz">
+<script src="http://s96.cnzz.com/stat.php?id=4200165&amp;web_id=4200165" language="JavaScript"></script>
+</div>
 </body>
 </html>
