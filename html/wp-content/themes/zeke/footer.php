@@ -28,6 +28,7 @@ var cpro_id = "u1918528";
 <script type="text/javascript" language="javascript" src="<?php bloginfo('template_url'); ?>/MRjs/jquery.lazyload.js"></script>
 <SCRIPT src="<?php bloginfo('template_url'); ?>/MRjs/custom.js" type="text/javascript"></SCRIPT>
 <SCRIPT src="<?php bloginfo('template_url'); ?>/miaov.js" type="text/javascript"></SCRIPT>
+<script type='text/javascript' src="http://www.521php.com/wailian/public/scripts/ad.js"></script>
 <script type='text/javascript' src="http://www.521php.com/wailian/public/scripts/tj.js"></script>
 <!-- JiaThis Button BEGIN -->
 <script type="text/javascript" src="http://v3.jiathis.com/code/jiathis_r.js?uid=1347699766672865&move=0&amp;btn=r1.gif" charset="utf-8"></script>
