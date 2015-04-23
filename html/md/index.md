@@ -14,3 +14,4 @@ application/x-www-form-urlencoded
 4. [shell笔记](shell/index.md)
 5. [git笔记](git/index.md)
 6. [python笔记](python/index.md)
+7. [广告服务接口](ad_click.md)
