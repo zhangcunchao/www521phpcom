@@ -15,3 +15,4 @@ application/x-www-form-urlencoded
 5. [git笔记](git/index.md)
 6. [python笔记](python/index.md)
 7. [广告服务接口](ad_click.md)
+8. [mysql error code](mysql_error.md)
