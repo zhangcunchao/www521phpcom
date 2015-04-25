@@ -23,8 +23,6 @@ var cpro_id = "u1918528";
 </script>
 <script src="http://cpro.baidustatic.com/cpro/ui/i.js" type="text/javascript"></script>
 <!--baidu ad-->
-
-<SCRIPT src="<?php bloginfo('template_url'); ?>/MRjs/jquery.min.js" type="text/javascript"></SCRIPT>
 <script type="text/javascript" language="javascript" src="<?php bloginfo('template_url'); ?>/MRjs/jquery.lazyload.js"></script>
 <SCRIPT src="<?php bloginfo('template_url'); ?>/MRjs/custom.js" type="text/javascript"></SCRIPT>
 <SCRIPT src="<?php bloginfo('template_url'); ?>/miaov.js" type="text/javascript"></SCRIPT>

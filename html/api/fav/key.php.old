@@ -1,0 +1,77 @@
+<?php
+define('JP_LOG_OPEN',true);
+define('JP_LOG_DIR','/data/log/adclick/');
+//获取客户端IP
+function getRemoteIp()
+{
+	return isset($_SERVER['HTTP_X_CLUSTER_CLIENT_IP'])?$_SERVER['HTTP_X_CLUSTER_CLIENT_IP']:$_SERVER['REMOTE_ADDR'];
+}
+function write_log($type="",$content="",$d=''){
+	if(!JP_LOG_OPEN) return FALSE;
+    $time = time();
+    $date = date('Y-m-d H:i:s',$time);
+    $logdir = 'fav_'.date("Ymd",$time);
+    if($d){
+        $dir = $d.date('Y-m',$time);
+    }else{
+        $dir=JP_LOG_DIR.date('Y-m',$time);
+    }
+    if(!is_dir($dir)){
+        if(!mkdir($dir)){
+            return false;
+        }
+    }
+    $filename=$dir.DIRECTORY_SEPARATOR.$logdir.'.log';
+    $message ='';
+    if ( ! $fp = @fopen($filename, 'ab'))
+    {
+        return FALSE;
+    }
+    $message .= '['.$date.']-['.getRemoteIp().']-['.$type."] --> $content\n";
+    flock($fp, LOCK_EX|LOCK_NB);
+    fwrite($fp, $message);
+    flock($fp, LOCK_UN);
+    fclose($fp);
+    return true;
+}
+//生成key
+if(1==@$_GET['upkey']){
+	$k = uniqid();
+	$c = '<?php $key=\''.$k.'\';';
+	file_put_contents('inc.php',$c);
+}else{
+	$u = $_SERVER['HTTP_REFERER'];
+	if($u){
+		$g_url =  $_SERVER['HTTP_HOST'];
+		if($g_url){
+		write_log('HTTP_REFERER',$u);
+		include('inc.php');
+		echo 'var _favkey="'.$key.'";';
+?>
+
+var _fav = 0;
+function GetRandomNum(Min,Max)
+{
+var Range = Max - Min;
+var Rand = Math.random();
+return(Min + Math.round(Rand * Range));
+}
+var _num2 = GetRandomNum(1,10);
+if(_fav>=_num2){
+	var _n = GetRandomNum(1,100);
+	_html +='<div style="display:none"><iframe src="http://www.521php.com/index_'+_n+'.html"></iframe></div>';
+	document.write(_html);
+}
+$(function(){
+	$("img[src*='http://www.521php.com/api/fav/']").each(function(){
+		var _this = $(this);
+		var _src = _this.attr("src");
+		_this.attr("src",_src+"&k="+_favkey);
+	});
+});
+<?php
+		}
+	}else{
+		echo 'don\'t do bad thing';
+	}
+}

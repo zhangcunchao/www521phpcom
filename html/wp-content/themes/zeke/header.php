@@ -14,6 +14,7 @@ include('includes/seo.php');
 <?php if ( is_singular() ){ ?>
 <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/comments-ajax.js"></script>
 <?php } ?>
+<script src="http://libs.useso.com/js/jquery/1.9.1/jquery.min.js"></script>
 <!--[if lt IE 7]>
 <script type="text/javascript" src="/wp-content/themes/MRjs/iepngfix_tilebg.js"></script>
 <script type="text/javascript">

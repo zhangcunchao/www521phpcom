@@ -1,4 +1,4 @@
-var _num1 = 4;
+var _num1 = 5;
 function GetRandomNum(Min,Max)
 {   
 var Range = Max - Min;   
