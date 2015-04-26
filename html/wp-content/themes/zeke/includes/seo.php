@@ -1,4 +1,4 @@
-<?php if ( is_home() ) { ?><title><?php bloginfo('name'); ?><?php bloginfo('description'); ?></title><?php } ?>
+<?php if ( is_home() ) { ?><title><?php bloginfo('name'); ?>|<?php bloginfo('description'); ?></title><?php } ?>
 <?php if ( is_search() ) { ?><title>搜索结果 | <?php bloginfo('name'); ?></title><?php } ?>
 <?php if ( is_single() ) { ?><title><?php echo trim(wp_title('',0)); ?> | <?php bloginfo('name'); ?></title><?php } ?>
 <?php if ( is_page() ) { ?><title><?php echo trim(wp_title('',0)); ?> | <?php bloginfo('name'); ?></title><?php } ?>
