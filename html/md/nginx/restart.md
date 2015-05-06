@@ -2,7 +2,7 @@
 
 #### php-fpm平滑重启 ####
 
-> php 5.3.3 下的php-fpm 不再支持 php-fpm 以前具有的 /usr/local/php/sbin/php-fpm (start|stop|reload)等命令，需要使用信号控制：
+> php 5.3.3 下的php-fpm 不再支持 php-fpm 以前具有的 /usr/local/php/sbin/php-fpm (start/stop/reload)等命令，需要使用信号控制：
 
 master进程可以理解以下信号
 
