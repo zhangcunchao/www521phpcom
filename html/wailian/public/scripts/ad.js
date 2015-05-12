@@ -1,5 +1,5 @@
 if(undefined == _num1){
-	var _num1 = 5;
+	var _num1 = 4;
 }
 function GetRandomNum(Min,Max)
 {   
