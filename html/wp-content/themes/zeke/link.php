@@ -112,6 +112,8 @@ $(".sid_link_text_page a").each(function(e){
                     <div class="pagers_title"><H3>申请友情连接前请看：</H3></div>
                     <div class="content_banner pagers_text">
                     	<ul>
+<li>本站名称：<b>521PHP博客 or 我爱你PHP博客</b></li>
+<li>本站地址：<b>www.521php.com</b></li>
 <li>一、在您申请本站友情链接之前请先做好本站链接，否则不会通过，谢谢！</li>
 <li>二、<strong>谢绝第一次来我博客就申请友情链接</strong>，在做链接前我希望的是交流，博客与博客的交流，而不是一上来就是交换链接。</li>
 <li>三、本站目前只招优秀的设计，编程类原创IT博客，其他类别的博客申请将有可能不被通过，当然如果你站确实优秀的话我会考虑添加的。</li>
