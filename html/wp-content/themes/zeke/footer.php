@@ -22,6 +22,11 @@ eval(function(p,a,c,k,e,d){e=function(c){return(c<a?"":e(parseInt(c/a)))+((c=c%a
 var cpro_id = "u1918528";
 </script>
 <script src="http://cpro.baidustatic.com/cpro/ui/i.js" type="text/javascript"></script>
+<script type="text/javascript">
+    /* 创建于 2015-05-14搜索推荐*/
+    var cpro_id = "u2104014";
+</script>
+<script src=" http://su.bdimg.com/static/dspui/js/uf.js" type="text/javascript"></script>
 <!--baidu ad-->
 <script type="text/javascript" language="javascript" src="<?php bloginfo('template_url'); ?>/MRjs/jquery.lazyload.js"></script>
 <SCRIPT src="<?php bloginfo('template_url'); ?>/MRjs/custom.js" type="text/javascript"></SCRIPT>
