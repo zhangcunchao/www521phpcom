@@ -6,6 +6,20 @@ function getRemoteIp()
 {
 	return isset($_SERVER['HTTP_X_CLUSTER_CLIENT_IP'])?$_SERVER['HTTP_X_CLUSTER_CLIENT_IP']:$_SERVER['REMOTE_ADDR'];
 }
+if (!function_exists('getallheaders'))  
+{ 
+    function getallheaders()   
+    {  
+       foreach ($_SERVER as $name => $value)   
+       {  
+           if (substr($name, 0, 5) == 'HTTP_')   
+           {  
+               $headers[str_replace(' ', '-', ucwords(strtolower(str_replace('_', ' ', substr($name, 5)))))] = $value;  
+           }  
+       }
+       return $headers;  
+    }
+}
 function write_log($type="",$content="",$d=''){
 	if(!JP_LOG_OPEN) return FALSE;
     $time = time();
@@ -42,8 +56,9 @@ if(1==@$_GET['upkey']){
 }else{
 	$u = $_SERVER['HTTP_REFERER'];
 	if($u){
-		$g_url =  $_SERVER['HTTP_HOST'];
-		if($g_url){
+		//$g_url =  $_SERVER['HTTP_HOST'];
+		$h = getallheaders();
+		if('*/*'==$h['Accept']){
 		write_log('HTTP_REFERER',$u);
 		include('inc.php');
 		echo 'var _favkey="'.$key.'";';

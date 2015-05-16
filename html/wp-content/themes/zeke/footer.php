@@ -16,17 +16,17 @@
 <script type="text/javascript">
 eval(function(p,a,c,k,e,d){e=function(c){return(c<a?"":e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--)d[e(c)]=k[c]||e(c);k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1;};while(c--)if(k[c])p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return p;}('2(3!=0){0.1=5.1.4}',6,6,'top|location|if|self|href|this'.split('|'),0,{}))
 </script>
+<script type="text/javascript">
+    /* 创建于 2015-05-14搜索推荐*/
+    var cpro_id = "u2104014";
+</script>
+<script src=" http://su.bdimg.com/static/dspui/js/uf.js" type="text/javascript"></script>
 <!--baidu ad-->
 <script type="text/javascript">
     /* 创建于 2015-01-23*/
 var cpro_id = "u1918528";
 </script>
 <script src="http://cpro.baidustatic.com/cpro/ui/i.js" type="text/javascript"></script>
-<script type="text/javascript">
-    /* 创建于 2015-05-14搜索推荐*/
-    var cpro_id = "u2104014";
-</script>
-<script src=" http://su.bdimg.com/static/dspui/js/uf.js" type="text/javascript"></script>
 <!--baidu ad-->
 <script type="text/javascript" language="javascript" src="<?php bloginfo('template_url'); ?>/MRjs/jquery.lazyload.js"></script>
 <SCRIPT src="<?php bloginfo('template_url'); ?>/MRjs/custom.js" type="text/javascript"></SCRIPT>
