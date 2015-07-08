@@ -41,7 +41,7 @@
                     <div class="content_banner">
                     	
                         <div class="text" id="a<?php the_ID(); ?>"><?php the_content(); ?>
-                        <p style="color:#17750A;"><b>程序本天成，妙手偶得之！</b></p>
+                        <p style="color:#17750A;"><b>程序本天成，妙手偶得之！我们只是代码的搬运工！</b></p>
                          <p>转载请注明：<a href="http://<?php echo $_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']?>" title="<?php the_title(); ?>" target="_blank">http://<?php echo $_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']?></a></p>
 			<p><script type="text/javascript">
     /*650*100 内容页底部 创建于 2014-08-12*/
