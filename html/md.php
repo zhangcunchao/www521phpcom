@@ -124,11 +124,6 @@
 var cpro_id = "u1655076";
 </script>
 <script src="http://cpro.baidustatic.com/cpro/ui/f.js" type="text/javascript"></script>
-<script type="text/javascript">
-    /* 创建于 2015-05-14搜索推荐*/
-    var cpro_id = "u2104014";
-</script>
-<script src=" http://su.bdimg.com/static/dspui/js/uf.js" type="text/javascript"></script>
 <script type='text/javascript' src="http://www.521php.com/wailian/public/scripts/ad.js"></script>
 <script>
 function hid(){
