@@ -119,11 +119,6 @@
 </div>
 <span style="display:none"><script src="http://s96.cnzz.com/stat.php?id=4200165&web_id=4200165" language="JavaScript"></script></span>
 <script src="http://libs.useso.com/js/jquery/1.9.1/jquery.min.js"></script>
-<script type="text/javascript">
-    /*120*300 创建于 2014-08-12*/
-var cpro_id = "u1655076";
-</script>
-<script src="http://cpro.baidustatic.com/cpro/ui/f.js" type="text/javascript"></script>
 <script type='text/javascript' src="http://www.521php.com/wailian/public/scripts/ad.js"></script>
 <script>
 function hid(){
