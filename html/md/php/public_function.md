@@ -58,3 +58,29 @@ php5.4
 			$value = is_array($value) ? array_map('addslashes_deep', $value) : addslashes($value);
 			return $value;
 		}
+
+5、多维数组排序
+
+	function cmpdesc($a, $b) {
+	    if (($a["sf"]+$a["tf"]-$a['bf']) == ($b["sf"]+$b['tf']-$b["bf"])) {
+	        return 0;
+	    }
+	    return (($a["sf"]+$a["tf"]-$a['bf']) < ($b["sf"]+$b['tf']-$b["bf"])) ? 1 : -1;
+	}
+	function cmpasc($a, $b) {
+	    if (($a["sf"]+$a["tf"]-$a['bf']) == ($b["sf"]+$b['tf']-$b["bf"])) {
+	        return 0;
+	    }
+	    return (($a["sf"]+$a["tf"]-$a['bf']) > ($b["sf"]+$b['tf']-$b["bf"])) ? 1 : -1;
+	}
+	//排序
+
+	if($sort){
+   	 if(1==$sort){
+   	     //$ticket = array_sort($ticket,'tf','asc');
+   	     usort($ticket,"cmpasc");
+   	 }else{
+        	//$ticket = array_sort($ticket,'tf','desc');
+	        usort($ticket,"cmpdesc");
+	    }
+	}
