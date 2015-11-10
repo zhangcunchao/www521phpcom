@@ -182,7 +182,7 @@ nameserver 192.168.129.2
 
 3.1.6、
 
-	grant all  on jeecnDB.* to jeecn@localhost identified by '密码';
+	grant all  on jeecnDB.* to jeecn@'localhost' identified by '密码';
 
 //刷新系统权限表
 
@@ -191,11 +191,12 @@ nameserver 192.168.129.2
 
 //如果想指定部分权限给一用户，可以这样来写:
 
-	mysql>grant select,update on jeecnDB.* to 'jeecn@localhost' identified by '密码';
+	mysql>grant select,update on jeecnDB.* to jeecn@'localhost' identified by '密码';
 
 3.1.7、设置远程连接
-mysql>update user set host = '%' where user = 'root';
-mysql>flush privileges;
+
+	mysql>update user set host = '%' where user = 'root';
+	mysql>flush privileges;
 
 3.1.8、查看mysql连接状态
 
