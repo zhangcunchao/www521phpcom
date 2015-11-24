@@ -43,11 +43,7 @@
                         </div>
                     </div>
                     <div class="sid_body" align="center">
-<script type="text/javascript">
-    /*200*200 创建于 2014-08-12*/
-    var cpro_id = "u1655068";
-</script>
-<script src="http://cpro.baidustatic.com/cpro/ui/c.js" type="text/javascript"></script>
+
                     </div>
                 </div>
                 <div class="sidebar_b_bot"><!--样式尾部--></div>

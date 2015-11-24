@@ -151,4 +151,4 @@ function doShare(stype){
 }
 </SCRIPT>
 
-<SCRIPT>postArray[0]=[];postArray[0][0]="张存超技术博客";postArray[0][1]="http://www.521php.com";postArray[0][2]="张存超技术博客 - http://www.521php.com";postArray[0][3]="http://www.521php.com/logo.png";</SCRIPT>
+<SCRIPT>postArray[0]=[];postArray[0][0]="张存超技术博客";postArray[0][1]="http://www.521php.com";postArray[0][2]="521PHP博客 - http://www.521php.com";postArray[0][3]="http://www.521php.com/logo.png";</SCRIPT>

@@ -5,11 +5,6 @@
                 <div class="content_text">
             	        <div class="content_t_top"><!--样式头部--></div>
            		<div class="content_t_main"><div style="margin-left: 20px;">
-			<script type="text/javascript">
-    /*640*60 创建于 2014-08-12*/
-    var cpro_id = "u1655033";
-</script>
-<script src="http://cpro.baidustatic.com/cpro/ui/c.js" type="text/javascript"></script>
 			</div></div>
                         <div class="content_t_bot"><!--样式尾部--></div>
                 </div>

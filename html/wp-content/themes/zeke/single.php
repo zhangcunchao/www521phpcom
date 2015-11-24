@@ -5,13 +5,7 @@
 	<div class="content_text">
           <div class="content_t_top"><!--样式头部--></div>
            		<div class="content_t_main"><div style="margin-left: 20px;">
-<!--淘宝内容页推广start-->
-<script type="text/javascript">
-    /*640*60 创建于 2014-08-12*/
-    var cpro_id = "u1655033";
-</script>
-<script src="http://cpro.baidustatic.com/cpro/ui/c.js" type="text/javascript"></script>
-<!--淘宝内容页推广end--></div></div>
+</div></div>
 <div class="content_t_bot"><!--样式尾部--></div>
 </div>
         	<div class="content_text">
@@ -43,11 +37,7 @@
                         <div class="text" id="a<?php the_ID(); ?>"><?php the_content(); ?>
                         <p style="color:#17750A;"><b>程序本天成，妙手偶得之！我们只是代码的搬运工！</b></p>
                          <p>转载请注明：<a href="http://<?php echo $_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']?>" title="<?php the_title(); ?>" target="_blank">http://<?php echo $_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']?></a></p>
-			<p><script type="text/javascript">
-    /*650*100 内容页底部 创建于 2014-08-12*/
-    var cpro_id = "u1655814";
-</script>
-<script src="http://cpro.baidustatic.com/cpro/ui/c.js" type="text/javascript"></script>
+			<p><!--网盟-->
 			</p>
                         </div>
                   </div><!--toolBar-->
