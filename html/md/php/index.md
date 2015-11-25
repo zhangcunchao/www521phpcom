@@ -14,3 +14,4 @@
 2. [封装的一些常用公共函数](public_function.md)
 3. [php实现穷举法](qiongju.md)
 4. [多维数组排序](asort.md)
+5.  [SQL删除重复数据只保留一条](sql.md)
