@@ -1,0 +1,97 @@
+body{
+    background: #fff;
+}
+
+* {
+    
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+img{
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.activity{
+    height:65px;
+    background: #f8cbc8;
+    font-size: 14px;
+    color: #000;
+    line-height: 18px;
+    padding:5px 10px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box; 
+}
+.price2{
+    color:#7a7a7a;
+    margin-left: 6px;
+    text-decoration: line-through ;
+}
+.rule{
+    float: right;
+    margin-left:50%;
+}
+.p1 .left,.right{
+    font-weight: bold;
+}
+.theme{
+    color:#000;
+    font-size: 20px;
+    text-align: center;
+    line-height: 20px;
+    margin:44px auto;
+}
+.product img{
+    width: 100%;
+}
+.btn{
+    border-radius: 4px;
+    font-size: 18px;
+    height:35px;
+    text-align: center;
+    width: 68%;
+    display: block;
+    margin: 10px auto;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box; 
+    outline:none;
+}
+.lqm_w{
+    border:1px solid #f8cbc8;
+    border-radius: 3px;
+    height:35px;
+    line-height: 35px;
+    text-align: center;
+    width: 68%;
+    margin: 10px auto;
+    /*box-sizing: border-box;
+    -webkit-box-sizing: border-box;*/ 
+    outline:none;
+}
+.lqm{
+    border-radius: 3px;
+    font-size: 18px;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    height:35px;
+    line-height: 35px;
+    border: none;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box; 
+    outline:none;
+    resize: none;
+}
+.btn{
+    line-height: 35px;
+    height:35px;
+    color:#fff;
+    margin-bottom: 60px;
+    background:#f8cbc8;
+    
+}
+.recommend img,.qwrz img,.aqhh img,.trcj img, .dfbz img{
+    display: block;
+    width: 100%;
+}
