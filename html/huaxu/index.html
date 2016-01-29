@@ -1,122 +1,193 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en" style="font-size: 23.4375px;">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta name="format-detection" content="telephone=no" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+
     <link rel="stylesheet" href="css/myreset.min.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
     <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="js/index.js">
-    <title>Activity</title>
+    <title>花煦 - Blossom</title>
 </head>
+<body id="body">
 
-<body>
-    <div class="activity">
-        <p class="p1"><span class="left">[</span> 0元购+加包邮 <span class="right">]</span> 花煦有机棉</p>
-        <p class="p2">卫生巾三片体验装</p>
-        <p class="p3">
-            <span class="price1">￥0.00</span>
-            <span class="price2"> ￥15.5</span>
-            <span class="rule">活动规则</span>
-        </p>
+<div id="home" class="home">
+    <div class="header">
+        <div>
+            <a class="userArea" href="/user/login.html">
+                <i class="iconfont">&#xe6df;</i>
+            </a>
+            <span class="hx-ico-index hx-logo"></span>
+            <a class="order" href="/buy.html">立即订购</a>
+        </div>
     </div>
-    <div class="theme">也许是世界上最干净的卫生巾</div>
-    <div class="product">
-        <img src="images/product.jpg" alt="">
-    </div>
-    <div class="lqm_w">
-        <input placeholder="请填写领取码" type="text" class="lqm" name="lqm">
-    </div>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <a href="/buy.html">
+                    <img src="image/home-banner-1.png">
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="/buy.html#pageCustomize">
+                    <img src="image/home-banner-2.png">
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="/buy.html#pagePackage">
+                    <img src="image/home-banner-3.png">
+                </a>
+            </div>
+        </div>
 
-    <div class="btn">限量领取</div>
-    <div class="recommend">
-        <img src="images/recommend.jpg" alt="">
-    </div>
-    <div class="qwrz">
-        <img src="images/qwrz.jpg" alt="">
-    </div>
-    <div class="aqhh">
-        <img src="images/aqhh.jpg" alt="">
-    </div>
-    <div class="trcj">
-        <img src="images/trcj.jpg" alt="">
-    </div>
-    <div class="dfbz">
-        <img src="images/dfbz.jpg" alt="">
+        <div class="swiper-pagination"></div>
     </div>
 
+    <div class="intro-wrap">
+        <a href="">
+            <img src="image/activity.png" alt="">
+        </a>
+    </div>
 
-    <script src="js/zepto.1.1.6.min.js"></script>
-    <script src="js/base.min.js"></script>
-    <script>
-        $(".lqm").on("input", function () {
-            var val = $('.lqm').val();
-            var m = /^[a-zA-Z0-9]+$/;
-            if (!m.test(val)) {
-                $('.btn').css({
-                    background: "#f8cbc8",
-                    color: "#fff"
-                });
-            } else {
-                $('.btn').css({
-                    background: "#ee737c",
-                    color: "#fff"
-                });
-            }
-        });
-        $(".lqm").on("propertychange", function () {
-            var val = $('.lqm').val();
-            var m = /^[a-zA-Z0-9]+$/;
-            if (!m.test(val)) {
-                $('.btn').css({
-                    background: "#f8cbc8",
-                    color: "#fff"
-                });
-            } else {
-                $('.btn').css({
-                    background: "#ee737c",
-                    color: "#fff"
-                });
-            }
-        });
-        $(".lqm").on("focus", function () {
-            var val = $('.lqm').val();
-            var m = /^[a-zA-Z0-9]+$/;
-            if (!m.test(val)) {
-                $('.btn').css({
-                    background: "#f8cbc8",
-                    color: "#fff"
-                });
-            } else {
-                $('.btn').css({
-                    background: "#ee737c",
-                    color: "#fff"
-                });
-            }
-        });
-        $('.btn').on("click", function () {
-            var val = $('.lqm').val();
-            var m = /^[a-zA-Z0-9]+$/;
-            if (!m.test(val)) {
-                return false;
-            }
-            $.ajax({
-                type: "POST",
-                url: "",
-                dateType: "json",
-                data: {
-                    "lqm": val
-                },
-                success: function () {},
-                error: function () {
-                    return false;
-                    alert("网络错误");
-                }
-            })
-        });
-    </script>
+    <div class="table-area">
+        <div class="cell">
+            <div class="title-warp left ">
+                <div class="intro-img">
+                    <span class="intro op-1"></span>
+                </div>
+                <div class='intro-txt'>USDA有机棉</div>
+                <div class='intro-info'>全球权威认证<br/>万里挑一的至臻品质</div>
+            </div>
+        </div>
+        <div class="cell">
+            <div class="title-warp right">
+                <div class="intro-img">
+                    <span class="intro op-2"></span>
+                </div>
+                <div class='intro-txt'>私人定制</div>
+                <div class='intro-info'>从购买到配送<br/>真正量身定制</div>
+            </div>
+        </div>
+        <div class="cell">
+            <div class="title-warp left">
+                <div class="intro-img">
+                    <span class="intro op-3"></span>
+                </div>
+                <div class='intro-txt'>德州首尔北京</div>
+                <div class='intro-info'>从播种到加工<br/>纯天然无污染</div>
+            </div>
+        </div>
+        <div class="cell">
+            <div class="title-warp right">
+                <div class="intro-img">
+                    <span class="intro op-4"></span>
+                </div>
+                <div class='intro-txt'>纯棉无它</div>
+                <div class='intro-info'>恪守有机传递<br/>全程无化学添加</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="content-wrap">
+        <div class="intro-content">
+            <img data-src="image/usda/u1.png" style="padding-top: 1.5rem" alt="">
+
+            <div class="u1-title">
+                ——世界上最权威、最严苛的有机棉认证
+            </div>
+            <img data-src="image/usda/u2.png" alt="">
+            <div class="word">
+                什么是USDA有机认证？<br>
+                即美国农业部（United States Department of Agriculture） 有机认证，是全美最权威的农产品有机认证标准，更是世界公认最为严苛的认证标准之一，对农作物的种植、动物的饲养有着极为明确的规范细则。
+            </div>
+            <img data-src="image/usda/u3.png" alt="">
+            <div class="word">
+                上面的两份文件是花煦从美国德克萨斯州进口有机棉原料的报货单。能够获得USDA认证的有机棉在种植加工过程中不使用添加剂，纯净度和舒适性远高于一般棉花，杜绝任何化学污染。
+            </div>
+            <img data-src="image/usda/u4.png" alt="">
+            <div class="word" style="text-align: center">
+                健康，舒适，轻柔纯净。我们选择最天然的有机棉，只为成为你的极致之选。
+            </div>
+            <div style="height: 30px;"></div>
+        </div>
+
+        <div class="intro-content">
+            <img data-src="image/srdz/s1.png" alt="">
+            <div class="word">
+                花煦致力于改善女性特殊时期的使用体验，我们提供的是一套呵护服务，而不仅仅是健康的卫生巾产品。这套服务包括：按片定制、按月配送和新鲜产品。
+            </div>
+            <img data-src="image/srdz/s2.png" alt="">
+            <div class="word">
+                花煦摒弃了传统思维，提供“按片购买”服务。女性用户可以从现有不同面层、四种不同长度和两种薄度中逐片选择，真正做到“量身定制”。
+            </div>
+            <img data-src="image/srdz/s3.png" alt="">
+            <div class="word">
+                花煦还提供单月包、季度包和半年包的服务，用户可以预约未来每个月在指定日期（大约在经期前一周）进行配送服务。
+            </div>
+            <img data-src="image/srdz/s4.png" alt="">
+            <div class="word">
+                为保证新鲜度，花煦首创订单化生产，配合自有国际先进的卫生巾生产线，可根据需求调整生产，保证每一位用户手上的卫生巾都是30天内生产出来的，避免由库存带来的细菌侵害风险。
+            </div>
+            <div style="height: 30px;"></div>
+        </div>
+
+        <div class="intro-content">
+            <div class="word">
+                花煦采用的有机纯棉产自美国德克萨斯州，指定在韩国加工成水刺无纺布，并于国内完成卫生巾的最终成品生产。全球甄选，使原材料到无纺布再到卫生巾，每一步都完美呈现。
+            </div>
+            <img data-src="image/dzse/d1.png" alt="">
+            <img data-src="image/dzse/d2.png" alt="">
+            <div class="word">
+                <span style="color: #f47373;">@德州：</span>源自德州钻石棉产区的有机棉花，历经6项严苛质检和2次等级评定，赢得USDA Organic有机认证，穿越20,000公里太平洋飞往韩国。
+            </div>
+            <img data-src="image/dzse/d3.png" alt="">
+            <div class="word">
+                <span style="color: #f47373;">@韩国：</span>经由J2LOH公司采用全球最好的水刺无纺布加工机（瑞士产）制成纯棉无纺布面层，制作全程不添加任何荧光剂及其它漂白制剂。一直保持着纯天然状态，飞往中国。
+            </div>
+            <img data-src="image/dzse/d4.png" alt="">
+            <div class="word">
+                <span style="color: #f47373;">@中国：</span>纯棉无纺布在国际一流全封闭式药用无菌生产线上，慢慢舒展开，变身成柔软、洁白的花煦有机卫生巾。
+            </div>
+            <div style="height: 30px;"></div>
+        </div>
+
+        <div class="intro-content">
+            <img data-src="image/cmwt/c1.png" alt="">
+            <div class="word">
+                花煦卫生巾采用美国德克萨斯州海岸有机棉，荣膺美国农业部（USDA）有机认证和德克萨斯州有机棉合作协会（TOCMC）许可，是全世界公认最顶级的纯棉材料，被誉为棉中“爱马仕”。
+            </div>
+            <img data-src="image/cmwt/c2.png" alt="">
+            <div class="word">
+                为什么选择有机棉？<br>
+                有机棉（Organic Cotton），从播种到加工过程全天然无污染的棉花，100%的生态生长环境，纯天然、无污染、零致敏，触感柔软，透气极佳，让人仿佛置身自然。
+            </div>
+            <img data-src="image/cmwt/c3.png" alt="">
+            <div class="word">
+                有机棉的生产对光、热、水、土有严苛限制，必须选在大气、水源、土壤未受到污染，周边200平方公里内无任何工厂或其他污染源的地区。因此，只有极少数有机棉可以通过USDA认证，而花煦采用的又是品质极为上乘的TOCMC许可有机棉。
+            </div>
+            <div style="height: 30px;"></div>
+        </div>
+    </div>
+    <span class="goTop"><i class="iconfont">&#xe873;</i></span>
+    <div class="wrap">
+        <ul class="ul-link">
+            <li><a href="about.html" data-ajax="true">品牌故事<i class="iconfont">&#xe622;</i></a></li>
+            <li><a href="contact.html" data-ajax="true">联系我们<i class="iconfont">&#xe622;</i></a></li>
+        </ul>
+    </div>
+
+    <div class="wrap">
+        <div class="copyright">Copyright © 2016, Lingxi Tech Co., Ltd. All Right Reserved.<br>北京灵希科技有限公司</div>
+    </div>
+</div>
+
+
+<script src="js/zepto.1.1.6.min.js"></script>
+<script src="js/swiper.min.js"></script>
+<script src="js/resize.js"></script>
+<script src="js/index.js"></script>
 </body>
 </html>

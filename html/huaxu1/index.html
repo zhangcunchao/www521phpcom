@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <link rel="stylesheet" href="css/myreset.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="js/index.js">
+    <title>Activity</title>
+</head>
+
+<body>
+    <div class="activity">
+        <p class="p1"><span class="left">[</span> 0元购+加包邮 <span class="right">]</span> 花煦有机棉</p>
+        <p class="p2">卫生巾三片体验装</p>
+        <p class="p3">
+            <span class="price1">￥0.00</span>
+            <span class="price2"> ￥15.5</span>
+            <span class="rule">活动规则</span>
+        </p>
+    </div>
+    <div class="theme">也许是世界上最干净的卫生巾</div>
+    <div class="product">
+        <img src="images/product.jpg" alt="">
+    </div>
+    <div class="lqm_w">
+        <input placeholder="请填写领取码" type="text" class="lqm" name="lqm">
+    </div>
+
+    <div class="btn">限量领取</div>
+    <div class="recommend">
+        <img src="images/recommend.jpg" alt="">
+    </div>
+    <div class="qwrz">
+        <img src="images/qwrz.jpg" alt="">
+    </div>
+    <div class="aqhh">
+        <img src="images/aqhh.jpg" alt="">
+    </div>
+    <div class="trcj">
+        <img src="images/trcj.jpg" alt="">
+    </div>
+    <div class="dfbz">
+        <img src="images/dfbz.jpg" alt="">
+    </div>
+
+
+    <script src="js/zepto.1.1.6.min.js"></script>
+    <script src="js/base.min.js"></script>
+    <script>
+        $(".lqm").on("input", function () {
+            var val = $('.lqm').val();
+            var m = /^[a-zA-Z0-9]+$/;
+            if (!m.test(val)) {
+                $('.btn').css({
+                    background: "#f8cbc8",
+                    color: "#fff"
+                });
+            } else {
+                $('.btn').css({
+                    background: "#ee737c",
+                    color: "#fff"
+                });
+            }
+        });
+        $(".lqm").on("propertychange", function () {
+            var val = $('.lqm').val();
+            var m = /^[a-zA-Z0-9]+$/;
+            if (!m.test(val)) {
+                $('.btn').css({
+                    background: "#f8cbc8",
+                    color: "#fff"
+                });
+            } else {
+                $('.btn').css({
+                    background: "#ee737c",
+                    color: "#fff"
+                });
+            }
+        });
+        $(".lqm").on("focus", function () {
+            var val = $('.lqm').val();
+            var m = /^[a-zA-Z0-9]+$/;
+            if (!m.test(val)) {
+                $('.btn').css({
+                    background: "#f8cbc8",
+                    color: "#fff"
+                });
+            } else {
+                $('.btn').css({
+                    background: "#ee737c",
+                    color: "#fff"
+                });
+            }
+        });
+        $('.btn').on("click", function () {
+            var val = $('.lqm').val();
+            var m = /^[a-zA-Z0-9]+$/;
+            if (!m.test(val)) {
+                return false;
+            }
+            $.ajax({
+                type: "POST",
+                url: "",
+                dateType: "json",
+                data: {
+                    "lqm": val
+                },
+                success: function () {},
+                error: function () {
+                    return false;
+                    alert("网络错误");
+                }
+            })
+        });
+    </script>
+</body>
+</html>

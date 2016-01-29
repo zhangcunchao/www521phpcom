@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <link rel="stylesheet" href="css/myreset.min.css">
+    <link rel="stylesheet" href="css/succ.css">
+    <title>Success</title>
+</head>
+
+<body>
+    <div class="success">
+        <img src="images/payend.png" alt="">
+    </div>
+    <p class="paysuc">下单成功</p>
+    <p class="menue">您的订单号: <span class="num">1234567898989</span></p>
+    <p class="fahuo-date">您下个月盒子将于<span class="date">2015年10月12日</span>为您发货</p>
+    <p class="contact">请保持电话畅通!</p>
+    <div class="btn">
+        <span class="left">个人中心</span>
+        <span class="right">邀请好友</span>
+    </div>
+
+    <!--//弹窗1-->
+    <div class="tanchuang">
+        <div class="tanchuang_1">
+            <p class="huaban">恭喜!您获得<span>100片花瓣</span></p>
+            <p class="dikou"> ( 可以抵扣10元 ) </p>
+            <p class="yaoqing">快来邀请好友得花瓣吧</p>
+            <div class="pic">
+                <img src="images/yq.png" alt="">
+            </div>
+            <span class="y_btn">邀请好友</span>
+            <i class="close"><img src="images/close.png" alt=""></i>
+        </div>
+    </div>
+
+    <!--//弹窗2-->
+    <div class="tanchuang2">
+        <img src="images/tanc2.png" alt="">
+    </div>
+
+    <script src="js/zepto.1.1.6.min.js"></script>
+    <script src="js/base.min.js"></script>
+    <script>
+        $('.close').on("click", function () {
+            $('.tanchuang').fadeOut(300);
+        });
+        $('.y_btn').on("click", function () {
+            $('.tanchuang').fadeOut(300);
+            $('.tanchuang2').fadeIn(300);
+        });
+        $('.tanchuang2').on("click", function () {
+            $('.tanchuang2').fadeOut(300);
+        });
+        $('.right').on("click", function () {
+            $('.tanchuang2').fadeIn(300);
+        });
+        $(".btn .left").on("click", function () {
+            window.location.href = "";
+        });
+    </script>
+</body>
+
+</html>
