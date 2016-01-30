@@ -1,0 +1,44 @@
+ @font-face {
+            font-family: fzlt;
+            src: url("../../indexnew/font/fzlt-about.ttf");
+        }
+
+        body {
+            background-color: #fafafa;
+            font-family: fzlt;
+        }
+
+        .content-wrap {
+        }
+
+        .content-wrap .intro-content {
+            padding-top: 33px;
+        }
+
+        .content-wrap .intro-content img {
+            width: 100%;
+            display: block;
+        }
+
+        .content-wrap .intro-content .word {
+            color: #000;
+            font-size: .7467rem;
+            line-height: 1.7;
+            margin: .7467rem;
+            word-wrap: break-word;
+            word-break: break-all;
+        }
+
+        .content-wrap .intro-content .title {
+            color: #000;
+            font-size: .9174rem;
+            line-height: 1.7;
+            margin: .9174rem;
+            word-wrap: break-word;
+            word-break: break-all;
+            text-align: center;
+        }
+
+        span.focus {
+            color: #ef8e8f;
+        }

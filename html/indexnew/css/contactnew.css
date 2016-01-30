@@ -1,0 +1,31 @@
+html, body {
+            height: 100%;
+        }
+
+        @font-face {
+            font-family: fzlt;
+            src: url("../../indexnew/font/fzlt-contact.ttf");
+        }
+
+        body {
+            background-color: #ffffff;
+            font-family: fzlt;
+        }
+
+        .content {
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+            -webkit-transform: translateY(-50%);
+        }
+
+        .word {
+            color: #000;
+            font-size: .7467rem;
+            line-height: 1.7;
+            margin: .7467rem;
+            word-wrap: break-word;
+            word-break: break-all;
+            text-align: center;
+            margin-top: 50px;
+        }
