@@ -1,4 +1,6 @@
+https://github.com/zhangcunchao/www521phpcom/tree/master/html/api/img
 <?php 
+exit;
 function curl_json($url,$data_string=''){
 	    $ip = array(
 			'0' => '124.127.133.242',
