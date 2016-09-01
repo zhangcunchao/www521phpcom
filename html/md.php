@@ -5,7 +5,7 @@
    header("Content-type: text/html; charset=utf-8");
    date_default_timezone_set('Asia/Shanghai');
    function markUrl($url){
-	  $root = '/data/www/www.521php.com/html/';
+	  $root = '/home/www/www521phpcom/html/';
 	  $url  = rtrim($url,'/');
 	  $url  = str_replace($root,'',$url);
 	  $d = explode('/',$url);
@@ -20,8 +20,17 @@
    $filename = strrchr($file,'/');
    $filename = ltrim($filename,'/');
    $odir = rtrim($file,$filename);
-   $content = shell_exec('/usr/bin/kramdown  '.$file);
-   @preg_match('/<h2.*?>(.*?)<\/h2>/isU',$content,$title);
+   //$content = shell_exec('/usr/local/bin/kramdown  '.$file);exit;
+   $socket = socket_create(AF_INET, SOCK_STREAM, SOL_TCP);
+$host = '127.0.0.1';
+$port = 11111;
+$con=socket_connect($socket,$host,$port);
+if(!$con){socket_close($socket);}
+        socket_write($socket,$file);
+        $content=socket_read($socket,2048);
+socket_shutdown($socket);
+socket_close($socket);
+  @preg_match('/<h2.*?>(.*?)<\/h2>/isU',$content,$title);
    isset($title[1])?$title = $title[1]:$title=$filename;
 ?>
 <head>
@@ -122,7 +131,7 @@
 <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=1699342"></script>
 <!-- UY END -->
 <span style="display:none"><script src="http://s96.cnzz.com/stat.php?id=4200165&web_id=4200165" language="JavaScript"></script></span>
-<script src="http://libs.useso.com/js/jquery/1.9.1/jquery.min.js"></script>
+<script src="//cdn.bootcss.com/jquery/1.12.1/jquery.min.js"></script>
 <script type='text/javascript' src="http://www.521php.com/wailian/public/scripts/ad.js"></script>
 <script>
 function hid(){

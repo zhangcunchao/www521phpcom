@@ -887,3 +887,21 @@
  [SYSTEM LOG] 'Upload directory is empty:  cannot load languages.'
  [SYSTEM LOG] 'The resource directory is missing, should be at \'\'.'
  [CrayonUtil::lines()] 'Cannot read lines at \'default/default.txt\'.'
+
+[Crayon Syntax Highlighter Log Entry - 10:06:18 AM - 03 Aug 2016]
+
+ [SYSTEM LOG] 'Upload directory is empty:  cannot load languages.'
+ [SYSTEM LOG] 'The resource directory is missing, should be at \'\'.'
+ [CrayonUtil::lines()] 'Cannot read lines at \'default/default.txt\'.'
+
+[Crayon Syntax Highlighter Log Entry - 10:06:40 AM - 03 Aug 2016]
+
+ [SYSTEM LOG] 'Upload directory is empty:  cannot load languages.'
+ [SYSTEM LOG] 'The resource directory is missing, should be at \'\'.'
+ [CrayonUtil::lines()] 'Cannot read lines at \'default/default.txt\'.'
+
+[Crayon Syntax Highlighter Log Entry - 10:10:11 AM - 03 Aug 2016]
+
+ [SYSTEM LOG] 'Upload directory is empty:  cannot load languages.'
+ [SYSTEM LOG] 'The resource directory is missing, should be at \'\'.'
+ [CrayonUtil::lines()] 'Cannot read lines at \'default/default.txt\'.'
