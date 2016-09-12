@@ -156,6 +156,10 @@ nameserver 192.168.129.2
 	grep "ffffff" ./*.log
 	grep "fffff"  ./log -R
 
+2.15、从nginx log查看访问前10的ip
+
+	cut access.log -d" " -f1|sort|uniq -c|sort -nr|head -n 10
+
 3、其他命令
 
 3.1、mysql命令
@@ -201,6 +205,11 @@ nameserver 192.168.129.2
 3.1.8、查看mysql连接状态
 
 	show full processlist;
+
+	==
+	
+	select * from information_schema.processlist limit 10
+	
 
 3.2、date
 date -s 2010-02-03 12:00:00
