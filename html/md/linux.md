@@ -160,6 +160,14 @@ nameserver 192.168.129.2
 
 	cut access.log -d" " -f1|sort|uniq -c|sort -nr|head -n 10
 
+1）查看网卡型号
+     lspci | grep Ethernet
+     这个命令可以查看你的网卡设备型号，根据型号就知道是什么性能了。
+2）查看网卡实际通讯速率
+    dmesg | grep eth0     
+    这个命令可以列出网卡工作速率。看到 Up 1000Mps full duplex 就知道是千兆网卡了。
+   （这里 eth0是网卡的设备名，不同机器名称可能不同。可以用ifconfig 查看自己网卡的设备名）
+
 3、其他命令
 
 3.1、mysql命令
