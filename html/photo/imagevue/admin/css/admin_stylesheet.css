@@ -1,0 +1,388 @@
+* { margin: 0; padding: 0; border: 0; outline: none; }
+body { behavior: url("javascript/csshover3.htc"); }
+body { background-color:#111; color: #eee;  }  
+.yui-editor-body-cont { color: #000;}
+
+body, input, textarea, select { font-family: Candara, "Myriad Pro", Helvetica, Tahoma, Arial, sans-serif; font-size: 15px;}
+select, input, textarea { 	font-family: Helvetica, Tahoma, Arial, sans-serif;	color:#333;	font-size: 12px;	margin: 2px 0px 0px 0px;	border: 1px solid #444; }    
+table { border-collapse: collapse; }
+a { color:#66CCFF; text-decoration: none; }
+a:hover { color: #FFFFFF; }
+h1 { font-weight: normal;}
+p { margin: 0 0 10px 0;}
+input, textarea, select { padding: 2px;}
+td, th { padding: 0 5px;}
+.header {	line-height: 45px; height: 45px; background-color:#333333;	padding:0px 10px 0px 45px; }
+.header h1 { font-family:Candara,"Myriad Pro",Georgia,"Times New Roman",Times,serif; font-size:18px;}
+.header h1 a { color: #ffffff; }
+.header div { float:right; }
+.header div a { margin: 0 10px 0 0; color: #f90; font-style: oblique;}
+.header div a {  }
+
+.menu {	background-color: #222222; padding: 0 10px 0 35px; height: 35px;  line-height: 35px;}
+
+.menu .main a, .menu .links a {line-height: 35px; height: 35px; display: block; float: left; padding: 0 10px;}
+.menu a:hover, .menu a.active { background: #333; color: #6cf; }
+.menu a.active { color: #fff; }
+.menu .links { float:right; }
+.menu .links a { }
+
+.path { padding: 0 0 0 45px; line-height: 35px; height: 35px; background: #000; }
+	.tree {  position: absolute; left: 0; z-index: 2000;}	
+.tree .control { height: 35px; line-height: 35px; background: url(../../images/admin/plus_icon.png) center center no-repeat; width: 35px; }
+.tree .control:hover { background-color: #222;}
+.tree .hiddenmenu { position: absolute; background: #222; display: none; margin: 35px 0 0 0; z-index: 1000; }
+.tree .control:hover .hiddenmenu { display: block; }
+.attributes{ font-size: 12px; color:#CCCCCC; }
+.diagnostics td { padding: 10px; vertical-align: top;}
+.diagnostics p a { display: block; margin: 10px 0 0 0;}
+/**/
+
+#content{
+	padding: 20px 40px 20px 45px;
+	
+}
+#content.left { padding: 20px 40px 20px 20px;}
+
+#content #rightmenu{
+	position: absolute;
+	right: 20px;
+	width: 300px;
+	line-height: 130%;
+	margin: -40px 0px 0px 0px;
+}
+#content #rightmenu .box{
+	background-color: #444444;
+	margin: 0px 0px 10px 0px;
+	padding: 0px 0px 0px 0px;
+	border: 1px solid #777777;
+}
+#content #rightmenu .box .heading{
+	background: url(../../images/admin/icon_minus.gif) no-repeat 10px 9px;
+	display: block;
+	padding: 8px 20px 8px 30px;
+	background-color:#444;
+	cursor:pointer;
+}
+#content #rightmenu .box .heading.hidden {
+	background: url(../../images/admin/icon_plus.gif) no-repeat 10px 9px;
+	background-color:#444444;
+}
+#content #rightmenu .box a.heading.collapsed{
+	background-color:#993300;
+}
+#content #rightmenu .box .content{
+	padding: 10px 20px;
+	display: block;
+	background: #333;
+}
+#content #rightmenu .box .content .mytitle, .mytitle{
+	font-size: 20px;
+	margin: 0px 0px 8px 0px;
+	color: #fff;
+}
+#content #rightmenu .box .content .field{
+	margin: 5px 0px 0px 0px;
+	font-size: 12px;
+}
+#content #rightmenu .box .content .field input, #content #rightmenu .box .content .field textarea{
+	padding: 4px;
+	width: 240px;
+}
+input.mytext {
+	padding: 3px;
+}
+#content #rightmenu .box .content .field input.mysubmit, input.mysubmit{
+	padding: 4px;
+	margin-top: 10px;
+	width: auto;
+}
+#content #rightmenu .box .content.actions a{
+	display: block;
+	/*color: #FFFFFF;*/
+	padding: 4px 4px 5px 23px;
+}
+#content #rightmenu .box .content.actions a.delete{
+	background: url(../../images/admin/icon_delete.gif) no-repeat 5px 5px;
+}
+#content #rightmenu .box .content.actions a.myicon{
+	background: url(../../images/admin/icon_edit.gif) no-repeat 5px 5px;
+}
+#content #rightmenu .box .content.actions a:hover, #content #rightmenu .box .content.actions a.active{
+	background-color: #333333;
+}
+#content #leftcontent{
+	margin: 0px 300px 0px 0px;
+}
+#content #leftcontent a:hover .actions{
+	visibility: visible;
+}
+#content #leftcontent .thumbitem{
+	padding: 15px; line-height: 100%;
+}
+#content #leftcontent .thumbitem.myhover, #content #leftcontent .thumbitem:hover, #content #leftcontent .thumbitem.selected{
+	background-color:#444444;
+	cursor: pointer;
+}
+#content #leftcontent .thumbitem.myhover .actions, #content #leftcontent .thumbitem:hover .actions, #content #leftcontent .thumbitem.selected .actions{
+	visibility: visible;
+}
+#content .odd{
+	background-color:#595959;
+}
+#content #leftcontent .thumbitem td{
+	vertical-align: top;
+}
+#content .thumbitem { zoom: 1;}
+#content .thumbitem .thumb{
+	padding: 7px;
+	background-color: #333;
+	border: solid 1px #555555;
+}
+#content .thumbitem .folder {
+	padding: 8px;
+	border: none;
+
+}
+
+
+#content .thumbitem .actions{
+	float: right;
+	visibility: hidden;
+	padding: 10px 20px 0px 0px;
+}
+#content .thumbitem .actions img{
+	border: none;
+	margin: 0px 3px -1px 0px;
+	vertical-align:text-bottom;
+}
+#content .thumbitem .actions a{
+	/*color: #FFFFFF;*/
+	display: block;
+	padding: 4px 4px 5px 3px;
+	border-bottom: solid 1px #666666;
+}
+#content .thumbitem .actions a:hover{
+	background-color: #666666;
+}
+#content .thumbitem .info{
+	padding: 10px 10px 10px 10px;
+}
+#content .thumbitem .hidden a{
+	color: #CCCCCC;
+}
+#content .thumbitem .title{
+/*	font-size: 13px;*/
+	font-weight: bold;
+	margin: 0 0 4px 0;
+}
+#content .thumbitem .filename,
+#content .thumbitem .filename a{
+	font-size: 13px;
+	color: #ccc;
+}
+#content .thumbitem .attributes{
+	padding: 2px 0px 0px 0px;
+	font-size: 12px;
+	color:#CCCCCC;
+	visibility: hidden;
+}
+#content #leftcontent .thumbitem:hover .attributes, #content #leftcontent .thumbitem.myhover .attributes, #content #leftcontent .thumbitem.selected .attributes{
+	visibility: visible;
+}
+#content #leftcontent #imagenav {
+	margin: 0px 0px 5px 0px;
+	font-size: 24px;
+}
+#content #leftcontent #imagenav a {
+	padding: 0px 10px 4px 10px;
+}
+#content #leftcontent #imagenav a:hover {
+	background-color: #555555;
+}
+#content #leftcontent #image img {
+	padding: 10px;
+	background-color:#333333;
+	border:1px solid #555555;
+}
+#content #user {
+}
+#content #user table.usertable{
+	background-color: #4A4A4A;
+	border: 1px solid #333333;
+	margin: 0 auto;
+}
+#content #user tr.odd {
+	background-color:#555555;
+}
+#content #user tr.current{
+	background-color:#404040;
+}
+#content #user tr.over{
+	cursor: pointer;
+	background-color:#666633;
+}
+#content #user td.text{
+	padding: 10px 20px 10px 20px;
+}
+#content #user td.right{
+	text-align: right;
+	padding: 10px 0px 10px 20px;
+}
+#content #user td.icon{
+	text-align: center;
+}
+#content #user tr.admin td {}
+#content #user td a img{
+	border: none;
+	padding: 8px 8px 9px 8px;
+}
+#content #user td a:hover img{
+	background-color: #111111;
+}
+#content #user td.captions{
+	background-color:#333333;
+	font-weight: bold;
+	font-size: 13px;
+}
+#config #jstree{
+	float: left;
+	width: 200px;
+}
+#config #fields{
+	float: left;
+	width: 250px;
+}
+#config #fields div{
+	height: 67px;
+	padding: 0px 20px 0px 20px;
+}
+#config #fields div.color {
+	background-color: #555555;
+}
+#config #fields div.inactive{
+}
+#config #fields div.active{
+	-moz-border-radius-topleft: 8px;
+	-moz-border-radius-bottomleft: 8px;
+	background-color: #333333;
+}
+#config #fields div label{
+	top: 10px;
+	position: relative;
+}
+#config #fields div input{
+	margin: 4px 0px 0px 0px;
+}
+#config #help{
+	float: left;
+	width: 250px;
+}
+#config #help .container{
+	height: 67px;
+}
+#config #help .container .helpbox{
+	-moz-border-radius-topright: 8px;
+	-moz-border-radius-bottomright: 8px;
+	-moz-border-radius-bottomleft: 8px;
+	background-color:#333333;
+	padding: 20px;
+	display: none;
+}
+#config #formtree {
+}
+#config #formtree a{
+	display: block;
+	cursor: pointer;
+	padding: 5px 15px 5px 25px;
+	margin: 1px 0px 1px 0px;
+	background: #222 url(../../images/admin/icon_plus.gif) no-repeat 5px 5px;
+}
+#config #formtree a.open{
+	color: white; background: #444 url(../../images/admin/icon_minus.gif) no-repeat 5px 5px;
+}
+#config #formtree a:hover {
+	background-color: #444;
+	color: #6cf;
+}
+#config #formtree a.open:hover { color: #fff;}
+
+/*#config #formtree .subitems{
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+}*/
+#config #formtree .subitems .itemgroup{
+	margin: 0px 0px 5px 25px;
+	padding: 0px 0px 0px 0px;
+
+}
+#config #formtree .subitems .nodegroup{
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 40px;
+		
+}
+#config #formtree .item{
+	display: block;
+	overflow: hidden;             
+	zoom: 1;
+	padding: 10px 20px 10px 25px;
+	background: #444;
+	border-bottom: 1px solid #111;
+}
+#config #formtree .help{
+	float: right;
+	padding: 13px 20px 12px 20px;
+	background-color: #333333;
+	visibility: hidden;
+	line-height: 17px;
+	margin: 0 0 0 25px;
+}
+#config #formtree .item:hover,
+#config #formtree .item.active{
+	background-color:#333333;
+}
+#config #formtree .item:hover .help,
+#config #formtree .item.active .help {
+	visibility: visible;
+}
+
+#stylesheet {
+}
+#stylesheet #field {
+	width: 95%;
+	padding: 5px;
+	font-family:"Courier New", Courier, monospace;
+	color: #444444;
+}
+.infobar { overflow: hidden; height: 1%; margin: 0 0 0 35px;}
+.notice{
+	padding: 5px 10px;
+	background-color:#99CC00;
+	color: #FFFFFF;
+	margin: 0px 1px 0 0;
+	float: left;
+}
+.error{
+	padding: 5px 10px;
+	background-color:#990000;
+	color: #FFFFFF;
+	margin: 0 1px 0 0 ;
+	float: left;
+}
+.actionsHelp { margin: 20px 0 0 0; text-align: center; }
+
+#leftcontent .field { margin: 10px 0 10px 40px;}
+#leftcontent .field input, .field textarea { padding: 3px; margin:0;}
+#leftcontent .field input { width: 90%;}
+#leftcontent .field textarea { width: 90%; }
+#leftcontent .field textarea.pageContent { height: 400px; padding: 2px 0;}
+#leftcontent .field textarea.description { height: 100px ;}
+
+input.integer { padding-right: 20px; background-color: white; background-repeat: no-repeat; background-position: 100% 0%; background-image:url(../../images/admin/spinbtn_updn.gif); }
+input.integer.up { cursor: pointer; background-position: 100% -18px; }
+input.integer.down { cursor: pointer; background-position: 100% -36px; }
+
+#divStatus, #fsUploadProgress { margin: 0 0 10px 0;}
+#btnCancel { float:left; width: 100px;height: 40px; margin: 0 0 0 10px }
+
+.yui-toolbar-titlebar { display: none;}

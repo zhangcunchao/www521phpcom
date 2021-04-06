@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This is the default LANGUAGE file. You should not edit this file manually - Any changes should be done throguh the admin, which is saved in a specific language files in your imagevue/language/ folder-->
+<lang>
+	<image>Image</image>
+	<indexseparator>/</indexseparator>
+	<page>Page</page>
+	<next_image>Next Image</next_image>
+	<previous_image>Previous Image</previous_image>
+	<next_thumbnails>Next Page</next_thumbnails>
+	<previous_thumbnails>Previous Page</previous_thumbnails>
+	<popup>Open in Popup Window</popup>
+	<window>Open in New Window</window>
+	<download>Download Image</download>
+	<zoomin>Zoom in</zoomin>
+	<zoomout>Zoom out</zoomout>
+	<play>Play Slideshow</play>
+	<stop>Stop Slideshow</stop>
+	<showimage>Show Image</showimage>
+	<showthumbnails>Show Thumbnails</showthumbnails>
+	<imageinfo>Image Description</imageinfo>
+	<mainmenu>Gallery Menu</mainmenu>
+	<sendemail>Send Image</sendemail>
+	<login>Login</login>
+	<logout>Logout</logout>
+	<open>Open</open>
+	<copylocation>Copy Image Location</copylocation>
+	<enterfullscreen>Go Full Screen</enterfullscreen>
+	<exitfullscreen>Exit Full Screen</exitfullscreen>
+	<videofullscreen>View Fullscreen</videofullscreen>
+	<audio>Audio</audio>
+	<volume>Volume</volume>
+	<yourname>Your Name</yourname>
+	<youremail>Your E-mail</youremail>
+	<yourfriendsemail>Your Friend's E-mail</yourfriendsemail>
+	<message>Message</message>
+	<send>Send</send>
+	<sent>Sent!</sent>
+	<contact>Contact Us</contact>
+	<sendlink>Send Image</sendlink>
+	<purchase>Buy now!</purchase>
+	<link>link</link>
+	<sfx>Toggle Sound FX</sfx>
+</lang>

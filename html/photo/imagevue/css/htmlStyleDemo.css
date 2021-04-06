@@ -1,0 +1,197 @@
+@charset "utf-8";
+* {margin:0; padding:0;}
+body {
+	background-color:#FFFFFF;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #999999;
+	
+}
+table { border-collapse: collapse; border: none; }
+
+a {
+	color:#0099CC;
+	text-decoration: none;
+	outline: none;
+
+}
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+	color:#006699;
+}
+a:active {
+	text-decoration: none;
+}
+#header {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 18px;
+	background-color: #DDDDDD;
+	padding: 10px 10px 10px 40px;
+	font-weight: bold;
+	display: none;
+}
+#subheader {
+	background-color: #EEEEEE;
+	padding: 0 20px 0 40px;
+
+
+}
+#subheader #flashlink {
+	float: right;
+	
+}
+#subheader #menu {
+	float: left; position: relative; behavior:url("javascript/csshover.htc"); 
+	margin: -8px 0 0 -8px; padding: 8px 8px 0 8px; z-index: 1;
+}
+#subheader #menu img.openMenu {margin: 8px 0 0 0;  }
+
+#subheader #menu:hover { background: #DDDDDD; }
+
+#subheader #menu #hiddenmenu {
+
+	position: absolute;
+	z-index: 2;
+	background-color: #DDDDDD;
+	-moz-border-radius: 0 0 5px 5px;
+	margin: 0 0 0 -8px;
+	padding: 20px 20px 20px 25px;
+	visibility: hidden;
+
+	
+}
+
+#subheader #menu:hover #hiddenmenu { visibility: visible;  }
+
+
+#subheader .crumbs {
+	float: left; 
+}
+#subheader .crumbs a, #flashlink a{
+	padding: 8px 10px; line-height: 30px;
+}
+
+
+
+#subheader .crumbs a.active{
+	font-weight: bold;
+}
+#subheader .crumbs a:hover{
+	background-color: #DDDDDD;
+}
+#content {
+	padding: 10px 20px 10px 20px;
+
+}
+#content #folders {
+}
+#content #folders a{
+	margin: 0px 0px 0px 0px;
+	padding: 4px 12px 12px 12px;
+	display: block;
+	float: left;
+	text-align: center;
+}
+#content #folders a:hover{
+	background-color:#CCCCCC;
+}
+#content #folders .textblock{
+	font-size: 12px;
+	padding: 1px;
+	position:relative;
+	bottom: 5px;
+}
+#content #folders img{
+	border: none;
+}
+#thumbnails {
+	clear: both;
+	padding: 0px 10px 0px 10px;
+}
+#thumbnails a{
+ display: block; float: left; line-height: 1px;
+}
+#thumbnails img{
+	border: solid 0px #AAAAAA;
+	padding: 0px 1px 1px 0px;
+	margin: 0px;
+}
+#thumbnails a:hover {
+	background-color:#CCCCCC;
+}
+#thumbnails a:hover img{
+	filter:alpha(opacity=50); 
+	-moz-opacity: 0.5; 
+	opacity: 0.5;
+	padding: 0px 1px 1px 0px;
+	margin: 0px;
+	border: none;
+}
+#image{
+clear: both;
+margin: 10px auto;
+	/*margin: 0 auto;*/
+}
+#image #myimage{
+	border: solid 10px #DDDDDD;
+	padding: 1px;
+	float: left;
+}
+#image #imagetext{
+	width: 200px;
+	margin: 10px 10px 10px 15px;
+	float: left;
+	font-size: 12px;
+}
+#image #imagetext .title, h1{
+	font-size: 13px;
+	font-weight: bold;
+	color:#006699;
+	margin: 0px 0px 3px 0px;
+}
+#image #imagetext .description{
+	font-size: 12px;
+	margin: 0px 0px 10px 0px;
+}
+#image #imagetext .filename{
+}
+#image #imagetext .date{
+}
+#navigation{
+	float: right;
+	font-size: 15px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+#navigation a {
+	margin: 0px 1px 0px 0px;
+	background-color: #DDDDDD;
+	font-size: 24px;
+	padding: 0px 15px 4px 15px;
+}
+#navigation a:hover {
+	background-color: #CCCCCC;
+}
+
+.clrFlt { clear: both; height: 1px; line-height: 1px; font-size: 1px;}
+#imageView {padding: 20px auto; text-align: center; }
+.imageAttributes, .imageProperties {  margin: auto auto 10px auto;  }
+.imageAttributes { color: #666; }
+.imageProperties { color: #999; }
+.naviCount { padding: 0 5px; }
+.exifData { visibility:visible; }
+.exif_heading {display: none;}
+
+/* overrun DTree: */
+.dtree a {
+	color:#0099CC;
+	text-decoration: none;
+}
+.dtree a.nodeSel {
+	background-color: #CCCCCC;
+	color: #0099CC;
+	font-weight: bold;
+}

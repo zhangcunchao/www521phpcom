@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang>
+	<image>Imagen</image>
+	<page>Página</page>
+	<next_image>Imagen Siguiente </next_image>
+	<previous_image>Imagen Anterior</previous_image>
+	<next_thumbnails>Siguiente Página</next_thumbnails>
+	<previous_thumbnails>Página Anterior</previous_thumbnails>
+	<popup>Abrir en Ventana Popup</popup>
+	<window>Abrir en Ventana</window>
+	<download>Descargar Imagen</download>
+	<play>Play Slideshow</play>
+	<stop>Stop Slideshow</stop>
+	<showimage>Mostrar Imagen</showimage>
+	<showthumbnails>Mostrar Thumbnails</showthumbnails>
+	<imageinfo>Descripción de Imagen</imageinfo>
+	<mainmenu>Menu de Galeria</mainmenu>
+	<sendemail>Enviar Imagen</sendemail>
+	<login>Login</login>
+	<logout>Logout</logout>
+	<open>Abrir</open>
+	<copylocation>Copiar ruta de la Imagen</copylocation>
+	<enterfullscreen>Pantalla Completa</enterfullscreen>
+	<exitfullscreen>Salir de Pantalla Completa</exitfullscreen>
+	<audio>Audio</audio>
+	<volume>Volumen</volume>
+</lang>

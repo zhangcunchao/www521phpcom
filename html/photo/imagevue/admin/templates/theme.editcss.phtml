@@ -1,0 +1,43 @@
+<div id="content">
+	<div id="rightmenu">
+		<div class="box">
+			<div id="theme_config_content" class="heading ivrm">主题 <?php echo $this->theme->getName(); ?></div>
+			<div class="content actions">
+				<a class="myicon" href="index.php?c=theme&amp;a=editconfig&amp;name=<?php echo $this->theme->getName(); ?>">编辑主题配置</a>
+				<a class="myicon active" href="index.php?c=theme&amp;a=editcss&amp;name=<?php echo $this->theme->getName(); ?>">编辑主题样式表</a>
+				<a class="myicon" href="../index.php?c=gallery&amp;theme=<?php echo $this->theme->getName(); ?>">预览主题</a>
+				<a class="myicon" href="#" onclick="var themeName = window.prompt('输入新主题的名称'); if (themeName) {location.href = 'index.php?c=theme&amp;a=copy&amp;name=<?php echo $this->theme->getName(); ?>&amp;new=' + themeName;} return false;">以 <?php echo $this->theme->getName(); ?> 为基础，创建一个新主题</a>
+				<div class="field">
+					编辑另一个主题:<br/>
+            		<select onchange="location.href = 'index.php?c=theme&amp;a=editcss&amp;name=' + this.value;">
+<?php foreach ($this->themes as $theme): ?>
+						<option value="<?php echo $theme; ?>" <?php echo ($this->theme->getName() == $theme ? 'selected="selected"' : '')?>><?php echo $theme; ?></option>
+<?php endforeach; ?>
+					</select>
+				</div>
+			</div>
+		</div>
+		<div class="box">
+			<div id="theme_upload_content" class="heading ivrm">上传背景文件</div>
+			<div class="content">
+				<div>
+					<form action="index.php?c=theme&amp;a=upload&amp;name=<?php echo $this->theme->getName(); ?>" method="post" enctype="multipart/form-data">
+						<div><input type="file" name="Filedata" /></div>
+						<div><input type="submit" class="mysubmit" value="上 传" /></div>
+					</form>
+				</div>
+			</div>
+		</div>			
+	</div>
+	<div id="leftcontent">
+		<h1>
+			<?php echo $this->theme->getName(); ?>
+		</h1>
+		<form method="post" action="">
+			<div id="stylesheet">
+				<textarea name="css" cols="" rows="30" id="field"><?php echo $this->theme->getStyle(); ?></textarea>
+				<input type="submit" name="save" value="save" class="mysubmit" style="float: right; margin-right: 60px;" />
+			</div>
+		</form>
+	</div>		
+</div>

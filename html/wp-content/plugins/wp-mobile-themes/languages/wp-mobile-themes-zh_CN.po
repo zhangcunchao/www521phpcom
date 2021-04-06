@@ -1,0 +1,84 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WordPress Mobile Themes 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-11-26 22:50+0800\n"
+"PO-Revision-Date: 2012-11-26 22:57+0800\n"
+"Last-Translator: neoease.com <wuzhao.mail@gmail.com>\n"
+"Language-Team: NeoEase.com <http://www.neoease.com/plugins/>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: English\n"
+"X-Poedit-Country: CHINA\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: _e;__\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: wp-mobile-themes.php:27
+msgid "Settings"
+msgstr "设置"
+
+#: wp-mobile-themes.php:82
+msgid "Mobile Themes"
+msgstr "移动设备主题"
+
+#: wp-mobile-themes.php:97
+msgid "Mobile Themes Options"
+msgstr "移动设备主题选项"
+
+#: wp-mobile-themes.php:100
+msgid "Settings <strong>saved</strong>."
+msgstr "更改成功。"
+
+#: wp-mobile-themes.php:106
+msgid "Donation"
+msgstr "捐款"
+
+#: wp-mobile-themes.php:108
+msgid "If you like this plugin, please donate to support development and maintenance!"
+msgstr "如果你喜欢这个插件，可以捐款支持作者对作品的开发和维护。"
+
+#: wp-mobile-themes.php:122
+msgid "About Author"
+msgstr "关于作者"
+
+#: wp-mobile-themes.php:125
+msgid "Author Blog"
+msgstr "作者的博客"
+
+#: wp-mobile-themes.php:126
+msgid "More Plugins"
+msgstr "更多插件"
+
+#: wp-mobile-themes.php:140
+#, php-format
+msgid "The following themes will be sent to mobile users and tablet users, desktop users will receive <a href=\"/wp-admin/themes.php\">%1$s</a>."
+msgstr "使用手机和平板访问网站的用户将看到以下选择的主题界面，而桌面用户依然看到 <a href=\"/wp-admin/themes.php\">%1$s</a> 主题界面。"
+
+#: wp-mobile-themes.php:145
+msgid "Mobile Theme"
+msgstr "手机主题"
+
+#: wp-mobile-themes.php:157
+#: wp-mobile-themes.php:180
+msgid " (deault)"
+msgstr "（默认主题）"
+
+#: wp-mobile-themes.php:163
+msgid "Mobile theme will activated on iPhone, iPod touch, Nexus, BlackBerry, Windows Phone, ... but tablets."
+msgstr "手机主题将应用在 iPhone、iPod touch、Nexus、BlackBerry等手机和小型移动设备上。"
+
+#: wp-mobile-themes.php:168
+msgid "Tablet Theme"
+msgstr "平板主题"
+
+#: wp-mobile-themes.php:186
+msgid "Tablet theme will activated on iPad, Kindle, NexusTablet, SamsungTablet, ..."
+msgstr "平板主题将应用在 iPad、Kindle、Nexus 平板、三星平板等平板设备上。"
+
+#: wp-mobile-themes.php:194
+msgid "Save Changes"
+msgstr "保存更改"
+

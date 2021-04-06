@@ -4,7 +4,22 @@
    header("HTTP/1.0 404 Not Found");
    header("Content-type: text/html; charset=utf-8");
    date_default_timezone_set('Asia/Shanghai');
-   function markUrl($url){
+ function udpGet($sendMsg = '', $ip = '127.0.0.1', $port = '3721'){  
+    $handle = stream_socket_client("udp://{$ip}:{$port}", $errno, $errstr);  
+    if( !$handle ){  
+        die("ERROR: {$errno} - {$errstr}\n");  
+    }
+    fwrite($handle, $sendMsg."\n"); 
+    $contents = ''; 
+    //while (!feof($handle1)) {
+         $contents .= fread($handle,18888);
+    //}
+    //$result = fread($handle, 2048);  
+    $result = $contents;
+    fclose($handle);  
+    return $result;  
+} 
+  function markUrl($url){
 	  $root = '/home/www/www521phpcom/html/';
 	  $url  = rtrim($url,'/');
 	  $url  = str_replace($root,'',$url);
@@ -21,7 +36,7 @@
    $filename = ltrim($filename,'/');
    $odir = rtrim($file,$filename);
    //$content = shell_exec('/usr/local/bin/kramdown  '.$file);exit;
-   $socket = socket_create(AF_INET, SOCK_STREAM, SOL_TCP);
+   /*$socket = socket_create(AF_INET, SOCK_STREAM, SOL_TCP);
 $host = '127.0.0.1';
 $port = 11111;
 $con=socket_connect($socket,$host,$port);
@@ -30,6 +45,8 @@ if(!$con){socket_close($socket);}
         $content=socket_read($socket,2048);
 socket_shutdown($socket);
 socket_close($socket);
+*/
+$content = udpGet($file);
   @preg_match('/<h2.*?>(.*?)<\/h2>/isU',$content,$title);
    isset($title[1])?$title = $title[1]:$title=$filename;
 ?>
@@ -54,11 +71,11 @@ socket_close($socket);
           <li class="header-nav-item">
             <a class="header-nav-link" href="/archives/category/tj/" data-ga-click="Header, go to gist, text:gist">推荐文章</a>
           </li>
+         <li class="header-nav-item">
+            <a class="header-nav-link" href="/photo/" data-ga-click="Header, go to gist, text:gist">相册</a>
+          </li>
 		   <li class="header-nav-item">
             <a class="header-nav-link" href="/md/" data-ga-click="Header, go to blog, text:blog">markdown</a>
-          </li>
-          <li class="header-nav-item">
-            <a class="header-nav-link" href="/xiangce/" target="_blank" data-ga-click="Header, go to blog, text:blog">相册</a>
           </li>
 		  <li class="header-nav-item">
             <a class="header-nav-link" href="/flink/" data-ga-click="Header, go to blog, text:blog">兄弟链</a>

@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<lang>
+	<image>Kép</image>
+	<page>Oldal</page>
+	<next_image>Következő</next_image>
+	<previous_image>Előző</previous_image>
+	<next_thumbnails>Következő oldal</next_thumbnails>
+	<previous_thumbnails>Előző oldal</previous_thumbnails>
+	<popup>Megnyitás felugró ablakban</popup>
+	<window>Megnyitás Új ablakban</window>
+	<download>Kép letöltése</download>
+	<zoomin>Nagyítás</zoomin>
+	<zoomout>Kicsinyítés</zoomout>
+	<play>Diavetítés indítása</play>
+	<stop>Diavetítés megállítása</stop>
+	<showimage>Kép megtekintése</showimage>
+	<showthumbnails>Bélyegkép mód</showthumbnails>
+	<imageinfo>Kép információ</imageinfo>
+	<mainmenu>Menü</mainmenu>
+	<sendemail>Kép küldése e-mailben</sendemail>
+	<login>Bejelentkezés</login>
+	<logout>Kilépés</logout>
+	<open>Megnyit</open>
+	<copylocation>Kép címének másolása</copylocation>
+	<enterfullscreen>Teljes képernyő</enterfullscreen>
+	<exitfullscreen>Kilépés teljes képernyőből</exitfullscreen>
+	<videofullscreen>Teljes képernyő</videofullscreen>
+	<audio>Hang</audio>
+	<volume>Hangerő</volume>
+	<yourname>A neved</yourname>
+	<youremail>Az e-mail címed</youremail>
+	<yourfriendsemail>A barátod e-mail címe</yourfriendsemail>
+	<message>Üzenet</message>
+	<send>Küldés</send>
+	<sent>Elküldve!</sent>
+	<contact>Kapcsolat</contact>
+	<sendlink>Kép küldése</sendlink>
+</lang>

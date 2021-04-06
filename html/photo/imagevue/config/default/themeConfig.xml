@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<imagevue>
+		<style>
+			<background_color>F3E9E9</background_color>
+			<custom_color>585858</custom_color>
+			<background_image>
+				<url>n.gif</url>
+				<repeat>repeat</repeat>
+				<scalemode>noBorder</scalemode>
+			</background_image>
+		</style>
+		<controls>
+			<maincontrols>
+				<button>
+					<background_color>EEE2E2</background_color>
+				</button>
+			</maincontrols>
+			<largecontrols>
+				<color>F3DFDF</color>
+			</largecontrols>
+		</controls>
+		<audioplayer>
+			<color>F3E4E4</color>
+			<backcolor>1E1C1C</backcolor>
+		</audioplayer>
+	</imagevue>
+</config>

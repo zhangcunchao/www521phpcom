@@ -1,0 +1,73 @@
+<?php
+	$this->placeholder->set('currentPath', $this->folder->getProperty('path'));
+	$this->placeholder->set('currentTitle', $this->folder->getTitle());
+	$this->placeholder->set('thumbRecreationPath', $this->folder->getProperty('path'));
+	$parentFolder = $this->folder->getAncestor();
+	$folderFolders = $this->folder->getFolders();
+	$folderFiles = $this->folder->getFiles();
+	$maxThumbSize = $this->folder->getMaxThumbSize();
+	$maxThumbWidth = $maxThumbSize['maxThumbWidth'];
+	$maxThumbHeight = $maxThumbSize['maxThumbHeight'];
+?>
+
+<?php if ($this->folder->isPage()): ?>   
+	<div class="textPage">
+		<h1><?php echo $this->folder->getTitle(); ?></h1>
+		<div>
+			<?php echo replaceSnippets($this->folder->getAttribute('pageContent')); ?>
+		</div>              
+	</div>
+<?php else: ?>
+	<div class="currentFolder">
+		<?php if (!is_null($parentFolder)): ?>
+			<div class="levelUp">
+				<a href="?<?php echo urlencode($parentFolder->getProperty('path')); ?>">
+					<img src="imagevue/images/folder_parent_128x128.png" alt="回到上级目录" title="回到上级目录" /><br />
+					<div align="center" class="textblock">..</div>
+				</a>               
+			</div>
+		<?php endif; ?>
+		<div class="currentFolderTitle">   
+			<h1 class="title">
+				<?php echo $this->folder->getTitle(); ?>
+			</h1>
+		   <h2 class="description">
+				<?php echo $this->folder->getAttribute('description') ?>
+		   </h2>
+		</div>                 
+	</div>
+	<div id="folders">
+		<?php if ($this->displaySubdirs): ?>
+			<?php foreach ($folderFolders as $item): ?>
+				<?php if (!$item->isHidden()): ?>
+					<?php if ($item->isLink()): ?>
+						<a href="<?php echo $item->getAttribute('pageContent'); ?>"  title="<?php echo $item->getTitle(); ?> <?php echo $item->getAttribute('description'); ?>" >
+					<?php else: ?>
+						<a href="?<?php echo urlencode($item->getProperty('path')); ?>"  title="<?php echo $item->getTitle(); ?> <?php echo $item->getAttribute('description'); ?>" >
+					<?php endif; ?>
+						<img class="png" src="<?php echo $item->getThumbRelativePath(); ?>" alt="<?php echo $item->getAttribute('name'); ?>"/><br />
+						<div align="center" class="textblock"><?php echo $item->getTitle(); ?></div>
+					</a>
+				<?php endif; ?>
+			<?php endforeach; ?>
+		<?php endif; ?>
+	</div>
+
+	<div id="thumbnails">
+		<?php foreach ($folderFiles as $item): ?>
+			<?php if (is_a($item, 'ivFileImage')): ?>
+				<a 	
+					<?php if ($this->useLightview): ?>
+						rel="lightbox[thumbs]"
+						href="<?php echo ($item->getProperty('path')); ?>" 
+					<?php else: ?>
+						href="?<?php echo urlencode($item->getProperty('path')); ?>" 
+					<?php endif; ?>
+					title="<?php echo $item->getTitle() ?> <?php echo $item->getAttribute('description'); ?>"
+					style="width: <?php echo $maxThumbWidth+20; ?>px; height: <?php echo $maxThumbHeight+20; ?>px;">
+					<span style="background: url('<?php echo $item->getThumbRelativePath(); ?>') center center no-repeat; width: <?php echo $maxThumbWidth; ?>px; height: <?php echo $maxThumbHeight; ?>px;" ></span>
+				</a>
+			<?php endif; ?>
+		<?php endforeach; ?>
+	</div>
+<?php endif; ?>

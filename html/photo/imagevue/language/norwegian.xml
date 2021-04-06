@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang>
+	<image>Bilde</image>
+	<page>Side</page>
+	<next_image>Neste bilde</next_image>
+	<previous_image>Forrige bilde</previous_image>
+	<next_thumbnails>Neste side</next_thumbnails>
+	<previous_thumbnails>Forrige side</previous_thumbnails>
+	<popup>Åpne i popup vindu</popup>
+	<window>Åpne i nytt vindu</window>
+	<download>Last ned bilde</download>
+	<zoomin>Zoom ut</zoomin>
+	<zoomout>Zoom ut</zoomout>
+	<play>Automatisk bildevisning</play>
+	<stop>Stopp</stop>
+	<showimage>Vis Bilde</showimage>
+	<showthumbnails>bilder</showthumbnails>
+	<imageinfo>Bilde beskrivelse</imageinfo>
+	<mainmenu>Galleri meny</mainmenu>
+	<sendemail>Send i epost</sendemail>
+	<login>Logg in</login>
+	<logout>Logg ut</logout>
+	<open>Åpne</open>
+	<copylocation>Kopier Bilde lenke</copylocation>
+	<enterfullscreen>Fullskjerm vising</enterfullscreen>
+	<exitfullscreen>Tilbake til normal visning</exitfullscreen>
+	<audio>Musikk</audio>
+	<volume>Volum</volume>
+	<yourname>Ditt navn</yourname>
+	<youremail>Din e-post</youremail>
+	<yourfriendsemail>Din venn's e-post</yourfriendsemail>
+	<message>Melding</message>
+	<sent>Sendt!</sent>
+	<contact>Kontakt oss</contact>
+	<sendlink>Send bilde</sendlink>
+	<purchase>Kjøp nå!</purchase>
+	<link>lenke</link>
+	<sfx>Lyd effekter</sfx>
+</lang>

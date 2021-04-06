@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang>
+	<image>Image</image>
+	<page>Page</page>
+	<next_image>Image suivante</next_image>
+	<previous_image>Image précédente</previous_image>
+	<next_thumbnails>Page suivante</next_thumbnails>
+	<previous_thumbnails>Page précédente</previous_thumbnails>
+	<popup>Ouvrir dans une fenêtre pop-up</popup>
+	<window>Ouvrir dans une nouvelle fenêtre</window>
+	<download>Télécharger l'image</download>
+	<zoomin>Zoom avant</zoomin>
+	<zoomout>Zoom arrière</zoomout>
+	<play>Jouer le diaporama</play>
+	<stop>Arrêter le diaporama</stop>
+	<showimage>Montrer le diaporama</showimage>
+	<showthumbnails>Montrer les vignettes</showthumbnails>
+	<imageinfo>Description de l'image</imageinfo>
+	<mainmenu>Menu de la galerie</mainmenu>
+	<sendemail>Envoyer l'image</sendemail>
+	<login>Ouvrir la session</login>
+	<logout>Fermer la session</logout>
+	<open>Ouvrir</open>
+	<copylocation>Copier l'adresse de l'image</copylocation>
+	<enterfullscreen>Afficher en plein écran</enterfullscreen>
+	<exitfullscreen>Sortir du mode plein écran</exitfullscreen>
+	<videofullscreen>Voir en plein écran</videofullscreen>
+	<audio>Audio</audio>
+	<volume>Volume</volume>
+	<yourname>Votre nom/prénom</yourname>
+	<youremail>Votre adresse e-mail</youremail>
+	<yourfriendsemail>L'adresse e-mail de votre ami</yourfriendsemail>
+	<message>Message</message>
+	<send>Envoyer</send>
+	<sent>Votre message a bien été envoyé ! Merci !</sent>
+	<contact>Me contacter</contact>
+	<sendlink>Envoyer l'image</sendlink>
+</lang>

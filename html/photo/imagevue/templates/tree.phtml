@@ -1,0 +1,42 @@
+<div id="hiddenmenu">
+	<script type="text/javascript">
+	//<![CDATA[
+		d = new dTree('d');
+		d.config.inOrder = true;
+		<?php $id = 0; ?>
+		<?php $stack = array(); ?>
+		<?php $prevDepth = -1; ?>
+		<?php $parentId = -1; ?>
+		<?php foreach ($this->flatFolderTree as $folderNode): ?>
+			<?php if (!$folderNode['folder']->isHidden() || $this->path === $folderNode['folder']->getProperty('path')): ?>
+				<?php
+					if ($prevDepth < $folderNode['depth']) {
+						array_push($stack, $parentId);
+						$parentId = $id - 1;
+					} elseif ($prevDepth > $folderNode['depth']) {
+						for ($i = 0; $i < ($prevDepth - $folderNode['depth']); $i++) {
+							$parentId = array_pop($stack);
+						}
+					}
+					if ($folderNode['folder']->isLink()) {
+						$linkParams = explode('*', $folderNode['folder']->getAttribute('pageContent'), 2);
+						$link = $linkParams[0];
+						$target = isset($linkParams[1]) ? $linkParams[1] : '';
+					} else {
+						$link = '?' . $folderNode['folder']->getProperty('path');
+						$target = '';
+					}
+				?>
+				d.add(<?php echo $id++; ?>,<?php echo $parentId; ?>,"<span class='text'><span class='title'><?php echo htmlspecialchars($folderNode['folder']->getTitle()); ?><\/span><?php if (!$folderNode['folder']->isPage() && !$folderNode['folder']->isLink()): ?><span class='number'>(<?php echo $folderNode['folder']->getFileCount(); ?>)<\/span><?php endif; ?><\/span>","<?php echo $link; ?>","<?php echo htmlspecialchars($folderNode['folder']->isPage() || $folderNode['folder']->isLink() ? $folderNode['folder']->getTitle() : $folderNode['folder']->getAttribute('description')); ?>","<?php echo $target; ?>",<?php echo ($folderNode['folder']->isPage() ? '"imagevue/images/dtree/page.gif","imagevue/images/dtree/page.gif"' : ($folderNode['folder']->isLink() ? '"imagevue/images/dtree/link.gif","imagevue/images/dtree/link.gif"' : '"imagevue/images/dtree/folder.gif","imagevue/images/dtree/folderopen.gif"')); ?>);
+				<?php if ($this->path === $folderNode['folder']->getProperty('path')): ?>
+					<?php $selectedId = $id - 1; ?>
+				<?php endif; ?>
+				<?php $prevDepth = $folderNode['depth']; ?>
+			<?php endif; ?>
+		<?php endforeach; ?>
+		<?php unset($stack); ?>
+		document.write(d);
+		<?php echo (isset($selectedId) ? "d.s($selectedId);\n" : ''); ?>
+	//]]>
+	</script>
+</div>

@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 <head>
 <meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -14,7 +14,7 @@ include('includes/seo.php');
 <?php if ( is_singular() ){ ?>
 <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/comments-ajax.js"></script>
 <?php } ?>
-<script src="//cdn.bootcss.com/jquery/1.12.1/jquery.min.js"></script>
+<script src="https://cdn.bootcdn.net/ajax/libs/jquery/1.12.1/jquery.min.js"></script>
 <!--[if lt IE 7]>
 <script type="text/javascript" src="/wp-content/themes/MRjs/iepngfix_tilebg.js"></script>
 <script type="text/javascript">
@@ -35,7 +35,7 @@ catch(e){}
 	<div id="header">
     	<div id="top">
         	<div class="mrlogo"><a href="<?php echo get_option('home'); ?>/" title="<?php if ( is_singular() || is_archive() ) { wp_title(''); } else { bloginfo('name'); } ?>-<?php bloginfo('description'); ?>"><?php if ( is_singular() || is_archive() ) { wp_title(''); } else { bloginfo('name'); } ?>-<?php bloginfo('description'); ?></a></div>
-            <div class="search"><form method="get" target="_blank" id="searchform" action="http://www.521php.com/so.php">
+            <div class="search"><form method="get" target="_blank" id="searchform" action="https://www.521php.com/so.php">
 <input type="hidden" name="url" value="521php.com" />
             <input class="field" name="s" id="s" type="text" value="百度谷歌一起搜！" onfocus="this.value=&#39;&#39;;" onblur="if(this.value==&#39;&#39;){this.value=&#39;百度谷歌一起搜！&#39;;}" />
             <input name="" type="submit" value="" class="so"id="go"  onmouseout="this.className=&#39;so&#39;" onmouseover="this.className=&#39;soHover&#39;" />
@@ -87,7 +87,7 @@ function doShare(stype){
 	sbanner = postArray[share_postid][3];
 	
 	blogtitle = '张存超技术博客';
-	bloghome = 'http://www.521php.com';
+	bloghome = 'https://www.521php.com';
 	
 	stitle = blogtitle + ' - ' + stitle;
 	

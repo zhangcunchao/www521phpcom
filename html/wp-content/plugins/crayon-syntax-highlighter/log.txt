@@ -1,907 +1,363 @@
+The log has been truncated since it exceeded 50000 bytes.
 
-[Crayon Syntax Highlighter Log Entry - 9:56:05 AM - 08 Jan 2015]
+ [SYSTEM LOG] 'Parsing of \'/langs/go/go.txt\' failed, an (?alt) tag failed for the element \'STATEMENT\''
 
- [SYSTEM LOG] 'Updated from 2.2.0 to 2.6.9'
-
-[Crayon Syntax Highlighter Log Entry - 3:03:52 PM - 08 Jan 2015]
-
- [SYSTEM LOG] 'Upload directory is empty:  cannot load languages.'
- [SYSTEM LOG] 'The resource directory is missing, should be at \'\'.'
- [CrayonUtil::lines()] 'Cannot read lines at \'default/default.txt\'.'
-
-[Crayon Syntax Highlighter Log Entry - 5:20:59 PM - 19 Jan 2015]
-
- [SYSTEM LOG] 'Upload directory is empty:  cannot load languages.'
- [SYSTEM LOG] 'The resource directory is missing, should be at \'\'.'
- [CrayonUtil::lines()] 'Cannot read lines at \'default/default.txt\'.'
-
-[Crayon Syntax Highlighter Log Entry - 10:05:49 AM - 30 Jan 2015]
-
- [SYSTEM LOG] 'Upload directory is empty:  cannot load languages.'
- [SYSTEM LOG] 'The resource directory is missing, should be at \'\'.'
- [CrayonUtil::lines()] 'Cannot read lines at \'default/default.txt\'.'
-
-[Crayon Syntax Highlighter Log Entry - 3:10:11 AM - 02 Feb 2015]
-
- [SYSTEM LOG] 'Upload directory is empty:  cannot load languages.'
- [SYSTEM LOG] 'The resource directory is missing, should be at \'\'.'
- [CrayonUtil::lines()] 'Cannot read lines at \'default/default.txt\'.'
-
-[Crayon Syntax Highlighter Log Entry - 8:20:02 AM - 02 Mar 2015]
-
- [SYSTEM LOG] 'Upload directory is empty:  cannot load languages.'
- [SYSTEM LOG] 'The resource directory is missing, should be at \'\'.'
- [CrayonUtil::lines()] 'Cannot read lines at \'default/default.txt\'.'
-
-[Crayon Syntax Highlighter Log Entry - 8:20:48 AM - 02 Mar 2015]
-
- [SYSTEM LOG] 'Upload directory is empty:  cannot load languages.'
- [SYSTEM LOG] 'The resource directory is missing, should be at \'\'.'
- [CrayonUtil::lines()] 'Cannot read lines at \'default/default.txt\'.'
-
-[Crayon Syntax Highlighter Log Entry - 8:21:13 AM - 02 Mar 2015]
-
- [SYSTEM LOG] 'Upload directory is empty:  cannot load languages.'
- [SYSTEM LOG] 'The resource directory is missing, should be at \'\'.'
- [CrayonUtil::lines()] 'Cannot read lines at \'default/default.txt\'.'
-
-[Crayon Syntax Highlighter Log Entry - 8:22:06 AM - 02 Mar 2015]
-
- [SYSTEM LOG] 'Upload directory is empty:  cannot load languages.'
- [SYSTEM LOG] 'The resource directory is missing, should be at \'\'.'
- [CrayonUtil::lines()] 'Cannot read lines at \'default/default.txt\'.'
-
-[Crayon Syntax Highlighter Log Entry - 8:23:03 AM - 02 Mar 2015]
-
- [SYSTEM LOG] 'Upload directory is empty:  cannot load languages.'
- [SYSTEM LOG] 'The resource directory is missing, should be at \'\'.'
- [CrayonUtil::lines()] 'Cannot read lines at \'default/default.txt\'.'
-
-[Crayon Syntax Highlighter Log Entry - 2:44:54 AM - 03 Mar 2015]
-
- [SYSTEM LOG] 'Upload directory is empty:  cannot load languages.'
- [SYSTEM LOG] 'The resource directory is missing, should be at \'\'.'
- [CrayonUtil::lines()] 'Cannot read lines at \'default/default.txt\'.'
-
-[Crayon Syntax Highlighter Log Entry - 2:46:08 AM - 03 Mar 2015]
-
- [SYSTEM LOG] 'Upload directory is empty:  cannot load languages.'
- [SYSTEM LOG] 'The resource directory is missing, should be at \'\'.'
- [CrayonUtil::lines()] 'Cannot read lines at \'default/default.txt\'.'
-
-[Crayon Syntax Highlighter Log Entry - 2:46:13 AM - 03 Mar 2015]
-
- [SYSTEM LOG] 'Upload directory is empty:  cannot load languages.'
- [SYSTEM LOG] 'The resource directory is missing, should be at \'\'.'
- [CrayonUtil::lines()] 'Cannot read lines at \'default/default.txt\'.'
-
-[Crayon Syntax Highlighter Log Entry - 2:47:09 AM - 03 Mar 2015]
-
- [SYSTEM LOG] 'Upload directory is empty:  cannot load languages.'
- [SYSTEM LOG] 'The resource directory is missing, should be at \'\'.'
- [CrayonUtil::lines()] 'Cannot read lines at \'default/default.txt\'.'
-
-[Crayon Syntax Highlighter Log Entry - 2:47:10 AM - 03 Mar 2015]
-
- [SYSTEM LOG] 'Upload directory is empty:  cannot load languages.'
- [SYSTEM LOG] 'The resource directory is missing, should be at \'\'.'
- [CrayonUtil::lines()] 'Cannot read lines at \'default/default.txt\'.'
-
-[Crayon Syntax Highlighter Log Entry - 2:52:20 AM - 03 Mar 2015]
-
- [SYSTEM LOG] 'Upload directory is empty:  cannot load languages.'
- [SYSTEM LOG] 'The resource directory is missing, should be at \'\'.'
- [CrayonUtil::lines()] 'Cannot read lines at \'default/default.txt\'.'
-
-[Crayon Syntax Highlighter Log Entry - 2:52:44 AM - 03 Mar 2015]
-
- [SYSTEM LOG] 'Upload directory is empty:  cannot load languages.'
- [SYSTEM LOG] 'The resource directory is missing, should be at \'\'.'
- [CrayonUtil::lines()] 'Cannot read lines at \'default/default.txt\'.'
-
-[Crayon Syntax Highlighter Log Entry - 2:52:58 AM - 03 Mar 2015]
-
- [SYSTEM LOG] 'Upload directory is empty:  cannot load languages.'
- [SYSTEM LOG] 'The resource directory is missing, should be at \'\'.'
- [CrayonUtil::lines()] 'Cannot read lines at \'default/default.txt\'.'
-
-[Crayon Syntax Highlighter Log Entry - 2:53:28 AM - 03 Mar 2015]
-
- [SYSTEM LOG] 'Upload directory is empty:  cannot load languages.'
- [SYSTEM LOG] 'The resource directory is missing, should be at \'\'.'
- [CrayonUtil::lines()] 'Cannot read lines at \'default/default.txt\'.'
-
-[Crayon Syntax Highlighter Log Entry - 5:58:42 AM - 13 Mar 2015]
-
- [SYSTEM LOG] 'Upload directory is empty:  cannot load languages.'
- [SYSTEM LOG] 'The resource directory is missing, should be at \'\'.'
- [CrayonUtil::lines()] 'Cannot read lines at \'default/default.txt\'.'
-
-[Crayon Syntax Highlighter Log Entry - 6:57:11 AM - 13 Mar 2015]
-
- [SYSTEM LOG] 'Upload directory is empty:  cannot load languages.'
- [SYSTEM LOG] 'The resource directory is missing, should be at \'\'.'
- [CrayonUtil::lines()] 'Cannot read lines at \'default/default.txt\'.'
-
-[Crayon Syntax Highlighter Log Entry - 3:44:37 AM - 16 Mar 2015]
-
- [SYSTEM LOG] 'Upload directory is empty:  cannot load languages.'
- [SYSTEM LOG] 'The resource directory is missing, should be at \'\'.'
- [CrayonUtil::lines()] 'Cannot read lines at \'default/default.txt\'.'
-
-[Crayon Syntax Highlighter Log Entry - 9:27:24 AM - 17 Mar 2015]
-
- [SYSTEM LOG] 'Upload directory is empty:  cannot load languages.'
- [SYSTEM LOG] 'The resource directory is missing, should be at \'\'.'
- [CrayonUtil::lines()] 'Cannot read lines at \'default/default.txt\'.'
-
-[Crayon Syntax Highlighter Log Entry - 9:29:11 AM - 17 Mar 2015]
-
- [SYSTEM LOG] 'Upload directory is empty:  cannot load languages.'
- [SYSTEM LOG] 'The resource directory is missing, should be at \'\'.'
- [CrayonUtil::lines()] 'Cannot read lines at \'default/default.txt\'.'
-
-[Crayon Syntax Highlighter Log Entry - 9:29:26 AM - 17 Mar 2015]
-
- [SYSTEM LOG] 'Upload directory is empty:  cannot load languages.'
- [SYSTEM LOG] 'The resource directory is missing, should be at \'\'.'
- [CrayonUtil::lines()] 'Cannot read lines at \'default/default.txt\'.'
-
-[Crayon Syntax Highlighter Log Entry - 10:10:46 AM - 17 Mar 2015]
-
- [SYSTEM LOG] 'Upload directory is empty:  cannot load languages.'
- [SYSTEM LOG] 'The resource directory is missing, should be at \'\'.'
- [CrayonUtil::lines()] 'Cannot read lines at \'default/default.txt\'.'
-
-[Crayon Syntax Highlighter Log Entry - 2:54:55 PM - 17 Mar 2015]
-
- [SYSTEM LOG] 'Upload directory is empty:  cannot load languages.'
- [SYSTEM LOG] 'The resource directory is missing, should be at \'\'.'
- [CrayonUtil::lines()] 'Cannot read lines at \'default/default.txt\'.'
-
-[Crayon Syntax Highlighter Log Entry - 2:55:59 PM - 17 Mar 2015]
-
- [SYSTEM LOG] 'Upload directory is empty:  cannot load languages.'
- [SYSTEM LOG] 'The resource directory is missing, should be at \'\'.'
- [CrayonUtil::lines()] 'Cannot read lines at \'default/default.txt\'.'
-
-[Crayon Syntax Highlighter Log Entry - 2:56:59 PM - 17 Mar 2015]
-
- [SYSTEM LOG] 'Upload directory is empty:  cannot load languages.'
- [SYSTEM LOG] 'The resource directory is missing, should be at \'\'.'
- [CrayonUtil::lines()] 'Cannot read lines at \'default/default.txt\'.'
-
-[Crayon Syntax Highlighter Log Entry - 3:04:43 PM - 17 Mar 2015]
-
- [SYSTEM LOG] 'Upload directory is empty:  cannot load languages.'
- [SYSTEM LOG] 'The resource directory is missing, should be at \'\'.'
- [CrayonUtil::lines()] 'Cannot read lines at \'default/default.txt\'.'
-
-[Crayon Syntax Highlighter Log Entry - 1:41:52 AM - 20 Mar 2015]
-
- [SYSTEM LOG] 'Upload directory is empty:  cannot load languages.'
- [SYSTEM LOG] 'The resource directory is missing, should be at \'\'.'
- [CrayonUtil::lines()] 'Cannot read lines at \'default/default.txt\'.'
-
-[Crayon Syntax Highlighter Log Entry - 1:42:28 AM - 20 Mar 2015]
-
- [SYSTEM LOG] 'Upload directory is empty:  cannot load languages.'
- [SYSTEM LOG] 'The resource directory is missing, should be at \'\'.'
- [CrayonUtil::lines()] 'Cannot read lines at \'default/default.txt\'.'
-
-[Crayon Syntax Highlighter Log Entry - 1:42:46 AM - 20 Mar 2015]
-
- [SYSTEM LOG] 'Upload directory is empty:  cannot load languages.'
- [SYSTEM LOG] 'The resource directory is missing, should be at \'\'.'
- [CrayonUtil::lines()] 'Cannot read lines at \'default/default.txt\'.'
-
-[Crayon Syntax Highlighter Log Entry - 1:42:55 AM - 20 Mar 2015]
-
- [SYSTEM LOG] 'Upload directory is empty:  cannot load languages.'
- [SYSTEM LOG] 'The resource directory is missing, should be at \'\'.'
- [CrayonUtil::lines()] 'Cannot read lines at \'default/default.txt\'.'
-
-[Crayon Syntax Highlighter Log Entry - 11:35:16 PM - 18 Apr 2015]
-
- [SYSTEM LOG] 'Upload directory is empty:  cannot load languages.'
- [SYSTEM LOG] 'The resource directory is missing, should be at \'\'.'
- [CrayonUtil::lines()] 'Cannot read lines at \'default/default.txt\'.'
-
-[Crayon Syntax Highlighter Log Entry - 10:02:14 AM - 20 Apr 2015]
-
- [SYSTEM LOG] 'Upload directory is empty:  cannot load languages.'
- [SYSTEM LOG] 'The resource directory is missing, should be at \'\'.'
- [CrayonUtil::lines()] 'Cannot read lines at \'default/default.txt\'.'
-
-[Crayon Syntax Highlighter Log Entry - 11:57:50 AM - 20 Apr 2015]
-
- [SYSTEM LOG] 'Upload directory is empty:  cannot load languages.'
- [SYSTEM LOG] 'The resource directory is missing, should be at \'\'.'
- [CrayonUtil::lines()] 'Cannot read lines at \'default/default.txt\'.'
-
-[Crayon Syntax Highlighter Log Entry - 11:58:08 AM - 20 Apr 2015]
-
- [SYSTEM LOG] 'Upload directory is empty:  cannot load languages.'
- [SYSTEM LOG] 'The resource directory is missing, should be at \'\'.'
- [CrayonUtil::lines()] 'Cannot read lines at \'default/default.txt\'.'
-
-[Crayon Syntax Highlighter Log Entry - 11:58:46 AM - 20 Apr 2015]
-
- [SYSTEM LOG] 'Upload directory is empty:  cannot load languages.'
- [SYSTEM LOG] 'The resource directory is missing, should be at \'\'.'
- [CrayonUtil::lines()] 'Cannot read lines at \'default/default.txt\'.'
-
-[Crayon Syntax Highlighter Log Entry - 12:32:18 PM - 22 Apr 2015]
-
- [SYSTEM LOG] 'Upload directory is empty:  cannot load languages.'
- [SYSTEM LOG] 'The resource directory is missing, should be at \'\'.'
- [CrayonUtil::lines()] 'Cannot read lines at \'default/default.txt\'.'
-
-[Crayon Syntax Highlighter Log Entry - 4:01:20 PM - 22 Apr 2015]
-
- [SYSTEM LOG] 'Upload directory is empty:  cannot load languages.'
- [SYSTEM LOG] 'The resource directory is missing, should be at \'\'.'
- [CrayonUtil::lines()] 'Cannot read lines at \'default/default.txt\'.'
-
-[Crayon Syntax Highlighter Log Entry - 4:01:24 PM - 22 Apr 2015]
-
- [SYSTEM LOG] 'Upload directory is empty:  cannot load languages.'
- [SYSTEM LOG] 'The resource directory is missing, should be at \'\'.'
- [CrayonUtil::lines()] 'Cannot read lines at \'default/default.txt\'.'
-
-[Crayon Syntax Highlighter Log Entry - 4:01:41 PM - 22 Apr 2015]
-
- [SYSTEM LOG] 'Upload directory is empty:  cannot load languages.'
- [SYSTEM LOG] 'The resource directory is missing, should be at \'\'.'
- [CrayonUtil::lines()] 'Cannot read lines at \'default/default.txt\'.'
-
-[Crayon Syntax Highlighter Log Entry - 4:02:27 PM - 22 Apr 2015]
-
- [SYSTEM LOG] 'Upload directory is empty:  cannot load languages.'
- [SYSTEM LOG] 'The resource directory is missing, should be at \'\'.'
- [CrayonUtil::lines()] 'Cannot read lines at \'default/default.txt\'.'
-
-[Crayon Syntax Highlighter Log Entry - 4:02:33 PM - 22 Apr 2015]
-
- [SYSTEM LOG] 'Upload directory is empty:  cannot load languages.'
- [SYSTEM LOG] 'The resource directory is missing, should be at \'\'.'
- [CrayonUtil::lines()] 'Cannot read lines at \'default/default.txt\'.'
-
-[Crayon Syntax Highlighter Log Entry - 4:03:38 PM - 22 Apr 2015]
-
- [SYSTEM LOG] 'Upload directory is empty:  cannot load languages.'
- [SYSTEM LOG] 'The resource directory is missing, should be at \'\'.'
- [CrayonUtil::lines()] 'Cannot read lines at \'default/default.txt\'.'
-
-[Crayon Syntax Highlighter Log Entry - 6:01:55 PM - 23 Apr 2015]
-
- [SYSTEM LOG] 'Upload directory is empty:  cannot load languages.'
- [SYSTEM LOG] 'The resource directory is missing, should be at \'\'.'
- [CrayonUtil::lines()] 'Cannot read lines at \'default/default.txt\'.'
-
-[Crayon Syntax Highlighter Log Entry - 6:02:57 PM - 23 Apr 2015]
-
- [SYSTEM LOG] 'Upload directory is empty:  cannot load languages.'
- [SYSTEM LOG] 'The resource directory is missing, should be at \'\'.'
- [CrayonUtil::lines()] 'Cannot read lines at \'default/default.txt\'.'
-
-[Crayon Syntax Highlighter Log Entry - 6:03:21 PM - 23 Apr 2015]
-
- [SYSTEM LOG] 'Upload directory is empty:  cannot load languages.'
- [SYSTEM LOG] 'The resource directory is missing, should be at \'\'.'
- [CrayonUtil::lines()] 'Cannot read lines at \'default/default.txt\'.'
-
-[Crayon Syntax Highlighter Log Entry - 6:44:00 PM - 24 Apr 2015]
-
- [SYSTEM LOG] 'Upload directory is empty:  cannot load languages.'
- [SYSTEM LOG] 'The resource directory is missing, should be at \'\'.'
- [CrayonUtil::lines()] 'Cannot read lines at \'default/default.txt\'.'
-
-[Crayon Syntax Highlighter Log Entry - 12:21:35 AM - 25 Apr 2015]
-
- [SYSTEM LOG] 'Upload directory is empty:  cannot load languages.'
- [SYSTEM LOG] 'The resource directory is missing, should be at \'\'.'
- [CrayonUtil::lines()] 'Cannot read lines at \'default/default.txt\'.'
-
-[Crayon Syntax Highlighter Log Entry - 12:22:37 AM - 25 Apr 2015]
-
- [SYSTEM LOG] 'Upload directory is empty:  cannot load languages.'
- [SYSTEM LOG] 'The resource directory is missing, should be at \'\'.'
- [CrayonUtil::lines()] 'Cannot read lines at \'default/default.txt\'.'
-
-[Crayon Syntax Highlighter Log Entry - 12:23:35 AM - 25 Apr 2015]
-
- [SYSTEM LOG] 'Upload directory is empty:  cannot load languages.'
- [SYSTEM LOG] 'The resource directory is missing, should be at \'\'.'
- [CrayonUtil::lines()] 'Cannot read lines at \'default/default.txt\'.'
-
-[Crayon Syntax Highlighter Log Entry - 12:23:59 AM - 25 Apr 2015]
+[Crayon Syntax Highlighter Log Entry - 9:26:15 AM - 31 Mar 2021]
 
  [CrayonUtil::lines()] 'Cannot read lines at \'/langs/go/statement.txt\'.'
  [SYSTEM LOG] 'Parsing of \'/langs/go/go.txt\' failed, an (?alt) tag failed for the element \'STATEMENT\''
 
-[Crayon Syntax Highlighter Log Entry - 12:24:35 AM - 25 Apr 2015]
-
- [SYSTEM LOG] 'Upload directory is empty:  cannot load languages.'
- [SYSTEM LOG] 'The resource directory is missing, should be at \'\'.'
- [CrayonUtil::lines()] 'Cannot read lines at \'default/default.txt\'.'
-
-[Crayon Syntax Highlighter Log Entry - 12:25:35 AM - 25 Apr 2015]
-
- [SYSTEM LOG] 'Upload directory is empty:  cannot load languages.'
- [SYSTEM LOG] 'The resource directory is missing, should be at \'\'.'
- [CrayonUtil::lines()] 'Cannot read lines at \'default/default.txt\'.'
-
-[Crayon Syntax Highlighter Log Entry - 12:26:36 AM - 25 Apr 2015]
-
- [SYSTEM LOG] 'Upload directory is empty:  cannot load languages.'
- [SYSTEM LOG] 'The resource directory is missing, should be at \'\'.'
- [CrayonUtil::lines()] 'Cannot read lines at \'default/default.txt\'.'
-
-[Crayon Syntax Highlighter Log Entry - 12:27:35 AM - 25 Apr 2015]
-
- [SYSTEM LOG] 'Upload directory is empty:  cannot load languages.'
- [SYSTEM LOG] 'The resource directory is missing, should be at \'\'.'
- [CrayonUtil::lines()] 'Cannot read lines at \'default/default.txt\'.'
-
-[Crayon Syntax Highlighter Log Entry - 12:28:35 AM - 25 Apr 2015]
-
- [SYSTEM LOG] 'Upload directory is empty:  cannot load languages.'
- [SYSTEM LOG] 'The resource directory is missing, should be at \'\'.'
- [CrayonUtil::lines()] 'Cannot read lines at \'default/default.txt\'.'
-
-[Crayon Syntax Highlighter Log Entry - 12:29:33 AM - 25 Apr 2015]
-
- [SYSTEM LOG] 'Upload directory is empty:  cannot load languages.'
- [SYSTEM LOG] 'The resource directory is missing, should be at \'\'.'
- [CrayonUtil::lines()] 'Cannot read lines at \'default/default.txt\'.'
-
-[Crayon Syntax Highlighter Log Entry - 1:04:48 AM - 25 Apr 2015]
-
- [SYSTEM LOG] 'Upload directory is empty:  cannot load languages.'
- [SYSTEM LOG] 'The resource directory is missing, should be at \'\'.'
- [CrayonUtil::lines()] 'Cannot read lines at \'default/default.txt\'.'
-
-[Crayon Syntax Highlighter Log Entry - 1:05:47 AM - 25 Apr 2015]
-
- [SYSTEM LOG] 'Upload directory is empty:  cannot load languages.'
- [SYSTEM LOG] 'The resource directory is missing, should be at \'\'.'
- [CrayonUtil::lines()] 'Cannot read lines at \'default/default.txt\'.'
-
-[Crayon Syntax Highlighter Log Entry - 11:19:04 AM - 25 Apr 2015]
-
- [SYSTEM LOG] 'Upload directory is empty:  cannot load languages.'
- [SYSTEM LOG] 'The resource directory is missing, should be at \'\'.'
- [CrayonUtil::lines()] 'Cannot read lines at \'default/default.txt\'.'
-
-[Crayon Syntax Highlighter Log Entry - 2:30:06 PM - 25 Apr 2015]
-
- [SYSTEM LOG] 'Upload directory is empty:  cannot load languages.'
- [SYSTEM LOG] 'The resource directory is missing, should be at \'\'.'
- [CrayonUtil::lines()] 'Cannot read lines at \'default/default.txt\'.'
-
-[Crayon Syntax Highlighter Log Entry - 2:30:17 PM - 25 Apr 2015]
-
- [SYSTEM LOG] 'Upload directory is empty:  cannot load languages.'
- [SYSTEM LOG] 'The resource directory is missing, should be at \'\'.'
- [CrayonUtil::lines()] 'Cannot read lines at \'default/default.txt\'.'
-
-[Crayon Syntax Highlighter Log Entry - 2:21:16 PM - 05 May 2015]
-
- [SYSTEM LOG] 'Upload directory is empty:  cannot load languages.'
- [SYSTEM LOG] 'The resource directory is missing, should be at \'\'.'
- [CrayonUtil::lines()] 'Cannot read lines at \'default/default.txt\'.'
-
-[Crayon Syntax Highlighter Log Entry - 2:25:29 PM - 05 May 2015]
-
- [SYSTEM LOG] 'Upload directory is empty:  cannot load languages.'
- [SYSTEM LOG] 'The resource directory is missing, should be at \'\'.'
- [CrayonUtil::lines()] 'Cannot read lines at \'default/default.txt\'.'
-
-[Crayon Syntax Highlighter Log Entry - 2:25:54 PM - 05 May 2015]
-
- [SYSTEM LOG] 'Upload directory is empty:  cannot load languages.'
- [SYSTEM LOG] 'The resource directory is missing, should be at \'\'.'
- [CrayonUtil::lines()] 'Cannot read lines at \'default/default.txt\'.'
-
-[Crayon Syntax Highlighter Log Entry - 2:26:31 PM - 05 May 2015]
-
- [SYSTEM LOG] 'Upload directory is empty:  cannot load languages.'
- [SYSTEM LOG] 'The resource directory is missing, should be at \'\'.'
- [CrayonUtil::lines()] 'Cannot read lines at \'default/default.txt\'.'
-
-[Crayon Syntax Highlighter Log Entry - 2:27:32 PM - 05 May 2015]
-
- [SYSTEM LOG] 'Upload directory is empty:  cannot load languages.'
- [SYSTEM LOG] 'The resource directory is missing, should be at \'\'.'
- [CrayonUtil::lines()] 'Cannot read lines at \'default/default.txt\'.'
-
-[Crayon Syntax Highlighter Log Entry - 2:28:31 PM - 05 May 2015]
-
- [SYSTEM LOG] 'Upload directory is empty:  cannot load languages.'
- [SYSTEM LOG] 'The resource directory is missing, should be at \'\'.'
- [CrayonUtil::lines()] 'Cannot read lines at \'default/default.txt\'.'
-
-[Crayon Syntax Highlighter Log Entry - 2:29:21 PM - 05 May 2015]
+[Crayon Syntax Highlighter Log Entry - 10:15:19 AM - 31 Mar 2021]
 
  [CrayonUtil::lines()] 'Cannot read lines at \'/langs/go/statement.txt\'.'
  [SYSTEM LOG] 'Parsing of \'/langs/go/go.txt\' failed, an (?alt) tag failed for the element \'STATEMENT\''
 
-[Crayon Syntax Highlighter Log Entry - 2:29:31 PM - 05 May 2015]
-
- [SYSTEM LOG] 'Upload directory is empty:  cannot load languages.'
- [SYSTEM LOG] 'The resource directory is missing, should be at \'\'.'
- [CrayonUtil::lines()] 'Cannot read lines at \'default/default.txt\'.'
-
-[Crayon Syntax Highlighter Log Entry - 2:30:31 PM - 05 May 2015]
-
- [SYSTEM LOG] 'Upload directory is empty:  cannot load languages.'
- [SYSTEM LOG] 'The resource directory is missing, should be at \'\'.'
- [CrayonUtil::lines()] 'Cannot read lines at \'default/default.txt\'.'
-
-[Crayon Syntax Highlighter Log Entry - 2:31:32 PM - 05 May 2015]
-
- [SYSTEM LOG] 'Upload directory is empty:  cannot load languages.'
- [SYSTEM LOG] 'The resource directory is missing, should be at \'\'.'
- [CrayonUtil::lines()] 'Cannot read lines at \'default/default.txt\'.'
-
-[Crayon Syntax Highlighter Log Entry - 2:32:31 PM - 05 May 2015]
-
- [SYSTEM LOG] 'Upload directory is empty:  cannot load languages.'
- [SYSTEM LOG] 'The resource directory is missing, should be at \'\'.'
- [CrayonUtil::lines()] 'Cannot read lines at \'default/default.txt\'.'
-
-[Crayon Syntax Highlighter Log Entry - 2:33:31 PM - 05 May 2015]
-
- [SYSTEM LOG] 'Upload directory is empty:  cannot load languages.'
- [SYSTEM LOG] 'The resource directory is missing, should be at \'\'.'
- [CrayonUtil::lines()] 'Cannot read lines at \'default/default.txt\'.'
-
-[Crayon Syntax Highlighter Log Entry - 2:34:31 PM - 05 May 2015]
-
- [SYSTEM LOG] 'Upload directory is empty:  cannot load languages.'
- [SYSTEM LOG] 'The resource directory is missing, should be at \'\'.'
- [CrayonUtil::lines()] 'Cannot read lines at \'default/default.txt\'.'
-
-[Crayon Syntax Highlighter Log Entry - 2:35:31 PM - 05 May 2015]
-
- [SYSTEM LOG] 'Upload directory is empty:  cannot load languages.'
- [SYSTEM LOG] 'The resource directory is missing, should be at \'\'.'
- [CrayonUtil::lines()] 'Cannot read lines at \'default/default.txt\'.'
-
-[Crayon Syntax Highlighter Log Entry - 2:36:31 PM - 05 May 2015]
-
- [SYSTEM LOG] 'Upload directory is empty:  cannot load languages.'
- [SYSTEM LOG] 'The resource directory is missing, should be at \'\'.'
- [CrayonUtil::lines()] 'Cannot read lines at \'default/default.txt\'.'
-
-[Crayon Syntax Highlighter Log Entry - 2:37:31 PM - 05 May 2015]
-
- [SYSTEM LOG] 'Upload directory is empty:  cannot load languages.'
- [SYSTEM LOG] 'The resource directory is missing, should be at \'\'.'
- [CrayonUtil::lines()] 'Cannot read lines at \'default/default.txt\'.'
-
-[Crayon Syntax Highlighter Log Entry - 2:49:42 PM - 05 May 2015]
-
- [SYSTEM LOG] 'Upload directory is empty:  cannot load languages.'
- [SYSTEM LOG] 'The resource directory is missing, should be at \'\'.'
- [CrayonUtil::lines()] 'Cannot read lines at \'default/default.txt\'.'
-
-[Crayon Syntax Highlighter Log Entry - 2:50:42 PM - 05 May 2015]
-
- [SYSTEM LOG] 'Upload directory is empty:  cannot load languages.'
- [SYSTEM LOG] 'The resource directory is missing, should be at \'\'.'
- [CrayonUtil::lines()] 'Cannot read lines at \'default/default.txt\'.'
-
-[Crayon Syntax Highlighter Log Entry - 2:52:10 PM - 05 May 2015]
-
- [SYSTEM LOG] 'Upload directory is empty:  cannot load languages.'
- [SYSTEM LOG] 'The resource directory is missing, should be at \'\'.'
- [CrayonUtil::lines()] 'Cannot read lines at \'default/default.txt\'.'
-
-[Crayon Syntax Highlighter Log Entry - 3:40:30 PM - 05 May 2015]
-
- [SYSTEM LOG] 'Upload directory is empty:  cannot load languages.'
- [SYSTEM LOG] 'The resource directory is missing, should be at \'\'.'
- [CrayonUtil::lines()] 'Cannot read lines at \'default/default.txt\'.'
-
-[Crayon Syntax Highlighter Log Entry - 3:40:38 PM - 05 May 2015]
-
- [SYSTEM LOG] 'Upload directory is empty:  cannot load languages.'
- [SYSTEM LOG] 'The resource directory is missing, should be at \'\'.'
- [CrayonUtil::lines()] 'Cannot read lines at \'default/default.txt\'.'
-
-[Crayon Syntax Highlighter Log Entry - 3:41:41 PM - 05 May 2015]
-
- [SYSTEM LOG] 'Upload directory is empty:  cannot load languages.'
- [SYSTEM LOG] 'The resource directory is missing, should be at \'\'.'
- [CrayonUtil::lines()] 'Cannot read lines at \'default/default.txt\'.'
-
-[Crayon Syntax Highlighter Log Entry - 10:50:53 PM - 05 May 2015]
-
- [SYSTEM LOG] 'Upload directory is empty:  cannot load languages.'
- [SYSTEM LOG] 'The resource directory is missing, should be at \'\'.'
- [CrayonUtil::lines()] 'Cannot read lines at \'default/default.txt\'.'
-
-[Crayon Syntax Highlighter Log Entry - 9:31:54 AM - 07 May 2015]
-
- [SYSTEM LOG] 'Upload directory is empty:  cannot load languages.'
- [SYSTEM LOG] 'The resource directory is missing, should be at \'\'.'
- [CrayonUtil::lines()] 'Cannot read lines at \'default/default.txt\'.'
-
-[Crayon Syntax Highlighter Log Entry - 2:23:00 PM - 08 May 2015]
-
- [SYSTEM LOG] 'Upload directory is empty:  cannot load languages.'
- [SYSTEM LOG] 'The resource directory is missing, should be at \'\'.'
- [CrayonUtil::lines()] 'Cannot read lines at \'default/default.txt\'.'
-
-[Crayon Syntax Highlighter Log Entry - 2:24:02 PM - 08 May 2015]
-
- [SYSTEM LOG] 'Upload directory is empty:  cannot load languages.'
- [SYSTEM LOG] 'The resource directory is missing, should be at \'\'.'
- [CrayonUtil::lines()] 'Cannot read lines at \'default/default.txt\'.'
-
-[Crayon Syntax Highlighter Log Entry - 2:25:02 PM - 08 May 2015]
-
- [SYSTEM LOG] 'Upload directory is empty:  cannot load languages.'
- [SYSTEM LOG] 'The resource directory is missing, should be at \'\'.'
- [CrayonUtil::lines()] 'Cannot read lines at \'default/default.txt\'.'
-
-[Crayon Syntax Highlighter Log Entry - 2:27:16 PM - 08 May 2015]
-
- [SYSTEM LOG] 'Upload directory is empty:  cannot load languages.'
- [SYSTEM LOG] 'The resource directory is missing, should be at \'\'.'
- [CrayonUtil::lines()] 'Cannot read lines at \'default/default.txt\'.'
-
-[Crayon Syntax Highlighter Log Entry - 3:20:47 PM - 08 May 2015]
-
- [SYSTEM LOG] 'Upload directory is empty:  cannot load languages.'
- [SYSTEM LOG] 'The resource directory is missing, should be at \'\'.'
- [CrayonUtil::lines()] 'Cannot read lines at \'default/default.txt\'.'
-
-[Crayon Syntax Highlighter Log Entry - 3:20:55 PM - 08 May 2015]
-
- [SYSTEM LOG] 'Upload directory is empty:  cannot load languages.'
- [SYSTEM LOG] 'The resource directory is missing, should be at \'\'.'
- [CrayonUtil::lines()] 'Cannot read lines at \'default/default.txt\'.'
-
-[Crayon Syntax Highlighter Log Entry - 3:21:49 PM - 08 May 2015]
-
- [SYSTEM LOG] 'Upload directory is empty:  cannot load languages.'
- [SYSTEM LOG] 'The resource directory is missing, should be at \'\'.'
- [CrayonUtil::lines()] 'Cannot read lines at \'default/default.txt\'.'
-
-[Crayon Syntax Highlighter Log Entry - 3:22:05 PM - 08 May 2015]
-
- [SYSTEM LOG] 'Upload directory is empty:  cannot load languages.'
- [SYSTEM LOG] 'The resource directory is missing, should be at \'\'.'
- [CrayonUtil::lines()] 'Cannot read lines at \'default/default.txt\'.'
-
-[Crayon Syntax Highlighter Log Entry - 10:55:09 PM - 08 May 2015]
-
- [SYSTEM LOG] 'Upload directory is empty:  cannot load languages.'
- [SYSTEM LOG] 'The resource directory is missing, should be at \'\'.'
- [CrayonUtil::lines()] 'Cannot read lines at \'default/default.txt\'.'
-
-[Crayon Syntax Highlighter Log Entry - 10:55:58 PM - 08 May 2015]
-
- [SYSTEM LOG] 'Upload directory is empty:  cannot load languages.'
- [SYSTEM LOG] 'The resource directory is missing, should be at \'\'.'
- [CrayonUtil::lines()] 'Cannot read lines at \'default/default.txt\'.'
-
-[Crayon Syntax Highlighter Log Entry - 5:14:22 PM - 12 May 2015]
-
- [SYSTEM LOG] 'Upload directory is empty:  cannot load languages.'
- [SYSTEM LOG] 'The resource directory is missing, should be at \'\'.'
- [CrayonUtil::lines()] 'Cannot read lines at \'default/default.txt\'.'
-
-[Crayon Syntax Highlighter Log Entry - 5:23:29 PM - 28 Jul 2015]
-
- [SYSTEM LOG] 'Upload directory is empty:  cannot load languages.'
- [SYSTEM LOG] 'The resource directory is missing, should be at \'\'.'
- [CrayonUtil::lines()] 'Cannot read lines at \'default/default.txt\'.'
-
-[Crayon Syntax Highlighter Log Entry - 5:23:37 PM - 28 Jul 2015]
-
- [SYSTEM LOG] 'Upload directory is empty:  cannot load languages.'
- [SYSTEM LOG] 'The resource directory is missing, should be at \'\'.'
- [CrayonUtil::lines()] 'Cannot read lines at \'default/default.txt\'.'
-
-[Crayon Syntax Highlighter Log Entry - 5:24:32 PM - 28 Jul 2015]
-
- [SYSTEM LOG] 'Upload directory is empty:  cannot load languages.'
- [SYSTEM LOG] 'The resource directory is missing, should be at \'\'.'
- [CrayonUtil::lines()] 'Cannot read lines at \'default/default.txt\'.'
-
-[Crayon Syntax Highlighter Log Entry - 5:25:32 PM - 28 Jul 2015]
-
- [SYSTEM LOG] 'Upload directory is empty:  cannot load languages.'
- [SYSTEM LOG] 'The resource directory is missing, should be at \'\'.'
- [CrayonUtil::lines()] 'Cannot read lines at \'default/default.txt\'.'
-
-[Crayon Syntax Highlighter Log Entry - 5:25:48 PM - 28 Jul 2015]
-
- [SYSTEM LOG] 'Upload directory is empty:  cannot load languages.'
- [SYSTEM LOG] 'The resource directory is missing, should be at \'\'.'
- [CrayonUtil::lines()] 'Cannot read lines at \'default/default.txt\'.'
-
-[Crayon Syntax Highlighter Log Entry - 4:51:56 PM - 07 Aug 2015]
-
- [SYSTEM LOG] 'Upload directory is empty:  cannot load languages.'
- [SYSTEM LOG] 'The resource directory is missing, should be at \'\'.'
- [CrayonUtil::lines()] 'Cannot read lines at \'default/default.txt\'.'
-
-[Crayon Syntax Highlighter Log Entry - 2:53:24 PM - 10 Sep 2015]
-
- [SYSTEM LOG] 'Upload directory is empty:  cannot load languages.'
- [SYSTEM LOG] 'The resource directory is missing, should be at \'\'.'
- [CrayonUtil::lines()] 'Cannot read lines at \'default/default.txt\'.'
-
-[Crayon Syntax Highlighter Log Entry - 2:53:59 PM - 10 Sep 2015]
-
- [SYSTEM LOG] 'Upload directory is empty:  cannot load languages.'
- [SYSTEM LOG] 'The resource directory is missing, should be at \'\'.'
- [CrayonUtil::lines()] 'Cannot read lines at \'default/default.txt\'.'
-
-[Crayon Syntax Highlighter Log Entry - 2:54:26 PM - 10 Sep 2015]
-
- [SYSTEM LOG] 'Upload directory is empty:  cannot load languages.'
- [SYSTEM LOG] 'The resource directory is missing, should be at \'\'.'
- [CrayonUtil::lines()] 'Cannot read lines at \'default/default.txt\'.'
-
-[Crayon Syntax Highlighter Log Entry - 2:55:26 PM - 10 Sep 2015]
-
- [SYSTEM LOG] 'Upload directory is empty:  cannot load languages.'
- [SYSTEM LOG] 'The resource directory is missing, should be at \'\'.'
- [CrayonUtil::lines()] 'Cannot read lines at \'default/default.txt\'.'
-
-[Crayon Syntax Highlighter Log Entry - 2:56:26 PM - 10 Sep 2015]
-
- [SYSTEM LOG] 'Upload directory is empty:  cannot load languages.'
- [SYSTEM LOG] 'The resource directory is missing, should be at \'\'.'
- [CrayonUtil::lines()] 'Cannot read lines at \'default/default.txt\'.'
-
-[Crayon Syntax Highlighter Log Entry - 2:57:05 PM - 10 Sep 2015]
-
- [SYSTEM LOG] 'Upload directory is empty:  cannot load languages.'
- [SYSTEM LOG] 'The resource directory is missing, should be at \'\'.'
- [CrayonUtil::lines()] 'Cannot read lines at \'default/default.txt\'.'
-
-[Crayon Syntax Highlighter Log Entry - 2:58:11 PM - 10 Sep 2015]
-
- [SYSTEM LOG] 'Upload directory is empty:  cannot load languages.'
- [SYSTEM LOG] 'The resource directory is missing, should be at \'\'.'
- [CrayonUtil::lines()] 'Cannot read lines at \'default/default.txt\'.'
-
-[Crayon Syntax Highlighter Log Entry - 3:04:44 PM - 10 Sep 2015]
-
- [SYSTEM LOG] 'Upload directory is empty:  cannot load languages.'
- [SYSTEM LOG] 'The resource directory is missing, should be at \'\'.'
- [CrayonUtil::lines()] 'Cannot read lines at \'default/default.txt\'.'
-
-[Crayon Syntax Highlighter Log Entry - 2:05:36 PM - 15 Sep 2015]
-
- [SYSTEM LOG] 'Upload directory is empty:  cannot load languages.'
- [SYSTEM LOG] 'The resource directory is missing, should be at \'\'.'
- [CrayonUtil::lines()] 'Cannot read lines at \'default/default.txt\'.'
-
-[Crayon Syntax Highlighter Log Entry - 9:48:40 AM - 28 Sep 2015]
-
- [SYSTEM LOG] 'Upload directory is empty:  cannot load languages.'
- [SYSTEM LOG] 'The resource directory is missing, should be at \'\'.'
- [CrayonUtil::lines()] 'Cannot read lines at \'default/default.txt\'.'
-
-[Crayon Syntax Highlighter Log Entry - 11:32:22 AM - 09 Oct 2015]
-
- [SYSTEM LOG] 'Upload directory is empty:  cannot load languages.'
- [SYSTEM LOG] 'The resource directory is missing, should be at \'\'.'
- [CrayonUtil::lines()] 'Cannot read lines at \'default/default.txt\'.'
-
-[Crayon Syntax Highlighter Log Entry - 3:57:53 PM - 18 Nov 2015]
-
- [SYSTEM LOG] 'Upload directory is empty:  cannot load languages.'
- [SYSTEM LOG] 'The resource directory is missing, should be at \'\'.'
- [CrayonUtil::lines()] 'Cannot read lines at \'default/default.txt\'.'
-
-[Crayon Syntax Highlighter Log Entry - 3:58:34 PM - 18 Nov 2015]
-
- [SYSTEM LOG] 'Upload directory is empty:  cannot load languages.'
- [SYSTEM LOG] 'The resource directory is missing, should be at \'\'.'
- [CrayonUtil::lines()] 'Cannot read lines at \'default/default.txt\'.'
-
-[Crayon Syntax Highlighter Log Entry - 3:58:55 PM - 18 Nov 2015]
-
- [SYSTEM LOG] 'Upload directory is empty:  cannot load languages.'
- [SYSTEM LOG] 'The resource directory is missing, should be at \'\'.'
- [CrayonUtil::lines()] 'Cannot read lines at \'default/default.txt\'.'
-
-[Crayon Syntax Highlighter Log Entry - 4:01:55 PM - 18 Nov 2015]
-
- [SYSTEM LOG] 'Upload directory is empty:  cannot load languages.'
- [SYSTEM LOG] 'The resource directory is missing, should be at \'\'.'
- [CrayonUtil::lines()] 'Cannot read lines at \'default/default.txt\'.'
-
-[Crayon Syntax Highlighter Log Entry - 4:02:55 PM - 18 Nov 2015]
-
- [SYSTEM LOG] 'Upload directory is empty:  cannot load languages.'
- [SYSTEM LOG] 'The resource directory is missing, should be at \'\'.'
- [CrayonUtil::lines()] 'Cannot read lines at \'default/default.txt\'.'
-
-[Crayon Syntax Highlighter Log Entry - 4:03:55 PM - 18 Nov 2015]
-
- [SYSTEM LOG] 'Upload directory is empty:  cannot load languages.'
- [SYSTEM LOG] 'The resource directory is missing, should be at \'\'.'
- [CrayonUtil::lines()] 'Cannot read lines at \'default/default.txt\'.'
-
-[Crayon Syntax Highlighter Log Entry - 4:04:55 PM - 18 Nov 2015]
-
- [SYSTEM LOG] 'Upload directory is empty:  cannot load languages.'
- [SYSTEM LOG] 'The resource directory is missing, should be at \'\'.'
- [CrayonUtil::lines()] 'Cannot read lines at \'default/default.txt\'.'
-
-[Crayon Syntax Highlighter Log Entry - 4:05:56 PM - 18 Nov 2015]
-
- [SYSTEM LOG] 'Upload directory is empty:  cannot load languages.'
- [SYSTEM LOG] 'The resource directory is missing, should be at \'\'.'
- [CrayonUtil::lines()] 'Cannot read lines at \'default/default.txt\'.'
-
-[Crayon Syntax Highlighter Log Entry - 4:06:56 PM - 18 Nov 2015]
-
- [SYSTEM LOG] 'Upload directory is empty:  cannot load languages.'
- [SYSTEM LOG] 'The resource directory is missing, should be at \'\'.'
- [CrayonUtil::lines()] 'Cannot read lines at \'default/default.txt\'.'
-
-[Crayon Syntax Highlighter Log Entry - 4:07:56 PM - 18 Nov 2015]
-
- [SYSTEM LOG] 'Upload directory is empty:  cannot load languages.'
- [SYSTEM LOG] 'The resource directory is missing, should be at \'\'.'
- [CrayonUtil::lines()] 'Cannot read lines at \'default/default.txt\'.'
-
-[Crayon Syntax Highlighter Log Entry - 4:08:56 PM - 18 Nov 2015]
-
- [SYSTEM LOG] 'Upload directory is empty:  cannot load languages.'
- [SYSTEM LOG] 'The resource directory is missing, should be at \'\'.'
- [CrayonUtil::lines()] 'Cannot read lines at \'default/default.txt\'.'
-
-[Crayon Syntax Highlighter Log Entry - 4:09:56 PM - 18 Nov 2015]
-
- [SYSTEM LOG] 'Upload directory is empty:  cannot load languages.'
- [SYSTEM LOG] 'The resource directory is missing, should be at \'\'.'
- [CrayonUtil::lines()] 'Cannot read lines at \'default/default.txt\'.'
-
-[Crayon Syntax Highlighter Log Entry - 4:10:56 PM - 18 Nov 2015]
-
- [SYSTEM LOG] 'Upload directory is empty:  cannot load languages.'
- [SYSTEM LOG] 'The resource directory is missing, should be at \'\'.'
- [CrayonUtil::lines()] 'Cannot read lines at \'default/default.txt\'.'
-
-[Crayon Syntax Highlighter Log Entry - 4:11:55 PM - 18 Nov 2015]
-
- [SYSTEM LOG] 'Upload directory is empty:  cannot load languages.'
- [SYSTEM LOG] 'The resource directory is missing, should be at \'\'.'
- [CrayonUtil::lines()] 'Cannot read lines at \'default/default.txt\'.'
-
-[Crayon Syntax Highlighter Log Entry - 4:12:55 PM - 18 Nov 2015]
-
- [SYSTEM LOG] 'Upload directory is empty:  cannot load languages.'
- [SYSTEM LOG] 'The resource directory is missing, should be at \'\'.'
- [CrayonUtil::lines()] 'Cannot read lines at \'default/default.txt\'.'
-
-[Crayon Syntax Highlighter Log Entry - 4:13:55 PM - 18 Nov 2015]
-
- [SYSTEM LOG] 'Upload directory is empty:  cannot load languages.'
- [SYSTEM LOG] 'The resource directory is missing, should be at \'\'.'
- [CrayonUtil::lines()] 'Cannot read lines at \'default/default.txt\'.'
-
-[Crayon Syntax Highlighter Log Entry - 4:14:55 PM - 18 Nov 2015]
-
- [SYSTEM LOG] 'Upload directory is empty:  cannot load languages.'
- [SYSTEM LOG] 'The resource directory is missing, should be at \'\'.'
- [CrayonUtil::lines()] 'Cannot read lines at \'default/default.txt\'.'
-
-[Crayon Syntax Highlighter Log Entry - 4:15:55 PM - 18 Nov 2015]
-
- [SYSTEM LOG] 'Upload directory is empty:  cannot load languages.'
- [SYSTEM LOG] 'The resource directory is missing, should be at \'\'.'
- [CrayonUtil::lines()] 'Cannot read lines at \'default/default.txt\'.'
-
-[Crayon Syntax Highlighter Log Entry - 4:16:55 PM - 18 Nov 2015]
-
- [SYSTEM LOG] 'Upload directory is empty:  cannot load languages.'
- [SYSTEM LOG] 'The resource directory is missing, should be at \'\'.'
- [CrayonUtil::lines()] 'Cannot read lines at \'default/default.txt\'.'
-
-[Crayon Syntax Highlighter Log Entry - 4:17:55 PM - 18 Nov 2015]
-
- [SYSTEM LOG] 'Upload directory is empty:  cannot load languages.'
- [SYSTEM LOG] 'The resource directory is missing, should be at \'\'.'
- [CrayonUtil::lines()] 'Cannot read lines at \'default/default.txt\'.'
-
-[Crayon Syntax Highlighter Log Entry - 4:18:56 PM - 18 Nov 2015]
-
- [SYSTEM LOG] 'Upload directory is empty:  cannot load languages.'
- [SYSTEM LOG] 'The resource directory is missing, should be at \'\'.'
- [CrayonUtil::lines()] 'Cannot read lines at \'default/default.txt\'.'
-
-[Crayon Syntax Highlighter Log Entry - 4:19:19 PM - 18 Nov 2015]
+[Crayon Syntax Highlighter Log Entry - 11:11:19 AM - 31 Mar 2021]
 
  [CrayonUtil::lines()] 'Cannot read lines at \'/langs/go/statement.txt\'.'
  [SYSTEM LOG] 'Parsing of \'/langs/go/go.txt\' failed, an (?alt) tag failed for the element \'STATEMENT\''
 
-[Crayon Syntax Highlighter Log Entry - 4:19:56 PM - 18 Nov 2015]
+[Crayon Syntax Highlighter Log Entry - 2:21:32 PM - 31 Mar 2021]
 
- [SYSTEM LOG] 'Upload directory is empty:  cannot load languages.'
- [SYSTEM LOG] 'The resource directory is missing, should be at \'\'.'
- [CrayonUtil::lines()] 'Cannot read lines at \'default/default.txt\'.'
+ [CrayonUtil::lines()] 'Cannot read lines at \'/langs/go/statement.txt\'.'
+ [SYSTEM LOG] 'Parsing of \'/langs/go/go.txt\' failed, an (?alt) tag failed for the element \'STATEMENT\''
 
-[Crayon Syntax Highlighter Log Entry - 4:20:55 PM - 18 Nov 2015]
+[Crayon Syntax Highlighter Log Entry - 2:21:34 PM - 31 Mar 2021]
 
- [SYSTEM LOG] 'Upload directory is empty:  cannot load languages.'
- [SYSTEM LOG] 'The resource directory is missing, should be at \'\'.'
- [CrayonUtil::lines()] 'Cannot read lines at \'default/default.txt\'.'
+ [CrayonUtil::lines()] 'Cannot read lines at \'/langs/go/statement.txt\'.'
+ [SYSTEM LOG] 'Parsing of \'/langs/go/go.txt\' failed, an (?alt) tag failed for the element \'STATEMENT\''
 
-[Crayon Syntax Highlighter Log Entry - 4:21:55 PM - 18 Nov 2015]
+[Crayon Syntax Highlighter Log Entry - 3:11:47 PM - 31 Mar 2021]
 
- [SYSTEM LOG] 'Upload directory is empty:  cannot load languages.'
- [SYSTEM LOG] 'The resource directory is missing, should be at \'\'.'
- [CrayonUtil::lines()] 'Cannot read lines at \'default/default.txt\'.'
+ [CrayonUtil::lines()] 'Cannot read lines at \'/langs/go/statement.txt\'.'
+ [SYSTEM LOG] 'Parsing of \'/langs/go/go.txt\' failed, an (?alt) tag failed for the element \'STATEMENT\''
 
-[Crayon Syntax Highlighter Log Entry - 4:23:56 PM - 18 Nov 2015]
+[Crayon Syntax Highlighter Log Entry - 7:19:07 PM - 31 Mar 2021]
 
- [SYSTEM LOG] 'Upload directory is empty:  cannot load languages.'
- [SYSTEM LOG] 'The resource directory is missing, should be at \'\'.'
- [CrayonUtil::lines()] 'Cannot read lines at \'default/default.txt\'.'
+ [CrayonUtil::lines()] 'Cannot read lines at \'/langs/go/statement.txt\'.'
+ [SYSTEM LOG] 'Parsing of \'/langs/go/go.txt\' failed, an (?alt) tag failed for the element \'STATEMENT\''
 
-[Crayon Syntax Highlighter Log Entry - 4:24:56 PM - 18 Nov 2015]
+[Crayon Syntax Highlighter Log Entry - 7:48:52 PM - 31 Mar 2021]
 
- [SYSTEM LOG] 'Upload directory is empty:  cannot load languages.'
- [SYSTEM LOG] 'The resource directory is missing, should be at \'\'.'
- [CrayonUtil::lines()] 'Cannot read lines at \'default/default.txt\'.'
+ [CrayonUtil::lines()] 'Cannot read lines at \'/langs/go/statement.txt\'.'
+ [SYSTEM LOG] 'Parsing of \'/langs/go/go.txt\' failed, an (?alt) tag failed for the element \'STATEMENT\''
 
-[Crayon Syntax Highlighter Log Entry - 4:26:55 PM - 18 Nov 2015]
+[Crayon Syntax Highlighter Log Entry - 8:53:35 PM - 31 Mar 2021]
 
- [SYSTEM LOG] 'Upload directory is empty:  cannot load languages.'
- [SYSTEM LOG] 'The resource directory is missing, should be at \'\'.'
- [CrayonUtil::lines()] 'Cannot read lines at \'default/default.txt\'.'
+ [CrayonUtil::lines()] 'Cannot read lines at \'/langs/go/statement.txt\'.'
+ [SYSTEM LOG] 'Parsing of \'/langs/go/go.txt\' failed, an (?alt) tag failed for the element \'STATEMENT\''
 
-[Crayon Syntax Highlighter Log Entry - 4:27:13 PM - 18 Nov 2015]
+[Crayon Syntax Highlighter Log Entry - 2:16:04 AM - 01 Apr 2021]
 
- [SYSTEM LOG] 'Upload directory is empty:  cannot load languages.'
- [SYSTEM LOG] 'The resource directory is missing, should be at \'\'.'
- [CrayonUtil::lines()] 'Cannot read lines at \'default/default.txt\'.'
+ [CrayonUtil::lines()] 'Cannot read lines at \'/langs/go/statement.txt\'.'
+ [SYSTEM LOG] 'Parsing of \'/langs/go/go.txt\' failed, an (?alt) tag failed for the element \'STATEMENT\''
 
-[Crayon Syntax Highlighter Log Entry - 4:28:27 PM - 18 Nov 2015]
+[Crayon Syntax Highlighter Log Entry - 2:26:55 AM - 01 Apr 2021]
 
- [SYSTEM LOG] 'Upload directory is empty:  cannot load languages.'
- [SYSTEM LOG] 'The resource directory is missing, should be at \'\'.'
- [CrayonUtil::lines()] 'Cannot read lines at \'default/default.txt\'.'
+ [CrayonUtil::lines()] 'Cannot read lines at \'/langs/go/statement.txt\'.'
+ [SYSTEM LOG] 'Parsing of \'/langs/go/go.txt\' failed, an (?alt) tag failed for the element \'STATEMENT\''
 
-[Crayon Syntax Highlighter Log Entry - 4:33:17 PM - 18 Nov 2015]
+[Crayon Syntax Highlighter Log Entry - 3:32:56 AM - 01 Apr 2021]
 
- [SYSTEM LOG] 'Upload directory is empty:  cannot load languages.'
- [SYSTEM LOG] 'The resource directory is missing, should be at \'\'.'
- [CrayonUtil::lines()] 'Cannot read lines at \'default/default.txt\'.'
+ [CrayonUtil::lines()] 'Cannot read lines at \'/langs/go/statement.txt\'.'
+ [SYSTEM LOG] 'Parsing of \'/langs/go/go.txt\' failed, an (?alt) tag failed for the element \'STATEMENT\''
 
-[Crayon Syntax Highlighter Log Entry - 3:29:24 PM - 23 Nov 2015]
+[Crayon Syntax Highlighter Log Entry - 4:04:23 AM - 01 Apr 2021]
 
- [SYSTEM LOG] 'Upload directory is empty:  cannot load languages.'
- [SYSTEM LOG] 'The resource directory is missing, should be at \'\'.'
- [CrayonUtil::lines()] 'Cannot read lines at \'default/default.txt\'.'
+ [CrayonUtil::lines()] 'Cannot read lines at \'/langs/go/statement.txt\'.'
+ [SYSTEM LOG] 'Parsing of \'/langs/go/go.txt\' failed, an (?alt) tag failed for the element \'STATEMENT\''
 
-[Crayon Syntax Highlighter Log Entry - 10:06:18 AM - 03 Aug 2016]
+[Crayon Syntax Highlighter Log Entry - 6:31:36 AM - 01 Apr 2021]
 
- [SYSTEM LOG] 'Upload directory is empty:  cannot load languages.'
- [SYSTEM LOG] 'The resource directory is missing, should be at \'\'.'
- [CrayonUtil::lines()] 'Cannot read lines at \'default/default.txt\'.'
+ [CrayonUtil::lines()] 'Cannot read lines at \'/langs/go/statement.txt\'.'
+ [SYSTEM LOG] 'Parsing of \'/langs/go/go.txt\' failed, an (?alt) tag failed for the element \'STATEMENT\''
 
-[Crayon Syntax Highlighter Log Entry - 10:06:40 AM - 03 Aug 2016]
+[Crayon Syntax Highlighter Log Entry - 7:34:16 AM - 01 Apr 2021]
 
- [SYSTEM LOG] 'Upload directory is empty:  cannot load languages.'
- [SYSTEM LOG] 'The resource directory is missing, should be at \'\'.'
- [CrayonUtil::lines()] 'Cannot read lines at \'default/default.txt\'.'
+ [CrayonUtil::lines()] 'Cannot read lines at \'/langs/go/statement.txt\'.'
+ [SYSTEM LOG] 'Parsing of \'/langs/go/go.txt\' failed, an (?alt) tag failed for the element \'STATEMENT\''
 
-[Crayon Syntax Highlighter Log Entry - 10:10:11 AM - 03 Aug 2016]
+[Crayon Syntax Highlighter Log Entry - 8:43:44 AM - 01 Apr 2021]
 
- [SYSTEM LOG] 'Upload directory is empty:  cannot load languages.'
- [SYSTEM LOG] 'The resource directory is missing, should be at \'\'.'
- [CrayonUtil::lines()] 'Cannot read lines at \'default/default.txt\'.'
+ [CrayonUtil::lines()] 'Cannot read lines at \'/langs/go/statement.txt\'.'
+ [SYSTEM LOG] 'Parsing of \'/langs/go/go.txt\' failed, an (?alt) tag failed for the element \'STATEMENT\''
+
+[Crayon Syntax Highlighter Log Entry - 10:44:41 AM - 01 Apr 2021]
+
+ [CrayonUtil::lines()] 'Cannot read lines at \'/langs/go/statement.txt\'.'
+ [SYSTEM LOG] 'Parsing of \'/langs/go/go.txt\' failed, an (?alt) tag failed for the element \'STATEMENT\''
+
+[Crayon Syntax Highlighter Log Entry - 2:53:21 PM - 01 Apr 2021]
+
+ [CrayonUtil::lines()] 'Cannot read lines at \'/langs/go/statement.txt\'.'
+ [SYSTEM LOG] 'Parsing of \'/langs/go/go.txt\' failed, an (?alt) tag failed for the element \'STATEMENT\''
+
+[Crayon Syntax Highlighter Log Entry - 4:08:15 PM - 01 Apr 2021]
+
+ [CrayonUtil::lines()] 'Cannot read lines at \'/langs/go/statement.txt\'.'
+ [SYSTEM LOG] 'Parsing of \'/langs/go/go.txt\' failed, an (?alt) tag failed for the element \'STATEMENT\''
+
+[Crayon Syntax Highlighter Log Entry - 4:19:55 PM - 01 Apr 2021]
+
+ [CrayonUtil::lines()] 'Cannot read lines at \'/langs/go/statement.txt\'.'
+ [SYSTEM LOG] 'Parsing of \'/langs/go/go.txt\' failed, an (?alt) tag failed for the element \'STATEMENT\''
+
+[Crayon Syntax Highlighter Log Entry - 5:06:54 PM - 01 Apr 2021]
+
+ [CrayonUtil::lines()] 'Cannot read lines at \'/langs/go/statement.txt\'.'
+ [SYSTEM LOG] 'Parsing of \'/langs/go/go.txt\' failed, an (?alt) tag failed for the element \'STATEMENT\''
+
+[Crayon Syntax Highlighter Log Entry - 6:40:42 PM - 01 Apr 2021]
+
+ [CrayonUtil::lines()] 'Cannot read lines at \'/langs/go/statement.txt\'.'
+ [SYSTEM LOG] 'Parsing of \'/langs/go/go.txt\' failed, an (?alt) tag failed for the element \'STATEMENT\''
+
+[Crayon Syntax Highlighter Log Entry - 6:56:41 PM - 01 Apr 2021]
+
+ [CrayonUtil::lines()] 'Cannot read lines at \'/langs/go/statement.txt\'.'
+ [SYSTEM LOG] 'Parsing of \'/langs/go/go.txt\' failed, an (?alt) tag failed for the element \'STATEMENT\''
+
+[Crayon Syntax Highlighter Log Entry - 11:57:52 PM - 01 Apr 2021]
+
+ [CrayonUtil::lines()] 'Cannot read lines at \'/langs/go/statement.txt\'.'
+ [SYSTEM LOG] 'Parsing of \'/langs/go/go.txt\' failed, an (?alt) tag failed for the element \'STATEMENT\''
+
+[Crayon Syntax Highlighter Log Entry - 1:29:04 AM - 02 Apr 2021]
+
+ [CrayonUtil::lines()] 'Cannot read lines at \'/langs/go/statement.txt\'.'
+ [SYSTEM LOG] 'Parsing of \'/langs/go/go.txt\' failed, an (?alt) tag failed for the element \'STATEMENT\''
+
+[Crayon Syntax Highlighter Log Entry - 1:29:07 AM - 02 Apr 2021]
+
+ [CrayonUtil::lines()] 'Cannot read lines at \'/langs/go/statement.txt\'.'
+ [SYSTEM LOG] 'Parsing of \'/langs/go/go.txt\' failed, an (?alt) tag failed for the element \'STATEMENT\''
+
+[Crayon Syntax Highlighter Log Entry - 11:43:20 AM - 02 Apr 2021]
+
+ [CrayonUtil::lines()] 'Cannot read lines at \'/langs/go/statement.txt\'.'
+ [SYSTEM LOG] 'Parsing of \'/langs/go/go.txt\' failed, an (?alt) tag failed for the element \'STATEMENT\''
+
+[Crayon Syntax Highlighter Log Entry - 6:21:56 PM - 02 Apr 2021]
+
+ [CrayonUtil::lines()] 'Cannot read lines at \'/langs/go/statement.txt\'.'
+ [SYSTEM LOG] 'Parsing of \'/langs/go/go.txt\' failed, an (?alt) tag failed for the element \'STATEMENT\''
+
+[Crayon Syntax Highlighter Log Entry - 12:06:18 AM - 03 Apr 2021]
+
+ [CrayonUtil::lines()] 'Cannot read lines at \'/langs/go/statement.txt\'.'
+ [SYSTEM LOG] 'Parsing of \'/langs/go/go.txt\' failed, an (?alt) tag failed for the element \'STATEMENT\''
+
+[Crayon Syntax Highlighter Log Entry - 4:43:03 AM - 03 Apr 2021]
+
+ [CrayonUtil::lines()] 'Cannot read lines at \'/langs/go/statement.txt\'.'
+ [SYSTEM LOG] 'Parsing of \'/langs/go/go.txt\' failed, an (?alt) tag failed for the element \'STATEMENT\''
+
+[Crayon Syntax Highlighter Log Entry - 4:44:55 AM - 03 Apr 2021]
+
+ [CrayonUtil::lines()] 'Cannot read lines at \'/langs/go/statement.txt\'.'
+ [SYSTEM LOG] 'Parsing of \'/langs/go/go.txt\' failed, an (?alt) tag failed for the element \'STATEMENT\''
+
+[Crayon Syntax Highlighter Log Entry - 5:25:03 AM - 03 Apr 2021]
+
+ [CrayonUtil::lines()] 'Cannot read lines at \'/langs/go/statement.txt\'.'
+ [SYSTEM LOG] 'Parsing of \'/langs/go/go.txt\' failed, an (?alt) tag failed for the element \'STATEMENT\''
+
+[Crayon Syntax Highlighter Log Entry - 9:06:19 AM - 03 Apr 2021]
+
+ [CrayonUtil::lines()] 'Cannot read lines at \'/langs/go/statement.txt\'.'
+ [SYSTEM LOG] 'Parsing of \'/langs/go/go.txt\' failed, an (?alt) tag failed for the element \'STATEMENT\''
+
+[Crayon Syntax Highlighter Log Entry - 4:52:42 PM - 03 Apr 2021]
+
+ [CrayonUtil::lines()] 'Cannot read lines at \'/langs/go/statement.txt\'.'
+ [SYSTEM LOG] 'Parsing of \'/langs/go/go.txt\' failed, an (?alt) tag failed for the element \'STATEMENT\''
+
+[Crayon Syntax Highlighter Log Entry - 8:58:25 PM - 03 Apr 2021]
+
+ [CrayonUtil::lines()] 'Cannot read lines at \'/langs/go/statement.txt\'.'
+ [SYSTEM LOG] 'Parsing of \'/langs/go/go.txt\' failed, an (?alt) tag failed for the element \'STATEMENT\''
+
+[Crayon Syntax Highlighter Log Entry - 11:29:56 PM - 03 Apr 2021]
+
+ [CrayonUtil::lines()] 'Cannot read lines at \'/langs/go/statement.txt\'.'
+ [SYSTEM LOG] 'Parsing of \'/langs/go/go.txt\' failed, an (?alt) tag failed for the element \'STATEMENT\''
+
+[Crayon Syntax Highlighter Log Entry - 5:15:20 AM - 04 Apr 2021]
+
+ [CrayonUtil::lines()] 'Cannot read lines at \'/langs/go/statement.txt\'.'
+ [SYSTEM LOG] 'Parsing of \'/langs/go/go.txt\' failed, an (?alt) tag failed for the element \'STATEMENT\''
+
+[Crayon Syntax Highlighter Log Entry - 6:33:38 AM - 04 Apr 2021]
+
+ [CrayonUtil::lines()] 'Cannot read lines at \'/langs/go/statement.txt\'.'
+ [SYSTEM LOG] 'Parsing of \'/langs/go/go.txt\' failed, an (?alt) tag failed for the element \'STATEMENT\''
+
+[Crayon Syntax Highlighter Log Entry - 6:56:10 AM - 04 Apr 2021]
+
+ [CrayonUtil::lines()] 'Cannot read lines at \'/langs/go/statement.txt\'.'
+ [SYSTEM LOG] 'Parsing of \'/langs/go/go.txt\' failed, an (?alt) tag failed for the element \'STATEMENT\''
+
+[Crayon Syntax Highlighter Log Entry - 6:58:35 AM - 04 Apr 2021]
+
+ [CrayonUtil::lines()] 'Cannot read lines at \'/langs/go/statement.txt\'.'
+ [SYSTEM LOG] 'Parsing of \'/langs/go/go.txt\' failed, an (?alt) tag failed for the element \'STATEMENT\''
+
+[Crayon Syntax Highlighter Log Entry - 10:22:12 AM - 04 Apr 2021]
+
+ [CrayonUtil::lines()] 'Cannot read lines at \'/langs/go/statement.txt\'.'
+ [SYSTEM LOG] 'Parsing of \'/langs/go/go.txt\' failed, an (?alt) tag failed for the element \'STATEMENT\''
+
+[Crayon Syntax Highlighter Log Entry - 1:12:57 PM - 04 Apr 2021]
+
+ [CrayonUtil::lines()] 'Cannot read lines at \'/langs/go/statement.txt\'.'
+ [SYSTEM LOG] 'Parsing of \'/langs/go/go.txt\' failed, an (?alt) tag failed for the element \'STATEMENT\''
+
+[Crayon Syntax Highlighter Log Entry - 5:43:56 PM - 04 Apr 2021]
+
+ [CrayonUtil::lines()] 'Cannot read lines at \'/langs/go/statement.txt\'.'
+ [SYSTEM LOG] 'Parsing of \'/langs/go/go.txt\' failed, an (?alt) tag failed for the element \'STATEMENT\''
+
+[Crayon Syntax Highlighter Log Entry - 5:56:24 PM - 04 Apr 2021]
+
+ [CrayonUtil::lines()] 'Cannot read lines at \'/langs/go/statement.txt\'.'
+ [SYSTEM LOG] 'Parsing of \'/langs/go/go.txt\' failed, an (?alt) tag failed for the element \'STATEMENT\''
+
+[Crayon Syntax Highlighter Log Entry - 7:21:47 PM - 04 Apr 2021]
+
+ [CrayonUtil::lines()] 'Cannot read lines at \'/langs/go/statement.txt\'.'
+ [SYSTEM LOG] 'Parsing of \'/langs/go/go.txt\' failed, an (?alt) tag failed for the element \'STATEMENT\''
+
+[Crayon Syntax Highlighter Log Entry - 2:51:49 AM - 05 Apr 2021]
+
+ [CrayonUtil::lines()] 'Cannot read lines at \'/langs/go/statement.txt\'.'
+ [SYSTEM LOG] 'Parsing of \'/langs/go/go.txt\' failed, an (?alt) tag failed for the element \'STATEMENT\''
+
+[Crayon Syntax Highlighter Log Entry - 5:02:25 AM - 05 Apr 2021]
+
+ [CrayonUtil::lines()] 'Cannot read lines at \'/langs/go/statement.txt\'.'
+ [SYSTEM LOG] 'Parsing of \'/langs/go/go.txt\' failed, an (?alt) tag failed for the element \'STATEMENT\''
+
+[Crayon Syntax Highlighter Log Entry - 5:41:08 AM - 05 Apr 2021]
+
+ [CrayonUtil::lines()] 'Cannot read lines at \'/langs/go/statement.txt\'.'
+ [SYSTEM LOG] 'Parsing of \'/langs/go/go.txt\' failed, an (?alt) tag failed for the element \'STATEMENT\''
+
+[Crayon Syntax Highlighter Log Entry - 7:57:58 AM - 05 Apr 2021]
+
+ [CrayonUtil::lines()] 'Cannot read lines at \'/langs/go/statement.txt\'.'
+ [SYSTEM LOG] 'Parsing of \'/langs/go/go.txt\' failed, an (?alt) tag failed for the element \'STATEMENT\''
+
+[Crayon Syntax Highlighter Log Entry - 12:39:20 PM - 05 Apr 2021]
+
+ [CrayonUtil::lines()] 'Cannot read lines at \'/langs/go/statement.txt\'.'
+ [SYSTEM LOG] 'Parsing of \'/langs/go/go.txt\' failed, an (?alt) tag failed for the element \'STATEMENT\''
+
+[Crayon Syntax Highlighter Log Entry - 2:06:01 PM - 05 Apr 2021]
+
+ [CrayonUtil::lines()] 'Cannot read lines at \'/langs/go/statement.txt\'.'
+ [SYSTEM LOG] 'Parsing of \'/langs/go/go.txt\' failed, an (?alt) tag failed for the element \'STATEMENT\''
+
+[Crayon Syntax Highlighter Log Entry - 2:07:19 PM - 05 Apr 2021]
+
+ [CrayonUtil::lines()] 'Cannot read lines at \'/langs/go/statement.txt\'.'
+ [SYSTEM LOG] 'Parsing of \'/langs/go/go.txt\' failed, an (?alt) tag failed for the element \'STATEMENT\''
+
+[Crayon Syntax Highlighter Log Entry - 2:12:27 PM - 05 Apr 2021]
+
+ [CrayonUtil::lines()] 'Cannot read lines at \'/langs/go/statement.txt\'.'
+ [SYSTEM LOG] 'Parsing of \'/langs/go/go.txt\' failed, an (?alt) tag failed for the element \'STATEMENT\''
+
+[Crayon Syntax Highlighter Log Entry - 2:27:14 PM - 05 Apr 2021]
+
+ [CrayonUtil::lines()] 'Cannot read lines at \'/langs/go/statement.txt\'.'
+ [SYSTEM LOG] 'Parsing of \'/langs/go/go.txt\' failed, an (?alt) tag failed for the element \'STATEMENT\''
+
+[Crayon Syntax Highlighter Log Entry - 2:31:44 PM - 05 Apr 2021]
+
+ [CrayonUtil::lines()] 'Cannot read lines at \'/langs/go/statement.txt\'.'
+ [SYSTEM LOG] 'Parsing of \'/langs/go/go.txt\' failed, an (?alt) tag failed for the element \'STATEMENT\''
+
+[Crayon Syntax Highlighter Log Entry - 2:41:59 PM - 05 Apr 2021]
+
+ [CrayonUtil::lines()] 'Cannot read lines at \'/langs/go/statement.txt\'.'
+ [SYSTEM LOG] 'Parsing of \'/langs/go/go.txt\' failed, an (?alt) tag failed for the element \'STATEMENT\''
+
+[Crayon Syntax Highlighter Log Entry - 2:45:33 PM - 05 Apr 2021]
+
+ [CrayonUtil::lines()] 'Cannot read lines at \'/langs/go/statement.txt\'.'
+ [SYSTEM LOG] 'Parsing of \'/langs/go/go.txt\' failed, an (?alt) tag failed for the element \'STATEMENT\''
+
+[Crayon Syntax Highlighter Log Entry - 2:52:45 PM - 05 Apr 2021]
+
+ [CrayonUtil::lines()] 'Cannot read lines at \'/langs/go/statement.txt\'.'
+ [SYSTEM LOG] 'Parsing of \'/langs/go/go.txt\' failed, an (?alt) tag failed for the element \'STATEMENT\''
+
+[Crayon Syntax Highlighter Log Entry - 2:55:08 PM - 05 Apr 2021]
+
+ [CrayonUtil::lines()] 'Cannot read lines at \'/langs/go/statement.txt\'.'
+ [SYSTEM LOG] 'Parsing of \'/langs/go/go.txt\' failed, an (?alt) tag failed for the element \'STATEMENT\''
+
+[Crayon Syntax Highlighter Log Entry - 3:11:37 PM - 05 Apr 2021]
+
+ [CrayonUtil::lines()] 'Cannot read lines at \'/langs/go/statement.txt\'.'
+ [SYSTEM LOG] 'Parsing of \'/langs/go/go.txt\' failed, an (?alt) tag failed for the element \'STATEMENT\''
+
+[Crayon Syntax Highlighter Log Entry - 3:11:39 PM - 05 Apr 2021]
+
+ [CrayonUtil::lines()] 'Cannot read lines at \'/langs/go/statement.txt\'.'
+ [SYSTEM LOG] 'Parsing of \'/langs/go/go.txt\' failed, an (?alt) tag failed for the element \'STATEMENT\''
+
+[Crayon Syntax Highlighter Log Entry - 3:12:51 PM - 05 Apr 2021]
+
+ [CrayonUtil::lines()] 'Cannot read lines at \'/langs/go/statement.txt\'.'
+ [SYSTEM LOG] 'Parsing of \'/langs/go/go.txt\' failed, an (?alt) tag failed for the element \'STATEMENT\''
+
+[Crayon Syntax Highlighter Log Entry - 3:19:49 PM - 05 Apr 2021]
+
+ [CrayonUtil::lines()] 'Cannot read lines at \'/langs/go/statement.txt\'.'
+ [SYSTEM LOG] 'Parsing of \'/langs/go/go.txt\' failed, an (?alt) tag failed for the element \'STATEMENT\''
+
+[Crayon Syntax Highlighter Log Entry - 3:20:27 PM - 05 Apr 2021]
+
+ [CrayonUtil::lines()] 'Cannot read lines at \'/langs/go/statement.txt\'.'
+ [SYSTEM LOG] 'Parsing of \'/langs/go/go.txt\' failed, an (?alt) tag failed for the element \'STATEMENT\''
+
+[Crayon Syntax Highlighter Log Entry - 4:16:37 PM - 05 Apr 2021]
+
+ [CrayonUtil::lines()] 'Cannot read lines at \'/langs/go/statement.txt\'.'
+ [SYSTEM LOG] 'Parsing of \'/langs/go/go.txt\' failed, an (?alt) tag failed for the element \'STATEMENT\''
+
+[Crayon Syntax Highlighter Log Entry - 4:17:27 PM - 05 Apr 2021]
+
+ [CrayonUtil::lines()] 'Cannot read lines at \'/langs/go/statement.txt\'.'
+ [SYSTEM LOG] 'Parsing of \'/langs/go/go.txt\' failed, an (?alt) tag failed for the element \'STATEMENT\''
+
+[Crayon Syntax Highlighter Log Entry - 5:09:03 PM - 05 Apr 2021]
+
+ [CrayonUtil::lines()] 'Cannot read lines at \'/langs/go/statement.txt\'.'
+ [SYSTEM LOG] 'Parsing of \'/langs/go/go.txt\' failed, an (?alt) tag failed for the element \'STATEMENT\''
+
+[Crayon Syntax Highlighter Log Entry - 6:11:34 PM - 05 Apr 2021]
+
+ [CrayonUtil::lines()] 'Cannot read lines at \'/langs/go/statement.txt\'.'
+ [SYSTEM LOG] 'Parsing of \'/langs/go/go.txt\' failed, an (?alt) tag failed for the element \'STATEMENT\''
+
+[Crayon Syntax Highlighter Log Entry - 7:00:54 PM - 05 Apr 2021]
+
+ [CrayonUtil::lines()] 'Cannot read lines at \'/langs/go/statement.txt\'.'
+ [SYSTEM LOG] 'Parsing of \'/langs/go/go.txt\' failed, an (?alt) tag failed for the element \'STATEMENT\''
+
+[Crayon Syntax Highlighter Log Entry - 7:21:55 PM - 05 Apr 2021]
+
+ [CrayonUtil::lines()] 'Cannot read lines at \'/langs/go/statement.txt\'.'
+ [SYSTEM LOG] 'Parsing of \'/langs/go/go.txt\' failed, an (?alt) tag failed for the element \'STATEMENT\''
+
+[Crayon Syntax Highlighter Log Entry - 12:04:07 AM - 06 Apr 2021]
+
+ [CrayonUtil::lines()] 'Cannot read lines at \'/langs/go/statement.txt\'.'
+ [SYSTEM LOG] 'Parsing of \'/langs/go/go.txt\' failed, an (?alt) tag failed for the element \'STATEMENT\''
+
+[Crayon Syntax Highlighter Log Entry - 2:05:59 AM - 06 Apr 2021]
+
+ [CrayonUtil::lines()] 'Cannot read lines at \'/langs/go/statement.txt\'.'
+ [SYSTEM LOG] 'Parsing of \'/langs/go/go.txt\' failed, an (?alt) tag failed for the element \'STATEMENT\''

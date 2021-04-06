@@ -147,6 +147,9 @@ class Page{
    当前第1/453页 [首页] [上页] 1 2 3 4 5 6 7 8 9 10 [下页] [尾页] 
    */ 
    function subPageCss2(){  
+   if($this->pageNums <= $this->current_page){
+     $this->current_page = $this->pageNums;
+   }
    $subPageCss2Str="";  
    $subPageCss2Str.="共[".$this->nums."]条 当前第".$this->current_page."/".$this->pageNums."页";  
       

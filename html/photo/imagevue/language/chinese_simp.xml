@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang>
+	<image>图片</image>
+	<page>页</page>
+	<next_image>下一张</next_image>
+	<previous_image>上一张</previous_image>
+	<next_thumbnails>下一页</next_thumbnails>
+	<previous_thumbnails>上一页</previous_thumbnails>
+	<popup>在弹出窗口中打开</popup>
+	<window>在新窗口中打开</window>
+	<download>下载图片</download>
+	<zoomin>放大</zoomin>
+	<zoomout>缩小</zoomout>
+	<play>播放幻灯片</play>
+	<stop>停止幻灯片</stop>
+	<showimage>显示所有图片</showimage>
+	<showthumbnails>显示缩略图</showthumbnails>
+	<imageinfo>图片信息</imageinfo>
+	<mainmenu>主菜单</mainmenu>
+	<sendemail>发送邮件</sendemail>
+	<login>登录</login>
+	<logout>注销</logout>
+	<open>打开</open>
+	<copylocation>复制图片地址</copylocation>
+	<enterfullscreen>进入全屏模式</enterfullscreen>
+	<exitfullscreen>退出全屏模式</exitfullscreen>
+	<videofullscreen>全屏观看</videofullscreen>
+	<audio>声音</audio>
+	<volume>音量</volume>
+	<yourname>您的姓名</yourname>
+	<youremail>您的邮箱</youremail>
+	<yourfriendsemail>朋友的邮箱</yourfriendsemail>
+	<message>您的留言</message>
+	<send>发送</send>
+	<sent>发送成功</sent>
+	<contact>联系我们</contact>
+	<sendlink>发送链接</sendlink>
+	<purchase>购买</purchase>
+	<link>链接</link>
+	<sfx>开关效果音</sfx>
+</lang>

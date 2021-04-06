@@ -1,0 +1,67 @@
+<?php
+	$this->placeholder->set('currentPath', $this->file->getProperty('path'));
+	$this->placeholder->set('currentTitle', $this->file->getTitle());
+	$fileProperties = $this->file->getProperties();
+	$fileAttributes = $this->file->getAttributes();
+	$parentFolder = $this->file->getAncestor();
+?>
+
+<div id="navigation">
+	<a href="?<?php echo urlencode($parentFolder->getProperty('path')); ?>" title="返回缩略图">&laquo;</a><a href="?<?php echo urlencode($this->prevFile->getProperty('path')); ?>" title="上一张图片">&lsaquo;</a>
+	<span class="naviCount"><?php echo $this->current; ?>/<?php echo $this->count; ?></span>
+	<a href="?<?php echo urlencode($this->nextFile->getProperty('path')); ?>" title="下一张图片">&rsaquo;</a>
+</div>
+
+<table align="center" id="image">
+	<tr>
+		<td>
+			<a href="?<?php echo urlencode($this->nextFile->getProperty('path')); ?>" title="<?php echo $this->file->getTitle(); ?>">
+				<img src="<?php echo $this->file->getProperty('path'); ?>" alt="<?php echo $this->file->getTitle(); ?>" id="myimage" width="<?php echo $fileProperties['width']; ?>" height="<?php echo $fileProperties['height']; ?>" />
+			</a>
+			<div id="imagetext">
+				<h1 class="title">
+					<a href="<?php echo ($this->file->getProperty('path')); ?>" title="<?php echo $this->file->getTitle(); ?>">
+						<?php echo $this->file->getTitle(); ?>
+					</a>
+				</h1>
+				<?php if (!empty($fileAttributes['description'])): ?>
+					<h2 class="description">
+						<?php echo $fileAttributes['description']; ?>
+					</h2>
+				<?php endif; ?>
+				<div class="imageAttributes">
+					<table style="width: 100%">
+						<?php foreach ($fileAttributes as $key => $value): ?>
+							<?php if (!in_array($key, array('title', 'description')) && !empty($value)): ?>
+								<tr>
+									<td><?php echo ucfirst($key); ?></td>
+									<td><?php echo $value; ?></td>
+								</tr>
+							<?php endif; ?>
+						<?php endforeach; ?>
+					</table>
+				</div>
+				<div class="imageProperties">
+					<div class="filename"><?php echo $fileProperties['name']; ?></div>
+					<div class="date"><?php echo formatDate($fileProperties['date']); ?></div>
+					<div class="dimensions"><?php echo $fileProperties['width']; ?> x <?php echo $fileProperties['height']; ?></div>
+					<div class="filesize"><?php echo formatFilesize($fileProperties['size']); ?></div>
+				</div>
+				<?php $exifData = $this->file->getExifData(); ?>
+				<?php if (!empty($exifData)): ?>
+					<div class="exifData">
+						<div class="exif_heading">Exif 信息</div>
+						<table>
+							<?php foreach ($exifData as $key => $value): ?>
+								<tr>
+									<td><?php echo $key; ?></td>
+									<td><?php echo $value; ?></td>
+								</tr>
+							<?php endforeach; ?>
+						</table>
+					</div>
+				<?php endif; ?>
+			</div>
+		</td>
+	</tr>
+</table>

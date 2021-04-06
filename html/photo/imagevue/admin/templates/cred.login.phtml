@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<?php
+	$conf = &ivPool::get('conf');
+	$siteTitle = $conf->get('/config/imagevue/settings/sitetitle');
+?>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+		<title>Imagevue Admin <?php echo $siteTitle; ?></title>
+		<link href="admin/css/admin_stylesheet.css" rel="stylesheet" type="text/css" />
+	</head>
+	<body>
+		<div  class="header">
+			<h1>
+				<a href="index.php">Imagevue 管理</a> | <a href="../"><?php echo $siteTitle; ?></a>
+			</h1>
+		</div>     
+		<div class="infobar">
+			<?php foreach (ivMessenger::get('error') as $error): ?>
+				<div class="error"><?php echo $error; ?></div>
+			<?php
+				endforeach;
+				foreach (ivMessenger::get('notice') as $notice):
+			?>
+				<div class="notice"><?php echo $notice; ?></div>
+			<?php endforeach; ?> 
+		</div>
+		<div id="content">
+			<div id="user">
+			<?php if ($this->defaultUser): ?>
+				<form method="post" action="index.php?redirect=<?php echo urlencode('index.php?c=user'); ?>">
+			<?php else: ?>
+				<form method="post" action="">
+			<?php endif; ?>
+					<table class="usertable" border="0" cellspacing="0" cellpadding="0">
+						<tr><td colspan="2" class="text captions">登录</td></tr>
+						<tr>
+							<td class="text right">用户名</td>
+							<td class="text">
+								<input name="login" type="text" class="mytext" id="textfield" />
+							</td>
+						</tr>
+						<tr class="odd">
+							<td class="text right">密码</td>
+							<td class="text">
+								<input type="password" name="password" id="textfield2" class="mytext" />
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2" class="text">
+								<label>
+									<input type="checkbox" name="rememberme" id="checkbox" />
+									记住我的登录状态
+								</label>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2" class="captions">
+								<input type="submit" class="mysubmit" value="登 录" style="padding: 2px 4px 2px 4px; margin: 5px 10px 5px 10px; float: right;" />
+							</td>
+						</tr>
+					</table>
+				</form>
+			</div>
+		</div>
+	</body>
+</html>

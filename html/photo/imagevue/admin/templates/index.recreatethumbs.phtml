@@ -1,0 +1,43 @@
+<div id="content">
+	<div id="leftcontent">
+		<!-- folderList -->
+		<?php foreach ($this->flatFolderTree as $folder): ?>
+			<h1><?php echo($folder['folder']->getProperty('path')); ?></h1>
+			<?php foreach ($folder['folder']->getFiles() as $item): ?>
+				<?php if (is_a($item, 'ivFileImage')): ?>
+					<?php if ($this->missingOnly && substr($item->getThumbRelativePath(), 0, strlen($this->contentPath)) === $this->contentPath) {continue;} ?>
+					<div class="thumbitem">
+						<table style="width: 100%">
+							<tr>
+								<td>
+									<a href="?c=file&amp;path=<?php echo urlencode($item->getProperty('path')); ?>">
+										<img src="index.php?c=file&amp;a=getthumb&amp;path=<?php echo ivPath::canonizeRelative($item->getProperty('path'), true); ?>" class="thumb" alt="" />
+									</a>
+								</td>
+								<td style="width: 100%">
+									<div class="info">
+										<div class="title">
+											<a href="?c=file&amp;path=<?php echo urlencode($item->getProperty('path')); ?>"><?php echo $item->getTitle(); ?></a>
+										</div>
+										<div class="filename"><a href="?c=file&amp;path=<?php echo urlencode($item->getProperty('path')); ?>"><?php echo $item->getProperty('name'); ?></a></div>
+										<div class="attributes">
+											<div><?php echo $item->getAttribute('description'); ?></div>
+										</div>
+										<div class="attributes properties">
+											<div><?php echo formatDate($item->getProperty('date')); ?></div>
+											<?php if ($item->getProperty('width') && $item->getProperty('height')): ?>
+												<div><?php echo $item->getProperty('width'); ?>x<?php echo $item->getProperty('height'); ?></div>
+											<?php endif; ?>
+											<div><?php echo formatFilesize($item->getProperty('size')); ?></div>
+										</div>
+									</div>
+								</td>
+							</tr>
+						</table>
+					</div>
+				<?php endif; ?>
+			<?php endforeach; ?>
+		<?php endforeach; ?>
+		<!-- /folderList -->
+	</div>
+</div>

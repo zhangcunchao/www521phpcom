@@ -1,0 +1,119 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta name="viewport" content="width=640" />
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+		<title>Site map [<?php echo $this->siteTitle; ?>]</title>
+		<link href="<?php echo IV_PATH; ?>css/dtree.css" rel="stylesheet" type="text/css" />
+		<link href="<?php echo IV_PATH; ?>css/htmlstyle.css" rel="stylesheet" type="text/css" />
+		<link href="<?php echo IV_PATH; ?>css/htmlstyle.css" rel="stylesheet" type="text/css" />
+		<link media="only screen and (max-device-width: 480px)" href="<?php echo IV_PATH; ?>css/forIphone.css" type="text/css" rel="stylesheet" />
+		<?php if (!empty($_COOKIE['stylesheet'])): ?>
+			<link href="<?php echo IV_PATH; ?>css/<?php echo $_COOKIE['stylesheet']; ?>" rel="stylesheet" type="text/css" />
+		<?php endif; ?>
+		<link href="<?php echo IV_PATH; ?>css/forAdmin.css" rel="stylesheet" type="text/css" />
+		<script type="text/javascript" src="<?php echo IV_PATH; ?>javascript/dtree.js"></script>
+		<script type="text/javascript" src="<?php echo IV_PATH; ?>javascript/prototype.js"></script>
+		<script type='text/javascript' src='<?php echo IV_PATH; ?>lightbox/js/scriptaculous.js?load=effects,builder'></script>
+		<script type="text/javascript" src="<?php echo IV_PATH; ?>lightbox/js/lightbox.js"></script>
+		<link rel="stylesheet" href="<?php echo IV_PATH; ?>lightbox/css/lightbox.css" type="text/css" media="screen" />
+	</head>
+	<body>
+		<?php if (ivAcl::isAdmin()): ?>
+			<!-- #forAdmin -->	
+			<div id="forAdmin">
+				<div class="right"><?php echo htmlspecialchars(ivAuth::getCurrentUserLogin()) ?>
+					<a href="imagevue/?c=cred&amp;a=logout" title="注销并关闭管理工具栏">关闭 &raquo;</a>
+				</div>
+				<a href="imagevue/" title="Gallery Admin / File Management">Gallery Admin &raquo;</a> 
+				<a href="imagevue/?c=config" title="更改 <?php echo $this->siteTitle; ?> 设置">设置 &raquo;</a> 
+				<!-- <a href="?a=index">API Reference &raquo;</a>  -->
+			</div>
+			<!-- /forAdmin -->
+		<?php endif; ?>
+
+		<!-- #header -->
+		<div id="header"><?php echo $this->siteTitle; ?></div>
+		<!-- /header -->
+
+		<!-- #subheader -->
+		<div id="subheader">
+
+			<div id="flashlink">
+				<a href="?p=gallery" title="Flash 相册">Flash 相册</a>
+				|
+				<a href="?p=html" title="HTML 相册">HTML 相册</a>
+			</div>
+
+			<div id="menu">
+				<div>
+					<img src="imagevue/images/plus_icon.png" alt="" class="openMenu"/>
+				</div>
+				<!-- JSTREE STARTS HERE -->
+				<?php echo $this->placeholder->get('tree'); ?>
+				<!-- JSTREE ENDS HERE -->
+			</div>
+
+			<div class="clrFlt"></div>
+		</div>
+		<!-- /subheader -->
+
+		<div id="content">
+			<div class="textPage">
+				<h1><?php echo $this->siteTitle?> 站点地图</h1>
+				<ul>
+					<li>
+						<h2>Content</h2>
+						<?php if (count($this->flatFolderTree)): ?>
+							<?php $oldDepth = 0; ?>
+							<?php foreach ($this->flatFolderTree as $item): ?>
+								<?php $folder = $item['folder']; ?>
+								<?php if ($oldDepth < $item['depth']): ?>
+									<ul>
+										<li>
+								<?php elseif ($oldDepth > $item['depth']): ?>
+									<?php for ($i = 0; $i < $oldDepth - $item['depth']; $i++): ?>
+											</li>
+										</ul>
+									<?php endfor; ?>
+									</li>
+									<li>
+								<?php else: ?>
+									</li>
+									<li>
+								<?php endif; ?>
+									<h2>
+										<a href="<?php echo ($folder->isLink() ? $folder->getAttribute('pageContent') : '?' .  urlencode($folder->getProperty('path'))); ?>" title="<?php echo htmlspecialchars($folder->getAttribute('description')); ?>">
+											<?php echo htmlspecialchars($folder->getTitle()); ?>
+										</a>
+									</h2>
+								<?php $oldDepth = $item['depth']; ?>
+								<?php if (!$folder->isPage() && !$folder->isLink()): ?>
+									<?php $files = $folder->getFiles() ?>
+									<?php if (count($files)): ?>
+										<ul>
+											<?php foreach ($files as $file): ?>
+												<li>
+													<h3>
+														<a href="?#/<?php echo urlencode($file->getProperty('path')); ?>/" title="<?php echo htmlspecialchars($file->getAttribute('description')); ?>">
+															<?php echo htmlspecialchars($file->getTitle()); ?>
+														</a>
+													</h3>
+												</li>
+											<?php endforeach; ?>
+										</ul>
+									<?php endif; ?>
+								<?php endif; ?>
+							<?php endforeach; ?>
+							<?php for ($i = 0; $i < $oldDepth; $i++): ?>
+									</li>
+								</ul>
+							<?php endfor; ?>
+						<?php endif; ?>
+					</li>
+				</ul>               
+			</div>
+		</div>
+	</body>
+</html>

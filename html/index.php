@@ -9,8 +9,8 @@ define('WP_USE_THEMES', true);
 		require('./wp-blog-header.php');
 	}
 }*/
-if('/'==$_SERVER['REQUEST_URI']){
-	include 'wailian/add.php';
-}
+//if('/'==$_SERVER['REQUEST_URI']){
+//	include 'wailian/add.php';
+//}
 require('./wp-blog-header.php');
 ?>

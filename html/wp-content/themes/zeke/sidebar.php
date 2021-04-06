@@ -5,11 +5,11 @@
                 <div class="sidebar_b_main">
                 	<div class="sid_ify">
                     	<div class="sid_ify_bg">
-                            <H3>本站公告</H3>
+                            <H3>橱窗</H3>
                         </div>
                     </div>
                     <div class="sid_body"><div><img src="http://www.521php.com/wp-content/themes/zeke/fly.gif" width="200" height="180" /></div>
-					<p style="text-align:left; font-size:12px;">哥的代码论斤卖！！！<br /><script>document.write('<a href="http://www.521php.com/payme/" target="_blank"><img src="/wp-content/themes/zeke/btn-index.png" height="40" /></a>');</script> <img src="/wp-content/themes/zeke/gx.gif" height="40" />			
+					<p style="text-align:left; font-size:12px;">哥的代码论斤卖！！！<br /><!--<script>document.write('<a href="http://www.521php.com/payme/" target="_blank"><img src="/wp-content/themes/zeke/btn-index.png" height="40" /></a>');</script> <img src="/wp-content/themes/zeke/gx.gif" height="40" />-->			
 					</p>
                     </div>
                 </div>
@@ -188,7 +188,9 @@ echo $output;
                     </div>
                     <div class="sid_body">
                     	<ul class="sid_link_text leftli">
-                        <?php get_links('2', '<li>', '</li>', '<br />', FALSE, 'rand', FALSE, FALSE, -1, FALSE , TRUE,'/wailian/index.php/reto/url/'); ?>
+                        <?php //get_links('2', '<li>', '</li>', '<br />', FALSE, 'rand', FALSE, FALSE, -1, FALSE , TRUE,'/wailian/index.php/reto/url/');
+get_links('2', '<li>', '</li>', '<br />', FALSE, 'rand', FALSE, FALSE, -1, FALSE , TRUE);
+ ?>
                       </ul>
                     </div>
                 </div>

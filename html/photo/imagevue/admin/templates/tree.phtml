@@ -1,0 +1,54 @@
+<div class="tree">
+	<div class="control" id="menuicon">
+	<div class="hiddenmenu">
+		<div style="white-space: nowrap">
+			<script type="text/javascript">
+			//<![CDATA[
+				d = new dTree('d');
+				d.icon = {
+					root: 'images/dtree/base.gif',
+					folder: 'images/dtree/folder.gif',
+					folderOpen: 'images/dtree/folderopen.gif',
+					node: 'images/dtree/page.gif',
+					empty: 'images/dtree/empty.gif',
+					line: 'images/dtree/line.gif',
+					join: 'images/dtree/join.gif',
+					joinBottom: 'images/dtree/joinbottom.gif',
+					plus: 'images/dtree/plus.gif',
+					plusBottom: 'images/dtree/plusbottom.gif',
+					minus: 'images/dtree/minus.gif',
+					minusBottom: 'images/dtree/minusbottom.gif',
+					nlPlus: 'images/dtree/nolines_plus.gif',
+					nlMinus: 'images/dtree/nolines_minus.gif'
+				};
+				d.config.inOrder = true;
+				<?php $id = 0; ?>
+				<?php $stack = array(); ?>
+				<?php $prevDepth = -1; ?>
+				<?php $parentId = -1; ?>
+				<?php foreach ($this->flatFolderTree as $folderNode): ?>
+					<?php
+						if ($prevDepth < $folderNode['depth']) {
+							array_push($stack, $parentId);
+							$parentId = $id - 1;
+						} elseif ($prevDepth > $folderNode['depth']) {
+							for ($i = 0; $i < ($prevDepth - $folderNode['depth']); $i++) {
+								$parentId = array_pop($stack);
+							}
+						}
+					?>
+					d.add(<?php echo $id++; ?>,<?php echo $parentId; ?>,"<span class='text'><span class='title'><?php echo htmlspecialchars($folderNode['folder']->getTitle()); ?><\/span><?php if (!$folderNode['folder']->isPage() && !$folderNode['folder']->isLink()): ?><span class='number'>(<?php echo $folderNode['folder']->getFileCount(); ?>)<\/span><?php endif; ?><\/span>","?path=<?php echo $folderNode['folder']->getProperty('path'); ?>","<?php echo htmlspecialchars($folderNode['folder']->isPage() || $folderNode['folder']->isLink() ? $folderNode['folder']->getTitle() : $folderNode['folder']->getAttribute('description')); ?>",''<?php echo ($folderNode['folder']->isPage() ? ',"images/dtree/page.gif","images/dtree/page.gif"' : ($folderNode['folder']->isLink() ? ',"images/dtree/link.gif","images/dtree/link.gif"' : ($folderNode['folder']->isHidden() ? ',"images/dtree/folderhidden.gif","images/dtree/folderopenhidden.gif"' : ',"images/dtree/folder.gif","images/dtree/folderopen.gif"'))); ?>);
+					<?php if ($this->path === $folderNode['folder']->getProperty('path')): ?>
+						<?php $selectedId = $id - 1; ?>
+					<?php endif; ?>
+					<?php $prevDepth = $folderNode['depth']; ?>
+				<?php endforeach; ?>
+				<?php unset($stack); ?>
+				document.write(d);
+				<?php echo (isset($selectedId) ? "d.s($selectedId);\n" : ''); ?>
+			//]]>
+			</script>
+		</div>
+	</div>
+	</div>
+</div>

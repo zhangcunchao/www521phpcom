@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+		<link href="<?php echo IV_PATH; ?>css/htmlstyle.css" rel="stylesheet" type="text/css" />
+		<link href="<?php echo IV_PATH; ?>css/forAdmin.css" rel="stylesheet" type="text/css" />
+		<title>Imagevue XML API</title>
+		<style type="text/css">
+			body { margin: 0 0 40px 0;}
+			table { margin: 0 0 0 40px; }
+			td { vertical-align: top; text-align: left; padding: 5px 10px 5px 0; }
+			h1 { font-weight: normal; font-size: 200%; margin: auto 40px}
+			h2 { font-weight: normal; font-size: 150%; }
+		</style>
+	</head>
+	<body>
+		<!-- #forAdmin -->
+		<div id="forAdmin">
+			 2.1.4.1<a href="http://anonym.to/?http://www.imagevuex.com" title="www.imagevuex.com">Imagevue X2</a>
+			
+			
+			<a href="?p=gallery">FLASH 版本 &raquo;</a>
+			<a href="?p=html">HTML 版本 &raquo;</a> 
+		</div>
+		<!-- /forAdmin -->
+		<h1>Imagevue API 参考</h1>
+		<table>
+			<?php foreach ($this->actions as $controllerName => $methods): ?>
+				<tr>
+					<td><h2><?php echo $controllerName; ?>&nbsp;控制者</h2></th>
+					<td>&nbsp;</td>
+				</tr>
+				<?php foreach ($methods as $methodName => $methodDesc): ?>
+					<tr>
+						<td><a href="?a=<?php echo $methodName; ?>">?a=<?php echo $methodName; ?></a></td>
+						<td><?php echo nl2br(htmlspecialchars($methodDesc)); ?></td>
+					</tr>
+				<?php endforeach; ?>
+			<?php endforeach; ?>
+		</table>
+	</body>
+</html>

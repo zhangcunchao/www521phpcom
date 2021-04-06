@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This is the default THEME settings file with descriptions and attributes. You should not edit the file manually - Any changes should be done throguh the admin, which is saved in a specific USERtheme file-->
+<config>
+	<imagevue>
+		<style>
+			<stylesheet type="string" description="设置加载到相册的CSS样式表">imagevue.css</stylesheet>
+			<background_color type="color" description="设置默认的背景色与前景色形成对比">222222</background_color>
+			<foreground_color type="color" description="设置默认的前景色与背景色形成对比">EEEEEE</foreground_color>
+			<custom_color type="color" description="自定义设置其他选项颜色">000000</custom_color>
+			<background_image>
+				<enabled type="boolean" description="启用或关闭背景图片">true</enabled>
+				<url type="file" description="设置自定义背景图片">background.gif</url>
+				<align type="enum" description="设置背景对齐方式，TL左上,T上,TR右上,R右,BR右下,B下,BL左下,L左,M居中" options="TL,T,TR,R,BR,B,BL,L,M">TL</align>
+				<repeat type="enum" description="设置背景图片重复方式" options="repeat,repeat-x,repeat-y,no-repeat">repeat-x</repeat>
+				<scalemode type="enum" description="设置背景图片的缩放模式，仅当使用背景无重复方式时起效" options="noScale,noBorder,exactFit,showAll">noScale</scalemode>
+			</background_image>
+			<globalshadow description="设置主题全局的阴影效果">
+				<enabled type="boolean" description="柔和的阴影或发光效果">true</enabled>
+				
+				<color type="color" description="设置深色背景浅色前景或者浅色背景深色前景的阴影和发光颜色">000000</color>
+				<alpha type="integer" description="设置阴影或发光的透明度" range="0,100">100</alpha>
+				<distance type="integer" description="设置阴影和发光的偏移距离，0为软和而均衡的效果" range="0,100">0</distance>
+				<angle type="integer" description="设置阴影方向的角度" range="0,360">45</angle>
+				<strength type="integer" range="0,100" description="设置阴影和发光的强度">50</strength>
+				<blur type="integer" range="0,20" description="设置阴影和发光的模糊度">10</blur>
+				<quality type="integer" range="1,3" description="设置阴影和发光效果的品质">3</quality>
+			</globalshadow>
+		</style>
+		<controls>
+			<maincontrols>
+				<button>
+					<background_color type="color" description="设置控制按钮的背景色">custom_color</background_color>
+					<foreground_color type="color" description="设置控制按钮的前景色">foreground_color</foreground_color>
+					<width type="integer" description="设置控制按钮的宽度" range="0,200">50</width>
+					<height type="integer" description="设置控制按钮的高度" range="0,200">35</height>
+					<opacity type="integer" description="设置控制按钮的透明度" range="0,100">50</opacity>
+					<opacity_rollover type="integer" description="设置控制按钮滚动时的透明度" range="0,100">100</opacity_rollover>
+					<opacity_press type="integer" description="设置控制按钮点击时的透明度" range="0,100">75</opacity_press>
+				</button>
+			</maincontrols>
+			<largecontrols>
+				<color type="color" description="设置大按钮的颜色">custom_color</color>
+				<size type="integer" description="设置大按钮的尺寸">45</size>
+			</largecontrols>
+		</controls>
+		<audioplayer>
+			<color type="color" description="设置音乐播放器的文本颜色">BBBBBB</color>
+			<backcolor type="color" description="设置音乐播放器的背景颜色">background_color</backcolor>
+			<width type="integer" description="设置音乐播放器的宽度" range="200,400">240</width>
+		</audioplayer>
+		<image>
+			<imagebuttons>
+				<color type="color" description="设置按钮前景色">custom_color</color>
+				<iconcolor type="color" description="设置图标前景色">foreground_color</iconcolor>
+				<width type="integer" description="设置按钮宽度（像素）" range="10,50">40</width>
+				<height type="integer" description="设置按钮高度（像素）" range="10,50">35</height>
+				<space type="integer" description="设置按钮间距（像素）" range="0,10">1</space>
+				<alpha type="integer" description="设置按钮的透明度" range="0,100">80</alpha>
+				<alpharollover type="integer" description="设置按钮滚动时的透明度" range="0,100">100</alpharollover>
+				<shadow type="boolean" description="设置是否为图片按钮启用阴影或发光效果">true</shadow>
+			</imagebuttons>
+			<closebutton>
+				<iconcolor type="color" description="设置'close'图标的颜色. 请确定它和图片框架的颜色不同">666666</iconcolor>
+			</closebutton>
+			<frame>
+				<enabled type="boolean" description="设置是否启用图片四周整体框架">true</enabled>
+				<width type="integer" description="设置图片框架的宽度" range="0,100">10</width>
+				<color type="color" description="设置图片框架的颜色">FFFFFF</color>
+				<shadow type="boolean" description="设置是否为框架启用柔和阴影或发光效果">true</shadow>
+				<frameborder>
+					<enabled type="boolean" description="设置框架是否使用边框">false</enabled>
+					<borderwidth type="integer" range="0,100" description="设置边框的宽度">1</borderwidth>
+					<color type="color" description="设置边框的颜色">custom_color</color>
+				</frameborder>
+			</frame>
+			<text>
+				<text1>
+					<padding type="integer" description="设置文本周围的填充空间" range="0,100">9</padding>
+					<offset_x type="integer" description="设置文本横向偏移量">3</offset_x>
+					<offset_y type="integer" description="设置文本纵向偏移量">0</offset_y>
+					<background_color type="color" description="设置文本背景颜色">background_color</background_color>
+					<background_opacity type="integer" description="设置背景透明度">0</background_opacity>
+					<background_shadow type="boolean" description="设置是否开启背景阴影">false</background_shadow>
+				</text1>
+				<text2>
+					<padding type="integer" description="设置文本周围的填充空间" range="0,100">20</padding>
+					<offset_x type="integer" description="设置文本横向偏移量">0</offset_x>
+					<offset_y type="integer" description="设置文本纵向偏移量">70</offset_y>
+					<background_color type="color" description="设置文本背景颜色">FFFFFF</background_color>
+					<background_opacity type="integer" description="设置背景透明度">80</background_opacity>
+					<background_shadow type="boolean" description="设置是否开启背景阴影">false</background_shadow>
+				</text2>
+				<text3>
+					<padding type="integer" description="设置文本周围的填充空间" range="0,100">10</padding>
+					<offset_x type="integer" description="设置文本横向偏移量">0</offset_x>
+					<offset_y type="integer" description="设置文本纵向偏移量">70</offset_y>
+					<background_color type="color" description="设置文本背景颜色">FFFFFF</background_color>
+					<background_opacity type="integer" description="设置背景透明度">80</background_opacity>
+					<background_shadow type="boolean" description="设置是否开启背景阴影">false</background_shadow>
+				</text3>
+			</text>
+			<transition>
+				<static_trans type="array" description="设置相同尺寸图片之间的过渡效果" options="motionmove,motionmask,blockmask,tint,white,fade">fade</static_trans>
+				<resize_trans type="array" description="设置不同尺寸图片之间的过渡效果" options="tint,white">tint</resize_trans>
+				<trans_speed type="integer" description="设置两幅图片之间过渡效果的速度，2=非常快 30=非常慢" range="2,30">10</trans_speed>
+				<frame_trans type="boolean" description="是否启用动态过渡">true</frame_trans>
+				<frame_trans_speed type="integer" description="设置两幅图片之间动态过渡的速度 2=非常快 30=非常慢" range="2,30">3</frame_trans_speed>
+			</transition>
+		</image>
+		<thumbnails>
+			<thumbnails>
+				<frame>
+					<width type="integer" description="设置缩略图框架的宽度" range="0,20">1</width>
+					<space type="integer" description="设置缩略图之间的距离" range="0,50">3</space>
+					<color type="color" description="设置缩略图框架的颜色">777777</color>
+				</frame>
+				<thumbnail>
+					<active_scale type="integer" description="设置鼠标滑过缩略图时的大小百分比（%）" range="80,300">115</active_scale>
+					<opacity type="integer" description="设置缩略图不透明度的百分比（%）" range="0,100">100</opacity>
+					<active_opacity type="integer" description="设置鼠标滑过缩略图时透明度百分比（%）" range="0,100">100</active_opacity>
+					<shadow type="boolean" description="设置是否为缩略图启用柔和阴影或发光效果">false</shadow>
+				</thumbnail>
+				<thumbnails>
+					<thumbnailsarea_alpha type="integer" description="设置缩略图列表区域透明度" range="0,100">0</thumbnailsarea_alpha>
+				</thumbnails>
+			</thumbnails>
+			<thumbnailscroller>
+				<start_scale type="integer" description="设置缩略图滚动条默认缩放百分比" range="25,100">50</start_scale>
+				<active_scale type="integer" description="设置鼠标经过缩略图时的缩放百分比" range="50,400">100</active_scale>
+				<start_brightness type="integer" description="设置鼠标未活动时的缩略图亮度" range="0,100">30</start_brightness>
+				<active_brightness type="integer" description="设置鼠标活动时的缩略图亮度" range="0,100">100</active_brightness>
+				<space type="integer" description="设置缩略图滚动条中缩略图的间距" range="0,50">10</space>
+				<frame_width type="integer" description="设置缩略图滚动条中缩略图框架的宽度" range="0,50">1</frame_width>
+				<frame_color type="color" description="设置缩略图滚动条中缩略图框架的颜色">000000</frame_color>
+				<frame_color_active type="color" description="设置当前图像的框架颜色">FFFFFF</frame_color_active>
+				<back_color type="color" description="设置缩略图滚动条的背景颜色">000000</back_color>
+				<alpha type="integer" description="设置缩略图未激活时的透明度" range="0,100">100</alpha>
+				<alpha_active type="integer" description="设置鼠标激活的缩略图的透明度" range="0,100">100</alpha_active>
+				<back_alpha type="integer" description="设置缩略图滚动条的背景透明度" range="0,100">25</back_alpha>
+				<back_alpha_active type="integer" description="设置缩略图滚动条激活时的背景透明度" range="0,100">100</back_alpha_active>
+				<scrollbar_height type="integer" description="设置缩略图滚动条的高度" range="0,30">8</scrollbar_height>
+			</thumbnailscroller>
+			<tooltip>
+				<shadow type="boolean" description="设置是否为消息框启用柔和阴影或发光效果">true</shadow>
+				<color type="color" description="设置提示框的背景颜色">custom_color</color>
+				<maxwidth type="integer" description="设置提示信息的最大宽度" range="0,800">200</maxwidth>
+			</tooltip>
+		</thumbnails>
+		<textpage>
+			<width type="integer" description="设置文字内容的宽度" range="100,1000">500</width>
+			<margin type="integer" description="设置文本页与屏幕得垂直间距">60</margin>
+			<padding type="integer" description="设置文字内容与背景之间的间距" range="0,100">30</padding>
+			<background>
+				<color type="color" description="设置文本页的背景颜色">custom_color</color>
+				<opacity type="integer" description="设置文本页的背景透明度" range="0,100">50</opacity>
+				<shadow type="boolean" description="设置是否为文本页背景启用阴影效果">true</shadow>
+				<scrollbar_color type="color" description="设置文本页滚动条的颜色">custom_color</scrollbar_color>
+			</background>
+		</textpage>
+		<menu>
+			<mainmenu>
+				<indent type="integer" description="设置子菜单的缩进量，不同的子菜单风格设置稍微有些不同" range="0,100">50</indent>
+				<horizontal_margin type="integer" description="设置菜单与舞台左边的水平距离" range="0,200">20</horizontal_margin>
+				<vertical_margin type="integer" description="设置菜单与舞台顶边的垂直距离" range="0,200">20</vertical_margin>
+				<menubutton_height type="integer" description="设置菜单折叠时的初始高度" range="0,200">50</menubutton_height>
+				<menuitem>
+					<color type="color" description="设置菜单按钮的背景颜色">custom_color</color>
+					<space type="integer" description="设置主菜单按钮之间的距离" range="0,100">1</space>
+					<opacity type="integer" description="设置按钮背景的透明度" range="0,100">35</opacity>
+					<opacity_rollover type="integer" description="设置鼠标滑过时的按钮背景透明度" range="0,100">70</opacity_rollover>
+					<opacity_active type="integer" description="设置活动页或文件夹的按钮背景透明度" range="0,100">100</opacity_active>
+					<horizontal_textmargin type="integer" description="设置按钮文本和按钮边缘的水平间距" range="0,100">20</horizontal_textmargin>
+					<vertical_textmargin type="integer" description="设置按钮文本和按钮边缘的垂直间距" range="0,100">10</vertical_textmargin>
+					<minimum_width type="integer" description="设置每个按钮的最小宽度" range="0,500">200</minimum_width>
+					<shadow>
+						<enabled type="boolean" description="设置是否为菜单启用柔和阴影或发光效果">false</enabled>
+						<color type="color" description="设置阴影或发光的颜色">000000</color>
+						<strength type="integer" range="0,1" description="设置阴影或发光的浓度">.5</strength>
+						<blur type="integer" range="0,20" description="设置阴影或发光的模糊程度">5</blur>
+						<quality type="integer" range="1,3" description="设置阴影或模糊特效的品质">3</quality>
+					</shadow>
+				</menuitem>
+				<menuback>
+					<hide_width type="integer" description="设置隐藏模式下菜单显示多少" range="0,200">50</hide_width>
+					<opacity type="integer" description="设置隐藏模式下菜单背景的透明度" range="0,100">60</opacity>
+					<opacity_rollover type="integer" description="设置激活中菜单的透明度" range="0,100">30</opacity_rollover>
+					<color type="color" description="设置菜单背景颜色">custom_color</color>
+					<color_active type="color" description="设置激活中的菜单背景颜色">CCFF00</color_active>
+				</menuback>
+				<folderdescription>
+					<shadow type="boolean" description="是否开启阴影效果">true</shadow>
+					<maxwidth type="integer" description="文字提示最大宽度" range="0,800">250</maxwidth>
+					<padding type="integer" description="设置消息框边缘和内部文字的间距" range="0,100">20</padding>
+				</folderdescription>
+			</mainmenu>
+		</menu>
+		<modules>
+			<hotspot>
+				<color type="color" description="设置热点的颜色">foreground_color</color>
+				<opacity type="integer" description="设置热点的透明度" range="0,100">60</opacity>
+				<opacity_rollover type="integer" description="设置滚动热点的透明度" range="0,100">100</opacity_rollover>
+			</hotspot>
+		</modules>
+	</imagevue>
+</config>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Translation by S.Galestien (www.thebbqking.eu)-->
+<lang>
+   <image>Foto</image>
+   <page>Pagina</page>
+   <next_image>Volgende Foto</next_image>
+   <previous_image>Vorige Foto</previous_image>
+   <next_thumbnails>Volgende Pagina</next_thumbnails>
+   <previous_thumbnails>Vorige Pagina</previous_thumbnails>
+   <popup>Open in Popup Scherm</popup>
+   <window>Open in Scherm</window>
+   <download>Download Foto</download>
+   <zoomin>Vergroot</zoomin>
+   <zoomout>Verklein</zoomout>
+   <play>Toon Diashow</play>
+   <stop>Stop Diashow</stop>
+   <showimage>Toon Foto</showimage>
+   <showthumbnails>Toon Thumbnails</showthumbnails>
+   <imageinfo>Foto Beschrijving</imageinfo>
+   <mainmenu>Galerie Menu</mainmenu>
+   <sendemail>Verstuur Foto</sendemail>
+   <login>Login</login>
+   <logout>Log uit</logout>
+   <open>Open</open>
+   <copylocation>Kopieer Foto Locatie</copylocation>
+   <enterfullscreen>Volledige Schermmodus</enterfullscreen>
+   <exitfullscreen>Sluit Volledige Schermmodus</exitfullscreen>
+   <audio>Audio</audio>
+   <volume>Volume</volume>
+</lang>

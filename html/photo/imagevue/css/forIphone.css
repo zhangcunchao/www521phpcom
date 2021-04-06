@@ -1,0 +1,10 @@
+*, .dtree, #image #imagetext .description{ font-size: 20px; line-height: 20px; }
+.dtree { line-height: 30px; font-size: 30px;}
+#header { font-size: 30px; padding: 10px;}
+#subheader { padding: 5px 10px;}
+	#subheader .crumbs { padding: 5px 0 0 0;}
+	#flashlink { display: none;}
+#content { padding: 0;}
+#navigation { position: absolute; top:0; right: 10px; }
+#navigation a { font-size: 30px; }
+#menu img { width: 40px; height: 40px;}

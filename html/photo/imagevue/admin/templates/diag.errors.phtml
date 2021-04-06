@@ -1,0 +1,83 @@
+<div id="content">
+	<div id="rightmenu">
+		<div class="box">
+			<div id="diagnostic_page" class="heading ivrm">诊断页面</div>
+			<div class="content actions">
+				<a class="myicon" href="index.php?c=diag&amp;a=index">文件系统诊断页</a>
+				<a class="myicon" href="index.php?c=diag&amp;a=apachemod#error">Apache模块诊断页</a>
+				<a class="myicon" href="index.php?c=diag&amp;a=phpinfo">PHP信息</a>
+			</div>
+		</div>
+	</div>
+
+	<div id="leftcontent">
+		<table class='diagnostics'>
+			<?php if (SUHOSIN_INSTALLED): ?>
+				<tr>
+					<td><img src="images/admin/icon_error.gif" alt="" /></td>
+					<td><a name="suhosin"></a>suhosin</td>
+					<td>真是不幸，'hardened php' 出了一些问题.您可能需要禁用它。
+						<a href="http://anonym.to/?http://imagevuex.com/forum/viewtopic.php?p=13808#13808">相关信息请访问 imagevuex.com</a>
+					</td>
+				</tr>
+			<?php endif; ?>
+			<tr>
+				<td><img src="<?php echo (version_compare('4.3.0', phpversion()) > 0 ? 'images/admin/icon_error.gif' : 'images/admin/icon_ok.gif'); ?>" alt="" /></td>
+				<td>php&nbsp;version&nbsp;<?php echo phpversion(); ?></td>
+				<td><p>
+					Imagevue X2系统需要运行在PHP ver.4.3.0以上版本的服务器上。 PHP是一种在大多数服务器上运行的服务器端脚本，如果你不能确定其准确信息，请您检测服务器环境。
+					</p><p><a href="http://en.wikipedia.org/wiki/PHP" target="_blank">http://en.wikipedia.org/wiki/PHP</a></p>
+				</td>
+			</tr>
+			<tr>
+				<td><img src="<?php echo (XML_INSTALLED ? 'images/admin/icon_ok.gif' : 'images/admin/icon_error.gif'); ?>" alt="" /></td>
+				<td><a name="xml"></a>XML parser</td>
+				<td><p>
+					XML Parser 是PHP扩展组件，对Imagevue X2需要执行的Imagevue脚本做解释编译。Imagevue与XML交换、存储数据，所以这是Imagevue X2运行的关键。这个扩展组件通常是与PHP一同部署在服务器上的。</p>
+					<p><a href="http://php.net/manual/en/intro.xml.php" target="_blank">http://php.net/manual/en/intro.xml.php</a></p>
+				</td>
+			</tr>
+			<tr>
+				<td><img src="<?php echo (GD_INSTALLED ? 'images/admin/icon_ok.gif' : 'images/admin/icon_notice.gif'); ?>" alt="" /></td>
+				<td><a name="gd"></a>GD 2</td>
+				<td><p>
+					GD 是PHP扩展组件，Imagevue通过调用GD组件生产需的缩略图图像。如果你的服务器没有启用此扩展组件，你仍然可以运行Imagevue X2，但是您需要手动创建缩略图。GD组件通常与PHP一同部署在服务器上的。 
+					</p><p><a href="http://en.wikipedia.org/wiki/GD_Graphics_Library" target="_blank">http://en.wikipedia.org/wiki/GD_Graphics_Library</a></p>
+				</td>
+			</tr>
+			<tr>
+				<td><img src="<?php echo (MBSTRING_INSTALLED ? 'images/admin/icon_ok.gif' : 'images/admin/icon_notice.gif'); ?>" alt="" /></td>
+				<td><a name="mbstring"></a>mbstring</td>
+				<td><p>
+					Multibyte string 是PHP扩展组件，Imagevue X2需要通过Multibyte string来显示国际字符。Multibyte string通常是启用的。如果你的服务器没有启用此扩展组件，Imagevue X2显示国际字符、格式或语言将会出现问题。 
+					</p>
+				  <p><a href="http://php.net/manual/en/intro.mbstring.php" target="_blank">http://php.net/manual/en/intro.mbstring.php</a></p>
+				</td>
+			</tr>
+			<tr>
+				<td><img src="<?php echo (ICONV_INSTALLED ? 'images/admin/icon_ok.gif' : 'images/admin/icon_notice.gif'); ?>" alt="" /></td>
+				<td><a name="iconv"></a>iconv</td>
+				<td><p>这个库文件是支持显示MP3标签字符的。</p></td>
+			</tr>
+			<tr>
+				<td><img src="<?php echo (EXIF_INSTALLED ? 'images/admin/icon_ok.gif' : 'images/admin/icon_notice.gif'); ?>" alt="" /></td>
+				<td><a name="exif"></a>EXIF</td>
+				<td><p>
+					EXIF是PHP扩展组件，Imagevue X2需要通过EXIF显示数据。 EXIF数据，一般来说是一张照片直接存储在文件中的信息，经常由摄影设备的镜头创建。它可以显示相机的信息、数据、以及关键字和描述。EXIF 通常和PHP一同部署在服务器上。如果你的服务器没有启用此扩展组件，照片的EXIF数据，将不会显示</p><p>
+					<a href="http://php.net/manual/en/intro.exif.php" target="_blank">http://php.net/manual/en/intro.exif.php</a>
+					<a href="http://en.wikipedia.org/wiki/Exif" target="_blank">http://en.wikipedia.org/wiki/Exif</a></p>
+				</td>
+			</tr>
+			<tr>
+				<td><img src="<?php echo (SAFE_MODE_ENABLED ? 'images/admin/icon_error.gif' : 'images/admin/icon_ok.gif'); ?>" alt="" /></td>
+				<td><a name="safemode"></a>safe mode</td>
+				<td><p>没有有关这些问题的说明</p></td>
+			</tr>
+			<tr>
+				<td><img src="<?php echo (OPEN_BASEDIR_ENABLED ? 'images/admin/icon_error.gif' : 'images/admin/icon_ok.gif'); ?>" alt="" /></td>
+				<td>open basedir</td>
+				<td><p>没有有关这些问题的说明</p></td>
+			</tr>
+		</table>
+	</div>
+</div>

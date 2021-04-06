@@ -1,0 +1,120 @@
+<?php
+	$fileProperties = $this->file->getProperties();
+	$fileAttributes = $this->file->getAttributes();
+	$fileUserAttributes = $this->file->getUserAttributes();
+	$type = substr(get_class($this->file), strlen('ivFile'));
+	$type = empty($type) ? 'file' : strtolower($type);
+	if (method_exists($this->file, 'getExifData')) {
+		$metaData = $this->file->getExifData();
+	} elseif (method_exists($this->file, 'getId3Data')) {
+		$metaData = $this->file->getId3Data();
+	}
+?>
+<div id="content">
+	<div id="rightmenu">
+		<div class="box">
+			<div id="image_info_content" class="heading ivrm"><?php echo(ucfirst($type)) ?> 信息</div>
+			<div class="content">
+				<div class="mytitle"><?php echo $this->file->getTitle(); ?></div>
+				<div class="attributes">
+				<?php foreach ($fileProperties as $name => $value): ?>
+					<?php if ('date' == $name): ?>
+						<b><?php echo ucfirst($name); ?></b>: <?php echo formatDate($value); ?><br />
+					<?php elseif ('size' == $name): ?>
+						<b><?php echo ucfirst($name); ?></b>: <?php echo formatFilesize($value); ?><br />
+					<?php else: ?>
+						<b><?php echo ucfirst($name); ?></b>: <?php echo $value; ?><br />
+					<?php endif; ?>
+				<?php endforeach; ?>
+				</div>
+				<form method="post" action="">
+					<div><input type="hidden" name="path" value="<?php echo $this->file->getProperty('path'); ?>" /></div>
+					<div class="field">标题:<br/>
+						<input type="text" id="textfield" name="newdata[title]" value="<?php echo htmlspecialchars($fileAttributes['title']); ?>" />
+					</div>
+					<?php if (is_a($this->file, 'ivFileMP3')): ?>
+						<div class="field">艺术家:<br/>
+							<input type="text" id="textfield" name="newdata[artist]" value="<?php echo htmlspecialchars($fileAttributes['artist']); ?>" />
+						</div>
+					<?php endif; ?>
+					<div class="field">描述:<br/>
+						<textarea cols="1" rows="5" name="newdata[description]"><?php echo $fileAttributes['description']; ?></textarea>
+					</div>
+					<?php foreach ($fileUserAttributes as $name => $value): ?>
+						<div class="field"><?php echo ucfirst($name); ?>:<br/>
+							<input type="text" name="newdata[<?php echo $name; ?>]" value="<?php echo htmlspecialchars($value); ?>" />
+						</div>
+					<?php endforeach; ?>
+					<div class="field">
+						<input type="submit" class="mysubmit" value="保 存" name="save" />
+					</div>
+					<div>
+						<label>
+							<input type="checkbox" name="editNext" id="editNextCheckbox" onclick="return false;" />
+							并且编辑下一个文件
+						</label>
+					</div>
+				</form>
+			</div>
+		</div>
+		<?php if (is_a($this->file, 'ivFileImage')): ?>
+			<div class="box">
+				<div id="image_actions_content" class="heading ivrm">照片操作</div>
+				<div class="content actions">
+					<a class="delete" href="index.php?c=file&amp;a=delete&amp;path=<?php echo $this->path; ?>" onclick="return confirm('您确认要删除当前的照片吗？ <?php echo ($fileProperties['name']); ?>?');">删除这张照片</a>
+					<?php if (GD_INSTALLED): ?>
+						<a class="myicon" href="index.php?c=file&amp;a=rotate&amp;dir=cw&amp;path=<?php echo $this->path; ?>">顺时针旋转照片</a>
+						<a class="myicon" href="index.php?c=file&amp;a=rotate&amp;dir=ccw&amp;path=<?php echo $this->path; ?>">逆时针旋转照片</a>
+					<?php endif; ?>
+					<form method="post" action="">
+						<div class="field">移动到:<br/>
+							<select onchange="this.form.action='index.php?c=file&amp;a=move&amp;path=<?php echo $this->path?>&amp;target=' + this.value; this.form.submit();">
+								<?php foreach ($this->flatFolderTree as $folderNode):?>
+									<option value="<?php echo $folderNode['folder']->getProperty('path'); ?>" <?php echo (ivFilepath::directory($this->path) == $folderNode['folder']->getProperty('path') ? 'selected="selected"' : ''); ?>><?php echo str_repeat('--', $folderNode['depth']); ?>[<?php echo $folderNode['folder']->getTitle(); ?>]</option>
+								<?php endforeach; ?>
+							</select>
+						</div>
+					</form>
+					<form method="post" action="">
+						<div class="field">复制到:<br/>
+							<select onchange="this.form.action='index.php?c=file&amp;a=copy&amp;path=<?php echo $this->path?>&amp;target=' + this.value; this.form.submit();">
+								<?php foreach ($this->flatFolderTree as $folderNode):?>
+									<option value="<?php echo $folderNode['folder']->getProperty('path'); ?>" <?php echo (ivFilepath::directory($this->path) == $folderNode['folder']->getProperty('path') ? 'selected="selected"' : ''); ?>><?php echo str_repeat('--', $folderNode['depth']); ?>[<?php echo $folderNode['folder']->getTitle(); ?>]</option>
+								<?php endforeach; ?>
+							</select>
+						</div>
+					</form>
+				</div>
+			</div>
+		<?php endif; ?>
+		<?php if (isset ($metaData) && !empty($metaData)): ?>
+			<div class="box">
+				<div id="image_metadata_content" class="heading ivrm"><?php echo(ucfirst($type)) ?> 标签</div>
+				<div class="content">
+					<table>
+						<?php foreach ($metaData as $key => $value): ?>
+							<tr>
+								<td><?php echo $key; ?></td>
+								<td><?php echo $value; ?></td>
+							</tr>
+						<?php endforeach; ?>
+					</table>
+				</div>
+			</div>
+		<?php endif; ?>
+	</div>
+	<div id="leftcontent">
+		<div id="image">
+			<div id="imagenav">
+				<a title="previous image" href="?c=file&amp;path=<?php echo urlencode($this->prevFile->getProperty('path')); ?>">&laquo;</a>
+				<?php echo $this->current; ?>/<?php echo $this->count; ?>
+				<a title="next image" href="?c=file&amp;path=<?php echo urlencode($this->nextFile->getProperty('path')); ?>">&raquo;</a>
+			</div>
+			<?php if (is_a($this->file, 'ivFileImage')): ?>
+				<img alt="<?php echo $this->file->getTitle(); ?>" src="../<?php echo $this->file->getProperty('path'); ?>?<?php echo md5(rand(0, 1000000)) ?>" />
+			<?php else: ?>
+				<img alt="<?php echo $this->file->getTitle(); ?>" src="../<?php echo $this->file->getThumbRelativePath(); ?>" />
+			<?php endif; ?>
+		</div>
+	</div>
+</div>

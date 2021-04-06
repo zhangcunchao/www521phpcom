@@ -1,0 +1,135 @@
+<?php
+	$conf = &ivPool::get('conf');
+	$siteTitle = $conf->get('/config/imagevue/settings/sitetitle');
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+		<title>Imagevue 管理 <?php echo $siteTitle; ?></title>
+		<link href="admin/css/admin_stylesheet.css" rel="stylesheet" type="text/css" />
+		<link href="admin/css/dtree.css" rel="stylesheet" type="text/css" />
+		<link href="admin/css/colorPicker.css" rel="stylesheet" type="text/css" />
+		<script type="text/javascript" src="javascript/prototype.js"></script>
+		<script type="text/javascript" src="javascript/scriptaculous/scriptaculous.js?load=effects,dragdrop,slider"></script>
+		<script type="text/javascript" src="javascript/admin.js"></script>
+		<script type="text/javascript" src="javascript/dtree.js"></script>
+		<script type="text/javascript" src="javascript/spinbutton.js"></script>
+		<script type="text/javascript" src="javascript/yahoo.color.js"></script>
+		<script type="text/javascript" src="javascript/colorPicker.js"></script>
+
+		<!-- Skin CSS file --> 
+		<link rel="stylesheet" type="text/css" href="admin/css/yuieditor.css" /> 
+		<!-- Utility Dependencies --> 
+		<script type="text/javascript" src="javascript/yui/yahoo-dom-event.js"></script>
+		<script type="text/javascript" src="javascript/yui/element-min.js"></script>  
+		<script type="text/javascript" src="javascript/yui/container_core-min.js"></script> 
+		<script type="text/javascript" src="javascript/yui/menu-min.js"></script> 
+		<script type="text/javascript" src="javascript/yui/button-min.js"></script> 
+		<script type="text/javascript" src="javascript/yui/simpleeditor.js"></script> 
+		<script type="text/javascript" src="javascript/yui/iveditor.js"></script> 
+
+		<?php if ('swfupload' == $conf->get('/config/imagevue/settings/uploader')): ?>
+			<script type="text/javascript" src="javascript/swfupload/swfupload.js"></script>
+			<script type="text/javascript" src="javascript/swfupload/swfupload.queue.js"></script>
+			<script type="text/javascript" src="javascript/fileprogress.js"></script>
+			<script type="text/javascript" src="javascript/swfupload/handlers.js"></script>
+		<?php elseif ('yuiuploader' == $conf->get('/config/imagevue/settings/uploader')): ?>
+			<script type="text/javascript" src="javascript/yui/uploader-min.js"></script>
+			<script type="text/javascript" src="javascript/yui/handlers.js"></script>
+			<script type="text/javascript" src="javascript/fileprogress.js"></script>
+		<?php endif; ?>
+	</head>
+	<body class="yui-skin-sam">
+		<script type="text/javascript" src="javascript/wz_tooltip.js"></script> 
+		<div class="header">
+			<?php if (ivAcl::isAdmin()): ?>
+				<div>
+					<?php $userManager = &ivPool::get('userManager'); ?>
+					<?php $admin = $userManager->getUser('admin'); ?>
+					<?php if ('30274c47903bd1bac7633bbf09743149ebab805f' === $admin->passwordHash || 'd033e22ae348aeb5660fc2140aec35850c4da997' === $admin->passwordHash): ?>
+						<a title="点击这里更改管理员密码" href="?c=user&amp;a=edit&amp;login=admin">您的管理员账户仍为默认密码！</a>
+					<?php endif; ?>
+					<?php if (!MBSTRING_INSTALLED): ?>
+						<a href="index.php?c=diag&amp;a=errors#mbstring" title="mbstring 扩展没有被安装..."><img style="border: 0px;" src="images/admin/icon_notice.gif" alt="" /></a>
+					<?php endif; ?>
+					<?php if (!GD_INSTALLED): ?>
+						<a href="index.php?c=diag&amp;a=errors#gd" title="GD 扩展没有被安装..."><img style="border: 0px;" src="images/admin/icon_notice.gif" alt="" /></a>
+					<?php endif; ?>
+					<?php if (!ICONV_INSTALLED): ?>
+						<a href="index.php?c=diag&amp;a=errors#iconv" title="您的PHP不支持ICONV..."><img style="border: 0px;" src="images/admin/icon_notice.gif" alt="" /></a>
+					<?php endif; ?>
+					<?php if (!EXIF_INSTALLED): ?>
+						<a href="index.php?c=diag&amp;a=errors#exif" title="您的PHP不支持EXIF..."><img style="border: 0px;" src="images/admin/icon_notice.gif" alt="" /></a>
+					<?php endif; ?>
+					<?php if (!XML_INSTALLED): ?>
+						<a href="index.php?c=diag&amp;a=errors#xml" title="您的PHP不支持XML..."><img style="border: 0px;" src="images/admin/icon_error.gif" alt="" /></a>
+					<?php endif; ?>
+					<?php if (SAFE_MODE_ENABLED): ?>
+						<a href="index.php?c=diag&amp;a=errors#safemode" title="您服务器上启用了'safe_mode'..."><img style="border: 0px;" src="images/admin/icon_error.gif" alt="" /></a>
+					<?php endif; ?>
+					<?php if (OPEN_BASEDIR_ENABLED): ?>
+						<a href="index.php?c=diag&amp;a=errors#open_basedir" title="It seems that there is 'open_basedir' resctriction in action..."><img style="border: 0px;" src="images/admin/icon_error.gif" alt="" /></a>
+					<?php endif; ?>
+					<?php if (SUHOSIN_INSTALLED): ?>
+						<a href="index.php?c=diag&amp;a=errors#suhosin" title="It seems that suhosin module installed on your server..."><img style="border: 0px;" src="images/admin/icon_notice.gif" alt="" /></a>
+					<?php endif; ?>
+	      </div>
+			<?php endif; ?>
+			<h1>
+				<a href="index.php">Imagevue 管理</a> | <a href="../"><?php echo $siteTitle; ?></a>
+			</h1>
+		</div>
+		<div class="menu">
+		
+		<!--<div class="tree">-->
+			<?php echo ivComponent::tree(dirname(__FILE__) . '/', $this->placeholder->get('path')); ?>
+		<!-- </div> -->
+				
+			<div class="links">
+				<a href="../#/<?php echo $this->placeholder->get('path'); ?>" title="点击查看Flash相册">Flash</a>
+				<a href="../?/<?php echo $this->placeholder->get('path'); ?>" title="点击查看HTML相册">HTML</a>
+				<a href="index.php?c=cred&amp;a=logout" title="点击退出后台管理">注销</a>
+			</div>
+			
+			<div class="main">
+				<a href="index.php" <?php echo ('index' == $this->moduleName || 'file' == $this->moduleName ? 'class="active"' : ''); ?> title="管理照片">相册管理</a>
+				<?php if (ivAcl::isAdmin()): ?>
+					<a href="index.php?c=config" <?php echo ('config' == $this->moduleName ? 'class="active" ' : ''); ?> title="更改系统参数">系统设置</a>
+					<a href="index.php?c=theme" <?php echo ('theme' == $this->moduleName ? 'class="active" ' : ''); ?> title="编辑主题和样式表">主题管理</a>
+					<a href="index.php?c=user" <?php echo ('user' == $this->moduleName ? 'class="active" ' : ''); ?> title="用户管理">用户管理</a>
+					<a href="index.php?c=lang" <?php echo ('lang' == $this->moduleName ? 'class="active" ' : ''); ?> title="更改语言包">语言管理</a>
+					<a href="index.php?c=diag" <?php echo ('diag' == $this->moduleName ? 'class="active" ' : ''); ?> title="系统运行环境测试">服务器环境测试</a>
+				<?php endif; ?>
+				<?php $conf = &ivPool::get('conf'); ?>
+				<?php if ($conf->get('/config/imagevue/settings/useCache')): ?>
+					<a href="index.php?c=cache&amp;a=clear" title="清空缓存">清空缓存</a>
+				<?php endif; ?>
+			</div>
+		</div>
+
+		<div class="path">
+		<?php $brCrumbs = &ivPool::get('breadCrumbs'); ?>
+		<?php if ($brCrumbs->count()): ?>
+		
+			<?php foreach ($brCrumbs->get() as $crumb): ?>
+				<?php if ($crumb->url) :?>
+				<a class="<?php echo $crumb->className; ?>" href="<?php echo $crumb->url; ?>"><?php echo $crumb->title; ?> <?php echo $crumb->suffix; ?></a><?php echo ($brCrumbs->tail() === $crumb->title ? '' : '&nbsp;&raquo;&nbsp;'); ?>
+				<?php else : echo $crumb->title; endif;?>
+			<?php endforeach; ?>
+		<?php endif; ?>
+		</div>
+		<div class="infobar">
+			<?php foreach (ivMessenger::get('error') as $error): ?>
+				<div class="error"><?php echo $error; ?></div>
+			<?php
+				endforeach;
+				foreach (ivMessenger::get('notice') as $notice):
+			?>
+				<div class="notice"><?php echo $notice; ?></div>
+			<?php endforeach; ?>
+		</div>
+		<?php echo $this->getPageContent(); ?>
+	</body>
+</html>

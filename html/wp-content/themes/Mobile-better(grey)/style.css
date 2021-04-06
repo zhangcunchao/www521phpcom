@@ -1,0 +1,205 @@
+/*
+Theme Name: Mobile-better(grey)
+Theme URI: http://wordpress.org
+Description: Mobile-better theme with special effects for mobile.(Need MobilePress plugin)
+Author: Shanks
+Author URI: http://imshanks.com
+Version: 2.0
+Tags: mobile, mobilepress, grey, black
+*/
+
+/* Simple Reset */
+body, html, div, span, h1, h2, h3, h4, h5, h6, p, ul, ol, li, blockquote, form, input, fieldset { margin: 0; padding: 0;}
+img, fieldset {border:none;outline:none;}
+img { height: auto; max-height: 300px; max-width: 300px; width: auto; }
+ul, ol, li { list-style: none; }
+a,a:hover,a:focus { text-decoration: none; }
+.cl { clear: both; }
+/* General Styles */
+body { background: #f7f7f7; font: 62.5% Verdana, Arial, Trebuchet MS; }
+
+/* Structure */
+#headerwrap { width: 100%;  position: fixed; height:45px; box-shadow: 0 0 3px 4px rgba(0,0,0,0.3);z-index:99;}
+#header { background: #333;  border-top: 1px solid #363639; border-bottom: 1px solid #151518; background-image: linear-gradient(top, rgb(64,64,72) 16%, rgb(42,42,48) 58%); height: 45px;
+	
+					background-image: -o-linear-gradient(top, rgb(64,64,72) 16%, rgb(42,42,48) 58%);
+					background-image: -moz-linear-gradient(top, rgb(64,64,72) 16%, rgb(42,42,48) 58%);
+					background-image: -webkit-linear-gradient(top, rgb(64,64,72) 16%, rgb(42,42,48) 58%);
+					background-image: -ms-linear-gradient(top, rgb(64,64,72) 16%, rgb(42,42,48) 58%);
+					
+					background-image: -webkit-gradient(
+						linear,
+						left top,
+						left bottom,
+						color-stop(0.16, rgb(64,64,72)),
+						color-stop(0.58, rgb(42,42,48))
+					); 
+}
+#contentwrap { width: 100%; background:#f7f7f7;  padding-top:45px;}
+.post { background: #f7f7f7; border-bottom: 1px solid #e5e5e5; border-top: 1px solid #fff; padding: 8px; }
+.single-post{border-bottom: 1px solid #e5e5e5; border-top: 1px solid #e5e5e5;}
+.single-post a{text-decoration:underline;}
+#title {padding: 8px 1em; color:#666;}
+#title h2 {color:#333;}
+#info {padding: 12px 0 2px; background:#eee; color:#666;}
+#info h2 {color:#666; text-align:center;}
+#more { background: #f7f7f7;text-align:center; }
+#more a{display:block; padding: 8px; }
+#more a, #title a, #info a {color: #666;} 
+#loading { background: #f7f7f7 url(images/wait.gif) center no-repeat; clear: both; display: none; font-size: 12px; height: 30px; padding: 5px 0px; text-align: center;	}
+#comments { background: #f7f7f7; text-align: center;}
+input[type="text"], input[type="email"], input[type="url"], #comment{
+outline: 0;
+width: 91%;
+padding: 4px 1%;
+margin: 0 2% 10px;
+font-size: 14px;
+height: 26px;
+line-height: 26px;
+border: 1px solid #777;
+box-shadow: 0 1px 1px #fff,0 2px 6px rgba(0,0,0,0.35) inset;
+border-radius: 6px;
+}
+#comment{height: 60px;}
+input[type="submit"] {
+outline: 0;
+cursor: pointer;
+width: 94%;
+margin: 0 2%;
+height: 30px;
+margin-bottom: 10px;
+color: white;
+font-size: 14px;
+line-height: 26px;
+border: 1px solid #777;
+text-shadow: 0 1px 1px rgba(0, 0, 0, .5);
+border-radius: 6px;
+background: -webkit-gradient(linear,center top,center bottom,color-stop(0.1,#4CABDA),color-stop(0.8,#1C92C1));
+}
+#respond a{ color:#666; display:block; padding: 8px 0; }
+#footerwrap { width: 100%; text-align: center; }
+#footer { background:#f7f7f7; border-top:1px solid #e5e5e5; padding: 8px; }
+
+/* Headings */
+h1 { font-size: 1.4em; line-height: 1.4em; margin: 0 0 10px 0; }
+#header h1 { float:left; width:12em; overflow: hidden; color: #ccc; margin: 0; line-height: 45px; }
+#header h1 a { color: #fff; text-decoration: none; text-shadow: 1px 1px 1px #000;  padding-left: 1em; }
+#top-nav { float: right; margin-right: 1em; padding-top: 4px; }
+#top-nav li { float: right; }
+#header #top-nav li a { color:#c4c4c5; margin: 2px 0 0 0.5em; display: block; background: #666; border-radius: 5px; padding: 0 0.6em; height: 30px; line-height: 30px; font-size:14px; font-weight: normal;  border: 1px solid #040405; box-shadow: rgba(255,255,255,0.1) 0px 1px 0 0px inset, rgba(255,255,255,0.1) 0px 1px 0 0px;
+		
+		 background-image: linear-gradient(top, rgb(64,64,72) 16%, rgb(42,42,48) 58%);
+	
+					background-image: -o-linear-gradient(top, rgb(64,64,72) 16%, rgb(42,42,48) 58%);
+					background-image: -moz-linear-gradient(top, rgb(64,64,72) 16%, rgb(42,42,48) 58%);
+					background-image: -webkit-linear-gradient(top, rgb(64,64,72) 16%, rgb(42,42,48) 58%);
+					background-image: -ms-linear-gradient(top, rgb(64,64,72) 16%, rgb(42,42,48) 58%);
+					
+					background-image: -webkit-gradient(
+						linear,
+						left top,
+						left bottom,
+						color-stop(0.16, rgb(64,64,72)),
+						color-stop(0.58, rgb(42,42,48))
+					);
+}		
+h2 { font-size: 1.6em; line-height: 1.4em; margin: 0 0 10px 0; }
+h2 a { color: #333; }
+h2.title { margin: 0; color: #333; }
+h3 { font-size: 1.2em; line-height: 1.4em; margin: 0 0 10px 0; }
+
+/* Typography */
+p { color: #666; font-size: 1.2em; line-height: 1.4em; margin: 0 0 10px 0;clear:both; }
+p a { color: #666; }
+#header p { color: #888; font-size: 1.1em; margin: 0; }
+#header p a { color: #888; }
+.index a { display: block; }	
+.index img, .archive img { width:90px; border: 1px solid #999; box-shadow: 0 0 3px rgba(0, 0, 0, 0.2); display: block; float:right; }	
+.post p.subtitle { font-size: 1.1em; margin: 0; }
+.post p.singleline { margin: 0; }
+.post p.commentfoot { font-size: 1.1em; }
+.oneline p { margin: 0; }
+#comments p { font-size: 1.1em; margin: 0; }
+#comments p a { color: #d54e21; }
+#footer p { color: #666; font-size: 1.1em; margin: 0; }
+#footer p a { color: #666; }
+blockquote { border-left: 4px solid #ccc; margin: 8px; padding-left: 4px; }
+.post-comment{border:none;}
+
+/* nav */
+#nav { max-height:200px; width:200px; display: none;  padding: 1em; position: fixed ; background: #333; top: 55px; border: 1px solid #000; box-shadow: 0 0 2px 2px rgba(0,0,0,0.5); border-radius: 4px; right: 1em; z-index:9}
+#nav ul { margin:0; }
+#nav li { padding:0; color:#999; font-size:12px;}
+#nav a { color: #f7f7f7; padding: 0.5em 0; display:block; float:left; margin: 0 1em ; }
+
+
+/* Bootstrap-highlighting-of-code */
+.prettyprint ul, .prettyprint ol, .prettyprint li{ list-style:decimal;}
+.prettyprint {
+  padding: 8px;
+  background-color: #f7f7f9;
+  border: 1px solid #e1e1e8;
+}
+.prettyprint.linenums {
+  -webkit-box-shadow: inset 40px 0 0 #fbfbfc, inset 41px 0 0 #ececf0;
+     -moz-box-shadow: inset 40px 0 0 #fbfbfc, inset 41px 0 0 #ececf0;
+          box-shadow: inset 40px 0 0 #fbfbfc, inset 41px 0 0 #ececf0;
+}
+.com { color: #93a1a1; }
+.lit { color: #195f91; }
+.pun, .opn, .clo { color: #93a1a1; }
+.fun { color: #dc322f; }
+.str, .atv { color: #D14; }
+.kwd, .linenums .tag { color: #1e347b; }
+.typ, .atn, .dec, .var { color: teal; }
+.pln { color: #48484c; }
+
+/* Specify class=linenums on a pre to get line numbering */
+ol.linenums {
+  margin: 0 0 0 33px; /* IE indents via margin-left */
+} 
+ol.linenums li {
+  padding-left: 12px;
+  color: #bebec5;
+  line-height: 18px;
+  text-shadow: 0 1px 0 #fff;
+}
+code, pre {
+  padding: 0 3px 2px;
+  font-family: Menlo, Monaco, "Courier New", monospace;
+  font-size: 12px;
+  color: #333333;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+code {
+  padding: 3px 4px;
+  color: #d14;
+  background-color: #f7f7f9;
+  border: 1px solid #E1E1E8;
+  border-image: initial;
+}
+pre {
+  display: block;
+  padding: 8.5px;
+  margin: 0 0 9px;
+  font-size: 12px;
+  line-height: 18px;
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  white-space: pre;
+  white-space: pre-wrap;
+  word-break: break-all;
+}
+pre.prettyprint {
+  margin-bottom: 18px;
+}
+pre code {
+  padding: 0;
+  background-color: transparent;
+}

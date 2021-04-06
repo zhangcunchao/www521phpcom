@@ -1,0 +1,40 @@
+<div id="content">
+	<div id="user">
+    	<table cellspacing="0" cellpadding="0" border="0" class="usertable">
+			<tr>
+				<td class="text captions">主题</td>
+				<td class="text captions">&nbsp;</td>
+				<td class="captions">&nbsp;</td>
+			</tr>
+			<?php $i = 0; ?>
+			<?php foreach ($this->themes as $theme): ?>
+				<?php $i++; ?>
+				<tr class="<?php echo ($i % 2 ? 'odd' : ''); ?> <?php echo ($this->theme == $theme ? 'current' : ''); ?>" onmouseout="$(this).removeClassName('over');" onmouseover="$(this).addClassName('over');">
+					<td class="text">
+						<a title="edit <?php echo $theme; ?> theme" href="index.php?c=theme&amp;a=editconfig&amp;name=<?php echo $theme; ?>"><?php echo $theme; ?></a>
+					</td>
+					<td class="text">
+						<?php if ($this->theme == $theme): ?>
+							使用
+						<?php else: ?>
+							<a title="启用 <?php echo $theme; ?> 主题" href="index.php?c=theme&amp;a=use&amp;name=<?php echo $theme; ?>">启用</a>
+						<?php endif; ?>
+						|
+						<a title="编辑 <?php echo $theme; ?> 主题" href="index.php?c=theme&amp;a=editconfig&amp;name=<?php echo $theme; ?>">编辑</a>
+						|
+						<a title="以 <?php echo $theme; ?> 主题为基础，创建一个新主题" href="#" onclick="var themeName = window.prompt('输入新主题的名称'); if (themeName) {location.href = 'index.php?c=theme&amp;a=copy&amp;name=<?php echo $theme; ?>&amp;new=' + themeName;} return false;">创建新主题</a>
+						|
+						<a title="预览 <?php echo $theme; ?> 主题" href="../index.php?c=gallery&amp;theme=<?php echo $theme; ?>" target="_blank">预览</a>
+						|
+						<a title="删除 <?php echo $theme; ?> 主题" href="index.php?c=theme&amp;a=delete&amp;name=<?php echo $theme; ?>" onclick="return confirm('该操作将删除 \'<?php echo $theme; ?>\' 主题。 您确定吗?');">删除</a>
+					</td>
+					<td class="icon">
+						<a title="edit <?php echo $theme; ?> theme" href="index.php?c=theme&amp;a=editconfig&amp;name=<?php echo $theme; ?>">
+							<img width="15" height="15" alt="编辑" src="images/admin/icon_edit.gif"/>
+						</a>
+					</td>
+				</tr>
+			<?php endforeach; ?>
+		</table>
+	</div>
+</div>

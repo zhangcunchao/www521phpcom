@@ -172,6 +172,10 @@ nameserver 192.168.129.2
 
 3.1、mysql命令
 
+binlog
+
+	/usr/local/mysql/bin/mysqlbinlog -v --base64-output=DECODE-ROWS --set-charset=gbk --start-datetime='2017-08-05 12:00:00' -d xyk2_db mysql-bin.000012 |grep insert
+
 3.1.1、导出sql
 
 	mysqldump -u$root2 -p$pwd2 -h$ip2 --opt $db2 amc_advertise_idea_relation >> $sqlfile
@@ -261,3 +265,17 @@ setsebool -P httpd_can_network_connect=1
 	*
 	# Except this file
 	!.gitignore
+
+6 redis
+
+	#!/bin/sh
+	user=''
+	pwd=''
+	host='localhost'
+	MYDATE=`date +%Y-%m-%d`
+	mysqldump -u$user -p$pwd -h$host --opt wxapi --skip-comments | gzip > /home/mysql/wxapi/wxapi-$MYDATE.sql.gz
+
+	redis-dump -u :password@127.0.0.1:6379 |gzip > /home/mysql/redis/db-$MYDATE.sql.gz
+	exit 0
+
+

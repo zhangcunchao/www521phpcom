@@ -7,3 +7,9 @@
 
 1. [nginx配置文件nginx.conf中文详解](manual.md)
 2. [nginx和php平滑重启](restart.md)
+
+nginx rewrite
+
+	if (!-f $request_filename && !-d $request_filename) {
+			rewrite ^/(.*)$ /index.php/$1 last;
+	}

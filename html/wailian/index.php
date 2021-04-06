@@ -1,4 +1,5 @@
 <?php
+exit;
 error_reporting(E_ALL ^ E_NOTICE);        //错误级别设置
 include 'include/config.inc.php';                //数据库配置文件
 include 'include/inc.php';

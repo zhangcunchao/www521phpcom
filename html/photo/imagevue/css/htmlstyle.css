@@ -1,0 +1,75 @@
+@charset "utf-8";
+* {margin:0; padding:0; outline: 0; border: 0;}
+html, body { height: 100%; }
+body { background: #111; color: #eee; }        
+body, input, textarea { font-family: Candara, "Myriad Pro", Helvetica, Tahoma, Arial, sans-serif; font-size: 15px; }
+table { border-collapse: collapse; border: none; }
+ul { margin: 0 0 25px 25px;}
+
+a { color:#66CCFF;	text-decoration: none;	outline: none; }
+a:hover { color: #FFFFFF; }
+#header  { font-family: Candara, "Myriad Pro", Tahoma, Georgia, "Times New Roman", Times, serif;	font-size: 18px;	background-color: #333333;	padding: 10px 10px 10px 40px; }
+
+#subheader {	background-color: #222222;	padding: 0 20px 0 40px; }
+#subheader #flashlink {	float: right;	}
+
+#menu {	float: left; position: relative; behavior:url("javascript/csshover.htc"); 	margin: -8px 0 0 -8px; padding: 8px 8px 0 8px; z-index: 1;}
+#menu img.openMenu {margin: 8px 0 0 0;  }
+#menu:hover { background: #333333; }
+#menu #hiddenmenu {  position: absolute; z-index: 2;	background-color: #333333;	-moz-border-radius: 0 0 5px 5px;	margin: 0 0 0 -8px;	padding: 20px 20px 20px 25px;	visibility: hidden; }
+#menu:hover #hiddenmenu { visibility: visible;  }
+
+.crumbs { float: left; }
+.crumbs a, #flashlink a { padding: 8px 10px; line-height: 30px; }
+.crumbs a:hover{  background-color: #333333; }
+
+#content { padding: 10px 20px 10px 20px; }
+.textPage { margin: 13px 0 0 25px; width: 600px; }
+.textPage h1 { margin: 0 0 10px 0; }
+
+#folders a, .levelUp a { margin: 0;	padding: 4px 12px 12px 12px;	 display: block; float: left; line-height: 1px;	text-align: center;	position: relative; }
+#folders a:hover, .levelUp a:hover{	background-color:#333333; }
+#folders .textblock{	font-size: 12px;	padding: 10px 0 0 0;	position:relative;	bottom: 5px; }
+#folders img, .levelUp img{ border: none; }
+
+#thumbnails { clear: both; }
+#thumbnails a{ display: block; float: left; line-height: 1px; text-align: center;	position: relative; }
+#thumbnails a span { border: solid 1px #AAAAAA; padding: 1px; background: center center no-repeat; position: absolute; top: 8px; left: 8px; }
+#thumbnails img{ margin: 9px; }
+#thumbnails a:hover {background-color:#333333; }
+#thumbnails a:hover img{padding: 11px; border: none; }
+#thumbnails a:hover span { border-color: #333; }
+
+#image{ clear: both; margin: 10px auto; }
+#image #myimage{	border: solid 1px #777777;	padding: 1px;	float: left; }
+#image #imagetext{ width: 200px; margin: 10px 10px 10px 15px; float: left; font-size: 12px; }
+
+#content .title, h1{ color: #66CCFF; font-weight: normal; font-size: 22px; margin: 0px 0px 3px 0px; }
+#content .description, h2 { font-weight: normal; font-size: 13px; margin: 0px 0px 10px 0px; }
+h3 { font-weight: normal; font-size: 12px;}
+#navigation{ float: right; font-size: 18px; }
+#navigation a { margin: 0px 1px 0px 0px; background-color: #222222; font-size: 24px; padding: 0px 15px 4px 15px; }
+#navigation a:hover { background-color: #333333; }
+
+#imageView {padding: 20px auto; text-align: center; }
+.imageAttributes, .imageProperties {  margin: auto auto 10px auto;  }
+.imageAttributes { color: #666; }
+.imageProperties { color: #999; }
+.naviCount { padding: 0 5px; }
+.exifData { }
+.exif_heading {display: none;}
+
+.currentFolder { overflow: hidden; clear: both; zoom: 1;}
+.currentFolderTitle  { padding: 13px 0 15px 20px; display: table-cell; float: left;} 
+.currentFolderTitle h2.description { max-width: 400px;}
+
+#contactForm input, 
+#contactForm textarea { width: 300px; padding: 2px;} 
+#contactForm div { margin: 0 0 10px 0; position: relative;}
+#contactForm label {  padding: 0 0 0 120px;   }
+#contactForm label span { display: block; width: 100px; position: absolute; left:0; top: 0;} 
+
+#contactFormResponse { overflow: hidden;}
+#contactFormResponse div {margin: 0 0 20px 0; padding: 10px; background: green; float: left;}
+#contactFormResponse div.error { background: red;}
+.clrFlt { clear: both; height: 1px; line-height: 1px; font-size: 1px;}

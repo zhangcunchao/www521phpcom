@@ -1,0 +1,52 @@
+<div id="content">
+	<!-- #user -->
+	<div id="user">
+        <table cellspacing="0" cellpadding="0" border="0" class="usertable">
+			<tr>
+				<td class="text captions">用户</td>
+				<td class="text captions">权限</td>
+				<td class="captions">&nbsp;</td>
+				<td class="captions">&nbsp;</td>
+			</tr>
+
+			<?php
+				$i = 0;
+				foreach ($this->users as $user):
+					if (ivAcl::isAdmin($user->login)):
+						$i++;
+					?>
+
+					<tr class="<?php echo ($i % 2 ? 'odd' : ''); ?> <?php echo ($this->user == $user->login ? 'current' : ''); ?> admin" onclick="window.location.href='?c=user&amp;a=edit&amp;login=<?php echo $user->login ?>'" onmouseout="$(this).removeClassName('over');" onmouseover="$(this).addClassName('over');">
+						<td class="text"><a title="编辑" href="?c=user&amp;a=edit&amp;login=<?php echo $user->login ?>"><?php echo $user->login ?></a></td>
+						<td class="text">&nbsp;</td>
+						<td class="icon"><a title="编辑" href="?c=user&amp;a=edit&amp;login=<?php echo $user->login ?>"><img width="15" height="15" alt="编辑" src="images/admin/icon_edit.gif"/></a></td>
+						<td class="icon"><a title="删除" href="?c=user&amp;a=delete&amp;login=<?php echo $user->login ?>" onclick="return confirm('您确定要删除用户 <?php echo $user->login; ?>?');"><img width="15" height="15" alt="删除" src="images/admin/icon_delete.gif"/></a></td>
+					</tr>
+
+					<?php
+					endif;
+				endforeach;
+				foreach ($this->users as $user):
+					if (!ivAcl::isAdmin($user->login)):
+						$i++;
+					?>
+
+					<tr class="<?php echo ($i % 2 ? 'odd' : ''); ?>" onclick="window.location.href='?c=user&amp;a=edit&amp;login=<?php echo $user->login ?>'" onmouseout="$(this).removeClassName('over');" onmouseover="$(this).addClassName('over');">
+						<td class="text"><a title="edit" href="?c=user&amp;a=edit&amp;login=<?php echo $user->login ?>"><?php echo $user->login ?></a></td>
+						<td class="text"><?php echo $user->access; ?></td>
+						<td class="icon"><a title="edit" href="?c=user&amp;a=edit&amp;login=<?php echo $user->login ?>"><img width="15" height="15" alt="编辑" src="images/admin/icon_edit.gif"/></a></td>
+						<td class="icon"><a title="Delete" href="?c=user&amp;a=delete&amp;login=<?php echo $user->login ?>"><img width="15" height="15" alt="删除" src="images/admin/icon_delete.gif"/></a></td>
+					</tr>
+
+					<?php
+					endif;
+				endforeach;
+			?>
+
+			<tr>
+				<td class="captions" colspan="4"><input onclick="window.location.href='?c=user&amp;a=edit'" type="button" style="margin: 5px 10px; padding: 2px 4px; float: right;" value="添加用户"/></td>
+	 		</tr>
+		</table>
+	</div>
+	<!-- #user -->
+</div>

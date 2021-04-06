@@ -15,7 +15,7 @@ Template Name: Flinks
 <link href="<?php bloginfo('stylesheet_url'); ?>" rel="stylesheet" type="text/css" />
 <link href="http://www.521php.com/wp-content/themes/zeke/miaov_style.css" rel="stylesheet" type="text/css">
 <?php wp_head(); ?>
-<script src="http://libs.useso.com/js/jquery/1.9.1/jquery.min.js"></script>
+<script src="//cdn.bootcss.com/jquery/2.2.3/jquery.min.js"></script>
 <!--[if lt IE 7]>
 <script type="text/javascript" src="/wp-content/themes/MRuu2011/MRjs/iepngfix_tilebg.js"></script>
 <script type="text/javascript">
@@ -75,7 +75,7 @@ catch(e){}
 <script type="text/javascript">
 jQuery(document).ready(function($){
 $(".sid_link_text_page a").each(function(e){
-	$(this).prepend("<img src=http://www.521php.com/api/fav/?url="+this.href.replace(/^(http:\/\/[^\/]+).*$/, '$1').replace( 'http://', '' )+" style=float:left;padding:7px; width=20 height=20>");
+	$(this).prepend("<img src=http://www.521php.com/api/newfav/?url="+this.href.replace(/^(http:\/\/[^\/]+).*$/, '$1').replace( 'http://', '' )+" style=float:left;padding:7px; width=20 height=20>");
 }); 
 });
 </script>
@@ -140,6 +140,6 @@ $(".sid_link_text_page a").each(function(e){
         <?php get_sidebar(); ?>
         <div class="clear"></div>
     </div>
-<script src="http://www.521php.com/api/fav/key.js"></script>
+<script src="http://www.521php.com/api/newfav/key.js"></script>
 <!--中间内容End-->
 <?php get_footer(); ?>

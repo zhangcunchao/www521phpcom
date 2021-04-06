@@ -1,0 +1,48 @@
+<!-- Do not remove or rename elements of form and script at the end of file -->
+<br/><br/><div id="contactFormResponse"></div>
+<form id="contactForm" action="?a=contact" method="post">
+	<div>
+		<label><span>
+			您的名字</span>
+			<input type="text" name="senderName" />
+		</label>
+	</div>
+	<div>
+		<label><span>
+			您的邮箱</span>
+			<input type="text" name="senderEmail" />
+		</label>
+	</div>
+	<div>
+		<label><span>
+			您的留言</span>
+			<textarea name="messageBody" rows="5" cols="20"></textarea>
+		</label>
+	</div>
+	<div><label>
+		<input type="submit" value="发送" onclick="return send(this.form);" />
+		</label>
+	</div>
+</form>
+
+<script type="text/javascript">
+//<![CDATA[
+function send(form) {
+	new Ajax.Request('?a=contact', {
+		method: 'post',
+		parameters: $(form).serialize(true),
+		onSuccess: function(transport) {
+			var resp = transport.responseText.substr('success='.length);
+			if ('true' == resp) {
+				$('contactFormResponse').update('<div>Your message succesfully sent!</div>');
+				$(form).reset();
+			} else {
+				resp = resp[0].toUpperCase() + resp.substr(1);
+				$('contactFormResponse').update('<div class="error">' + resp + '</div>');
+			}
+		}
+	});
+	return false;
+}
+//]]>
+</script>

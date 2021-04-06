@@ -1,0 +1,46 @@
+<div id="content">
+	<div id="rightmenu">
+		<div class="box">
+			<div id="diagnostic_page" class="heading ivrm">Imagevue 2.1.4.1</div>
+			<div class="content actions">
+				<a class="myicon" href="index.php?c=diag&amp;a=errors">错误诊断页面</a>
+				<a class="myicon" href="index.php?c=diag&amp;a=apachemod#error">Apache模块诊断页</a>
+				<a class="myicon" href="index.php?c=diag&amp;a=phpinfo">PHP信息</a>
+			</div>
+		</div>
+	</div>
+	
+	<div id="leftcontent">
+		<table>
+			<tr>
+				<th width="100%">&nbsp;</th>
+				<th>读取</th>
+				<th>写入</th>
+				<th>执行</th>
+			</tr>
+			<?php foreach ($this->fsTree as $item): ?>
+				<tr onmouseout="$(this).style.backgroundColor = '';" onmouseover="$(this).style.backgroundColor = '#333';">
+					<td>
+						<span style="margin-left: <?php echo (23 * $item['depth'])?>px;">
+							<img src="images/dtree/<?php echo ('folder' == $item['type'] ? 'folder' : 'page'); ?>.gif" alt="" />
+							<?php echo $item['name']; ?>
+						</span>
+					</td>
+					<td align="center">
+						<img src="images/admin/<?php echo $item['r'] ? 'icon_ok' : 'icon_error'; ?>.gif" alt="" />
+					</td>
+					<td align="center">
+						<img src="images/admin/<?php echo $item['w'] ? 'icon_ok' : 'icon_error'; ?>.gif" alt="" />
+					</td>
+					<td align="center">
+						<?php if ('folder' == $item['type']): ?>
+							<img src="images/admin/<?php echo ($item['x'] ? 'icon_ok' : 'icon_error'); ?>.gif" alt="" />
+						<?php else: ?>
+							&nbsp;
+						<?php endif; ?>
+					</td>
+				</tr>
+			<?php endforeach; ?>
+		</table>
+	</div>
+</div>

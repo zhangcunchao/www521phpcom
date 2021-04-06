@@ -1,0 +1,549 @@
+<?php
+	$conf = &ivPool::get('conf');
+	$folderProperties = $this->folder->getProperties();
+	$folderAttributes = $this->folder->getAttributes();
+	$folderUserAttributes = $this->folder->getUserAttributes();
+	$folderFolders = $this->folder->getFolders();
+	$folderFiles = $this->folder->getFiles();
+	$parentFolder = $this->folder->getAncestor();
+	$remakeThumbs = false;
+	if (isset($_SESSION['remakeThumbs']) && $_SESSION['remakeThumbs']) {
+		unset($_SESSION['remakeThumbs']);
+		$remakeThumbs = true;
+	}
+?>
+<div id="content" class="left">
+	<div id="rightmenu">
+		<div class="box">
+			<div id="folder_info_content" class="heading ivrm">文件夹信息</div>
+			<div class="content">
+				<div class="mytitle"><?php echo $this->folder->getTitle(); ?></div>
+				<div><?php echo formatDate($folderProperties['date']); ?></div>
+				<div><?php echo $this->folder->getFileCount(); ?>个文件</div>
+				<div>
+					<img src="../<?php echo $this->folder->getThumbRelativePath(); ?>" alt="" />
+				</div>
+
+				<form method="post" action="">
+					<div>
+						设置为
+						  <select name="newdata[page]" onchange="this.form.submit();">
+							<option value="gallery" selected="selected">文件夹</option>
+							<option value="html" <?php echo ($this->folder->isPage() ? 'selected="selected"' : ''); ?>>纯文本页</option>
+							<option value="link" <?php echo ($this->folder->isLink() ? 'selected="selected"' : ''); ?>>超链接</option>
+							<option value="filemod" <?php echo ($this->folder->isFilemod() ? 'selected="selected"' : ''); ?>>文件模式</option>
+						</select>
+					</div>
+
+					<?php if (!$this->folder->isPage() && !$this->folder->isLink()): ?>
+						<?php if ($this->folder->isFilemod()): ?>
+							<div class="field">
+								文件模式:<br/>
+								<select name="newdata[fileMod]">
+									<option value="slideshow" <?php echo ('slideshow' == $folderAttributes['fileMod'] ? 'selected="selected"' : ''); ?>>幻灯片</option>
+									<option value="photoblinds" <?php echo ('photoblinds' == $folderAttributes['fileMod'] ? 'selected="selected"' : ''); ?>>模糊特效</option>
+									<option value="randomimage" <?php echo ('randomimage' == $folderAttributes['fileMod'] ? 'selected="selected"' : ''); ?>>随机显示</option>
+									<option value="custom" <?php echo ('custom' == $folderAttributes['fileMod'] ? 'selected="selected"' : ''); ?>>自定义</option>
+									<?php foreach (getContent(BASE_DIR . 'filemods/') as $file): ?>
+										<?php if (ivFilepath::matchSuffix($file, $conf->get('/config/imagevue/settings/allowedext'))): ?>
+											<option value="<?php echo $file; ?>" <?php echo ($file == $folderAttributes['fileMod'] ? 'selected="selected"' : ''); ?>><?php echo $file; ?></option>
+										<?php endif; ?>
+									<?php endforeach; ?>
+								</select>
+							</div>
+							
+							<div class="field">
+								参数:<br/>
+								<input type="text" name="newdata[parameters]" value="<?php echo $folderAttributes['parameters'] ?>"/>
+							</div>
+						<?php endif; ?>
+						<?php if (count($folderFiles)): ?>
+						<div class="field">
+							预览图片:<br/>
+							<input type="hidden" name="newdata[previewimage]" value="" />
+							<select name="newdata[previewimage]" onchange="this.form.submit();">
+									<?php foreach ($folderFiles as $item): ?>
+										<?php if (is_a($item, 'ivFileImage')): ?>
+											<option value="<?php echo $item->getProperty('name'); ?>"<?php echo ($folderAttributes['previewimage'] == $item->getProperty('name') ? ' selected="selected"' : ''); ?>><?php echo $item->getProperty('name'); ?></option>
+										<?php endif; ?>
+									<?php endforeach; ?>
+							</select>
+						</div>
+						<?php endif; ?>
+						<div class="field">
+							排序方式:<br/>
+							<select name="newdata[sort]" onchange="this.form.submit();">
+								<?php foreach ($this->sorts as $value => $data): ?>
+									<option value="<?php echo $value; ?>"<?php echo ($folderAttributes['sort'] == $value ? ' selected="selected"' : ''); ?>><?php echo $data['name'] ?></option>
+								<?php endforeach; ?>
+							</select>
+						</div>
+					
+						<div class="field">标题:<br/>
+							<input type="text" name="newdata[title]" value="<?php echo htmlspecialchars($folderAttributes['title']); ?>"/>
+						</div>
+						
+						<div class="field">
+							描述:<br/>
+							<textarea cols="20" rows="5" name="newdata[description]"><?php echo htmlspecialchars($folderAttributes['description']); ?></textarea>
+						</div>
+						
+						<?php foreach ($folderUserAttributes as $name => $value): ?>
+							<div class="field"><?php echo ucfirst($name); ?>:<br/>
+								<input type="text" name="newdata[<?php echo $name; ?>]" value="<?php echo htmlspecialchars($value); ?>"/>
+							</div>
+						<?php endforeach; ?>
+						<div class="field">
+							<input type="submit" class="mysubmit" value="保 存" name="save"/>
+						</div>
+					<?php endif; ?>
+				</form>
+			</div>
+		</div>
+
+		<div class="box">
+			<div id="folder_actions_content" class="heading ivrm">文件夹操作</div>
+			<div class="content actions">
+				<?php if ($this->allowRenaming): ?>
+					<a class="myicon" href="#" onclick="var dirName = window.prompt('Insert new name of folder', '<?php echo $folderProperties['name'] ?>'); if (dirName) {location.href = '?a=rename&amp;path=<?php echo $this->path ?>&amp;name=' + dirName;} return false;">重命名当前文件夹</a>
+				<?php endif; ?>
+				<a class="delete" href="index.php?path=<?php echo $this->path; ?>&amp;a=delete" onclick="return confirm('您确定要删除文件夹 <?php echo ($folderProperties['name']); ?>?');">删除当前文件夹</a>
+				<a class="myicon" href="#" onclick="var dirName = window.prompt('Enter name for a new folder'); if (dirName) {location.href = '?a=create&amp;path=<?php echo $this->path ?>&amp;name=' + dirName;} return false;">创建新文件夹</a>
+				<a class="myicon" href="index.php?path=<?php echo $this->path; ?>&amp;a=<?php echo ($this->folder->isHidden() ? 'unhide' : 'hide') ?>"><?php echo ($this->folder->isHidden() ? '显示该文件夹' : '隐藏该文件夹') ?></a>
+				<?php if (!$this->folder->isPage() && !$this->folder->isLink()): ?>
+					<a class="myicon" href="index.php?a=makethumbs&amp;path=<?php echo $this->path; ?>">为此文件夹重新创建缩略图</a>
+					<a class="myicon" href="index.php?a=recreatethumbs&amp;path=<?php echo $this->path; ?>">从当前文件夹开始，重新创建所有文件夹的缩略图</a>
+					<a class="myicon" href="index.php?a=recreatethumbs&amp;path=<?php echo $this->path; ?>&amp;miss=1">从当前文件夹开始，为所有文件夹重新创建缺失的缩略图</a>
+				<?php endif; ?>
+			</div>
+		</div>
+
+		<?php if (!$this->folder->isPage() && !$this->folder->isLink()): ?>
+			<div class="box">
+				<div id="selected_file_actions_content" class="heading ivrm">选中的文件操作</div>
+				<div class="content actions">
+					<a class="delete" href="javascript:void(0);" onclick="if (confirm('您确定要删除选中的文件吗？')) {$('sfaForm').action='index.php?a=deleteFiles&amp;path=<?php echo $this->path?>'; $('sfaForm').submit();} else {return false;}">删除选中的文件</a>
+					<form method="post" action="" id="sfaForm">
+						<div class="field">
+							移动到:<br/>
+							<select onchange="this.form.action='index.php?a=moveFiles&amp;path=<?php echo $this->path?>&amp;target=' + this.value; this.form.submit();">
+								<?php foreach ($this->flatFolderTree as $folderNode):?>
+									<option value="<?php echo $folderNode['folder']->getProperty('path'); ?>" <?php echo (ivFilepath::directory($this->path) == $folderNode['folder']->getProperty('path') ? 'selected="selected"' : ''); ?>><?php echo str_repeat('--', $folderNode['depth']); ?>[<?php echo $folderNode['folder']->getTitle(); ?>]</option>
+								<?php endforeach; ?>
+							</select>
+						</div>
+						<div class="field">复制到:<br/>
+							<select onchange="this.form.action='index.php?a=copyFiles&amp;path=<?php echo $this->path?>&amp;target=' + this.value; this.form.submit();">
+								<?php foreach ($this->flatFolderTree as $folderNode):?>
+									<option value="<?php echo $folderNode['folder']->getProperty('path'); ?>" <?php echo (ivFilepath::directory($this->path) == $folderNode['folder']->getProperty('path') ? 'selected="selected"' : ''); ?>><?php echo str_repeat('--', $folderNode['depth']); ?>[<?php echo $folderNode['folder']->getTitle(); ?>]</option>
+								<?php endforeach; ?>
+							</select>
+						</div>
+						<?php if (!empty($folderFiles)): ?>	
+							<div style="visibility: hidden; height: 1px; width: 1px;">
+								<select name="selected[]" multiple="multiple" id="selected_files">
+									<?php foreach ($folderFiles as $item): ?>
+										<option value="<?php echo $item->getProperty('name'); ?>"></option>
+									<?php endforeach; ?>
+								</select>
+							</div>
+						<?php endif; ?>
+					</form>
+				</div>
+			</div>
+		<?php endif; ?>
+
+		<?php if (!$this->folder->isLink()): ?>
+			<div class="box">
+				<div id="folder_upload_content" class="heading ivrm">上传文件</div>
+				<div class="content" style="overflow: hidden; height: 1%">
+					<?php
+						$fileTypes = array();
+						foreach ($this->allowedExtentions as $ext) {
+							$fileTypes[] = "*.$ext";
+						}
+					?>
+					<?php if ('swfupload' == $this->uploader): ?>
+						<form id="form1" action="" method="post" enctype="multipart/form-data">
+							<fieldset class="flash" id="fsUploadProgress">
+								<legend>上传队列</legend>
+							</fieldset>
+							<div id="divStatus">0个文件被上传</div>
+							<div style="height: 50px; float: left;">
+								<div id="uploaderContainer" style="width: 100px;height: 40px;"></div>
+							</div>
+							<div style="height: 50px; float: left;">
+								<input id="btnCancel" type="button" class="mysubmit" value="取消上传" disabled="disabled" />
+							</div>
+							
+						</form>
+						<script type="text/javascript">
+						// <![CDATA[
+							var settings = {
+								flash_url : "admin/swfupload.swf",
+								upload_url: (Prototype.Browser.IE ? "" : "../") + "index.php?a=upload&path=<?php echo $this->path; ?>",	// Relative to the SWF file
+								post_params: {"<?php echo session_name(); ?>": "<?php echo session_id(); ?>"},
+								file_size_limit : "<?php echo $this->uploadLimit; ?>B",
+								file_types : "<?php echo implode(';', $fileTypes); ?>",
+								file_types_description : "All Files",
+								file_upload_limit : 100,
+								file_queue_limit : 0,
+								custom_settings : {
+									progressTarget : "fsUploadProgress",
+									cancelButtonId : "btnCancel"
+								},
+								debug: false,
+				
+								// Button settings
+								button_image_url: "images/uploadFileButton.png",	// Relative to the Flash file
+								button_width: "100",
+								button_height: "40",
+								button_placeholder_id: "uploaderContainer",
+								
+								// The event handler functions are defined in handlers.js
+								file_queued_handler : fileQueued,
+								file_queue_error_handler : fileQueueError,
+								file_dialog_complete_handler : fileDialogComplete,
+								upload_start_handler : uploadStart,
+								upload_progress_handler : uploadProgress,
+								upload_error_handler : uploadError,
+								upload_success_handler : uploadSuccess,
+								upload_complete_handler : uploadComplete,
+								queue_complete_handler : queueComplete,	// Queue plugin event
+								preserve_relative_urls : true,
+								prevent_swf_caching : false
+							};
+				
+							var swfu = new SWFUpload(settings);
+							$('btnCancel').observe('click', function (ev) {
+								swfu.cancelQueue();
+							});
+						// ]]>
+						</script>
+					<?php elseif ('yuiuploader' == $this->uploader): ?>
+						
+						<form id="form1" action="" method="post" enctype="multipart/form-data">
+							<fieldset class="flash" id="fsUploadProgress">
+								<legend>上传队列</legend>
+							</fieldset>
+							<div id="divStatus">0个文件被上传</div>
+							<div style="height: 50px; float: left;">
+								<div id="uploaderContainer" style="width: 100px;height: 40px;"></div>
+							</div>
+							<div style="height: 50px; float: left;">
+								<input id="btnCancel" type="button" class="mysubmit" value="取消上传" disabled="disabled" />
+							</div>
+						</form>
+						<script type="text/javascript">
+						// <![CDATA[
+							YAHOO.widget.Uploader.SWFURL = 'admin/uploader.swf';
+							var uploader = new YAHOO.widget.Uploader('uploaderContainer', 'images/uploadFileButton.png');
+							uploader.addListener('contentReady', function () {
+								uploader.setAllowMultipleFiles(true);
+								uploader.setFileFilters({extensions:"<?php echo implode(';', $fileTypes); ?>", description:"Images"});
+								uploader.setSimUploadLimit(1); 
+							});
+							uploader.addListener('fileSelect', onFileSelect);
+							uploader.addListener('uploadStart', onUploadStart);
+							uploader.addListener('uploadCancel', onUploadComplete);
+							uploader.addListener('uploadComplete', onUploadComplete);
+							uploader.addListener('uploadError', onUploadError);
+							$('btnCancel').observe('click', function (ev) {
+								uploader.cancel();
+							});
+							function onFileSelect(ev) {
+								$('btnCancel').enable();
+								for (var item in ev.fileList) {
+									if(YAHOO.lang.hasOwnProperty(ev.fileList, item)) {
+										var progress = new FileProgress(ev.fileList[item], "fsUploadProgress");
+										if (ev.fileList[item].size > <?php echo $this->uploadLimit; ?>) {
+											uploader.removeFile(ev.fileList[item].id);
+											progress.setStatus("File is too big.");
+											progress.setComplete();												
+										} else {
+											progress.setStatus("等待中...");
+										}
+									}
+								}
+								uploader.uploadAll('http://<?php echo getenv('HTTP_HOST'); ?><?php echo getenv('SCRIPT_NAME'); ?>?a=upload&path=<?php echo $this->path; ?>', 'POST', {"<?php echo session_name(); ?>": "<?php echo session_id(); ?>"});
+							}
+						// ]]>
+						</script>
+					<?php else: ?>
+						<div>
+							<form id="htmlUploader" action="index.php?a=upload&amp;path=<?php echo $this->path; ?>" method="post" enctype="multipart/form-data" target="myIframe">
+								<div>
+									<!-- ie8 fix :/  -->
+									<input  style="display:none" type="submit"/>
+								</div>
+								
+								<div>
+									<input type="file" name="Filedata" />
+								</div>
+								<div>       
+									<input type="submit" class="mysubmit" value="上 传" />
+								</div> 
+							</form>
+							<iframe id="myIframe" name="myIframe" style="display: none;"></iframe>
+						</div>
+					<?php endif; ?>
+				</div>
+			</div>			
+		<?php endif; ?>
+	</div>
+		
+	<div id="leftcontent">
+		<!-- parentFolder -->
+		<?php if (!is_null($parentFolder)): ?>
+			<div class="thumbitem" onclick="location.href='?path=<?php echo urlencode($parentFolder->getProperty('path')); ?>';" >
+				<table style="width: 100%">
+					<tr>
+						<td><img src="images/folder_parent_128x128.png" class="folder" alt="Goto parent folder" /></td>
+						<td style="width: 100%">
+							<div class="actions">
+								<a href="?path=<?php echo urlencode($parentFolder->getProperty('path')); ?>" title="回到上级目录"><img src="images/admin/icon_edit.gif" alt=""/>回到上级目录</a>
+							</div>
+						</td>
+					</tr>
+				</table>
+			</div>
+		<?php endif; ?>
+		<!-- /parentFolder -->
+		<!-- folderList -->
+		<?php foreach ($folderFolders as $item): ?>
+			<div class="thumbitem">
+				<table style="width: 100%">
+					<tr>
+						<td><a href="?path=<?php echo urlencode($item->getProperty('path'));?>"><img src="../<?php echo $item->getThumbRelativePath(); ?>" class="folder" alt="" /></a></td>
+						<td style="width: 100%">
+							<div class="actions">
+								<a href="?path=<?php echo urlencode($item->getProperty('path')); ?>" title="打开文件夹"><img src="images/admin/icon_edit.gif" alt=""/>打开</a>
+								<a href="?a=delete&amp;path=<?php echo urlencode($item->getProperty('path')); ?>" title="删除文件夹" onclick="return confirm('您确定要删除文件夹 <?php echo $item->getProperty('name'); ?>?');"><img src="images/admin/icon_delete.gif" alt=""/>删除</a>
+							</div>
+							<div class="info<?php echo ($item->isHidden() ? ' hidden' : '') ?>">
+								<div class="title">
+									<a href="?path=<?php echo urlencode($item->getProperty('path')); ?>"><?php echo $item->getTitle(); ?></a>
+								</div>
+								<div class="filename"><a href="?path=<?php echo urlencode($item->getProperty('path')); ?>"><?php echo $item->getProperty('path'); ?></a> <?php echo $item->getFileCount(); ?>个文件</div>
+								<div class="attributes">
+									<div><?php echo $item->getAttribute('description'); ?></div>
+								</div>
+								<div class="attributes properties">
+									<div><?php echo formatDate($item->getProperty('date')); ?></div>
+									<div><?php echo $item->getFileCount(); ?>个文件</div>
+								</div>
+							</div>
+						</td>
+					</tr>
+				</table>
+			</div>
+		<?php endforeach; ?>
+		<!-- /folderList -->
+
+		<?php if ($this->folder->isPage()): ?>
+			<!-- pageData -->
+
+			<form method="post" action="">
+				<div class="field">
+				    标题:<br/>
+					<input type="text" name="newdata[title]" value="<?php echo $folderAttributes['title'] ?>"/>
+				</div>
+				
+				<div class="field">
+					描述:<br/>
+					<textarea class="description" cols="20" rows="5" name="newdata[description]"><?php echo $folderAttributes['description'] ?></textarea>
+				</div>
+				
+				<div class="field">
+					内容:<br/>
+					<textarea id="pageContent" class="pageContent" cols="20" rows="10" name="newdata[pageContent]"><?php echo htmlspecialchars($folderAttributes['pageContent']); ?></textarea>
+				</div>
+				<script type="text/javascript">
+				//<![CDATA[
+					(function() {
+						var ta = $('pageContent');
+						if (ta) {
+							ta.value = ta.value.gsub(/src\=\"(<?php echo preg_quote(ivPath::canonizeRelative($conf->get('/config/imagevue/settings/contentfolder')), '/'); ?>.*?)\"/, function (match) {return 'src="../' + match[1] + '"';});
+						}
+
+						document.observe('dom:loaded', function () {
+							ta.form.onsubmit = function () {
+								ta.value = ta.value.gsub(/src\=\"\.\.\/(.*?)\"/, function (match) {return 'src="' + match[1] + '"';});
+							};
+						});
+
+						var config = {
+							height: '400px',
+							width: '90%',
+							dompath: true,
+							animate: true,
+							markup: 'default'
+						}
+
+						var editor = new YAHOO.widget.ivEditor('pageContent', config);
+						editor.on('toolbarLoaded', function() {
+							<?php
+								$str = '';
+								foreach ($folderFiles as $file) {
+									if (is_a($file, 'ivFileImage')) {
+										$imageTip = '<div><img src="../' . $file->getProperty('path') . '" alt="' . $file->getTitle() . ' width="' . $file->getProperty('width') . '" height="' . $file->getProperty('height') . '" /></div><div>' . $file->getProperty('name') . '</div><div>' . $file->getProperty('width') . 'x' . $file->getProperty('height') . '</div>';
+										if ($file->getProperty('width') / $file->getProperty('height') > 1.5) {
+											$tw = 60;
+											$th = round($tw / $file->getProperty('width') * $file->getProperty('height'));
+										} else {
+											$th = 40;
+											$tw = round($th / $file->getProperty('height') * $file->getProperty('width'));
+										}
+										$str .= '<div><a href="#" onmouseover="Tip(\'' . htmlspecialchars($imageTip) . '\')" onmouseout="UnTip()"><img src="../' . $file->getProperty('path') . '" alt="' . $file->getTitle() . '" width="' . $tw . '" height="' . $th . '" /><span>' . $file->getTitle() . '</span></a></div>';
+									}
+								}
+							?>
+							<?php if (!empty($str)): ?>
+								//Add insertpicture button to the Toolbar Group called insertitem.        
+								editor.toolbar.addButtonToGroup({
+									type: 'push',
+									label: 'Insert picture from this folder',
+									value: 'insertpicture',
+									menu: function() {
+										//Create the Overlay instance we are going to use for the menu            
+										var menu = new YAHOO.widget.Overlay('insertpicture', {
+											width: '165px',
+											height: '210px',
+											visible: false
+										});
+										//Setting the body of the container to our list of images.
+										menu.setBody('<div id="insertPicMenu"><?php echo str_replace("'", "\'", $str); ?></div>');
+										menu.beforeShowEvent.subscribe(function() {
+											//Set the context to the bottom left corner of the Insert Picture button  
+											menu.cfg.setProperty('context', [
+												editor.toolbar.getButtonByValue('insertpicture').get('element'),
+												'tl',
+												'bl'
+											]);
+										});            
+										menu.render(document.body);
+										$(menu.element).setStyle({visibility: 'hidden'});
+										return menu;
+									}()            
+								}, 'insertitem');
+
+								editor.toolbar.on('insertpictureClick', function(ev) {
+									var icon = '';
+									this._focusWindow();
+									if (ev.icon) {
+										icon = ev.icon;
+									}
+									this.execCommand('inserthtml', '<img src="' + icon.src + '" width="' + icon.width + '" height="' + icon.height + '" alt="">');
+									this.cleanHTML();
+								}, editor, true);
+
+								YAHOO.util.Event.onAvailable('insertPicMenu', function() {
+									YAHOO.util.Event.on('insertPicMenu', 'click', function(ev) {
+										var tar = YAHOO.util.Event.getTarget(ev);
+										if (tar.tagName.toLowerCase() == 'img') {
+											var src = tar.getAttribute('src', 2);
+											var img = new Image();
+											img.src = src;
+											var _button = this.toolbar.getButtonByValue('insertpicture');
+											_button._menu.hide();
+											this.toolbar.fireEvent('insertpictureClick', {type: 'insertpictureClick', icon: {src: src, width: img.width, height: img.height}});
+										}
+										YAHOO.util.Event.stopEvent(ev);
+									}, editor, true);
+								});
+							<?php endif; ?>
+						}, editor, true);
+
+						editor.render();
+					})();
+				//]]>
+				</script>
+
+				<div class="field">
+					<input type="submit" class="mysubmit" value="保 存" name="save" />
+				</div>
+			</form>
+			<!-- /pageData -->
+		<?php elseif ($this->folder->isLink()): ?>
+			<!-- linkData -->
+			<form method="post" action="">
+				<div class="field">
+					标题:<br/>
+					<input type="text" name="newdata[title]" value="<?php echo $folderAttributes['title'] ?>"/>
+				</div>
+				
+				<div class="field">
+					描述:<br/>
+					<textarea class="description" cols="20" rows="5" name="newdata[description]"><?php echo $folderAttributes['description'] ?></textarea>
+				</div>
+				
+				<div class="field">
+					链接:<br/>
+					<input type="text" name="newdata[pageContent]" value="<?php echo (empty($folderAttributes['pageContent']) ? 'http://' : htmlspecialchars($folderAttributes['pageContent'])); ?>"/>
+				</div>
+
+				<div class="field">
+					<input type="submit" class="mysubmit" value="保 存" name="save"/>
+				</div>
+			</form>
+			<!-- /linkData -->
+		<?php else: ?>
+			<!-- imageList -->
+			<?php foreach ($folderFiles as $item): ?>
+				<div class="thumbitem selectable" onclick="toggle_file('<?php echo $item->getProperty('name'); ?>'); $(this).toggleClassName('selected');">
+					<table style="width: 100%">
+						<tr>
+							<td>
+								<a href="?c=file&amp;path=<?php echo urlencode($item->getProperty('path')); ?>">
+									<?php if ($remakeThumbs || ivPath::canonizeRelative(substr($item->getThumbRelativePath(), 0, strlen($this->contentPath))) !== $this->contentPath): ?>
+										<img src="index.php?c=file&amp;a=getthumb&amp;path=<?php echo ivPath::canonizeRelative($item->getProperty('path'), true); ?>" class="thumb" alt="" />
+									<?php else: ?>
+										<img src="../<?php echo $item->getThumbRelativePath(); ?>" class="thumb" alt="" />
+									<?php endif; ?>
+								</a>
+							</td>
+							<td style="width: 100%">
+								<div class="actions">
+									<a href="?c=file&amp;path=<?php echo urlencode($item->getProperty('path')); ?>" title="编辑"><img src="images/admin/icon_edit.gif" alt=""/>编辑</a>
+									<a href="?c=file&amp;a=delete&amp;path=<?php echo urlencode($item->getProperty('path')); ?>" title="删除文件" onclick="return confirm('您确定要删除文件 <?php echo $item->getProperty('name'); ?>?');"><img src="images/admin/icon_delete.gif" alt=""/>删除</a>
+								</div>
+								<div class="info">
+									<div class="title">
+										<a href="?c=file&amp;path=<?php echo urlencode($item->getProperty('path')); ?>"><?php echo $item->getTitle(); ?></a>
+									</div>
+									<div class="filename"><a href="?c=file&amp;path=<?php echo urlencode($item->getProperty('path')); ?>"><?php echo $item->getProperty('name'); ?></a></div>
+									<div class="attributes">
+										<div><?php echo $item->getAttribute('description'); ?></div>
+									</div>
+									<div class="attributes properties">
+										<div><?php echo formatDate($item->getProperty('date')); ?></div>
+										<?php if ($item->getProperty('width') && $item->getProperty('height')): ?>
+											<div><?php echo $item->getProperty('width'); ?>x<?php echo $item->getProperty('height'); ?></div>
+										<?php endif; ?>
+										<div><?php echo formatFilesize($item->getProperty('size')); ?></div>
+									</div>
+								</div>
+							</td>
+						</tr>
+					</table>
+				</div>
+			<?php endforeach; ?>
+			<!-- /imageList -->
+
+			<div class="actionsHelp">单击选择一张照片，使用Ctrl+A可以选择当前文件夹下所有照片。</div>
+		<?php endif; ?>
+	</div>
+</div>
+
+<script type="text/javascript">
+// <![CDATA[
+	Event.observe(window, 'load', function() {  
+		Event.observe(document, 'keydown', function(event) {
+			if (event.ctrlKey && !event.altKey && 65 == event.keyCode) {
+				event.preventDefault();
+				toggle_all_files();
+			}
+		});
+	});
+// ]]>
+</script>

@@ -1,0 +1,59 @@
+<!-- #content -->
+<div id="content">
+	<!-- #user -->
+	<div id="user">
+		<form method="post" action="">
+			<table class="usertable" border="0" cellspacing="0" cellpadding="0">
+				<tr>
+					<td class="text right">用户名</td>
+					<td class="text">
+						<input name="login" type="text" class="mytext" value="<?php echo (isset($this->user) ? $this->user->login : ''); ?>" />
+					</td>
+				</tr>
+				<tr class="odd">
+					<td class="text right">密码</td>
+					<td class="text">
+						<input type="password" name="user[password]" class="mytext" value="" />
+					</td>
+				</tr>
+				<tr>
+					<td class="text right">确认密码</td>
+					<td class="text">
+						<input type="password" name="password_confirm" class="mytext" value="" />
+					</td>
+				</tr>
+				<tr class="odd">
+					<td class="text right">权限</td>
+					<td class="text">
+						<input name="user[access]" id="hidden_selector" type="hidden" value="<?php echo (isset($this->user) ? $this->user->access : ''); ?>" />
+						<label>
+							<input type="radio" value="Admin" onclick="$('path_selector').disabled = true; $('hidden_selector').value = '*';" name="radio" <?php echo (isset($this->user) && ivAcl::isAdmin($this->user->login) ? 'checked="checked"' : ''); ?> />
+							相管理员
+						</label>
+						<br />
+						<label>
+							<input type="radio" value="Admin" onclick="$('path_selector').disabled = false; $('hidden_selector').value = $('path_selector').value;" name="radio" <?php echo (isset($this->user) && !ivAcl::isAdmin($this->user->login) ? 'checked="checked"' : ''); ?>/>
+							限制于
+						</label>
+						<br />
+						<select id="path_selector" style="margin: 5px 0px 5px 0px;" <?php echo (isset($this->user) && ivAcl::isAdmin($this->user->login) ? 'disabled="disabled"' : ''); ?> onchange="$('hidden_selector').value = this.value;">
+							<?php foreach ($this->flatFolderTree as $folderNode): ?>
+								<?php $folder = $folderNode['folder']; ?>
+								<option value="<?php echo $folder->getProperty('path') ?>" <?php echo (isset($this->user) && $folder->getProperty('path') == $this->user->access ? 'selected="selected"' : '') ?>>
+									<?php echo str_repeat('--', $folderNode['depth']); ?>[<?php echo $folder->getProperty('name') ?>]
+								</option>
+							<?php endforeach; ?>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2" class="text captions">
+						<input type="submit" name="save" class="mysubmit" value="提 交" style="padding: 2px 4px 2px 4px; margin: 5px 10px 5px 10px; float: right;" />
+					</td>
+				</tr>
+			</table>
+		</form>
+	</div>
+	<!-- #user -->
+</div>
+<!-- #content -->

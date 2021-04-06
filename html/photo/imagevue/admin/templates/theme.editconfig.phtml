@@ -1,0 +1,112 @@
+<?php
+	$function = create_function('$path', "return trim(preg_replace('/\W/', '_', \$path), '_');");
+	$firstLevelItems = array();
+	foreach ($this->flatConfig as $itemInfo) {
+		if (2 == $itemInfo['depth']) {
+			$firstLevelItems[$itemInfo['node']->getName()] = call_user_func($function, $itemInfo['path']);
+		}
+	}
+?>
+<div id="content">
+	<div id="rightmenu">
+		<div class="box">
+			<div id="theme_config_content" class="heading ivrm"><?php echo $this->themeName; ?> 主题</div>
+			<div class="content actions">
+				<a class="myicon active" href="index.php?c=theme&amp;a=editconfig&amp;name=<?php echo $this->themeName; ?>">编辑主题配置</a>
+				<a class="myicon" href="index.php?c=theme&amp;a=editcss&amp;name=<?php echo $this->themeName; ?>">编辑主题样式表</a>
+				<a class="myicon" href="../index.php?c=gallery&amp;theme=<?php echo $this->themeName; ?>">预览主题</a>
+				<a class="myicon" href="#" onclick="var themeName = window.prompt('输入新主题的名称'); if (themeName) {location.href = 'index.php?c=theme&amp;a=copy&amp;name=<?php echo $this->themeName; ?>&amp;new=' + themeName;} return false;">以 <?php echo $this->themeName; ?> 为基础，创建一个新主题</a>
+				<div class="field">
+					编辑另一个主题:<br/>
+					<select onchange="location.href = 'index.php?c=theme&amp;a=editconfig&amp;name=' + this.value;">
+						<?php foreach ($this->themes as $theme): ?>
+							<option value="<?php echo $theme; ?>" <?php echo ($this->themeName == $theme ? 'selected="selected"' : '')?>><?php echo $theme; ?></option>
+						<?php endforeach; ?>
+					</select>
+				</div>
+			</div>
+		</div>
+		<div class="box">
+			<div id="theme_upload_content" class="heading ivrm">上传背景文件</div>
+			<div class="content">
+				<div>
+					<form action="index.php?c=theme&amp;a=upload&amp;name=<?php echo $this->themeName; ?>" method="post" enctype="multipart/form-data">
+						<div><input type="file" name="Filedata" /></div>
+						<div><input type="submit" class="mysubmit" value="上 传" /></div>
+					</form>
+				</div>
+			</div>
+		</div>			
+	</div>
+	<div id="leftcontent">
+		<h1>
+			<?php echo $this->themeName; ?> 主题
+		</h1>
+		<p>
+			<?php $lastFirstLevelItem = end($firstLevelItems); ?>
+			<?php foreach ($firstLevelItems as $name => $id): ?>
+				<a href="#<?php echo $id ?>">
+					<?php echo ucfirst($name); ?>
+				</a>
+				<?php if ($lastFirstLevelItem != $id): ?>
+					|
+				<?php endif; ?>
+			<?php endforeach; ?>
+		</p>
+		<form method="post" action="">
+			<div>
+				<p>
+					<input type="submit" name="save" value="保 存" />
+					<input type="button" value="全部展开" onclick="$$('.ivconf').each(function (el) {el.addClassName('open'); el.next().show();});" />
+					<input type="button" value="全部折叠" onclick="$$('.ivconf').each(function (el) {el.removeClassName('open'); el.next().hide();});" />
+				</p>
+		  </div>
+			<div id="config">
+				<div id="formtree">
+					<?php
+						$oldDepth = 0;
+						$id = 1;
+					?>
+					<?php foreach ($this->flatConfig as $itemInfo): ?>
+						<?php if (1 < $itemInfo['depth']): ?>
+							<?php if ($oldDepth > $itemInfo['depth']): ?>
+								<?php for ($i = 0; $i < $oldDepth - $itemInfo['depth']; $i++): ?>
+									</div>
+								</div>
+								<?php endfor; ?>
+							<?php endif; ?>
+							<?php if ($itemInfo['node']->hasChildren()): ?>
+								<?php $aId = call_user_func($function, $itemInfo['path']); ?>
+								<?php $opened = in_array($aId, $this->openedPanels); ?>
+								<a href="#" id="<?php echo $aId; ?>" class="ivconf <?php echo $opened ? 'open' : ''; ?>" onclick="return false;"><?php echo $itemInfo['node']->getName(); ?></a>
+								<div class="subitems"<?php echo $opened ? '' : ' style="display: none;"'; ?>>
+									<div class="itemgroup">
+							<?php else: ?>
+								<div class="item" id="l<?php echo $id ?>">
+									<?php echo $itemInfo['node']->getName(); ?>:<br />
+									<?php echo $itemInfo['node']->toFormElement("config[{$itemInfo['path']}]", $id); ?>
+									<div class="help" id="h<?php echo $id ?>">
+										<?php echo $itemInfo['node']->getAttribute('description'); ?>
+									</div>
+								</div>
+							<?php endif; ?>
+						<?php endif; ?>
+						<?php
+							$oldDepth = $itemInfo['depth'];
+							$id++;
+						?>
+					<?php endforeach; ?>
+					<?php for ($i = 0; $i < $oldDepth - 2; $i++): ?>
+						</div>
+					</div>
+					<?php endfor; ?>
+				</div>
+			</div>
+			<div>
+				<input type="submit" name="save" value="保 存" />
+			  <input type="button" value="全部展开" onclick="$$('.ivconf').each(function (el) {el.addClassName('open'); el.next().show();});" />
+				<input type="button" value="全部折叠" onclick="$$('.ivconf').each(function (el) {el.removeClassName('open'); el.next().hide();});" />
+			</div>
+		</form>
+	</div>
+</div>

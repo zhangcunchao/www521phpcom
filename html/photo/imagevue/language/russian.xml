@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- firedev.com contribution -->
+<lang>
+	<image>Фото</image>
+	<page>Страница</page>
+	<next_image>Следующая</next_image>
+	<previous_image>Предыдущая</previous_image>
+	<next_thumbnails>Следующая</next_thumbnails>
+	<previous_thumbnails>Предыдущая</previous_thumbnails>
+	<popup>Открыть popup</popup>
+	<window>Открыть в окне</window>
+	<download>Скачать</download>
+	<play>Слайдшоу</play>
+	<stop>Остановить</stop>
+	<showimage>Показать</showimage>
+	<showthumbnails>Миниатюры</showthumbnails>
+	<imageinfo>Описание</imageinfo>
+	<mainmenu>Меню</mainmenu>
+	<sendemail>Отправить</sendemail>
+	<login>Вход</login>
+	<logout>Выход</logout>
+	<open>Открыть</open>
+	<copylocation>Копировать ссылку</copylocation>
+	<enterfullscreen>На весь экран</enterfullscreen>
+	<exitfullscreen>Обратно</exitfullscreen>
+	<audio>Аудио</audio>
+	<volume>Громкость</volume>
+</lang>
